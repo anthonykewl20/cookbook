@@ -251,9 +251,9 @@ hardened, because the first set carried nothing tying a brief to its own chapter
 |---|---|---|---|---|---|
 | 17. Prep | 599 | pass | **SERVE** 5·5·5·5·5·5·5 | all NONE | yes |
 | 18. Cooking it | 635 | pass | **SERVE** 5·5·5·5·5·5·5 | all NONE | yes |
-| 19. Checking it before it leaves the kitchen | 596 | pass | pending | pending | no |
-| 20. Serving it | 572 | pass | pending | all NONE | no |
-| 21. Taking the money | — | — | — | — | no |
+| 19. Checking it before it leaves the kitchen | 596 → **662** | pass | **SERVE** 5·5·5·5·5·5·5 | all NONE | **sent back once**, then yes |
+| 20. Serving it | 572 → **539** | pass | **SERVE** 5·5·5·5·5·5·5 | all NONE | **sent back once**, then yes |
+| 21. Taking the money | 575 | pass | **SERVE** 5·5·5·5·5·5·5 | all NONE | yes |
 
 **Chapter 19 carries more than its brief asked and fits it.** Chapter 10 promised that the
 taster's checklist would be *given in detail* in chapter 19. It is: seven written questions
@@ -310,3 +310,62 @@ was merely not looked at.
 
 **Both faults are the same fault wearing different clothes** — work done by the wrong hands,
 and noticed by somebody other than the hands that did it.
+
+### The reader found what three checks could not, on its first batch of the night
+
+Every page above had already passed the head chef's list, a taster on seven questions, and a
+rule-by-rule sweep against ten invariants — a sweep proved that same hour against a page with
+a planted fault. Then the reader was asked the one question none of them asks: **what is not
+here?**
+
+> *"The pass counter — furnished in Ch. 4 as furniture — is the mechanism the running order
+> gives the batch for the dish to move between cooking, checking, and serving. No chapter
+> names it."*
+
+It was right. The running order's own seam says *"Part Two says there is a counter where a
+finished dish is checked and a taster who never cooked it. Part Three says how the tasting is
+done."* Chapter 4 put that counter in the building. Then the dish went from the cook's bench,
+through two checks, into the waiter's hands, and **no page ever put it anywhere.** Between
+"send it" and "the waiter carries it" there was no hand-off at all.
+
+**The fault was in the brief, not the page.** The pass counter is named in chapter 4 and
+nowhere else in the book, and it appeared in none of the five briefs. The printer wrote
+faithfully to an instruction with a hole in it. That is the second time this shop has traced a
+page fault back to the instruction that produced it, and the fix is the same both times:
+**correct the brief, not the writing.**
+
+Chapters 19 and 20 were sent back once each — their first — with the fault named. Both came
+back SERVE at straight sevens with clean sweeps. Chapter 19's fix is better than the
+instruction it was given: it ties the pass counter to *why* the counter exists, opening with
+**"The dish leaves the maker's hands before judgment"** rather than merely naming furniture.
+
+**What every check here has in common, and why it needed a fourth.** The head chef's list,
+the taster and the sweep all ask whether what is on the page is correct. None of them can ask
+whether the page is complete. A chapter can satisfy all three and still be missing the thing
+the reader needed — which is exactly the reasoning that moved DeepSeek out of the taster's
+chair rather than off the roster.
+
+### The reader's other findings, and what was done with each
+
+Recorded rather than acted on, with the reason, because "noted" is how a hole gets lost.
+
+| What it said is missing | Decision |
+|---|---|
+| The pass counter is never used | **Sent back.** Assigned by the running order's own seam |
+| No hand-off between bench, checks and waiter | **Sent back**, same fix |
+| The cashier has no signal that serving finished | **Sent back.** Stamp 4 is now stated as the signal |
+| Stamps cited by number without the full list | **Declined.** Chapter 12 holds the list; repeating it five times is the padding the length rule exists to stop |
+| What the operations log physically *is* | **Open hole.** Real, and not a service chapter's job |
+| The restaurant standing and wired up before any of this can be followed | **Open hole.** Belongs to what ships in the box |
+
+### Hy3 returned an empty reply twice tonight, and both times it failed loudly
+
+Chapter 18's tasting and chapter 26's brief both came back with nothing in them. Both were
+retried unchanged and both then answered normally. Nothing was altered to make either pass.
+
+**The second one is the one worth recording.** By then the scripts had been hardened by a
+reviewer, so the empty reply raised an error and wrote no file. The manager's original version
+wrote whatever came back — which means it would have produced **a zero-byte brief that reads
+exactly like a thin one, and a zero-byte verdict that reads exactly like a page with no
+faults.** The fault the manager was caught for was also the fault that would have hidden this
+one.

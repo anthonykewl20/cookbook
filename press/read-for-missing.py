@@ -119,7 +119,11 @@ If a chapter is genuinely complete against the running order, say so in one line
 """
     completed = subprocess.run(
         [
-            "ocask", "--model", "deepseek-v4-pro", "--variant", "max", "--pure",
+            # --variant and --pure are NOT ocask options. An earlier version passed
+            # them because they appear as shorthand in the routing notes, and the
+            # reader failed with an unknown-option error before it ever reached the
+            # model. Check the tool's own help before copying a flag out of prose.
+            "ocask", "--model", "deepseek-v4-pro",
             "--task", "-", "--lens", "general", "--temperature", "0",
             "--timeout-ms", "300000",
         ],
