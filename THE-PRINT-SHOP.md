@@ -30,8 +30,43 @@ job it meant. Named properly, the conflict disappears.
 | **Printer** — writes one chapter, start to finish | **Codex 5.6 Sol**, high effort | The designated writer for substantial work. Holding structure and a consistent voice across a long document is the hard version of this job |
 | **Page taster** — checks one finished page | **DeepSeek V4 Pro** | Deep review of a single piece of work against a checklist. Never wrote the page it judges |
 | **Binder** — reads the whole book once it exists | **DeepSeek V4 Pro, fresh session** | Whole-document consistency: does ch. 40 contradict ch. 12, does ch. 19 say what ch. 10 claims it says |
+| **Prep cook** — gathers the ingredients for a chapter before the printer writes | **Hy3** (Tencent, via OpenRouter) | Cheap, parallel, and the output is checkable before it matters. A trial junior belongs where a mistake is caught early |
+| **Shadow taster** — tastes alongside the taster of record, verdict not binding | **Hy3** | How a junior earns promotion on evidence rather than impression |
 | **Odd jobs** — renumbering, formatting, file moves | **GLM 5.2** | Mechanical work that needs no analysis |
 | **The doctor** — watches the production line itself | worn by the print manager for now | Whether pages are being rejected more often, whether the template is drifting. A named job, not yet a separate pair of hands |
+
+## The junior
+
+Hy3 was hired on 2026-07-21 as a **trial junior**, with cookbook drafting named as its first
+assignment. This is that assignment. Two things are true about it and should not be blurred
+together:
+
+- **It is cheaper than the taster** — roughly a third of DeepSeek V4 Pro per page.
+- **Nobody has ever judged the quality of its work.** What is recorded is that it was
+  *verified working*: it echoed a test phrase end to end. That is a wiring check, not a
+  verdict. Treating "it replied" as "it writes well" is exactly the kind of quiet promotion
+  this book exists to prevent.
+
+So it gets the two jobs where being unproven costs least:
+
+**Prep.** Before a chapter is printed, someone has to gather what goes into it — what the
+running order says the chapter must cover, the decisions already settled about it, the
+neighbouring chapters it must not contradict. The printer currently has to do that hunting
+itself. Handing it over follows the book's own reasoning: the grunt work is not the cook's
+job, *once it is written down*. It also cuts the expensive printer's bill, because Sol then
+spends its effort writing rather than searching.
+
+**Shadow tasting.** It gives a verdict on every page beside the taster of record, and its
+verdict decides nothing. Both go in the log. After ten chapters there is a real record of how
+often the junior agreed with the taster — and a junior promoted on that evidence has been
+promoted honestly, which is the only kind of promotion this book allows.
+
+**Operating note:** it has an internal reasoning mode and needs generous room to answer, or
+replies come back empty. That is a job description detail, and it belongs written down.
+
+**Its credit is finite** — roughly $8.49 remained on the OpenRouter account at hire. Fifty
+chapters of prep is probably well inside that, but "probably" is not a measurement. Chapter 1
+gets measured.
 
 ## The rules this shop runs under
 
