@@ -29,11 +29,11 @@ job it meant. Named properly, the conflict disappears.
 |---|---|---|
 | **Print manager** | Claude (this session) | Hands out chapters, holds the template, checks each page followed it, keeps two printers off one page |
 | **Printer** — writes one chapter, start to finish | **Codex 5.6 Sol**, high effort — **won the showdown, on probation for five chapters** | Took the objective half outright, and was the only printer that verified itself against a written limit before handing in. The owner picked its page blind |
-| **Page taster** — checks one finished page | **DeepSeek V4 Pro** | Deep review of a single piece of work against a checklist. Never wrote the page it judges |
+| **Page taster** — checks one finished page on the taster's list ONLY | **DeepSeek V4 Pro** | Voice, first read, analogies, unfounded claims, length. **Contradiction is no longer its job** — it failed that check three times |
 | **Binder** — reads the whole book once it exists | **DeepSeek V4 Pro, fresh session** | Whole-document consistency: does ch. 40 contradict ch. 12, does ch. 19 say what ch. 10 claims it says |
 | **Prep cook** — gathers the ingredients for a chapter before the printer writes | **Hy3** (Tencent, via OpenRouter) | Cheap, parallel, and the output is checkable before it matters. A trial junior belongs where a mistake is caught early |
 | **Shadow taster** — tastes alongside the taster of record, verdict not binding | **Hy3** | How a junior earns promotion on evidence rather than impression |
-| **The contradiction pass** — every chapter against the ten core invariants, rule by rule | **Hy3 — PROVEN, awaiting the owner's word to make it binding** | The only worker that has ever caught a quiet contradiction here. Passed the entrance exam; the taster of record failed it three times |
+| **The contradiction pass** — every chapter against the ten core invariants, rule by rule | **Hy3 — BINDING.** Promoted by the owner on the record | The only worker that has ever caught a quiet contradiction here. Passed the entrance exam; the taster of record failed it three times |
 | **Odd jobs** — renumbering, formatting, file moves | **GLM 5.2** | Mechanical work that needs no analysis |
 | **The doctor** — watches the production line itself | worn by the print manager for now | Whether pages are being rejected more often, whether the template is drifting. A named job, not yet a separate pair of hands |
 
@@ -129,6 +129,25 @@ So what reaches him is:
 the binder against the written standard. If the voice wanders, that is a fault raised like
 any other — and only the *decision* to rerun the showdown comes upstairs, because staffing is
 the owner's. Noticing is not.
+
+## What the junior is actually good at
+
+Promoted on 2026-07-22 from shadow to holding a binding check. Worth naming precisely **what**
+was proven, because "good reviewer" is too vague to staff by.
+
+Across every test here, and in one report from another restaurant on this chain, its strength
+is the same: **it locates the specific.** In the entrance exam it quoted the offending sentence
+verbatim rather than summarising the problem. In a code review elsewhere it named the exact
+line where a stronger gate sat — a fact the primary reviewer had not stated plainly.
+
+That is why the holistic verdict failed and the rule-by-rule question worked. **The job it is
+good at is "find and quote the specific thing", not "tell me if this is good."** Staff it that
+way, and shape the question that way, and it performs. Ask it for an impression and it returns
+one, like everyone else.
+
+**The limit, stated honestly.** The evidence from the other restaurant is second-hand — a
+report of its output, not its output — and it is one instance. It moves the code-review
+question from "no evidence" to "one promising instance", which is not the same as proven.
 
 ## Tested and not hired
 
