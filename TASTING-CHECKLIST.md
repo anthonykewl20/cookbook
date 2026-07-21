@@ -38,7 +38,7 @@ Judgement, not measurement. Run only on pages that passed the head chef.
    A fault is reaching **outside** that world for a comparison: a car, a fuel gauge, a
    football team, a computer. Only four outside comparisons are agreed, because they earn
    their keep: **the recipe and the shopping list**, **the telephone game**, **a building with
-   doors**, and **a photograph against a diary**. Anything else from outside is a fault however
+   doors**, and **a photograph and a diary** (either alone or as a pair — the book's own settled words for the stocktake and the log). Anything else from outside is a fault however
    good it is — and so is one of those four **stretched past where it fits**, which is the
    commoner failure and the harder to see, because the words are all approved.
 

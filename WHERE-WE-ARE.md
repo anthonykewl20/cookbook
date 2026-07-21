@@ -8,23 +8,30 @@ Read this first, every session. Name the step in your first line, every reply.
 
 ## The step we are on
 
-**Printing the book.** Chapter 0 is written by hand, chapter 1 is won and adopted, the
-template exists and the printer's chair is filled. What remains is 49 chapters through the
-print shop.
+**Printing the book — chapters 17 to 50.** Seventeen are bound. The tools, the checks and
+the night's instructions are all in the repository: **read `OVERNIGHT.md` first if you are
+picking this up cold.**
 
-**Done looks like:** every chapter written, tasted, and bound into a book that does not
-contradict itself.
+**Done looks like:** every chapter written, tasted, swept for contradictions, and bound into a
+book that does not contradict itself.
 
-**Not this step:** reopening the running order. Reopening the print shop roster. Sending the
-owner anything that is not a decision.
+**Not this step:** reopening the running order. Reopening the print shop roster. Hiring
+anyone. Sending the owner anything that is not a decision.
 
 ## Steps behind us
 
-- **The showdown** — done. Four printers, one brief, blind scoring, the owner's ear breaking
-  the tie. Codex 5.6 Sol prints, on probation for five chapters. Every page, score and the
-  key are in `showdown/`.
-- **Chapter 0 and the template** — done. Written by hand so the template came from doing the
-  job, not from inventing one in advance.
+- **Batch three (chapters 12-16)** — bound, after chapter 13 was sent back for jargon in its
+  flat rules and chapters 10 and 12 were sent back for contradictions the rule-by-rule pass
+  found. Chapter 12's fault was in its flat rules and it had already passed two rounds of
+  tasting with straight fives.
+- **The checks were rebuilt in a day, three times.** Tasting missed a quiet rule reversal
+  twice, even with the rule quoted in front of it — so contradiction moved to its own
+  rule-by-rule pass. The analogy check was then too loose, then too tight, then right.
+- **The roster changed on evidence.** Hy3 came in unproven and now holds the tasting and the
+  contradiction pass. DeepSeek stopped approving pages and now reads for what is missing.
+  Qwen was let go. kimi-k3 was tested and not hired.
+- **Batches one and two (chapters 2-11)** — bound.
+- **The showdown, chapter 0 and the template** — done.
 
 ## The five rules
 
