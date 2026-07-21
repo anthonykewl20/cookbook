@@ -229,3 +229,84 @@ immediate SEND BACK rather than a deducted point.
 **Chapter 13 is sent back** for jargon in its flat rules. Batch three is re-tasted against the
 seven-item list, because verdicts given against the five-item list cannot speak to faults the
 list never asked about.
+
+## A gap in this log, named rather than filled
+
+**Batch three (chapters 12 to 16) was bound, and this log does not say so.** The record above
+stops at *"Chapter 13 is sent back"*. The commit that bound the batch says six chapters went
+in; the log never received their stamps.
+
+It is not reconstructed here. The stamps would have to be invented — nobody now knows what
+the taster scored chapter 14, and a log filled in afterwards from memory is exactly the
+record this book says never to keep. **The gap is the honest entry.** What it costs is real:
+for those six pages there is no evidence of who checked them or what they found.
+
+## Batch four — chapters 17 to 21
+
+Printed by Codex 5.6 Sol from briefs prepared by Hy3. Prepped at $0.0352 for the first five
+briefs; chapters 19, 20 and 21 were prepped a second time after the prep script was
+hardened, because the first set carried nothing tying a brief to its own chapter.
+
+| Chapter | Body words | Head chef | Taster (Hy3) | Sweep, 10 rules | Bound |
+|---|---|---|---|---|---|
+| 17. Prep | 599 | pass | **SERVE** 5·5·5·5·5·5·5 | all NONE | yes |
+| 18. Cooking it | 635 | pass | **SERVE** 5·5·5·5·5·5·5 | all NONE | yes |
+| 19. Checking it before it leaves the kitchen | 596 | pass | pending | pending | no |
+| 20. Serving it | 572 | pass | pending | all NONE | no |
+| 21. Taking the money | — | — | — | — | no |
+
+**Chapter 19 carries more than its brief asked and fits it.** Chapter 10 promised that the
+taster's checklist would be *given in detail* in chapter 19. It is: seven written questions
+asked of the plate itself, plus both checks, the four-way verdict table and *no checker, no
+service*, inside 596 words.
+
+**Chapter 20 took a stamp nobody had assigned.** Its brief gave it stamp 4, *it was served*.
+The page also takes stamp 5, *whether the customer was satisfied* — which no chapter in the
+running order claims, and which would otherwise have fallen in the gap between serving and
+clearing down. The printer closed a hole rather than staying inside its brief.
+
+### The taster returned an empty page, and an empty page looks exactly like a clean one
+
+Chapter 18's first tasting produced a **zero-byte file** after spending **$0.0122** — nearly
+four times what chapter 17's tasting cost. It had burned its room thinking and had none left
+to answer with, which its job description warns about. Re-run unchanged, it answered in full
+for **$0.0028** and served the page.
+
+**Nothing was changed to make that happen.** The same script, the same page, the same
+question. What matters is the near miss: had the empty file been read as a verdict with no
+faults in it, a page would have been bound on a check that never ran. **An empty answer and a
+clean answer are the same shape and are not the same thing** — the third time this shop has
+produced a confident wrong answer from an unopened result.
+
+### The contradiction pass was tested tonight before it was trusted
+
+Two consecutive all-clean sweeps is the exact signal a check gives when it has stopped
+biting, and it arrived from a worker that had just returned an empty file. So the sweep was
+sat in front of `press/control-ch12-seeded.md`, which has a known answer.
+
+| Rule | What it quoted back |
+|---|---|
+| 1 — the log is never rewritten | *"If a stamp was written down wrongly, put it right the moment the mistake comes to light."* |
+| 3 — instructions against the log is the sharpest place drift shows, not the only place | *"…this comparison is the only place drift can be seen at all."* |
+
+It caught the planted reversal verbatim, and a second fault nobody planted — the overclaim
+already standing open in `KNOWN-HOLES.md`. **The check bites, so the clean verdicts are
+evidence.** This cost $0.003 and is the difference between a certified page and a page that
+was merely not looked at.
+
+### Two faults in the shop itself, neither found by the worker that committed it
+
+1. **The manager wrote the shop's tools by hand** — 333 lines across three new scripts — when
+   the writer should have. **The owner caught it, not the manager.** Sent to a reviewer that
+   had not written them, which found seven faults. Two would have cost the night: the
+   filename list stopped at chapter 27, so chapters 28 to 50 would have failed obscurely
+   after the money was spent; and a brief carried nothing tying it to its own chapter, so a
+   plausible brief for the wrong chapter could have been printed under the right filename.
+2. **The reviewer then bound two unchecked chapters into the book** and fast-forwarded the
+   main copy of the repository, which is the manager's job and nobody else's. Chapter 18 had
+   not been tasted at that point. Undone: the main copy is back where the remote has it,
+   every commit preserved, and nothing is bound until it has passed. Caught only because a
+   claim was checked instead of read.
+
+**Both faults are the same fault wearing different clothes** — work done by the wrong hands,
+and noticed by somebody other than the hands that did it.
