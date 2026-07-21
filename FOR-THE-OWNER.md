@@ -43,3 +43,55 @@ never the second.
 
 Saying no means taking the taste note out of the third stamp and reprinting four chapters.
 Saying nothing leaves four bound chapters resting on a decision that was never made.
+
+---
+
+## 3. When the head chef stops checking each dish, who checks the method?
+
+**Recommendation: the second cook checks the first cook's dish, and never their own.**
+
+This one blocks growth, so it is the most important of the three.
+
+The book promises every dish gets two verdicts: the head chef says whether the method was
+followed, the taster says whether the quality is right. The growth ladder then says that once
+there are many cooks, **the head chef stops checking and starts coordinating.** That takes the
+first verdict away and gives it to nobody. And *no checker, no service* means the kitchen may
+not simply carry on with one verdict — it would be serving a dish nobody had checked the
+method on.
+
+So as the book stands, **a restaurant cannot add a second cook at all.** That is a real stop,
+not a wording problem, and the chapter was right to refuse to guess its way past it.
+
+Why the second cook: it is the only answer that adds no new role. The floor stays at seven,
+the separation that matters is preserved — whoever made the dish never approves it — and
+checking a peer's method is exactly the kind of work a cook already knows how to do. The head
+chef keeps the standard and settles disagreements, which is what coordinating means.
+
+The alternative is an eighth role whose only job is checking method, and the book's own gate
+for that is hard to pass: name the promise that breaks without it. Nothing breaks that the
+second cook cannot hold.
+
+---
+
+## 4. The book calls the same role "chef" in one half and "cook" in the other. Which wins?
+
+**Recommendation: "cook" everywhere, and fix it in one mechanical pass rather than by
+reprinting.**
+
+Counted rather than guessed: Part Two says *chef* almost throughout, Part Three onward says
+*cook*, and **chapter 30 uses fifteen of one and eight of the other on the same page.**
+
+This is the failure chapter 1 names outright — *"A competing word appears for the same thing…
+soon nobody knows whether the two words carry the same promise."* The book is breaking its own
+first rule, in about twenty chapters.
+
+It was inherited honestly. The running order itself says "the chefs" in Part Two and "the cook"
+in Part Three, so every page faithfully copied whichever half it was written from.
+
+Why *cook*: Part Three is the standards part, the one that must be true in every restaurant on
+earth, and it says *cook*. "Head chef" stays as it is — it is a different role and never
+ambiguous.
+
+Why it is yours: the running order is settled and closed, and this changes it. It also touches
+roughly twenty chapters either way, which is not a change a kitchen makes on its own
+judgement at four in the morning.

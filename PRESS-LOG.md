@@ -491,3 +491,80 @@ a document nobody broke on purpose.
 **Nothing was changed to make anything pass.** The taster still sends the page back — on two
 real faults it found by itself. The finding is about which of its numbers can be trusted, not
 about whether it works.
+
+## Batch six — chapters 27 to 31
+
+Part Three finished; Part Four opened.
+
+| Chapter | Body words | Head chef | Taster (Hy3) | Sweep | Sent back |
+|---|---|---|---|---|---|
+| 27. When it goes wrong | 666 | pass | **SERVE** | all NONE | — |
+| 28. When one waiter is not enough | 588 | pass | **SERVE** | flagged, **overruled** | — |
+| 29. When one cook is not enough | 645 → **699** | pass | **SERVE** | all NONE | **once** |
+| 30. Two people working at once, without colliding | 664 | pass | **SERVE** | all NONE | — |
+| 31. When the menu grows from ten dishes to a thousand | 675 | pass | **SERVE** | all NONE | — |
+
+### The book had blocked its own growth path, and no verdict-giving check saw it
+
+All five pages passed everything. The reader then found that **chapter 29 shipped with an open
+hole**, and quoted the page's own words back:
+
+> *"This book has not yet settled who gives that verdict once the head chef stops checking
+> each dish. Do not drop it and do not guess a replacement."*
+
+The running order gave chapter 29 *"and what the head chef's job turns into."* The growth
+ladder takes the head chef off checking each dish and puts it on coordinating. Part Three
+requires two verdicts on every dish and the head chef gives one of them. **Remove the head
+chef from checking and that verdict has no owner** — and the book's own *no checker, no
+service* then closes the kitchen.
+
+So as written, **a restaurant cannot add a second cook at all.** That is a stop, not a wording
+problem.
+
+**The printer was right twice.** It refused to invent a replacement checker, and it said
+plainly that the question was unsettled. What it had missed is the other half of the rule: a
+chapter may ship with something unsettled only if it also says **where that is handled
+instead.**
+
+The reprint says it, and draws a consequence nobody had to be told:
+
+> *"Do not put a second cook on until the owner has settled who gives the method verdict.
+> Growing past one cook before then would leave every dish without one of its two required
+> verdicts. No checker, no service."*
+
+**That is the book working rather than failing.** A chapter that names what is unsettled, sends
+it through the one door, and states what a kitchen may not do meanwhile has no hole in it.
+
+### The book calls the same role two names, and one page uses both
+
+Measured across every chapter, not sampled:
+
+| | *chef*, excluding "head chef" | *cook* |
+|---|---|---|
+| Part Two (ch. 3–13) | heavy throughout | almost none |
+| Part Three onward | almost none | heavy throughout |
+| **Chapter 30 alone** | **8** | **15** |
+
+Chapter 1 forbids exactly this: *"A competing word appears for the same thing… soon nobody
+knows whether the two words carry the same promise."* **The book is breaking its own first
+rule in about twenty chapters.**
+
+It was inherited honestly — the running order itself says "the chefs" in Part Two and "the
+cook" in Part Three, so every page copied whichever half it was written from. The running
+order is settled and closed, so this is not the kitchen's to fix. It is in
+`FOR-THE-OWNER.md` with a recommendation and a measured cost.
+
+### Eight chapters sent back tonight. The reader found all eight.
+
+Three batches, fifteen pages, three checks each. **The head chef's list, the taster and the
+contradiction sweep did not find one fault in a page all night** — and they were not asleep:
+the sweep caught a planted reversal verbatim on two seeded pages, and the taster returned SEND
+BACK on the seeded page with two faults quoted.
+
+They were right every time and they were answering the wrong question. **Every one of them asks
+whether what is on the page is correct. Only the reader asks whether the page is all there** —
+and that question found a missing piece of furniture, two chapters that named nobody, a
+chapter that never delivered its own line from the running order, a book that had blocked its
+own growth, and a role called by two different names.
+
+The reader gives no verdict, cannot send a page back, and costs roughly ten pence a batch.
