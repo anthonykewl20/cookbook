@@ -229,6 +229,23 @@ you never stop hiring. Every chain of checks ends at the owner, standing outside
 building — which is exactly why the area manager exists: to hold those chains once there are
 more of them than the owner has attention.
 
+### When a check cannot run, the kitchen does not serve
+
+Three pairs of hands is a thin floor, and one absence takes a restaurant below it. The answer
+is not to carry on with fewer:
+
+> **No checker, no service.** The kitchen closes until the check can be made again.
+
+The reasoning is the promise itself. Without the taster, nobody knows what the dish tastes
+like before it reaches the customer — so the restaurant can no longer claim it serves the
+same dish every time. It is not serving a slightly-less-checked dish; it is serving an
+*unknown* dish, and the promise is simply void. A kitchen that suspends its checks to keep
+the food moving is the exact kitchen this book was written to prevent.
+
+Closing is also the honest signal. A stoppage is **logged like anything else**, and a
+restaurant that keeps stopping is telling the owner something a full order book never
+would — that it has been running one absence away from failure the whole time.
+
 **Three checks, on three different questions.** Between them they cover everything that can
 go wrong, and no two of them overlap:
 

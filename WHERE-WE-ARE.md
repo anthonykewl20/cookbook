@@ -8,16 +8,15 @@ Read this first, every session. Name the step in your first line, every reply.
 
 ## The step we are on
 
-**Settling the table of contents — Part Three, the base framework.** The standard run of
-service for a restaurant with **one of everything**: one waiter, one cook, one cashier, one
-dishwasher. Standards only — anything that differs between restaurants is not base, it is
-growth, and it belongs in Part Four.
+**Settling the table of contents — the chain part.** The last part still made of raw stock.
+One owner, several restaurants: what a new one inherits, what stays local, how a standards
+change reaches all of them, and where the area manager sits.
 
-**Done looks like:** the owner says the base framework is right, and agrees what counts as
-base versus growth.
+**Done looks like:** the owner says the chain part is right. At that point the whole running
+order is settled end to end and the contents can be signed off.
 
-**Not this step:** writing any chapter. Reopening Part Two. Working out the growth rules in
-detail. Saying what each thing is in real terms rather than in cooking terms.
+**Not this step:** writing any chapter. Reopening Parts Two or Three. Saying what each thing
+is in real terms rather than in cooking terms.
 
 ## The five rules
 
@@ -53,6 +52,10 @@ Things worth deciding, at the step where they belong.
 - **First running order** — done, then rebuilt. The first draft ran straight into *how a
   chain is run* without ever saying what a restaurant contains. The owner caught it. The
   inventory now comes first, and everything else is written on top of it.
+- **The base framework (Part Three)** — settled. Seven roles and three pairs of hands, three
+  checks on three different questions, one door for changing the manual, and no service
+  without a checker. Part Four has its governing rule: nothing is delegated until it is
+  written down well enough for a stranger to do it.
 - **The inventory (Part Two)** — settled. Eleven categories, each with a test for what
   belongs in it, so a new owner can sort their own things without asking us. The last thing
   settled: a stocktake and a log are two different records and must never be one thing.
