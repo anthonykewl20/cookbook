@@ -787,3 +787,74 @@ already fixed is how a correction gets quietly reversed.**
 Twelve by the reader, three by the taster, one of those three wrongly. Every rejection was
 settled by opening the evidence rather than obeying the verdict — including the one that was
 wrong, which is the only reason it was caught.
+
+## Batch ten — chapters 47 to 50. The running order is finished.
+
+| Chapter | Body words | Head chef | Taster | Sweep | Sent back |
+|---|---|---|---|---|---|
+| 47. Wiring them up | 657 | pass | **SERVE** | all NONE | — |
+| 48. The doorman | 445 | pass | **SERVE** | all NONE | — |
+| 49. What ships in the box | 517 → **586** | pass | **SERVE** | all NONE | **once** |
+| 50. What we deliberately left out, and why | 553 | pass | **SERVE** | all NONE | — |
+
+**Every chapter in `CONTENTS.md` now exists, and every one of them has passed the head chef's
+mechanical list, a taster on eight items, and a rule-by-rule sweep against all ten
+invariants.**
+
+### Chapter 49 listed the tools and never named what they hold up
+
+The running order gives it word for word: *"What ships in the box — **the tools the book's own
+rules depend on**."* The page listed the benches, the doorman, the safe, the hygiene checks and
+the log. It never said which rule any of them makes true.
+
+The reprint says it, and in saying it earns the closing line the chapter already had:
+
+> **"Every tool holds up a settled rule."** … **"A remembered rule is not enforced."**
+
+That is the whole argument of Part Seven, and it was missing from the part that exists to make
+it.
+
+### Two holes were re-pointed, because their answer had quietly gone stale
+
+Both were recorded as closing in Part Seven. **Part Seven is now written and neither closed.**
+
+- *What the operations log physically is.* Chapter 49 says the box ships one the appliance
+  keeps — which names the thing without showing the reader one.
+- *What the appliance actually is, and how a reader gets one.* Chapter 2 settles the **word**
+  (the machine everyone works on). **Nothing settles the thing.**
+
+**The reader raised the appliance gap in four separate batches** — 32–36, 37–41, 42–46 and
+47–50 — independently each time. Four findings on one gap is the strongest signal this list
+holds, and both entries now say plainly that their previous answer expired rather than
+pretending they are handled.
+
+**A hole whose "where it closes" has gone stale is worse than one nobody wrote down, because
+it looks handled.**
+
+### The night's tally
+
+| | |
+|---|---|
+| Chapters printed and bound | **34** — batches four to ten, chapters 17 to 50 |
+| The book, start of night → end | **17 bound → 51 bound** |
+| Chapters sent back | **17** |
+| Found by the reader, which gives no verdict | **16** |
+| Found by the taster | **2** — one of them wrong |
+| Found by the head chef's list or the sweep, in a page | **0** |
+| Contradiction flags raised | **5** — every one a false positive, none overruled by the manager |
+| Checks corrected rather than pages | **5** |
+| Control pages seeded to test a checker | **2** — both caught their planted faults |
+| Faults in the shop | **9**, nearly all the same one: a conclusion drawn from something not opened |
+
+**The three checks that give a verdict did not find a single fault in a page all night.** They
+were not asleep — both were shown pages broken on purpose and both quoted the planted faults
+back verbatim. They were answering a different question. The head chef asks whether the
+template was followed, the taster whether the writing is good, the sweep whether a settled
+rule is contradicted.
+
+**None of them can ask whether the page is all there** — and across seven batches that was the
+only question that found anything: a piece of furniture the running order assigned and no
+chapter used, two chapters that named nobody, chapters that skipped their own line in the
+running order, a book that had blocked its own growth past one cook, a role called by two
+names, a book describing its own reprint queue, and an argument that contradicted the page
+before it.
