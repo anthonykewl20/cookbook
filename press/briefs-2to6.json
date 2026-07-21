@@ -1,0 +1,127 @@
+{
+  "2": {
+    "must_cover": [
+      "Define the local word for the owner (the person who owns the place)",
+      "Define the local word for the one who runs a place day to day",
+      "Define the local word for the ones who do the work",
+      "Define the local word for the one who checks the work",
+      "Define the local word for the machine they work on"
+    ],
+    "must_not_cover": [
+      "The interview method itself (ch1)",
+      "The building and physical inventory categories (ch3-13)",
+      "Specific named roles beyond these five such as waiter, cashier, taster separate from checker, doctor, dishwasher (Part Three)",
+      "Stock, money, instructions, stocktake, log, locks (ch7-13)",
+      "How these words are used in practice (later Parts)"
+    ],
+    "must_not_contradict": [
+      "Treat restaurant, kitchen, dish, chef and taster as worked examples only. Allow workshops, studios or plain terms instead.",
+      "Agree local words for who owns the place, who runs it day to day, who does the work, who checks it, the machine everyone works on and one unit of work.",
+      "Write the agreed words down locally in that kitchen. Never write them back into this book; keep the book blank on local language."
+    ],
+    "hooks": [
+      1
+    ],
+    "traps": [
+      "Open hole: The manager keeps trying to spend the owner's attention \u2014 standing guard: what goes to the owner is a decision, never a task. Touches definition of 'the one who runs a place' if it implies pushing tasks upward."
+    ]
+  },
+  "3": {
+    "must_cover": [
+      "Define the category 'building' as anything fixed to the ground; if you moved premises you would leave it behind.",
+      "List examples: the path to the door, the signage, the mat, the door itself, how the rooms are laid out.",
+      "Carry a test for what belongs in this category (fixed to ground, left behind on move)."
+    ],
+    "must_not_cover": [
+      "Furniture (ch4) \u2014 anything you could carry out but never use up",
+      "Equipment (ch5) \u2014 powered",
+      "Utensils (ch6) \u2014 picked up by hand",
+      "Stock, money, people, instructions, stocktake, log, locks (ch7-13)",
+      "How the building is used (Part Three)",
+      "The words/interview (ch1-2)"
+    ],
+    "must_not_contradict": [
+      "Part Two says a thing exists. Part Three says how it is used.",
+      "The building is furnished. Everything after it is now written on top of it, and every later chapter must point back at something Part Two put in the building.",
+      "Each chapter is one category, and each category carries a test for what belongs in it."
+    ],
+    "hooks": [
+      2
+    ],
+    "traps": []
+  },
+  "4": {
+    "must_cover": [
+      "Define furniture as anything you could carry out, but never use up.",
+      "List examples: tables, chairs, shelves, the pass counter, the benches chefs stand at.",
+      "Carry a test for what belongs (carry out, not used up, distinct from building/equipment/utensils)."
+    ],
+    "must_not_cover": [
+      "Building (ch3) \u2014 fixed to ground",
+      "Equipment (ch5) \u2014 powered",
+      "Utensils (ch6) \u2014 picked up by hand to do work",
+      "Stock, money, people, instructions, stocktake, log, locks (ch7-13)",
+      "How furniture is used (Part Three)",
+      "Words/interview (ch1-2)"
+    ],
+    "must_not_contradict": [
+      "Part Two says a thing exists. Part Three says how it is used.",
+      "The building is furnished. Everything after it is now written on top of it, and every later chapter must point back at something Part Two put in the building.",
+      "Each chapter is one category, and each category carries a test for what belongs in it."
+    ],
+    "hooks": [
+      2
+    ],
+    "traps": []
+  },
+  "5": {
+    "must_cover": [
+      "Define equipment as anything powered that does work for you.",
+      "List examples: ovens, fridges, the dishwashing machine, and the appliance the chefs cook on.",
+      "Carry a test for what belongs (powered, does work, distinct from furniture/utensils/building)."
+    ],
+    "must_not_cover": [
+      "Building (ch3)",
+      "Furniture (ch4) \u2014 carry out not powered",
+      "Utensils (ch6) \u2014 hand picked not powered",
+      "Stock (ch7) \u2014 runs out",
+      "Money, people, instructions, stocktake, log, locks (ch8-13)",
+      "The language definition of 'the machine' (ch2)",
+      "How equipment is used (Part Three)"
+    ],
+    "must_not_contradict": [
+      "Part Two says a thing exists. Part Three says how it is used.",
+      "The building is furnished. Everything after it is now written on top of it, and every later chapter must point back at something Part Two put in the building.",
+      "Each chapter is one category, and each category carries a test for what belongs in it."
+    ],
+    "hooks": [
+      2
+    ],
+    "traps": []
+  },
+  "6": {
+    "must_cover": [
+      "Define utensils as anything picked up by hand to do the work.",
+      "List examples: knives, pans, plates, crates, trays.",
+      "Carry a test for what belongs (picked up by hand, used to do work, not powered, not fixed, not furniture)."
+    ],
+    "must_not_cover": [
+      "Building (ch3)",
+      "Furniture (ch4) \u2014 carry out but not hand tool",
+      "Equipment (ch5) \u2014 powered",
+      "Stock (ch7) \u2014 runs out",
+      "Other categories ch7-13",
+      "Usage (Part Three)",
+      "Words (ch1-2)"
+    ],
+    "must_not_contradict": [
+      "Part Two says a thing exists. Part Three says how it is used.",
+      "The building is furnished. Everything after it is now written on top of it, and every later chapter must point back at something Part Two put in the building.",
+      "Each chapter is one category, and each category carries a test for what belongs in it."
+    ],
+    "hooks": [
+      2
+    ],
+    "traps": []
+  }
+}
