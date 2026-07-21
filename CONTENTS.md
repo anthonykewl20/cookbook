@@ -135,20 +135,32 @@ smallest place that still works. Every restaurant on earth starts here and every
 on earth does these things, so this part is true everywhere or it does not belong in this
 part.
 
-**The six base roles**, all present from day one:
+**The seven base roles**, all present from day one:
 
 | Role | Present at the smallest scale because |
 |---|---|
-| The head chef | Someone runs the kitchen even when there is only one cook in it |
+| The head chef | Someone runs the kitchen even when there is only one cook in it, and gives the first verdict on every dish |
 | The cook | Someone makes the dish |
+| The prep cook | The cook must not be doing the grunt work. Slicing the fish and peeling the potatoes is what makes a dish slow, and it is not the cook's job |
 | The taster | **Nobody ever checks their own work** — this is not a luxury bought later |
 | The waiter | Someone takes the order and carries the dish out |
 | The cashier | Someone takes the money |
 | The dishwasher | Someone clears down and puts things back |
 
 The taster is the load-bearing one. A restaurant where the cook approves their own plate is
-not a smaller restaurant; it is a restaurant with no check in it at all. The floor is six
+not a smaller restaurant; it is a restaurant with no check in it at all. The floor is seven
 roles, and the book does not ship a version below it.
+
+**Chapter 19 carries the two checks.** A dish is checked twice, by two people, looking at
+two different things:
+
+1. **The head chef tastes it and gives a verdict.** First check, on the dish itself.
+2. **The taster gives the final verdict.** It works from its own written checklist, and it
+   weighs the head chef's verdict too — so the second check covers both *the dish* and
+   *whether the first check was sound*. The taster's word is final.
+
+Two things this drags into the building, both already in Part Two: the taster's **checklist**
+is a written instruction (ch. 10), and **both verdicts** are stamped into the log (ch. 12).
 
 The chapters run in the order service actually runs.
 
