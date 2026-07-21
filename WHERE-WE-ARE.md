@@ -8,11 +8,14 @@ Read this first, every session. Name the step in your first line, every reply.
 
 ## The step we are on
 
-**Settling the table of contents.** Deciding what belongs in the book and in what order.
+**Settling the table of contents — Part Two, the inventory of a restaurant.** Naming the
+**categories** of things a restaurant contains, not the items one by one.
 
-**Done looks like:** the owner says the running order is right. Nothing else.
+**Done looks like:** the owner says the categories are complete. Then, and only then, the
+rest of the book is rebuilt on top of them.
 
-**Not this step:** writing any chapter. Deciding anything that lives *inside* a chapter.
+**Not this step:** writing any chapter. Saying what each thing is in real terms rather than
+in cooking terms. Rebuilding Part Three.
 
 ## The three rules
 
@@ -38,3 +41,6 @@ Things worth deciding, at the step where they belong.
 - **Set up the print shop** — done. A separate repository, its own history.
 - **Test print** — done, passed. A rule delivered by the book is obeyed like a hand-written
   one, proven in a fresh session in an empty folder.
+- **First running order** — done, then rebuilt. The first draft ran straight into *how a
+  chain is run* without ever saying what a restaurant contains. The owner caught it. The
+  inventory now comes first, and everything else is written on top of it.
