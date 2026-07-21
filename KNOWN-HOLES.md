@@ -28,6 +28,7 @@ instead.
 
 | Hole | Where it gets closed |
 |---|---|
+| **The manager keeps trying to spend the owner's attention.** Twice now: a scoring formula that buried a money-against-quality judgement inside a number, and a five-chapter probation that quietly made the owner the taster. Both were caught — one by the manager, one by the owner. Neither should have been written. The pull is constant, because handing a decision upstairs always feels safer than making it. | Standing guard, restated here: **what goes to the owner is a decision, never a task.** If the sentence asks him to read, check, confirm or verify anything, it is the wrong sentence and the manager has failed at its own job |
 | The owner is not in the kitchen, so nothing is known upstairs unless someone downstairs writes it down. A fault seen and not recorded is a fault the chain never had a chance to fix. | Part Three, ch. 25 — saying something is wrong |
 | Where the job list lives for a kitchen with no shared tracker | Part Two, ch. 12 — the operations log |
 | **Chapter 0 describes a check the plugin cannot yet pass.** It tells the reader to ask a fresh session about the tasting rule. The plugin currently ships only the test-print rule, not the book — so today that check would fail. The chapter is right and the box is behind it. | When the plugin is made to carry the book itself |

@@ -8,22 +8,23 @@ Read this first, every session. Name the step in your first line, every reply.
 
 ## The step we are on
 
-**Writing chapter 0, and deriving the chapter template from having written it.**
+**Printing the book.** Chapter 0 is written by hand, chapter 1 is won and adopted, the
+template exists and the printer's chair is filled. What remains is 49 chapters through the
+print shop.
 
-The running order is settled and closed. Before 51 chapters can be handed to anybody, we
-have to know what a chapter *is* — and the book's own rule says you may not delegate a job
-until it is written down well enough for a stranger to do it. So chapter 0 gets written by
-hand, slowly, and the template comes out of the doing. The cook peels their own potatoes
-first.
+**Done looks like:** every chapter written, tasted, and bound into a book that does not
+contradict itself.
 
-Chapter 0 is the right one to start with for a second reason: it is the only chapter standing
-between a reader and everything else.
+**Not this step:** reopening the running order. Reopening the print shop roster. Sending the
+owner anything that is not a decision.
 
-**Done looks like:** the owner is happy with chapter 0, **and** there is a written template
-that a stranger could follow to produce chapter 1.
+## Steps behind us
 
-**Not this step:** writing chapters 1 onward. Reopening the running order. Choosing who
-writes the rest.
+- **The showdown** — done. Four printers, one brief, blind scoring, the owner's ear breaking
+  the tie. Codex 5.6 Sol prints, on probation for five chapters. Every page, score and the
+  key are in `showdown/`.
+- **Chapter 0 and the template** — done. Written by hand so the template came from doing the
+  job, not from inventing one in advance.
 
 ## The five rules
 

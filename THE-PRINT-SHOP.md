@@ -69,6 +69,31 @@ replies come back empty. That is a job description detail, and it belongs writte
 chapters of prep is probably well inside that, but "probably" is not a measurement. Chapter 1
 gets measured.
 
+## What reaches the owner
+
+**The owner does not read chapters.** He owns the place; he does not work in it. Any plan
+that needs him to read fifty pages — or five — has quietly turned the owner into a taster,
+and the shop has failed before it printed anything.
+
+**His ear is already captured.** He chose the voice once, blind, on a real page. That
+decision did not evaporate when he made it: **chapters 0 and 1 together are now the written
+voice standard**, and the taster scores every later page against them. This is the book's own
+rule turned on the book — the owner's judgement was the undelegable thing, so it was done
+once, written down, and became delegable. He does not re-rule on voice fifty times. He ruled.
+
+So what reaches him is:
+
+| Reaches the owner | Never reaches the owner |
+|---|---|
+| A decision only he can make — staffing, direction, anything hard to undo | A page to read |
+| A fault that needs the manual changed, arriving through the one door | A verdict to confirm |
+| One line when a batch lands: how many printed, how many sent back | A progress report nobody asked for |
+
+**The probation is not his to run.** Sol's five-chapter probation is checked by the taster and
+the binder against the written standard. If the voice wanders, that is a fault raised like
+any other — and only the *decision* to rerun the showdown comes upstairs, because staffing is
+the owner's. Noticing is not.
+
 ## The rules this shop runs under
 
 They are the book's own rules, applied to the book's own making. If they do not work here,
