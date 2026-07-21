@@ -151,7 +151,11 @@ they do not work anywhere.
    the reason has expired; the permission expired with it. Chapter 0 was tasted like any
    other page, sent back with two faults, and reprinted by the printer. **No page in this
    book is written by the manager.**
-7. **The taster receives the chapter's brief**, not only the page. Otherwise "is anything
+7. **Point back at another chapter only where a reader would otherwise be lost, and never
+   in the opening line.** The first briefs said "point back at chapter N" and the printer
+   obeyed by opening with it every time — a formula caught at its second instance, by the
+   manager and the taster independently. The instruction was the fault, not the writing.
+8. **The taster receives the chapter's brief**, not only the page. Otherwise "is anything
    asserted that nobody established" cannot be answered, and a chapter gets marked down for
    doing what it was told.
 

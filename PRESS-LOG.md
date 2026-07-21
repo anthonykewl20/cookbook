@@ -96,3 +96,38 @@ established in the chapter's **brief**, which the taster never saw.
 **Fixed for every chapter after this one: the taster receives the chapter's brief.** Without
 it, "is anything asserted that nobody established" is unanswerable, and every chapter would
 be marked down for doing exactly what it was told.
+
+## Batch one — chapters 2 to 6
+
+Five printed at once, the first real use of the press.
+
+| Chapter | Words | Head chef | Taster | Verdict | Scores |
+|---|---|---|---|---|---|
+| 2. The words you need | 607 | pass | DeepSeek V4 Pro | **SERVE** | 5·5·5·5·5 |
+| 3. The building | 426 | pass | DeepSeek V4 Pro | **SERVE** | 5·5·5·5·5 |
+| 4. The furniture | 415 | pass | DeepSeek V4 Pro | **SERVE** | 5·5·5·5·5 |
+| 5. The equipment | 425 | pass | DeepSeek V4 Pro | **SERVE** | 5·5·5·5·5 |
+| 6. The utensils | 400 | pass | DeepSeek V4 Pro | **SERVE** | 4·5·5·5·4 |
+
+Prepared by Hy3 — 249 seconds, $0.00696 for all five briefs. Printed by Codex 5.6 Sol, five
+in parallel. First use of DeepSeek as taster of record; chapters 0 and 1 went to Qwen because
+DeepSeek had competed for chapter 1 and lost.
+
+**A pattern caught twice, independently.** The print manager noticed that chapters 3 and 6
+both open by pointing back at chapter 2 — *"Chapter 2 gives this category its settled name"*,
+*"Chapter 2 gave the restaurant the words it needs"* — and flagged it as a formula forming.
+The taster, which had not seen that note, marked chapter 6 down to 4/5 for the same thing:
+*"the opening reference to Chapter 2 is a slight structural indulgence."*
+
+Neither observation alone would justify sending a page back. **Two independent observers
+landing on the same sentence is a different thing**, and it is exactly what a five-chapter
+probation exists to surface — a single chapter cannot show a formula, because one instance of
+a pattern is not a pattern.
+
+**Fixed at the source rather than in the pages.** The briefs told the printer to *point back
+at* named chapters, and the printer obeyed by opening with it every time. The instruction was
+the fault, not the writing. From batch two the brief says: point back only where a reader
+would otherwise be lost, and never in the opening line.
+
+The five pages stand as printed. A formula caught at instance two costs an instruction; caught
+at instance twenty it costs eighteen chapters.
