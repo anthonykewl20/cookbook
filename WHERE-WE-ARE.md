@@ -8,9 +8,14 @@ Read this first, every session. Name the step in your first line, every reply.
 
 ## The step we are on
 
-**Printing the book — chapters 17 to 50.** Seventeen are bound. The tools, the checks and
+**Printing the book — chapters 37 to 50.** **Thirty-six are bound.** The tools, the checks and
 the night's instructions are all in the repository: **read `OVERNIGHT.md` first if you are
 picking this up cold.**
+
+**Four decisions are waiting in `FOR-THE-OWNER.md`, and one of them blocks a chapter.** The
+book currently says a restaurant may not add a second cook until the owner settles who gives
+the method verdict. Chapters 29 and 33 are written to that, honestly, and they stay honest
+until he rules.
 
 **Done looks like:** every chapter written, tasted, swept for contradictions, and bound into a
 book that does not contradict itself.
@@ -20,6 +25,25 @@ anyone. Sending the owner anything that is not a decision.
 
 ## Steps behind us
 
+- **The overnight run — batches four to seven, chapters 17 to 36.** Twenty chapters printed,
+  checked four ways and bound. Parts Three and Four complete end to end; Part Five opened.
+- **Ten of those twenty went back once, and the reader found all ten.** The three checks that
+  give a verdict — the head chef's mechanical list, the taster, the rule-by-rule sweep — did
+  not find one fault in a page across four batches. They were not asleep: both were tested
+  against pages broken on purpose the same night and both quoted the planted faults verbatim.
+  **They answer whether what is written is correct. Only the reader asks whether it is all
+  there** — and that is the question that found a missing pass counter, two chapters naming
+  nobody, a chapter skipping its own line in the running order, a book that had blocked its
+  own growth past one cook, a role called by two names, and a book that had started telling
+  readers about its own reprint queue.
+- **Every check was measured rather than trusted.** A page was broken on purpose and shown to
+  the taster: it caught two faults of three, and **missed the planted contradiction while
+  scoring contradiction 5/5 — its third failure from three attempts.** The sweep caught that
+  exact sentence. So the taster's contradiction score is recorded as *not asked*, and the
+  sweep is the only contradiction evidence this shop has.
+- **The sweep flagged two clean pages** — both times the book quoting its own settled rule.
+  Neither was overruled by the manager; both went to a worker that had produced neither
+  verdict. **The check was not loosened**, because both errors were in the safe direction.
 - **Batch three (chapters 12-16)** — bound, after chapter 13 was sent back for jargon in its
   flat rules and chapters 10 and 12 were sent back for contradictions the rule-by-rule pass
   found. Chapter 12's fault was in its flat rules and it had already passed two rounds of
