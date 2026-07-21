@@ -18,7 +18,7 @@ on somebody remembering to take it down. Remembering is exactly what a stranger 
 So opening the box is not "begin reading at chapter one". It is something you do once, to a
 machine.
 
-## What you need
+## You need only two things
 
 Two things, and nothing else.
 
@@ -27,9 +27,9 @@ Two things, and nothing else.
 
 Nothing to pay for, no account to make, nothing to set up first.
 
-## Opening it
+## Two lines open the box
 
-Two lines, typed into the appliance:
+Type these two lines into the appliance:
 
 ```
 /plugin marketplace add anthonykewl20/cookbook
@@ -39,26 +39,24 @@ Two lines, typed into the appliance:
 The first tells the appliance where the box is. The second takes the book out and puts it on
 the wall.
 
-## How you know it worked
+## A fresh session proves it worked
 
 Do not take the machine's word for it. **A book that reports itself installed and is not is
 worse than no book at all** — you will spend a month believing rules are being followed that
 nobody ever received.
 
-So test it the way you would test a new oven. Put something in, and see whether it comes out
-cooked.
-
-**Start a fresh session** — not the one you installed from — and ask it what the rule is
-about who tastes a dish. If it answers without you having told it, the book is on the wall.
+Give the book a real question and check the answer. **Start a fresh session** — not the one
+you installed from — and ask it what the rule is about who tastes a dish. If it answers
+without you having told it, the book is on the wall.
 
 The fresh session is the part that matters. The session you installed from was there when it
 happened, and may simply be remembering the conversation. A session that was not there is a
 stranger, and strangers are what this book is built for. If a stranger knows the rule, every
 future stranger will know it too.
 
-## If it did not work
+## Three checks find what failed
 
-Three things, in this order.
+Check these three things, in this order.
 
 1. **You are in the session that installed it.** Start a new one and ask again.
 2. **The appliance was already open before you installed.** Close it and open it again.

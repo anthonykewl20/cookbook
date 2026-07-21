@@ -39,9 +39,29 @@ has gone to the printer like every other page, with both faults named.
 A standard has to be a page that passed. Chapter 1 was measured against chapter 0 while
 chapter 0 was unchecked; that was luck, and it happened to come out clean.
 
+### Chapter 0, reprint
+
 | Stamp | Record |
 |---|---|
-| Reprint | **Codex 5.6 Sol** — sent with both faults named, everything the chapter settles held fixed |
+| Printed by | **Codex 5.6 Sol** — sent with both faults named, everything the chapter settles held fixed |
+| Head chef's list | Passed. 616 words, zero jargon, all six headings are statements |
+| Taster | Qwen |
+| Verdict | **SERVE** |
+| Scores | first read 5/5 · voice 5/5 · analogies 5/5 · unfounded 4/5 · length earned 5/5 |
+| Faults | none |
+
+Both faults cleanly gone: no invented analogy, every heading a statement. The chapter now
+reads in the same cadence as chapter 1 and is 101 words shorter than the hand-written
+version it replaces.
+
+**The voice standard is now chapters 0 and 1 again** — but this time both of them have
+passed a taster, which is the only reason a page is allowed to be a standard.
+
+**A fault in the checker, found the same day.** The head chef's script flagged "repo" inside
+the word "reports" and failed a title check hardcoded for chapter 1. Both were bugs in the
+checker, not the pages. It now matches whole words and reads the chapter number off the page.
+**A check that manufactures faults is worse than no check** — it was about to run over 49
+more chapters, sending clean pages back and teaching the printer to write around a phantom.
 
 **The exception, stated rather than left quiet.** The shop's own rule is that *the manager
 never prints*. Chapter 0 breaks it, deliberately: the book also says nothing may be delegated
