@@ -1,0 +1,147 @@
+{
+  "7": {
+    "must_cover": [
+      "Define stock as anything that runs out and has to be reordered, using the test: it runs out in ordinary work AND must be reordered.",
+      "Include the ingredients and who supplies them as the worked examples of stock.",
+      "Carry a test that separates stock from building (fixed), furniture (carried out, not used up), equipment (powered), and utensils (picked up by hand).",
+      "State that stock exists in the furnished building; leave how it is used to Part Three.",
+      "Make clear stock is the category of things, not the standing list of current quantities (that is chapter 11)."
+    ],
+    "must_not_cover": [
+      "The stocktake list of current counts and its rewriting (chapter 11).",
+      "The money cost of an ingredient or the till (chapter 8).",
+      "The operations log of what was used (chapter 12).",
+      "Suppliers as staff or roles (chapter 9)."
+    ],
+    "must_not_contradict": [
+      "The stock \u2014 anything that runs out and has to be reordered. *The ingredients, and who supplies them.*",
+      "Part Two says a thing exists. Part Three says how it is used.",
+      "Exclude anything that ordinary work uses up.",
+      "State what belongs to the building in Part Two. Leave how it is used to Part Three."
+    ],
+    "hooks": [],
+    "traps": [
+      "Do not confuse the stock category with the stocktake record of chapter 11; the running order warns: 'Two kinds of record, and they must not be one thing.'",
+      "Do not list suppliers as roles; roles belong to chapter 9.",
+      "The ingredients are stock, but their cost is money (chapter 8) \u2013 keep the boundary."
+    ]
+  },
+  "8": {
+    "must_cover": [
+      "Define money as anything that costs or earns.",
+      "Include the till, the takings, what an ingredient costs to use, and what the owner is willing to spend in a day as money.",
+      "Apply a test: if it costs or earns it is money; separate from stock (the ingredient is stock, its cost is money), equipment (till may be powered), building, furniture, utensils.",
+      "State that money exists in the furnished building; leave how it is handled to Part Three."
+    ],
+    "must_not_cover": [
+      "The ingredients themselves as physical things (chapter 7 stock).",
+      "The people who take money or spend (chapter 9).",
+      "Written instructions about money handling (chapter 10).",
+      "The log of transactions (chapter 12)."
+    ],
+    "must_not_contradict": [
+      "The money \u2014 anything that costs or earns. *The till, the takings, what an ingredient costs to use, what the owner is willing to spend in a day.*",
+      "Part Two says a thing exists. Part Three says how it is used.",
+      "Count as equipment anything powered that does work for you and is distinct from the building, furniture and utensils."
+    ],
+    "hooks": [],
+    "traps": [
+      "The till is powered and could be misclassified as equipment; the money test takes priority.",
+      "The cost of an ingredient is money, but the ingredient is stock \u2013 do not merge the two categories.",
+      "Do not let 'what the owner is willing to spend' become a task sent upward; owner decides, does not perform (see chapter 2)."
+    ]
+  },
+  "9": {
+    "must_cover": [
+      "Define the people category: anyone who works here, named by role and never by person.",
+      "Present the starting roster exactly as parked: head chef (runs kitchen, manages chefs), chefs (cook dishes), prep cook (growth role: gets ingredients ready, work written into recipe from day one, cook does it until volume forces split), waiter (takes order, carries dish), cashier (takes money), taster (checks dish, never cooked it), doctor (checks health of people and building, never treats), dishwasher (clears up, puts back).",
+      "State the book ships a default set of roles, not a blank form; a kitchen renames them but does not start from nothing.",
+      "Cover what each role may and may not touch.",
+      "Cover who may hire (owner-level decision; note the held rule that a worker never hires a worker).",
+      "Cover what happens when one is off sick.",
+      "Include the seven base roles present day one (head chef, cook, taster, doctor, waiter, cashier, dishwasher) and the three separations: maker never approves, diagnoser never treats, judged never judges self \u2013 yielding three pairs of hands.",
+      "Include the three checks: head chef asks 'was the process followed?' (method), taster asks 'is the quality right?' (result), doctor asks 'is everything still fit?' (means); no overlap.",
+      "State the rule: no checker, no service \u2013 kitchen closes until the check can be made; stoppage is logged.",
+      "Note recursion stops at owner; area manager appears later at chain level."
+    ],
+    "must_not_cover": [
+      "The live two-check procedure of chapter 19 (how head chef and taster stamp a dish).",
+      "The log stamps of chapter 12.",
+      "The written job descriptions as instructions (chapter 10) \u2013 roles are not the instructions.",
+      "Growth steps of Part Four beyond the prep-cook note.",
+      "Chain-level mechanics of Part Five."
+    ],
+    "must_not_contradict": [
+      "The book ships a default set of roles, not a blank form; a kitchen renames them, but does not start from nothing.",
+      "A growth role: the work is written into the recipe from day one, but the cook does it themselves until volume forces the split",
+      "Nobody ever checks their own work \u2014 this is not a luxury bought later",
+      "No checker, no service. The kitchen closes until the check can be made again.",
+      "The taster is the load-bearing one. A restaurant where the cook approves their own plate is not a smaller restaurant; it is a restaurant with no check in it at all.",
+      "The doctor diagnoses and prescribes. It never treats.",
+      "Never let the person who made a dish give the checking verdict on that dish."
+    ],
+    "hooks": [],
+    "traps": [
+      "Closed hole: 'Runtime role / recursion ban | Ch. 9 (roles) + held: a worker never hires a worker' \u2013 do not let a worker hire a worker.",
+      "Closed hole: prep cook is a growth role, not a base role; do not count it in the seven base roles.",
+      "Closed hole: floor is jobs not bodies \u2013 do not imply seven hires or allow illegal hat-sharing (maker+checker, diagnoser+treator, judged+judge).",
+      "Do not suggest serving with a missing checker; the promise is void without it."
+    ]
+  },
+  "10": {
+    "must_cover": [
+      "Define instructions as anything written that tells someone what to do, before they do it.",
+      "Include the menu, the recipes, the house rules on the wall, each person's job description, and this book on the shelf.",
+      "State instructions are the static manual: they change only through one door (log \u2192 owner \u2192 amend once for everybody).",
+      "Flag that chapters 10 and 12 are the pair the whole book turns on: instructions say what should happen, the log says what did; their disagreement is the only place drift is seen.",
+      "Note instructions travel to new restaurants unchanged (they are the promise, not a record).",
+      "Note the taster's checklist is a written instruction (detailed later in chapter 19)."
+    ],
+    "must_not_cover": [
+      "The operations log and its diary nature (chapter 12).",
+      "The stocktake photograph (chapter 11).",
+      "The roles themselves (chapter 9) \u2013 only their written job descriptions are instructions.",
+      "The money or stock categories (chapters 8, 7)."
+    ],
+    "must_not_contradict": [
+      "The instructions \u2014 anything written that tells someone what to do, before they do it. *The menu, the recipes, the house rules on the wall, each person's job description, and this book on the shelf.*",
+      "Chapters 10 and 12 are the pair the whole book turns on. Instructions say what should happen. The log says what did. When the two disagree, that is drift \u2014 and it is the only place drift can be seen at all.",
+      "If the people vary and the result must not, then the manual is the only thing allowed to hold still.",
+      "Something goes wrong or could be better \u2192 it is written into the log \u2192 the log is read and reported upward \u2192 the owner decides \u2192 the manual is amended once, for everybody.",
+      "The book is installed. It is not transcribed. If you want it to say something different, you change the book \u2014 and there is exactly one door for that, described in Part Three."
+    ],
+    "hooks": [],
+    "traps": [
+      "Closed hole: 'Is a recipe fixed by the restaurant that found it wrong, or only by the owner?' \u2013 must not imply a kitchen may edit its own manual; raise from below, amend at top.",
+      "Do not merge instructions with the log or stocktake; the running order says those categories are hardest to tell apart but decide what a chain is.",
+      "Do not present the menu as local-variable recipe; recipe never local (chapter 42 later, but keep boundary)."
+    ]
+  },
+  "11": {
+    "must_cover": [
+      "Define stocktake as the standing list of what the building has right now; it answers 'what have we got?'.",
+      "State it is rewritten every time the answer changes \u2013 a photograph, old one thrown away.",
+      "Include the count of what is in the pantry, what is in the safe, which benches exist, who is on the payroll.",
+      "Carry the test that separates stocktake (snapshot) from the operations log (diary that only appends).",
+      "Make clear stocktake is a record, not the category of things that run out (chapter 7)."
+    ],
+    "must_not_cover": [
+      "The stock category of ingredients that run out (chapter 7).",
+      "The operations log and its never-rewritten diary nature (chapter 12).",
+      "Written instructions (chapter 10).",
+      "Role definitions beyond the payroll count (chapter 9)."
+    ],
+    "must_not_contradict": [
+      "The stocktake \u2014 the standing list of what the building has right now. Answers \"what have we got?\" It is rewritten every time the answer changes. *The count of what is in the pantry, what is in the safe, which benches exist, who is on the payroll.*",
+      "A stocktake is a photograph \u2014 you throw away the old one when you take a new one. A log is a diary \u2014 you only ever add to the end of it.",
+      "Two kinds of record, and they must not be one thing.",
+      "Part Two says a thing exists. Part Three says how it is used."
+    ],
+    "hooks": [],
+    "traps": [
+      "Known rule: keeping stocktake and log in one place ruins both \u2013 do not merge them.",
+      "Do not turn the stocktake into the stock category; chapter 7 owns the 'runs out' test.",
+      "Payroll count is just a number here; the roles and hiring rules live in chapter 9."
+    ]
+  }
+}

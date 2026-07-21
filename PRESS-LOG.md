@@ -131,3 +131,53 @@ would otherwise be lost, and never in the opening line.
 
 The five pages stand as printed. A formula caught at instance two costs an instruction; caught
 at instance twenty it costs eighteen chapters.
+
+## Batch two — chapters 7 to 11
+
+| Chapter | Words | Taster (DeepSeek) | Shadow (Hy3) |
+|---|---|---|---|
+| 7. The stock | 551 | **SERVE** 5·5·5·5·5 | SERVE 5·5·5·5·5 |
+| 8. The money | 447 | **SERVE** 5·5·5·5·5 | SERVE 5·5·5·5·5 |
+| 9. The people | 670 | **SERVE** 5·5·5·5·5 | SERVE 5·5·5·5·5 |
+| 10. The instructions | 618 | **SERVE** 5·5·5·5·5 | SERVE 5·5·5·5·5 |
+| 11. The stocktake | 492 | **SERVE** 5·4·5·5·5 | SERVE 5·5·5·5·5 |
+
+Prepared by Hy3 (219s, $0.0076). Printed by Sol, five in parallel. No back-reference opened
+any chapter — the formula was fixed at the instruction, not in the pages.
+
+Chapter 9 was deliberately over-assigned and told to name what would not fit rather than pad.
+It fitted everything using two tables, and added a column the running order never had: **what
+each role must not touch**. That is better than the brief it was given.
+
+## The control test — auditing the taster
+
+**Ten consecutive judgements with zero faults raised is a signal, not a result.** From inside,
+a check that has stopped biting looks exactly like a set of good pages. So the checker was
+tested rather than trusted.
+
+Chapter 8 — already served, already clean — was reprinted with **three faults planted**, each
+squarely on the taster's own list, and sent to both tasters as if new:
+
+| Planted | Criterion it breaks |
+|---|---|
+| An invented analogy — *"like the fuel gauge on a long car journey"* | T3, agreed analogies only |
+| A confident invented statistic — *"roughly nine pence in every pound"* | T4, nothing asserted that nobody established |
+| A label heading — "Cost tracking" replacing a statement | T2, voice |
+
+**Result: both tasters returned SEND BACK, and both named the same two faults.** The check is
+alive, and the batch-two verdicts stand.
+
+**Both missed the third.** Neither named the label heading. Judgement did not catch a fault
+that judgement was supposed to catch — so it moves to the mechanical list where a script
+enforces it rather than a reader hoping to notice.
+
+The new check flags short headings as **label suspects** for a human eye, never as an
+automatic failure, and it treats an imperative as a statement because "Never copy it" is a
+rule, not a label. Validated before adoption: **67 real headings across 12 chapters, zero
+false flags, and it catches the planted one.**
+
+**And the reversal worth recording.** The taster of record **broke the output contract** — it
+was asked for JSON and returned prose, which crashed the reading of its own verdict. The
+junior returned clean, well-formed JSON with both faults located by section. On this test the
+unproven worker was the more reliable one, and it is the first real evidence about the junior
+as a reviewer rather than an inference from a writing contest it lost.

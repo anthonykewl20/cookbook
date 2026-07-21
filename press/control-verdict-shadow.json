@@ -1,0 +1,19 @@
+{
+  "verdict": "SEND BACK",
+  "t1_first_read": 3,
+  "t2_voice": 3,
+  "t3_analogies": 1,
+  "t4_unfounded": 1,
+  "t5_length_earned": 3,
+  "faults": [
+    {
+      "where": "Section 'Money is anything that costs or earns', first paragraph",
+      "what": "Invented analogy 'Money is like the fuel gauge on a long car journey' not in the agreed analogy list (chain, restaurant, kitchen, dish, chefs, taster, appliance, recipe, shopping list, telephone game, building with doors)."
+    },
+    {
+      "where": "Section 'Money is anything that costs or earns', first paragraph",
+      "what": "Unfounded assertion 'Roughly nine pence in every pound leaves an average kitchen unrecorded' with no established source."
+    }
+  ],
+  "why": "The chapter inserts an unapproved fuel-gauge analogy and a fabricated statistic, breaching the taster's rules on allowed analogies and unsupported claims."
+}
