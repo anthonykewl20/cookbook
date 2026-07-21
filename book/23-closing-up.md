@@ -1,62 +1,62 @@
 # 23. Closing up
 
-**What this chapter settles:** how to end the day with one true account of what the building has now and one complete account of what happened.
+**What this chapter settles:** who closes the day, how the two records are left true, and why they remain separate.
 
-## Closing has its place in the service
+## Closing comes after clearing and before reading
 
-Closing up follows clearing down in chapter 22. The dishes have been collected, washed and
-put back before you close the records. **Closing up then makes both records true at the end
-of the day.**
+Closing up begins after clearing down from chapter 22. That work is finished before the
+records are closed. **Closing up is the next job in the service, not another name for
+clearing down.**
 
-It comes before reading the log back in chapter 24. Closing checks that the day's events are
-present. It does not ask what the procedure, waste or errors mean. That work begins only
-after the day's record is complete.
+Reading the log back comes after closing up. Closing makes sure the day's record is complete.
+It does not decide what any waste or error means. That belongs to chapter 24, after the day
+has been closed.
 
-## Close the two records in order
+## The head chef closes both records
 
-There are three steps.
+Chapter 9 puts running the kitchen in the head chef's hands. **At the end of the day, the
+head chef redoes the stocktake and completes the operations log.** Giving both jobs to one
+role does not make the records one thing. The head chef must still obey the different rule
+for each.
 
-1. **Take a new stocktake.** Chapter 11 settled that every changed answer requires a new
-   photograph. Service used stock and made dishes, so the opening photograph was discarded
-   as soon as its answer changed. At close, rewrite the standing list once more with what
-   the building has now, and discard the photograph it replaces.
-2. **Complete the operations log.** Make sure every event from the day has been added at its
-   end. Where orders ran, make sure each one has all seven stamps from chapter 12. Never
-   erase, move, tidy or rewrite an earlier entry while doing this. The log is a diary, so
-   what happened earlier must remain where it was written.
-3. **Add the closing of the day.** Append it as a new event at the end of the operations
-   log. It records that the day closed. It is not another hand-off in an order, so it is
-   not an eighth order stamp.
+## A new photograph replaces the old one
 
-The stocktake now answers what the building has. The log answers what the restaurant did,
-including closing the day.
+Service used stock and dishes were made, so the building no longer has exactly what it had
+when it opened. The opening stocktake stopped being true when its first answer changed and
+was discarded then.
 
-## Completeness is not a new version of the past
+**The head chef now takes a new photograph of what the building has at close.** Rewrite the
+whole standing list with what is there now, then discard the stocktake it replaces. Do not
+add the day's history to it. The stocktake answers only, “what have we got now?”
 
-A missing event can make the log incomplete. Add the event at the end, where every new
-entry belongs. **Do not put it back into an earlier place or rewrite nearby entries to make
-the page look neat.** That would change the diary after the event.
+## The diary is completed without being tidied
 
-The same rule applies when you check the seven stamps. You are checking that every required
-part of each order's journey is present. You are not polishing the account of that journey.
+The head chef next makes sure every event from the day is in the operations log. For every
+order that ran, check that all seven order stamps are present. If an event was not written,
+add only what actually happened at the end.
 
-## The photograph and diary stay apart
+**Never erase, move, tidy or rewrite an earlier entry.** The log is a diary. Changing an old
+entry would change the answer to “what did we do?” after the event.
 
-Both records are handled at closing, which makes one closing sheet look convenient. Never
-make one. **The stocktake and operations log obey opposite rules.** The photograph replaces
-the old photograph. The diary keeps every earlier entry and grows only at the end.
+When the check is complete, the head chef adds the closing of the day as a new entry at the
+end of the log. Closing the day is not another hand-off in an order. It must never become an
+eighth order stamp.
 
-Merging them would either clutter the current photograph with history or invite someone to
-rewrite the diary when the stocktake changes. Keep the new stocktake as the stocktake. Keep
-the completed log as the log.
+## The photograph and diary remain separate
 
-## Never turn closing into one tidy record
+Both records are handled at closing, but they still answer different questions and obey
+opposite rules. **The stocktake replaces an old photograph. The operations log keeps its
+whole diary and grows only at the end.**
 
-The tempting mistake is to copy the final stocktake and the day's events onto one clean
-closing sheet. It looks easier to hand over because everything is together.
+Keep the closing stocktake as the stocktake. Keep the completed operations log as the log.
+Never merge them into one closing sheet. One sheet would either fill the photograph with
+history or invite somebody to rewrite the diary when the photograph changes.
 
-Do not do it. **One sheet cannot be both a replaced photograph and a diary that is never
-rewritten.** Close the two records, but never combine them.
+## Never make one tidy closing sheet
+
+It is tempting to copy the final stocktake and the day's events together because one sheet
+looks easier to hand over. Do not do it. **One record cannot be both replaced and never
+rewritten.** Close the two records, and keep them two records.
 
 ---
 
@@ -65,14 +65,15 @@ rewritten.** Close the two records, but never combine them.
 *The same rules as above, with the explanation removed. This is the part the appliance
 obeys.*
 
-1. Close the records after clearing down and before reading the log back.
-2. Discard the opening stocktake as soon as its answer changes. At the end of the day,
-   rewrite the stocktake with what the building has now and discard the photograph it
-   replaces.
-3. Complete the operations log by adding every day's event at its end.
-4. Make sure every order that ran has all seven order stamps.
-5. Never erase, move, tidy or rewrite an earlier log entry.
-6. Append the closing of the day as a new event at the end of the operations log. Never
-   treat it as an eighth order stamp.
-7. Keep the closing stocktake and the operations log as separate records. Never make one
-   closing sheet from the photograph and the diary.
+1. Close the day after clearing down and before reading the log back.
+2. Have the head chef redo the stocktake and complete the operations log at closing.
+3. Discard the opening stocktake as soon as its answer changes. At close, rewrite the
+   stocktake with what the building has now and discard the stocktake it replaces.
+4. Make sure every event from the day is in the operations log and every order that ran has
+   all seven order stamps.
+5. Add any missing event only at the end of the log, and record only what actually happened.
+6. Never erase, move, tidy or rewrite an earlier log entry.
+7. Have the head chef add the closing of the day as a new entry at the end of the operations
+   log. Never treat it as an eighth order stamp.
+8. Keep the closing stocktake and the operations log as separate records. Never merge the
+   photograph and the diary into one closing sheet.
