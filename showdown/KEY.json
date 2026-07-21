@@ -1,0 +1,7 @@
+{
+  "printer-a": "GLM 5.2 (max effort, via glm-exec)",
+  "printer-b": "Codex 5.6 Sol (high effort, via codex-exec)",
+  "printer-c": "Hy3 (Tencent, via OpenRouter)",
+  "printer-d": "DeepSeek V4 Pro (via opencode)",
+  "note": "Written before judging. The judge never receives this file."
+}

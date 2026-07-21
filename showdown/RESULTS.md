@@ -1,8 +1,23 @@
 # The showdown — results
 
-**Still blind.** The key naming which model wrote which page is deliberately not in this
-commit. It lands when the owner has given his verdict on the two finalists, so that the
-order of events is on the record rather than asserted afterwards.
+## Decided: printer-b — Codex 5.6 Sol
+
+The owner read the two finalists blind and chose **printer-b**. The key is now published in
+`KEY.json`; it was written before judging and the judge never received it.
+
+**His verdict overruled the model judge, and that is the design working, not a failure of
+it.** The blind judge put printer-d a point ahead on quality. The owner is the final word on
+whether a page sounds like his book, because the voice is his way of seeing and no model can
+be given that call. He heard it differently, and his ear settles the tie.
+
+It also settles it in the same direction as the objective half. printer-b took Section A
+outright — the only printer that both stayed inside a written limit and verified itself
+against it before handing in.
+
+**Codex 5.6 Sol takes the printer's chair, on probation for five chapters**, exactly as
+written into the plan before anyone had a stake in the result. One chapter cannot show a
+voice drifting over fifty. The first five real chapters get read as a set, and if the voice
+wanders, this is rerun with what was learned.
 
 ## Section A — following the template (40)
 
@@ -51,10 +66,13 @@ Judge's ranking: **d, b, a, c**. Its reasons are in `judge-verdict.json` verbati
 
 | | A /40 | B /60 | **Total** | Time | Price of the page |
 |---|---|---|---|---|---|
-| printer-b | 40 | 52 | **92** | 72s | not metered — subscription |
-| printer-d | 35 | 58 | **93** | 88s | ~$0.002 (estimated from the rate card) |
-| printer-a | 38 | 50 | **88** | **731s** | not metered — subscription |
-| printer-c | 32 | 47 | **79** | 41s | $0.0034 (measured) |
+| printer-b | 40 | 52 | **92** | 72s (agent run) | not metered — subscription |
+| printer-d | 35 | 58 | **93** | 88s (light harness) | ~$0.002 (estimated from the rate card) |
+| printer-a | 38 | 50 | **88** | **731s** (agent run) | not metered — subscription |
+| printer-c | 32 | 47 | **79** | 41s (bare API call) | $0.0034 (measured) |
+
+**The time column is not like-for-like** — see finding 2 below. Only printer-a and
+printer-b were timed doing the same kind of work.
 
 ## What this does and does not show
 
@@ -74,8 +92,27 @@ they are tied in an interesting way:
 1. **The money question mostly dissolved.** Two of the four run on subscriptions, so the
    page has no invoice attached. The two that are metered cost a fifth of a penny each. Cost
    is not what should decide this.
-2. **Speed varies by an order of magnitude.** 41 seconds against 731. Across 51 chapters
-   that is the difference between an afternoon and several days.
+2. **Speed varies by an order of magnitude — but only one of those comparisons is fair.**
+   The owner caught this and he is right. The four were not timed doing the same kind of
+   work:
+
+   | Printer | Time | What was actually timed |
+   |---|---|---|
+   | printer-c (Hy3) | 41s | **One API call.** No harness, no tools, no file to write. Ask, answer, done |
+   | printer-d (DeepSeek) | 88s | A light harness through the opencode command |
+   | printer-b (Codex) | 72s | **A full agent session** — config loaded, tools enabled, file written, self-verified |
+   | printer-a (GLM) | 731s | **A full agent session**, same shape as printer-b |
+
+   So printer-c's 41 seconds does not mean it thinks faster than the others. It means it was
+   never asked to do the surrounding work. Comparing it to the agent runs is comparing a
+   phone call to a visit.
+
+   **The one fair comparison is printer-b against printer-a**, because those two ran the same
+   harness, with the same tools, writing the same kind of file. 72 seconds against 731. That
+   tenfold gap is real, and it is not explained by the harness — they both had one.
+
+   Recorded as a fault in this test's design: the time column should have been measured
+   like-for-like from the start, and was not.
 3. **The cheapest printer came last on both axes** — but it was last by a small margin while
    costing almost nothing, which is exactly the profile of a good prep cook and a poor
    printer. That is the job it already has.

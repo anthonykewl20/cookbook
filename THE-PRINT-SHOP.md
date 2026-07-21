@@ -1,6 +1,7 @@
 # The print shop
 
-**Status: proposed roster, awaiting the owner.**
+**Status: settled. The printer's chair was decided by measured contest — see `SHOWDOWN.md`
+and `showdown/RESULTS.md`.**
 
 This is not part of the book. It is the crew that *makes* the book — this restaurant's own
 local staff, the third pile, filled in here and travelling nowhere.
@@ -27,7 +28,7 @@ job it meant. Named properly, the conflict disappears.
 | Job | Who | The strength it is hired for |
 |---|---|---|
 | **Print manager** | Claude (this session) | Hands out chapters, holds the template, checks each page followed it, keeps two printers off one page |
-| **Printer** — writes one chapter, start to finish | **Codex 5.6 Sol**, high effort | The designated writer for substantial work. Holding structure and a consistent voice across a long document is the hard version of this job |
+| **Printer** — writes one chapter, start to finish | **Codex 5.6 Sol**, high effort — **won the showdown, on probation for five chapters** | Took the objective half outright, and was the only printer that verified itself against a written limit before handing in. The owner picked its page blind |
 | **Page taster** — checks one finished page | **DeepSeek V4 Pro** | Deep review of a single piece of work against a checklist. Never wrote the page it judges |
 | **Binder** — reads the whole book once it exists | **DeepSeek V4 Pro, fresh session** | Whole-document consistency: does ch. 40 contradict ch. 12, does ch. 19 say what ch. 10 claims it says |
 | **Prep cook** — gathers the ingredients for a chapter before the printer writes | **Hy3** (Tencent, via OpenRouter) | Cheap, parallel, and the output is checkable before it matters. A trial junior belongs where a mistake is caught early |
