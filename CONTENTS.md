@@ -25,6 +25,28 @@ or a clever shortcut. It changes when the owner changes it, and at no other time
 other hand. Everything else in this book — the roles, the checks, the log, the locks — exists
 to make that one sentence true in practice.
 
+### Static is not frozen — there is exactly one door
+
+A manual that can never change is a manual that gets worse every year. A manual that anyone
+can change is not a manual at all. So it changes through **one door, and only one**:
+
+> **Something goes wrong or could be better → it is written into the log → the log is read
+> and reported upward → the owner decides → the manual is amended once, for everybody.**
+
+Anything that changes the way a dish is cooked without passing through that door is drift, no
+matter how good the reason or how good the result.
+
+**And the door opens from the bottom.** The owner is not in the kitchen. The only people who
+ever see a recipe fail, an ingredient arrive short, or a step waste ten minutes are the ones
+doing the work. If they cannot get that upward, the owner is running the chain blind — so
+**every employee can raise a fault**, not only the head chef. The head chef raises the most,
+because managing the place is how you see the pattern rather than the single bad night; but
+the cook who fights the same recipe every service, and the waiter who hears the same
+complaint at the same table, are seeing something real, and the log is where it goes.
+
+This is the second reason the log exists. The first is proof of what happened. The second is
+**opportunity** — where a dish could be better, and where the kitchen is wasting its time.
+
 ## The sort: three piles
 
 | Pile | What it is | Travels? |
@@ -81,7 +103,7 @@ Each chapter is one category, and each category carries a test for what belongs 
 8. **The money** — anything that costs or earns. *The till, the takings, what an ingredient
    costs to use, what the owner is willing to spend in a day.*
 9. **The people** — anyone who works here, named by role and never by person. *The head chef,
-   the chefs, the prep cook, the waiter, the cashier, the taster, the dishwasher.*
+   the chefs, the prep cook, the waiter, the cashier, the taster, the doctor, the dishwasher.*
 10. **The instructions** — anything written that tells someone what to do, before they do it.
     *The menu, the recipes, the house rules on the wall, each person's job description, and
     this book on the shelf.*
@@ -119,6 +141,7 @@ blank form; a kitchen renames them, but does not start from nothing.
 | The waiter | Takes the order from the customer, carries the finished dish back out |
 | The cashier | Takes the money |
 | The taster | Checks the dish, and never cooked it |
+| The doctor | Checks the health of the people and of the building, and never treats what it finds |
 | The dishwasher | Clears up after service, and puts back what it washed where it belongs |
 
 Also in this chapter: what each may and may not touch; who may hire; what happens when one
@@ -162,13 +185,35 @@ part.
 | The cook | Someone makes the dish |
 | The prep cook | The cook must not be doing the grunt work. Slicing the fish and peeling the potatoes is what makes a dish slow, and it is not the cook's job |
 | The taster | **Nobody ever checks their own work** — this is not a luxury bought later |
+| The doctor | Somebody has to notice that a person or the building is failing, and no one else's job is to look |
 | The waiter | Someone takes the order and carries the dish out |
 | The cashier | Someone takes the money |
 | The dishwasher | Someone clears down and puts things back |
 
 The taster is the load-bearing one. A restaurant where the cook approves their own plate is
-not a smaller restaurant; it is a restaurant with no check in it at all. The floor is seven
+not a smaller restaurant; it is a restaurant with no check in it at all. The floor is eight
 roles, and the book does not ship a version below it.
+
+**Three checks, on three different questions.** Between them they cover everything that can
+go wrong, and no two of them overlap:
+
+| Who | Asks | About |
+|---|---|---|
+| The head chef | Was the process followed? | **The method** |
+| The taster | Is the quality right? | **The result** |
+| The doctor | Is everything still fit to work? | **The means** — the people and the building |
+
+The first two look at a dish. The doctor looks at what the dish was made *with*: whether a
+worker is degrading, whether the equipment is failing, whether the place itself is getting
+sicker. It reads the log for decline — a step that used to take five minutes and now takes
+twenty, the same worker fumbling the same task, an oven that is running cold. And it does not
+wait for a weekly report: when something starts going wrong it says so at once, and says what
+is wrong, not merely that something is.
+
+**The doctor never treats.** Same rule as the taster never cooking, and for the same reason:
+anyone who both finds faults and fixes them quietly stops reporting the ones they fixed. The
+doctor diagnoses and records; the head chef acts inside the kitchen; anything that turns out
+to be a fault in the manual goes through the one door like everything else.
 
 **Chapter 19 carries the two checks.** A dish is checked twice, by two people, on two
 different questions:
@@ -205,7 +250,10 @@ The chapters run in the order service actually runs.
 22. Clearing down — collected, washed, and put back where it belongs
 23. Closing up — the stocktake redone, the log written
 24. Reading the log back — the procedure, the waste, the errors, the memory
-25. When it goes wrong — sent back, out of stock, and how to undo
+25. Saying something is wrong — anyone may raise a fault; nobody may fix the manual
+26. Is everything still fit? — the health of the people and of the building, and what a
+    diagnosis is made of
+27. When it goes wrong — sent back, out of stock, and how to undo
 
 # Part Four — Growth
 
@@ -227,28 +275,36 @@ The ladder:
 |---|---|---|
 | One cook cannot keep up | More cooks | The cook's |
 | Many cooks | The head chef stops checking and starts coordinating | The head chef's |
-| Many restaurants | **The owner's assistant** — holds the head chefs so the owner does not have to | The owner's |
+| Many restaurants | **The area manager** — holds the head chefs so the owner does not have to | The owner's |
 
 Each chapter names the strain, then what must become true before you can add the extra pair
 of hands without the two of them colliding.
 
-26. When one waiter is not enough
-27. When one cook is not enough — and what the head chef's job turns into
-28. Two people working at once, without colliding
-29. When the menu grows from ten dishes to a thousand
-30. When the pantry grows
-31. When the day is longer than one shift
-32. When one restaurant becomes two
+28. When one waiter is not enough
+29. When one cook is not enough — and what the head chef's job turns into
+30. Two people working at once, without colliding
+31. When the menu grows from ten dishes to a thousand
+32. When the pantry grows
+33. When the day is longer than one shift
+34. When one restaurant becomes two
 
-Chapter 32 is the hand-off into the next part: a chain is what growth turns into when it
+Chapter 34 is the hand-off into the next part: a chain is what growth turns into when it
 stops fitting in one building.
 
-**The owner's assistant belongs to the chain, not to any building.** It is the only role that
+**The area manager belongs to the chain, not to any building.** It is the only role that
 is not on a restaurant's payroll, which is why it is not in Part Two's roster — it sits above
 every restaurant, holding the head chefs so that the owner's attention is spent on direction
 rather than on supervision. It is introduced in the chain part, and like the head chef's
 management of cooks, it has to run **without the owner in the loop**. A layer that still
 needs the owner's attention has not saved any.
+
+**What it actually does — the weekly report.** It reads the logs of every restaurant, across
+all of them at once, and brings the owner one report a week. Not a pile of incidents: the
+pattern. Where dishes are coming out wrong in more than one place, where the same complaint
+keeps arriving, where a step is costing time it does not need to cost. Its two questions are
+fixed — **is the kitchen getting more efficient, and is the dish getting better** — and its
+output is the owner's decision list. It is the only role that can see across restaurants, so
+it is the only role that can tell a bad night in one kitchen from a fault in the manual.
 
 # Parts Five and beyond — being rebuilt
 
