@@ -8,14 +8,25 @@ Read this first, every session. Name the step in your first line, every reply.
 
 ## The step we are on
 
-**Printing the book — chapters 37 to 50.** **Thirty-six are bound.** The tools, the checks and
-the night's instructions are all in the repository: **read `OVERNIGHT.md` first if you are
-picking this up cold.**
+**The running order is printed. All fifty-one chapters are bound.** Every one has passed the
+head chef's mechanical list, a taster, and a rule-by-rule sweep against the ten invariants,
+and every batch was read for what it left out.
 
-**Four decisions are waiting in `FOR-THE-OWNER.md`, and one of them blocks a chapter.** The
-book currently says a restaurant may not add a second cook until the owner settles who gives
-the method verdict. Chapters 29 and 33 are written to that, honestly, and they stay honest
-until he rules.
+**The step is no longer printing. It is deciding.** Four decisions wait in
+`FOR-THE-OWNER.md`, each a single question with a recommendation, and **two of them are
+load-bearing on pages already bound**:
+
+- **A restaurant may not add a second cook** until the owner settles who gives the method
+  verdict once the head chef stops checking each dish. Chapters 29 and 33 say so plainly and
+  honestly, and they stay that way until he rules.
+- **The book calls the same role "chef" in one half and "cook" in the other**, breaking
+  chapter 1's own rule against a competing word. About twenty chapters either way.
+
+**Not this step:** printing more. There is nothing left in the running order to print.
+
+**What is left, in order:** the owner's four decisions; then the holes in `KNOWN-HOLES.md`
+that a bound chapter still rests on; then a whole-book read, which no session has yet done —
+every check so far has judged one page or one batch, never the book end to end.
 
 **Done looks like:** every chapter written, tasted, swept for contradictions, and bound into a
 book that does not contradict itself.
@@ -25,9 +36,10 @@ anyone. Sending the owner anything that is not a decision.
 
 ## Steps behind us
 
-- **The overnight run — batches four to seven, chapters 17 to 36.** Twenty chapters printed,
-  checked four ways and bound. Parts Three and Four complete end to end; Part Five opened.
-- **Ten of those twenty went back once, and the reader found all ten.** The three checks that
+- **The overnight run — batches four to ten, chapters 17 to 50.** **Thirty-four chapters
+  printed, checked four ways and bound in one night.** The book went from seventeen chapters
+  to fifty-one. Parts Three, Four, Five, Six and Seven all written end to end.
+- **Seventeen of those thirty-four went back once, and the reader found sixteen of them.** The three checks that
   give a verdict — the head chef's mechanical list, the taster, the rule-by-rule sweep — did
   not find one fault in a page across four batches. They were not asleep: both were tested
   against pages broken on purpose the same night and both quoted the planted faults verbatim.
