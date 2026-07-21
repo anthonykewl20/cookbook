@@ -137,7 +137,7 @@ blank form; a kitchen renames them, but does not start from nothing.
 |---|---|
 | The head chef | Runs the kitchen and manages the chefs |
 | The chefs | Cook the dishes |
-| The prep cook | Peels the potatoes — gets ingredients ready before anyone cooks |
+| The prep cook | Peels the potatoes — gets ingredients ready before anyone cooks. **A growth role:** the work is written into the recipe from day one, but the cook does it themselves until volume forces the split |
 | The waiter | Takes the order from the customer, carries the finished dish back out |
 | The cashier | Takes the money |
 | The taster | Checks the dish, and never cooked it |
@@ -183,7 +183,6 @@ part.
 |---|---|
 | The head chef | Someone runs the kitchen even when there is only one cook in it, and gives the first verdict on every dish |
 | The cook | Someone makes the dish |
-| The prep cook | The cook must not be doing the grunt work. Slicing the fish and peeling the potatoes is what makes a dish slow, and it is not the cook's job |
 | The taster | **Nobody ever checks their own work** — this is not a luxury bought later |
 | The doctor | Somebody has to notice that a person or the building is failing, and no one else's job is to look |
 | The waiter | Someone takes the order and carries the dish out |
@@ -191,8 +190,44 @@ part.
 | The dishwasher | Someone clears down and puts things back |
 
 The taster is the load-bearing one. A restaurant where the cook approves their own plate is
-not a smaller restaurant; it is a restaurant with no check in it at all. The floor is eight
-roles, and the book does not ship a version below it.
+not a smaller restaurant; it is a restaurant with no check in it at all.
+
+**Peeling the potatoes is not on that list, and that is deliberate.** It is work the cook does
+themselves at the smallest scale — but it is written into the recipe in full, step by step,
+as work in its own right. Naming it without hiring for it is what makes it possible to hand
+it to someone else later without the dish changing. See the rule that governs Part Four.
+
+### Why the floor is seven roles and not more
+
+Roles are cheap to add and impossible to remove, so a base framework grows quietly until
+nobody can afford to open a restaurant at all. Two rules hold it down.
+
+**A role joins the base only if you can name the promise that breaks without it.** Not "it
+would be useful" — useful is unlimited, and every role ever added was useful. Take the role
+away, and something this book *promised* has to become untrue. The dishwasher is in because
+the book promises the next service starts clean. The doctor is in because the book promises
+decline is caught before it reaches a plate. A ninth role has to beat that question, and
+almost nothing does.
+
+**The floor is jobs, not bodies.** Seven roles has never meant seven hires. Small restaurants
+have always run on one person wearing several hats, and the book allows it. What it forbids
+is certain hats worn *together*:
+
+| Separation | Why |
+|---|---|
+| Whoever made it never approves it | The cook is never the head chef checking the process, and never the taster. Otherwise the check is the maker marking their own work |
+| Whoever diagnoses never treats | A finder who also fixes stops reporting what they fixed |
+| Whoever is judged never judges themselves | Which is what forces the doctor to be its own pair of hands, since it judges everyone's fitness including the checkers' |
+
+Those three separations, not the role count, are the real floor. What falls out of them is
+**three pairs of hands**: one who does the work, one who checks it, one who watches whether
+the doers and the checkers are still fit. Waiter, cashier and dishwasher are hats the first
+two can wear. Seven roles, three bodies, and a restaurant anybody can open.
+
+**The recursion stops at the owner.** Who checks the doctor's health? Not a fourth role, or
+you never stop hiring. Every chain of checks ends at the owner, standing outside the
+building — which is exactly why the area manager exists: to hold those chains once there are
+more of them than the owner has attention.
 
 **Three checks, on three different questions.** Between them they cover everything that can
 go wrong, and no two of them overlap:
@@ -210,10 +245,16 @@ twenty, the same worker fumbling the same task, an oven that is running cold. An
 wait for a weekly report: when something starts going wrong it says so at once, and says what
 is wrong, not merely that something is.
 
-**The doctor never treats.** Same rule as the taster never cooking, and for the same reason:
-anyone who both finds faults and fixes them quietly stops reporting the ones they fixed. The
-doctor diagnoses and records; the head chef acts inside the kitchen; anything that turns out
-to be a fault in the manual goes through the one door like everything else.
+**The doctor diagnoses and prescribes. It never treats.** Same rule as the taster never
+cooking, and for the same reason: anyone who both finds faults and fixes them quietly stops
+reporting the ones they fixed.
+
+This looks like a contradiction at first — if the doctor already knows what is wrong, why is
+it not the one to put it right? Because **a doctor who treats can only ever have one patient
+at a time.** Not treating is precisely what lets one doctor hold a whole restaurant: it names
+the fault, names the remedy, names who should carry it out, and hands that to the head chef
+to make happen. Its hands stay free for the next patient. Anything that turns out to be a
+fault in the manual goes through the one door like everything else.
 
 **Chapter 19 carries the two checks.** A dish is checked twice, by two people, on two
 different questions:
@@ -263,6 +304,22 @@ Nothing here is optional detail bolted onto Part Three. It is the same framework
 A place with a hundred customers cannot be run by one waiter; a place with a thousand dishes
 on the menu changes what the waiter, the cashier, the cook and the pantry each have to do.
 The base framework does not break — it grows, and each growth has a rule.
+
+### The rule that governs this whole part
+
+> **Nothing is handed to someone else until it is written down well enough that a stranger
+> could do it.** You have to know how to do a job before you are allowed to delegate it.
+
+Growth is where consistency normally dies, and this is why: a job gets split off before
+anyone wrote down what it actually involves, so the new pair of hands does it *nearly* the
+same, and the dish quietly changes. The cook peels the potatoes themselves first — not
+because it is a good use of a cook, but because doing it is how the recipe comes to describe
+it properly. Once the peeling is written down step by step, it can be handed to a prep cook
+and the dish does not move.
+
+So every growth step in this part has the same precondition: **the written instruction comes
+before the extra pair of hands, never after.** A job you cannot describe is a job you may not
+split.
 
 **What triggers a growth step: someone running out of attention, not work running out.**
 That is the rule that makes growth predictable instead of improvised. Attention is the only
