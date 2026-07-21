@@ -57,3 +57,37 @@ Results so far:
 
 `press/core-invariants.json` — the book's ten load-bearing rules. Every chapter is swept
 against all ten before it is bound in.
+
+## When the sweep flags a page, the manager does not rule on it alone
+
+Measured over one night, the sweep produced **two false positives in sixteen pages**, and both
+had the same shape: **it flagged the book stating its own settled rule.**
+
+| Page | Quoted as a violation | Actually |
+|---|---|---|
+| Ch. 25 | *"Say what went wrong or what could be better."* | The running order puts opportunity in the log on purpose: *"Something goes wrong or could be better → it is written into the log"* |
+| Ch. 28 | *"Raise the fault, add it to the log, report it upward and let the owner decide."* | That is the one door, stated almost verbatim. The owner gets a decision, which is what rule 10 requires |
+
+A third instance predates this: the analogy check once flagged the book's own settled words
+for the stocktake and the log.
+
+### The remedy, which worked both times
+
+**A flag is settled by a worker that produced neither verdict.** It is given the sentence, the
+rule, the running order's own words, and an explicit instruction that it should be willing to
+say the flag is real. It answers a few narrow yes/no questions and quotes what decides it.
+
+This costs about a minute and a few pennies, and it exists because of one specific danger:
+**the manager is the person most tempted to wave away an inconvenient flag at four in the
+morning**, and a manager who overrules a check on its own judgement has quietly become the
+check.
+
+### The check was NOT loosened, and that is deliberate
+
+Both false positives were wrong in the **safe** direction — questioning a clean page rather
+than passing a broken one. Every failure that has cost this book ran the other way. On the
+same night this sweep caught a planted reversal of *nobody checks their own work* and quoted
+it verbatim, on a page the taster had just scored 5/5 for contradiction.
+
+**A check that occasionally asks an awkward question and is answered on evidence is working. A
+check softened until it stops asking is the one that ends up certifying a broken page.**
