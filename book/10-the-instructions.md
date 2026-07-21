@@ -12,7 +12,7 @@ The instructions include:
 - the recipes;
 - the house rules on the wall;
 - each person's written job description; and
-- this book on the shelf.
+- this book installed in the kitchen.
 
 The menu says what may be ordered, the recipe how a dish is made, and the house rules how the place is run. A job description sets its holder's work. This book sets every restaurant's work.
 

@@ -16,14 +16,14 @@ task, and never a question you could have answered by reading.**
 5. `TASTING-CHECKLIST.md`, `THE-CONTRADICTION-PASS.md` — how a page is checked.
 6. `PRESS-LOG.md` and `KNOWN-HOLES.md` — what has happened, and what is still wrong.
 
-## Start here, before the goal
+## Chapter 10 — DONE, do not repeat it
 
-**Chapter 10 is bound and wrong.** It says "this book on the shelf", and chapter 0 settles the
-opposite in its opening paragraph. The running order has been corrected; the chapter has not.
-**Send chapter 10 to the printer with that one fault named, and nothing else changed.** It is a
-short job and it is first.
+**Already fixed and bound before the night began.** It said "this book on the shelf"; chapter 0
+settles the opposite in its opening paragraph. It now reads "this book installed in the
+kitchen", it was tasted SERVE with no faults, and it swept clean on all ten invariants. **Do
+not send it back again.**
 
-It is also a worked example of two rules you will need tonight: a page can inherit a fault from
+Keep it as a worked example of two rules you will need tonight: a page can inherit a fault from
 the running order and still be faithful to its brief, and **nothing is bound until every check
 launched against it has returned.** Chapter 10 was bound on a SERVE while a second run of the
 same check was still in flight, and that run came back SEND BACK — correctly.
