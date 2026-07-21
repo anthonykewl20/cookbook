@@ -640,3 +640,84 @@ template. The taster asks whether the writing is good. The sweep asks whether a 
 is contradicted. **Not one of them can ask whether something is missing, or whether a sentence
 belongs to the reader's world at all** — and across four batches that has been the only
 question that found anything.
+
+## Batch eight — chapters 37 to 41
+
+Part Five complete but for chapters 42 and 43.
+
+| Chapter | Body words | Head chef | Taster | Sweep | Sent back |
+|---|---|---|---|---|---|
+| 37. Knowing which restaurant you are standing in | 550 | pass | **SERVE** | flagged, **overruled** | — |
+| 38. The area manager | 631 | pass | **SERVE** | all NONE | — |
+| 39. Changing the manual everywhere at once | 543 → **630** | pass | **SERVE** | all NONE | **once** |
+| 40. Two kitchens, same recipe, different dish | 537 → **601** | pass | **SERVE** | flagged, **overruled** | **once** |
+| 41. When one restaurant drifts | 602 | pass | **SERVE** | flagged, **overruled** | — |
+
+### Chapter 40's argument had a hole in it, and it was not an omission
+
+Every page passed all three checks. The reader then found the sharpest fault of the night
+after the second-cook block, and it was not a missing piece — it was **a flaw in the
+chapter's own reasoning.**
+
+Chapter 40 argues that two kitchens following the same recipe and producing different dishes
+proves the fault is in the writing. **Chapter 39, one page earlier, establishes that a kitchen
+can be running older wording.** Put those together and the argument collapses: if one kitchen
+is behind, the difference proves nothing about the recipe. It proves one kitchen missed an
+amendment.
+
+The reprint puts the precondition at the front of the comparison and into the flat rules,
+where it is actually obeyed:
+
+> *"Before comparing the dishes, confirm that both kitchens are working from exactly the same
+> wording. If one has older wording, stop. The difference does not measure the recipe."*
+
+**None of the three checks asks whether a chapter's argument holds.** The head chef measures
+the template, the taster judges the writing, the sweep hunts contradictions of settled rules.
+A chapter can be well written, rule-abiding, correctly structured — and reason from a premise
+the previous page disproved.
+
+### Chapter 39 had not delivered its own line from the running order
+
+The running order gives it, word for word: *"Changing the manual everywhere at once — **and
+knowing which version each kitchen is actually running**."* The page said to check the wording
+matches. **Confirming words match is not knowing which version you are on** — it proves
+agreement today and leaves nothing nameable tomorrow.
+
+The fix stays inside the book's own world rather than inventing machinery: an amendment is an
+event, events go in the log, so **"Each kitchen records the amendment it is using."** Nothing
+new was invented to close it.
+
+### Four sweep flags tonight, four false positives, and the check was still not touched
+
+| Page | Flagged against | Actually |
+|---|---|---|
+| Ch. 25 | log is never rewritten | The running order puts opportunity in the log on purpose |
+| Ch. 28 | decision never a task | *"let the owner decide"* IS a decision |
+| Ch. 37 | instructions travel unchanged | The menu is rule 9's territory, not rule 8's |
+| Ch. 41 | instructions against log is drift | A logged menu shortening is a permitted, recorded outcome |
+
+**Four in twenty-five pages — about one page in six.** All four the same shape: the check read
+a settled rule, or a settled exception to one, as a breach of a neighbouring rule. **Not one
+was overruled by the manager.** Each went to a worker that had produced neither verdict, with
+the sentence, the rule, the running order's own words, and an explicit instruction to be
+willing to say the flag was real.
+
+**The check has still not been loosened, and that is a decision rather than an omission.** All
+four errors ran in the safe direction — questioning a clean page, never passing a broken one.
+On the same night this sweep caught two planted reversals and quoted both verbatim, including
+one the taster had just scored 5/5 for contradiction. A rate of one adjudication per six
+pages costs about a minute and a few pence. **A contradiction check softened until it stops
+asking awkward questions costs the book**, and the manager rewriting a binding check at five
+in the morning — on a night it had already been caught doing work that was not its own — is
+the exact shape of every quiet failure in this log.
+
+### Twelve chapters sent back tonight. The reader found all twelve.
+
+Five batches, twenty-five pages, three verdict-giving checks on every one. **Those three found
+nothing in a page all night.** Both were tested against pages broken on purpose and both bit.
+
+They are answering different questions, and the gap between them is where everything hid: a
+piece of furniture the running order assigned and no chapter used, two chapters that named
+nobody, a chapter that skipped its own line, a book that had blocked its own growth, a role
+called by two names, a book describing its own reprint queue, and an argument that contradicted
+the page before it.
