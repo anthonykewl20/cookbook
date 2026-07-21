@@ -721,3 +721,69 @@ piece of furniture the running order assigned and no chapter used, two chapters 
 nobody, a chapter that skipped its own line, a book that had blocked its own growth, a role
 called by two names, a book describing its own reprint queue, and an argument that contradicted
 the page before it.
+
+## Batch nine — chapters 42 to 46
+
+Part Five finished; Part Six all but done.
+
+| Chapter | Body words | Head chef | Taster | Sweep | Sent back |
+|---|---|---|---|---|---|
+| 42. What is local by right | 505 | pass | **SERVE** | flagged, **ruled with the record** | — |
+| 43. Closing a restaurant down | 519 | pass | **SERVE** | all NONE | — |
+| 44. Naming your staff | 518 → **490** | **FAILED** on reprint check | **SERVE** | all NONE | **once — jargon** |
+| 45. A worker never hires a worker | 512 → **516** | pass | **SERVE** | all NONE | **once** |
+| 46. When someone is off sick | 535 | pass | **SERVE** *(after the check was fixed)* | all NONE | — |
+
+### The taster was right about one page and wrong about another, in the same batch
+
+**Chapter 44 — a real catch the script was blind to.** The taster found *"file path"*, *"identifier"*
+and *"command"* — ten instances, including inside the flat rules. The mechanical list did not
+hold those words. **This is the second time judgement has beaten the list**, the first being
+"worktree" in chapter 13.
+
+Where they came from is the interesting part: the shop's own sort table describes the local
+pile as *"their names, their commands, their file paths."* **The planning note handed the
+printer the jargon, and the book copied it.** Third time tonight a page fault traced to its
+instruction. The reprint says the same thing in the book's own words and came back at 490
+words with nothing flagged.
+
+*"file path"* and *"identifier"* were added to the mechanical list. **"command" was
+deliberately not added** — it has an ordinary English meaning the book may legitimately want,
+and this list has already produced one false flag by swallowing a normal word. Validated
+before adoption, as required: across all 46 chapters the extended list flags chapter 44 and
+nothing else.
+
+**Chapter 46 — a false rejection, and the check's own record proved it.** The taster sent it
+back at analogies 1/5 for calling the doctor an outside-world medical comparison. The doctor
+is one of the seven base roles. **The same checker had already served chapter 26 — which is
+entirely about the doctor — at 5/5 on that very item.**
+
+The cause was the checklist's furniture list: it named a doorman and a stocktake and never
+named the doctor. Item 3 documents this exact failure about itself — *"when the book grows a
+word, this item has to know"* — and it had gone tight again.
+
+**The page was not touched. Only the check was.** Re-tasted unchanged against the corrected
+list: **SERVE, straight sevens.** Same page, same checker, opposite verdict — which is the
+cleanest proof available that the fault was never in the writing.
+
+**The correction is bounded by measurement, not by assurance.** Across 41 tastings that night,
+only two pages ever scored below 5 on analogies: the seeded control, correctly, and chapter
+46, falsely. **Loosening this list cannot re-pass anything**, and that number is written into
+the checklist so nobody has to take the manager's word for it later.
+
+### A reader finding declined because obeying it would have undone an hour-old fix
+
+The reader asked chapter 44 to supply the list of available commands, quoting the running
+order's *"their names, their commands, their file paths."* **That is the exact phrase that put
+the programmer words into chapter 44 in the first place.**
+
+Declined on two grounds. Part Six is blank forms by design — *"every kitchen fills these in
+locally, and nothing here travels"* — so supplying the commands would make one kitchen's
+answer the law, which chapter 1 forbids outright. And **a check pointing back at a fault
+already fixed is how a correction gets quietly reversed.**
+
+### Sixteen chapters sent back tonight
+
+Twelve by the reader, three by the taster, one of those three wrongly. Every rejection was
+settled by opening the evidence rather than obeying the verdict — including the one that was
+wrong, which is the only reason it was caught.

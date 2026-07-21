@@ -35,6 +35,13 @@ Judgement, not measurement. Run only on pages that passed the head chef.
    ovens, plates, a stocktake, a doorman — these are furniture of the world the book lives in.
    They are never faults. Do not flag them.
 
+   **The seven base roles are furniture too, and that includes the doctor.** The head chef,
+   the cook, the taster, **the doctor**, the waiter, the cashier and the dishwasher are roles
+   this book hires, not comparisons it reaches for. The doctor checks whether the people and
+   the building are still fit and never treats what it finds; a chapter using the word is
+   naming an employee, not borrowing from medicine. Also furniture: the prep cook, the area
+   manager, the pass counter, the menu, the till, the recipe and the log.
+
    A fault is reaching **outside** that world for a comparison: a car, a fuel gauge, a
    football team, a computer. Only four outside comparisons are agreed, because they earn
    their keep: **the recipe and the shopping list**, **the telephone game**, **a building with
@@ -46,6 +53,17 @@ Judgement, not measurement. Run only on pages that passed the head chef.
    passed, and then so tight that "waiter" and "safe" were flagged as inventions. **The list of
    what is allowed is a document, and it drifts like any other** — when the book grows a word,
    this item has to know.
+
+   **It went tight again, and the roles above were added because of it.** Chapter 46 was SENT
+   BACK, scoring analogies 1/5, for calling the doctor an outside-world medical comparison. The
+   doctor is one of the seven base roles. **The same checker had already served chapter 26 —
+   which is entirely about the doctor — at 5/5 on this very item.** The check contradicted
+   itself within one night, and the cause was this list: it named a doorman and a stocktake and
+   never named the doctor.
+
+   Corrected in the direction of **less tight**, and the correction cannot hide anything:
+   across 41 tastings that night, only two pages scored below 5 here — the seeded control,
+   correctly, and chapter 46, falsely. No bound verdict changes.
 4. **Is anything asserted that nobody established?** Invented mechanism, invented commands,
    invented history. Confident and unfounded is worse than absent.
 5. **Does it earn its length?** Padding is a fault of its own. So is a chapter that hits the

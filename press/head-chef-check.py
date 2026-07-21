@@ -7,7 +7,14 @@ JARGON = ["repository","repo","repos","commit","commits","API","APIs","JSON","YA
           "config","CLI","terminal","shell","git","branch","deploy","runtime","backend",
           "frontend","boolean","schema","endpoint","parameter","variable","function",
           "namespace","instantiate","refactor","dependency","syntax","parse","LLM",
-          "codebase","repo's","worktree","worktrees","invariant","rebase","stdout","stderr","regex","daemon","cron","sandbox","stack trace"]
+          "codebase","repo's","worktree","worktrees","invariant","rebase","stdout","stderr","regex","daemon","cron","sandbox","stack trace",
+          # Added after the TASTER caught these in chapter 44 and the script was blind to
+          # them — judgement beating the list for the second time. Both were checked against
+          # every bound page first: they appear in chapter 44 and nowhere else, so neither
+          # can cry wolf. "command" was deliberately NOT added: it has an ordinary English
+          # meaning the book may legitimately want, and this list has already produced one
+          # false flag by swallowing a normal word.
+          "file path","file paths","filepath","identifier","identifiers"]
 def score(path):
     t = open(path).read()
     m = re.match(r"^#\s*(\d+)\.", t.strip())
