@@ -30,11 +30,13 @@ That change does not loosen the kitchen's separations. A cook makes and never ap
 
 The existing method check cannot simply vanish. Every dish still requires a verdict on whether the written method was followed. This book has not yet settled who gives that verdict once the head chef stops checking each dish. Do not drop it and do not guess a replacement.
 
-## A missing instruction goes through the one door
+## The unanswered question goes through the one door
 
-If the head chef finds that coordination is unwritten, including how the method verdict remains covered, that gap is a fault. **Add the fault to the end of the log, report it upward and let the owner decide.** The owner amends the manual once for everybody. The owner decides the rule; the owner does not coordinate the cooks.
+An unsettled rule is a fault in the writing. **Add the unanswered method-verdict question to the end of the log, report it upward and let the owner decide.** This gives the owner a decision, never the task of coordinating cooks. The owner amends the manual once for everybody.
 
-Until the required checks are covered without a maker approving work, the kitchen does not serve.
+Use the same door for any other missing coordination instruction. Raise the fault from the kitchen, write it into the log and report it upward. Do not repair the recipe locally.
+
+**Do not put a second cook on until the owner has settled who gives the method verdict.** Growing past one cook before then would leave every dish without one of its two required verdicts. No checker, no service: if the check cannot be made, the restaurant does not serve.
 
 ## Existing protections help without settling every collision
 
@@ -60,6 +62,6 @@ obeys.*
 5. Turn the head chef's job from checking each dish to coordinating many cooks when the head chef's attention can no longer hold both jobs.
 6. Keep the separations under load: makers never approve; the taster gives the final quality verdict; the doctor checks fitness and never treats; the head chef coordinates and never makes dishes.
 7. Keep the required method verdict on every dish. Never drop it or invent who gives it when the head chef stops checking each dish.
-8. Raise any missing coordination instruction as a fault, append it to the log and report it upward. Let the owner decide and amend the manual once for everybody; never give the owner a coordination task.
-9. Do not serve until every required check is covered without a maker approving work.
+8. Raise the unanswered method-verdict question, or any missing coordination instruction, as a fault. Append it to the log and report it upward. Let the owner decide and amend the manual once for everybody; never give the owner a coordination task or repair the recipe locally.
+9. Do not add a second cook until the owner has settled who gives the method verdict. If any required check cannot be made, do not serve. No checker, no service.
 10. Keep cooks at the doorman's separate benches and use the log's role-and-shift stamps. Leave detailed collision rules to chapter 30.
