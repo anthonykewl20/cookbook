@@ -130,10 +130,25 @@ put in the building.
 
 **Standards only. No blanks, no local variation, nothing to fill in.**
 
-Written for a restaurant with **one of everything** — one waiter, one cook, one cashier, one
-dishwasher. The smallest place that still works. Every restaurant on earth starts here and
-every restaurant on earth does these things, so this part is true everywhere or it does not
-belong in this part.
+Written for a restaurant with **one of each role** — not one person doing everything. The
+smallest place that still works. Every restaurant on earth starts here and every restaurant
+on earth does these things, so this part is true everywhere or it does not belong in this
+part.
+
+**The six base roles**, all present from day one:
+
+| Role | Present at the smallest scale because |
+|---|---|
+| The head chef | Someone runs the kitchen even when there is only one cook in it |
+| The cook | Someone makes the dish |
+| The taster | **Nobody ever checks their own work** — this is not a luxury bought later |
+| The waiter | Someone takes the order and carries the dish out |
+| The cashier | Someone takes the money |
+| The dishwasher | Someone clears down and puts things back |
+
+The taster is the load-bearing one. A restaurant where the cook approves their own plate is
+not a smaller restaurant; it is a restaurant with no check in it at all. The floor is six
+roles, and the book does not ship a version below it.
 
 The chapters run in the order service actually runs.
 
@@ -159,11 +174,24 @@ A place with a hundred customers cannot be run by one waiter; a place with a tho
 on the menu changes what the waiter, the cashier, the cook and the pantry each have to do.
 The base framework does not break — it grows, and each growth has a rule.
 
+**What triggers a growth step: someone running out of attention, not work running out.**
+That is the rule that makes growth predictable instead of improvised. Attention is the only
+thing in a restaurant that cannot be bought in bulk, so every layer in the book exists to
+protect somebody's.
+
+The ladder:
+
+| Strain | What is added | Whose attention ran out |
+|---|---|---|
+| One cook cannot keep up | More cooks | The cook's |
+| Many cooks | The head chef stops checking and starts coordinating | The head chef's |
+| Many restaurants | **The owner's assistant** — holds the head chefs so the owner does not have to | The owner's |
+
 Each chapter names the strain, then what must become true before you can add the extra pair
 of hands without the two of them colliding.
 
 26. When one waiter is not enough
-27. When one cook is not enough — and why someone now has to run the kitchen
+27. When one cook is not enough — and what the head chef's job turns into
 28. Two people working at once, without colliding
 29. When the menu grows from ten dishes to a thousand
 30. When the pantry grows
@@ -172,6 +200,13 @@ of hands without the two of them colliding.
 
 Chapter 32 is the hand-off into the next part: a chain is what growth turns into when it
 stops fitting in one building.
+
+**The owner's assistant belongs to the chain, not to any building.** It is the only role that
+is not on a restaurant's payroll, which is why it is not in Part Two's roster — it sits above
+every restaurant, holding the head chefs so that the owner's attention is spent on direction
+rather than on supervision. It is introduced in the chain part, and like the head chef's
+management of cooks, it has to run **without the owner in the loop**. A layer that still
+needs the owner's attention has not saved any.
 
 # Parts Five and beyond — being rebuilt
 

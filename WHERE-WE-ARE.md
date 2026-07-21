@@ -19,7 +19,7 @@ base versus growth.
 **Not this step:** writing any chapter. Reopening Part Two. Working out the growth rules in
 detail. Saying what each thing is in real terms rather than in cooking terms.
 
-## The four rules
+## The five rules
 
 1. **Name the step** at the top of every reply, so drift shows in the first line instead of
    three paragraphs down.
@@ -31,6 +31,9 @@ detail. Saying what each thing is in real terms rather than in cooking terms.
    owner can overrule. An assumption nobody noticed is a foundation nobody checked — and
    everything built on top of it comes down together. The danger is never the wrong guess; it
    is the guess that was never labelled as one.
+5. **Write every hole down, and close it.** Weaknesses go in `KNOWN-HOLES.md` the moment they
+   are spotted. Closing them is the whole reason this book is being written; a chapter does
+   not ship with an open hole in it.
 
 ## Parked for later
 
