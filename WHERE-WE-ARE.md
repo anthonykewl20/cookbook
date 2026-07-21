@@ -17,7 +17,7 @@ point back at something Part Two put in the building.
 **Not this step:** writing any chapter. Reopening Part Two. Saying what each thing is in
 real terms rather than in cooking terms.
 
-## The three rules
+## The four rules
 
 1. **Name the step** at the top of every reply, so drift shows in the first line instead of
    three paragraphs down.
@@ -25,6 +25,10 @@ real terms rather than in cooking terms.
    not lost, and it is not answered now.
 3. **Either of us can call drift** — the owner to the head chef, and the head chef to the
    owner. Called drift means stop and look at the peg. Not a complaint; a course correction.
+4. **Say what you are assuming, every time.** An assumption named out loud is a decision the
+   owner can overrule. An assumption nobody noticed is a foundation nobody checked — and
+   everything built on top of it comes down together. The danger is never the wrong guess; it
+   is the guess that was never labelled as one.
 
 ## Parked for later
 
