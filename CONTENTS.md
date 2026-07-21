@@ -6,6 +6,25 @@ what order. It is the running order, not the book.
 **Who this book is for:** an owner who wants to start and run their own chain — not one
 restaurant, but several, over time, without the standards rotting between them.
 
+## What the book is for
+
+**The same dish, every time, whoever is working.**
+
+The staff are never the same twice. Different people, different days, different restaurants,
+and none of them remember yesterday. That is not a problem to be solved — it is the permanent
+condition of the kitchen, and any plan that depends on the same hands coming back tomorrow
+has already failed.
+
+So the people cannot be the constant. The process has to be.
+
+> If the people vary and the result must not, then the manual is the only thing allowed to
+> hold still.
+
+That is why the manual is **static**. It does not bend for a busy night, an experienced chef,
+or a clever shortcut. It changes when the owner changes it, and at no other time and by no
+other hand. Everything else in this book — the roles, the checks, the log, the locks — exists
+to make that one sentence true in practice.
+
 ## The sort: three piles
 
 | Pile | What it is | Travels? |
@@ -151,13 +170,24 @@ The taster is the load-bearing one. A restaurant where the cook approves their o
 not a smaller restaurant; it is a restaurant with no check in it at all. The floor is seven
 roles, and the book does not ship a version below it.
 
-**Chapter 19 carries the two checks.** A dish is checked twice, by two people, looking at
-two different things:
+**Chapter 19 carries the two checks.** A dish is checked twice, by two people, on two
+different questions:
 
-1. **The head chef tastes it and gives a verdict.** First check, on the dish itself.
-2. **The taster gives the final verdict.** It works from its own written checklist, and it
-   weighs the head chef's verdict too — so the second check covers both *the dish* and
-   *whether the first check was sound*. The taster's word is final.
+1. **The head chef checks the process.** Was the recipe followed? Were the instructions
+   obeyed? This is the kitchen's own discipline, and it is the drift check from ch. 10 and
+   ch. 12 done live, on one dish: what the instructions said, against what was actually done.
+2. **The taster checks the quality.** Its own written checklist, its own set of questions,
+   asked of the plate itself before it reaches a customer's palate. It weighs the head chef's
+   verdict as well, but never in place of its own. The taster's word is final.
+
+**The two verdicts together say more than either alone.** This is what the second check buys:
+
+| Process | Quality | What it means |
+|---|---|---|
+| Followed | Good | Normal service. Send it. |
+| Followed | Bad | **The recipe is wrong.** Not the cook's fault — the manual's. This is how the book learns it needs changing. |
+| Not followed | Bad | The cook drifted. Fix the cook, not the recipe. |
+| Not followed | Good | **A fluke, and the most dangerous outcome.** It tastes right and cannot be repeated. Never bank it as a success. |
 
 Two things this drags into the building, both already in Part Two: the taster's **checklist**
 is a written instruction (ch. 10), and **both verdicts** are stamped into the log (ch. 12).
