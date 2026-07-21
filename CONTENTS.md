@@ -300,7 +300,8 @@ The chapters run in the order service actually runs.
 14. Opening up — the right building, the stock checked, who is here
 15. Taking the order — written down before it moves, and read back
 16. Into the kitchen — the hand-off from front to back
-17. Prep — the potatoes peeled before anyone cooks
+17. Prep — the cook's own potatoes, peeled before the cooking starts, and written down in
+    full while they do it
 18. Cooking it — follow the recipe, one dish start to finish
 19. Checking it before it leaves the kitchen
 20. Serving it
@@ -407,7 +408,7 @@ out to be the ones that decide what a chain even is.
     actually running
 40. Two kitchens, same recipe, different dish
 41. When one restaurant drifts
-42. What is local by right
+42. What is local by right — the menu, and nothing else
 43. Closing a restaurant down — and what happens to its log
 
 ### Chapter 40 is why a chain is worth having
@@ -422,6 +423,22 @@ kitchen "just knew". An ingredient assumed. A temperature nobody wrote down.
 a recipe that were never actually written, only remembered — and remembered knowledge dies
 with the shift that held it. This is the chain-scale version of the four-way verdict table:
 process followed in both places, results differ, so the fault is in the writing.
+
+### Chapter 42 — the menu is local, the recipe never is
+
+A restaurant that cannot get the fish does not cook a different fish. **It takes the dish off
+its menu**, and that goes in the log. So a restaurant may serve *fewer* dishes than the
+chain, and never *different* ones.
+
+This is the only local right there is, and it is enough. An absolute ban on local variation
+would be broken quietly — and a quiet breach is far worse than a recorded one, because the
+owner never learns of it. Dropping a dish is an honest, visible, logged answer to a real
+problem, and it costs the promise nothing: every dish that *is* served is still the same dish
+everywhere.
+
+It is also information. Three restaurants dropping the same dish is not three local
+difficulties; it is a fact about that recipe, and the area manager will see it before anyone
+in a kitchen does.
 
 # Part Six — Who works here
 
