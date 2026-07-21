@@ -41,7 +41,7 @@ anyone. Sending the owner anything that is not a decision.
   to fifty-one. Parts Three, Four, Five, Six and Seven all written end to end.
 - **Seventeen of those thirty-four went back once, and the reader found sixteen of them.** The three checks that
   give a verdict — the head chef's mechanical list, the taster, the rule-by-rule sweep — did
-  not find one fault in a page across four batches. They were not asleep: both were tested
+  not find one fault in a page across seven batches. They were not asleep: both were tested
   against pages broken on purpose the same night and both quoted the planted faults verbatim.
   **They answer whether what is written is correct. Only the reader asks whether it is all
   there** — and that is the question that found a missing pass counter, two chapters naming
@@ -53,9 +53,15 @@ anyone. Sending the owner anything that is not a decision.
   scoring contradiction 5/5 — its third failure from three attempts.** The sweep caught that
   exact sentence. So the taster's contradiction score is recorded as *not asked*, and the
   sweep is the only contradiction evidence this shop has.
-- **The sweep flagged two clean pages** — both times the book quoting its own settled rule.
-  Neither was overruled by the manager; both went to a worker that had produced neither
-  verdict. **The check was not loosened**, because both errors were in the safe direction.
+- **The sweep flagged five clean pages and no faulty one** — every time the book quoting its
+  own settled rule, and **three of the five on one seam**: the menu being both an instruction
+  and local. None was overruled by the manager; each went to a worker that had produced
+  neither verdict. **The check was not loosened**, because every error ran in the safe
+  direction — and three trips on one seam is the check saying two rules genuinely disagree.
+- **The taster rejected a clean page once**, calling the doctor an outside-world comparison
+  when the doctor is one of the seven base roles. The page was not touched; the checklist was,
+  because its furniture list named a doorman and never named the doctor. Re-tasted unchanged:
+  SERVE.
 - **Batch three (chapters 12-16)** — bound, after chapter 13 was sent back for jargon in its
   flat rules and chapters 10 and 12 were sent back for contradictions the rule-by-rule pass
   found. Chapter 12's fault was in its flat rules and it had already passed two rounds of
