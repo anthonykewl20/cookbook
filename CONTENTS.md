@@ -380,21 +380,69 @@ fixed — **is the kitchen getting more efficient, and is the dish getting bette
 output is the owner's decision list. It is the only role that can see across restaurants, so
 it is the only role that can tell a bad night in one kitchen from a fault in the manual.
 
-# Parts Five and beyond — being rebuilt
+# Part Five — Running a chain
 
-The material below is the previous draft, kept so nothing is lost. Treat it as raw stock,
-not as a running order.
+The reason the book exists. One owner, several restaurants, and the standards not rotting
+between them.
 
-- **Running a chain** — one owner and many restaurants; what is shared and what is local;
-  opening a new restaurant; knowing which one you are standing in; several running at once;
-  changing the standards everywhere at once; closing one down
-- **How we cook** — one job at a time and claiming it; who decides what; how to explain
-  yourself; every session is a stranger; charting only when lost; working without colliding;
-  secrets never leave the building; the tasting rules
-- **Who works here** — naming your staff; a worker never hires a worker; when someone is off
-  sick; wiring them up
-- **What the book enforces by itself** — the doorman; what ships in the box
-- **Appendix** — what we deliberately left out, and why
+### The rule that governs this whole part
+
+> **Instructions travel. Records never do.**
+
+Everything written comes across to a new restaurant unchanged — the recipes, the house rules,
+the taster's checklist, the job descriptions. Those *are* the promise, and a restaurant that
+rewrites them on arrival is not part of the chain. Nothing owned or lived comes across: its
+own building, its own stock, its own staff, its own log, starting empty.
+
+That line is the same one Part Two already drew between **instructions** (ch. 10) and the
+**stocktake and log** (ch. 11–12). The two categories that were hardest to tell apart turn
+out to be the ones that decide what a chain even is.
+
+35. What a chain is — instructions travel, records never do
+36. Opening a new restaurant — what it inherits, and what it starts blank
+37. Knowing which restaurant you are standing in — and why this is the most dangerous
+    confusion in the book
+38. The area manager — one report a week, read across all of them at once
+39. Changing the manual everywhere at once — and knowing which version each kitchen is
+    actually running
+40. Two kitchens, same recipe, different dish
+41. When one restaurant drifts
+42. What is local by right
+43. Closing a restaurant down — and what happens to its log
+
+### Chapter 40 is why a chain is worth having
+
+One restaurant cannot tell you whether your recipe is complete — it only ever produces one
+result, and you have nothing to compare it against. Two restaurants can. When both follow the
+same written recipe and the dish comes out different, the difference did not come from
+nowhere: it came from something the recipe never mentioned. A step everyone in the first
+kitchen "just knew". An ingredient assumed. A temperature nobody wrote down.
+
+**A chain is a measuring instrument for the manual.** It is the only way to find the parts of
+a recipe that were never actually written, only remembered — and remembered knowledge dies
+with the shift that held it. This is the chain-scale version of the four-way verdict table:
+process followed in both places, results differ, so the fault is in the writing.
+
+# Part Six — Who works here
+
+**Blank forms, not answers.** The third pile: every kitchen fills these in locally, and
+nothing here travels.
+
+44. Naming your staff
+45. A worker never hires a worker
+46. When someone is off sick
+47. Wiring them up
+
+# Part Seven — What the book enforces by itself
+
+Rules that are not words, and do not depend on anybody reading them.
+
+48. The doorman
+49. What ships in the box — the tools the book's own rules depend on
+
+# Appendix
+
+50. What we deliberately left out, and why
 
 ## Nothing was dropped in the sort
 

@@ -27,5 +27,6 @@ instead.
 
 | Hole | Where it gets closed |
 |---|---|
+| A restaurant that genuinely cannot follow a recipe — the fish is unavailable, the oven cannot reach the temperature. An absolute ban on local variation will be broken quietly, which is worse than a recorded exception; but a recorded exception is still a second version of the manual. | Part Five, ch. 42 — what is local by right |
 | The owner is not in the kitchen, so nothing is known upstairs unless someone downstairs writes it down. A fault seen and not recorded is a fault the chain never had a chance to fix. | Part Three, ch. 25 — saying something is wrong |
 | Where the job list lives for a kitchen with no shared tracker | Part Two, ch. 12 — the operations log |
