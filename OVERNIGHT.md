@@ -16,6 +16,18 @@ task, and never a question you could have answered by reading.**
 5. `TASTING-CHECKLIST.md`, `THE-CONTRADICTION-PASS.md` — how a page is checked.
 6. `PRESS-LOG.md` and `KNOWN-HOLES.md` — what has happened, and what is still wrong.
 
+## Start here, before the goal
+
+**Chapter 10 is bound and wrong.** It says "this book on the shelf", and chapter 0 settles the
+opposite in its opening paragraph. The running order has been corrected; the chapter has not.
+**Send chapter 10 to the printer with that one fault named, and nothing else changed.** It is a
+short job and it is first.
+
+It is also a worked example of two rules you will need tonight: a page can inherit a fault from
+the running order and still be faithful to its brief, and **nothing is bound until every check
+launched against it has returned.** Chapter 10 was bound on a SERVE while a second run of the
+same check was still in flight, and that run came back SEND BACK — correctly.
+
 ## The goal
 
 **Print, check and bind chapters 17 to 50.** Seventeen are done. Work in batches of five.
@@ -36,7 +48,9 @@ For each batch, in order:
 
 ## Rules for the night
 
-1. **Never change the running order.** It is settled.
+1. **Never change the running order** — except to correct a phrase that a bound chapter has
+   already proved wrong, as happened with "this book on the shelf". A correction is not a
+   redesign. Record it, and reprint any chapter that inherited the phrase.
 2. **You may change a check, but never to make a page pass.** If a check is wrong, fix it,
    write down what it got wrong and in which direction, and re-run everything it has already
    judged. This has happened three times; each time is in the log.

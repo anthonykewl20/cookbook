@@ -107,7 +107,7 @@ Each chapter is one category, and each category carries a test for what belongs 
    the chefs, the prep cook, the waiter, the cashier, the taster, the doctor, the dishwasher.*
 10. **The instructions** — anything written that tells someone what to do, before they do it.
     *The menu, the recipes, the house rules on the wall, each person's job description, and
-    this book on the shelf.*
+    this book itself.*
 11. **The stocktake** — the standing list of what the building has *right now*. Answers "what
     have we got?" It is rewritten every time the answer changes. *The count of what is in the
     pantry, what is in the safe, which benches exist, who is on the payroll.*
