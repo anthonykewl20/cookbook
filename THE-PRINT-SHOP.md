@@ -33,6 +33,7 @@ job it meant. Named properly, the conflict disappears.
 | **Binder** — reads the whole book once it exists | **DeepSeek V4 Pro, fresh session** | Whole-document consistency: does ch. 40 contradict ch. 12, does ch. 19 say what ch. 10 claims it says |
 | **Prep cook** — gathers the ingredients for a chapter before the printer writes | **Hy3** (Tencent, via OpenRouter) | Cheap, parallel, and the output is checkable before it matters. A trial junior belongs where a mistake is caught early |
 | **Shadow taster** — tastes alongside the taster of record, verdict not binding | **Hy3** | How a junior earns promotion on evidence rather than impression |
+| **The contradiction pass** — every chapter against the ten core invariants, rule by rule | **Hy3 — PROVEN, awaiting the owner's word to make it binding** | The only worker that has ever caught a quiet contradiction here. Passed the entrance exam; the taster of record failed it three times |
 | **Odd jobs** — renumbering, formatting, file moves | **GLM 5.2** | Mechanical work that needs no analysis |
 | **The doctor** — watches the production line itself | worn by the print manager for now | Whether pages are being rejected more often, whether the template is drifting. A named job, not yet a separate pair of hands |
 
@@ -128,6 +129,23 @@ So what reaches him is:
 the binder against the written standard. If the voice wanders, that is a fault raised like
 any other — and only the *decision* to rerun the showdown comes upstairs, because staffing is
 the owner's. Noticing is not.
+
+## Tested and not hired
+
+**kimi-k3.** Proposed by the owner as an intern. Two facts, and they point the same way.
+
+Its stated strength is interface design, and **this restaurant has no interface** — the menu
+is a book and a plugin. Excellent capability that matches no job on the menu is a chair nobody
+sits in.
+
+It was still put through the entrance exam, because a tested worker is worth more on the
+roster than an untested opinion. **It passed** — caught the planted contradiction, stayed
+clean on the correct page. But it costs **$0.048 a page against Hy3's $0.003**: sixteen times
+the price for the same answer. It is also the most expensive model available, at $3 in and
+$15 out per million, which makes "intern" the wrong shape for it entirely.
+
+**Recorded, not hired.** When a restaurant on this chain needs interface work, it is already
+known and already tested. Nothing here needs it.
 
 ## The rules this shop runs under
 
