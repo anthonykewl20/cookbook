@@ -164,20 +164,27 @@ where a neutral party was needed, and its record should not be lost with it.
 It was also the most expensive per token of the metered workers, at $1.20 in and $4.80 out
 per million, and it carried the largest single line of accumulated spend.
 
-### The uncomfortable fact this leaves behind
+### A correction, because the manager got this wrong first time
 
-**Qwen is the only worker in this shop that has ever rejected a page.**
+The manager told the owner the taster of record had **never** rejected a page. **That was
+false.** It rejected the first control, the one seeded with three loud faults.
 
-The taster of record has now given **21 verdicts and 21 SERVEs**. Never once sent anything
-back — including a page seeded with three loud faults, which it served, and a page seeded with
-a rule reversal, which it served twice, scoring "no contradiction" 5/5 while holding it.
+The error came from counting with a script that looked for the verdict in a data field. That
+run answered in prose instead, so the tally simply did not see it, and the manager reported
+the tally as fact without opening the file. **A count is not evidence until you have looked at
+what it skipped** — and this is the third time in two days that a check of ours produced a
+confident wrong answer.
 
-It has found real things: it caught "worktree" jargon the script missed, and marked chapter 6
-down for a formula the manager had independently spotted. So it is not blind. **But it has
-never once used the word that makes a check a check.**
+### What is actually true
 
-A taster that cannot say SEND BACK is not a check. It is a delay with a scorecard. That is a
-staffing question about the taster of record, and it belongs to the owner.
+| Worker | Rejected a page? | Caught a QUIET fault? |
+|---|---|---|
+| Hy3 | Yes — the loud control | **Yes. The only one.** |
+| Qwen | Yes — chapter 0, a real page, two upheld faults | never tested on one |
+| DeepSeek V4 Pro | Yes — the loud control | **No. Missed it three times.** |
+
+All three reject when a fault is obvious. Only one has ever caught a fault that was hiding,
+and only Qwen has ever failed a page that was not a test.
 
 ## Tested and not hired
 
