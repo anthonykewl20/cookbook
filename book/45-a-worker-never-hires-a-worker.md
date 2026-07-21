@@ -63,8 +63,8 @@ several restaurants at once. The same stopping point holds: the owner decides.
 
 A hiring decision made by any worker has no standing. Do not keep the new worker in place
 because the mistake has already happened. **Undo the hire through the restaurant's normal
-correction process.** The owner may then consider what the restaurant needs and make a
-separate hiring decision.
+correction process, described in Chapter 27.** The owner may then consider what the
+restaurant needs and make a separate hiring decision.
 
 ---
 
