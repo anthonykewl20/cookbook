@@ -29,7 +29,8 @@ job it meant. Named properly, the conflict disappears.
 |---|---|---|
 | **Print manager** | Claude (this session) | Hands out chapters, holds the template, checks each page followed it, keeps two printers off one page |
 | **Printer** — writes one chapter, start to finish | **Codex 5.6 Sol**, high effort — **won the showdown, on probation for five chapters** | Took the objective half outright, and was the only printer that verified itself against a written limit before handing in. The owner picked its page blind |
-| **Page taster** — checks one finished page on the taster's list ONLY | **DeepSeek V4 Pro** | Voice, first read, analogies, unfounded claims, length. **Contradiction is no longer its job** — it failed that check three times |
+| **Page taster** — checks one finished page on the taster's list | **Hy3** | Cheapest and sharpest. The only worker here that has caught a hidden fault |
+| **The reader** — reads for what is MISSING, and gives no verdict | **DeepSeek V4 Pro**, until its credits run out | Its real strength is heavy reading. It is poor at approving and good at noticing, so it is asked what is absent rather than whether a page passes |
 | **Binder** — reads the whole book once it exists | **DeepSeek V4 Pro, fresh session** | Whole-document consistency: does ch. 40 contradict ch. 12, does ch. 19 say what ch. 10 claims it says |
 | **Prep cook** — gathers the ingredients for a chapter before the printer writes | **Hy3** (Tencent, via OpenRouter) | Cheap, parallel, and the output is checkable before it matters. A trial junior belongs where a mistake is caught early |
 | **Shadow taster** — tastes alongside the taster of record, verdict not binding | **Hy3** | How a junior earns promotion on evidence rather than impression |
@@ -148,6 +149,33 @@ one, like everyone else.
 **The limit, stated honestly.** The evidence from the other restaurant is second-hand — a
 report of its output, not its output — and it is one instance. It moves the code-review
 question from "no evidence" to "one promising instance", which is not the same as proven.
+
+## Spending down a paid balance without buying a bad page
+
+DeepSeek has about **$9.57 of credit already paid for**. That money is spent whether it works
+or not, so using it costs nothing extra — **but only if the work is worth doing.**
+
+**A weak checker is not free because the credits are.** If it passes a page with a hidden
+fault and the shop records that page as checked, the cost is not the tokens. It is the fault
+in the book, and that is far more expensive than the credit saved. Keeping a worker busy to
+use up a balance is how a kitchen ends up serving food nobody really checked.
+
+So it keeps working and it changes job. **It stops approving pages and starts reading for what
+is missing.**
+
+| Its record | |
+|---|---|
+| Catching hidden faults | Failed three times |
+| Saying no when a fault is obvious | Fine |
+| Noticing things no checklist asked about | **Caught "worktree" jargon the script was blind to; marked a chapter down for a formula the manager had independently spotted** |
+
+That last row is the job. Nobody in this shop is asking *what is absent* — every check so far
+asks whether what is present is correct. A chapter can pass every check and still be missing
+the thing a reader needed. **The reader answers a question no verdict can:** what did this
+page leave out, and what would confuse someone who has never done this?
+
+It gives **no verdict**. It cannot send a page back and is not asked to. When the credits are
+gone, the job goes with it unless it has proved itself worth paying for.
 
 ## Let go
 
