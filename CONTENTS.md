@@ -66,15 +66,23 @@ Each chapter is one category, and each category carries a test for what belongs 
 10. **The instructions** — anything written that tells someone what to do, before they do it.
     *The menu, the recipes, the house rules on the wall, each person's job description, and
     this book on the shelf.*
-11. **The records** — anything written that says what was actually done, after it was done.
-    *The order book, the life of each order stamped at every hand-off, the logbook, the
-    decisions book.*
-12. **The locks and the alarms** — anything that protects the building whether or not a
+11. **The stocktake** — the standing list of what the building has *right now*. Answers "what
+    have we got?" It is rewritten every time the answer changes. *The count of what is in the
+    pantry, what is in the safe, which benches exist, who is on the payroll.*
+12. **The operations log** — what actually happened, in the order it happened, and never
+    rewritten. Answers "what did we do?" *The order book, the life of each order stamped at
+    every hand-off, the decisions book.*
+13. **The locks and the alarms** — anything that protects the building whether or not a
     person is reading. *The safe, the doorman on the door, the hygiene checks before food
     leaves, the fire exit.*
 
-**Chapters 10 and 11 are the pair the whole book turns on.** Instructions say what should
-happen. Records say what did. When the two disagree, that is drift — and it is the only
+**Two kinds of record, and they must not be one thing.** A stocktake is a photograph — you
+throw away the old one when you take a new one. A log is a diary — you only ever add to the
+end of it. Keeping them in one place ruins both: the photograph gets cluttered with history,
+and the diary gets edited.
+
+**Chapters 10 and 12 are the pair the whole book turns on.** Instructions say what *should*
+happen. The log says what *did*. When the two disagree, that is drift — and it is the only
 place drift can be seen at all.
 
 ## Notes carried into Part Two chapters
@@ -97,7 +105,8 @@ blank form; a kitchen renames them, but does not start from nothing.
 Also in this chapter: what each may and may not touch; who may hire; what happens when one
 is off sick.
 
-**Ch. 11, the records — the life of one order.** Every order is stamped at each hand-off:
+**Ch. 12, the operations log — the life of one order.** Every order is stamped at each
+hand-off:
 
 1. The waiter took it — and took it **accurately**
 2. It reached the kitchen
@@ -113,10 +122,11 @@ only **memory**, because every chef is a stranger who leaves at the end of the s
 
 ---
 
-# Parts Three and beyond — held
+**Part Two is settled** (owner, 2026-07-21). The building is furnished. Everything after it
+is now written on top of it, and every later chapter must point back at something Part Two
+put in the building.
 
-Not yet rebuilt. Part Two changed the foundations, so the rest is rewritten on top of it
-once Part Two is settled — not before.
+# Parts Three and beyond — being rebuilt
 
 The material below is the previous draft, kept so nothing is lost. Treat it as raw stock,
 not as a running order.
@@ -140,8 +150,8 @@ Every section of the current wall notes, and where it went:
 |---|---|
 | Runtime role / recursion ban | Ch. 9 (roles) + held: a worker never hires a worker |
 | How to talk to me | Ch. 1, 2 (the interview) + held: how we cook |
-| Worktree invariant | Ch. 4 (the benches) + Ch. 12 (the doorman) |
+| Worktree invariant | Ch. 4 (the benches) + Ch. 13 (the doorman) |
 | Model routing tables | Ch. 9, 10 — all of it local |
-| Secrets | Ch. 12 (the safe) |
-| Final validation gate | Ch. 11 (records) + held: the tasting rules |
+| Secrets | Ch. 13 (the safe) |
+| Final validation gate | Ch. 12 (the log) + held: the tasting rules |
 | Hard constraints | split: method → held; runner commands → Ch. 9 |

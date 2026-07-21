@@ -8,14 +8,14 @@ Read this first, every session. Name the step in your first line, every reply.
 
 ## The step we are on
 
-**Settling the table of contents — Part Two, the inventory of a restaurant.** Naming the
-**categories** of things a restaurant contains, not the items one by one.
+**Settling the table of contents — Part Three, running the restaurant.** Laying out the
+operations: what happens, in what order, from opening up to closing down. Every chapter must
+point back at something Part Two put in the building.
 
-**Done looks like:** the owner says the categories are complete. Then, and only then, the
-rest of the book is rebuilt on top of them.
+**Done looks like:** the owner says the run of service is right.
 
-**Not this step:** writing any chapter. Saying what each thing is in real terms rather than
-in cooking terms. Rebuilding Part Three.
+**Not this step:** writing any chapter. Reopening Part Two. Saying what each thing is in
+real terms rather than in cooking terms.
 
 ## The three rules
 
@@ -44,3 +44,6 @@ Things worth deciding, at the step where they belong.
 - **First running order** — done, then rebuilt. The first draft ran straight into *how a
   chain is run* without ever saying what a restaurant contains. The owner caught it. The
   inventory now comes first, and everything else is written on top of it.
+- **The inventory (Part Two)** — settled. Eleven categories, each with a test for what
+  belongs in it, so a new owner can sort their own things without asking us. The last thing
+  settled: a stocktake and a log are two different records and must never be one thing.
