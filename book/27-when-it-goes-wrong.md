@@ -51,3 +51,47 @@ operations log, because the correction is part of what actually happened.
 If the treatment reveals another fault, add that fault too. If it concerns the manual, send
 it through the one door described in Chapter 10. Do not amend the manual inside this
 restaurant.
+
+## Recovery keeps every role in its place
+
+Nothing about a fault suspends the seven base roles: head chef, cook, taster, doctor, waiter,
+cashier and dishwasher. **Their separations matter most when the kitchen is in a hurry to put
+something right.** The maker never approves the redone dish. The doctor never treats. The
+taster never cooked the dish it judges.
+
+If treatment reaches a required check and the proper checker is absent, stop there. No
+checker, no service. Urgency cannot turn an unchecked remedy into a safe one.
+
+## Never rewrite the past after a repair
+
+It is tempting to erase the mistake once its effect has been put right. Do not. That would
+make the log describe the story the kitchen wanted instead of the one that happened.
+**Append the correction and leave the mistake visible.**
+
+---
+
+## The rules, flat
+
+*The same rules as above, with the explanation removed. This is the part the appliance
+obeys.*
+
+1. Receive every returned dish and append the return and the customer's dissatisfaction to
+   the operations log as a new event. Preserve all seven original stamps; never invent an
+   eighth stamp.
+2. Have the head chef judge whether the recipe was followed and the taster judge the result.
+   Use their findings to record cook drift or a possible recipe fault.
+3. Keep all seven base roles and all three separations during recovery. Never let the maker
+   approve the redone dish, the doctor treat, or the taster judge a dish it cooked.
+4. When a required ingredient is missing, remove the dish from the local menu, log the
+   removal, inform the customer, and cancel or undo the order. Never change the recipe or
+   cook a substitute dish.
+5. Have the doctor hand its prescribed remedy to the head chef. Require the head chef to
+   make sure the named role carries it out; never let the doctor treat.
+6. Reverse mistaken actions where possible and make good their effects where they cannot be
+   reversed. Return utensils and unused stock to their places where possible. Append every
+   corrective action and its result to the operations log.
+7. Append every fault found during treatment. Send a fault in the manual through its one
+   door; never amend the manual inside the restaurant.
+8. Stop whenever a required checker is absent. No checker, no service.
+9. Add only to the end of the operations log. Never erase, tidy or rewrite an earlier entry,
+   including when cancelling, undoing or correcting an action.
