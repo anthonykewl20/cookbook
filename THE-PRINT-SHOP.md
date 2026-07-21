@@ -69,6 +69,39 @@ replies come back empty. That is a job description detail, and it belongs writte
 chapters of prep is probably well inside that, but "probably" is not a measurement. Chapter 1
 gets measured.
 
+### What the showdown did and did not say about the junior
+
+It came **last of four at printing**, 79 against the winner's 92. That is a fact about
+writing chapters. It is **not** a fact about reviewing them, and the two are different jobs —
+the analyst that will taste every page came third at printing and nobody is proposing it
+should write.
+
+Two things the contest did leave behind, and they point opposite ways:
+
+- **Against it.** Its page contradicted itself inside four paragraphs — it stated this book's
+  words as plain fact, then said a few lines later that those same words were only examples
+  nobody has to use. Noticing when two statements disagree is the whole of a reviewer's job.
+  A writer that misses it in its own 737 words is weak evidence, but it is evidence, and it
+  points at the exact skill in question.
+- **Against the reason it was hired.** It was taken on at roughly a third of the analyst's
+  price. On this page it cost **$0.0034 measured**, against an estimated **~$0.002** for the
+  analyst — which wrote more words and scored higher. The gap came from **4,733 reasoning
+  tokens** it spent before answering. Whatever else is true, *cheaper* is not currently
+  demonstrated.
+
+**Neither of those decides anything, and neither should.** The trial that answers this is
+already running and costs nothing extra: it shadow-tastes every page, its verdict binds
+nothing, and after ten chapters the log says how often it agreed with the taster of record.
+That is evidence. A second contest would spend real effort re-asking a question the shadow
+log answers for free.
+
+### Why it cannot hold a final verdict yet, however good it turns out to be
+
+This is a rule, not a judgement of the junior. **Nothing final rests on someone unproven.**
+Even if it shadow-tastes brilliantly from tomorrow, the way it reaches the final chair is by
+shadowing first and being promoted on the record — because a promotion on impression is the
+quiet promotion this book exists to prevent. The chair is earned the same way for everyone.
+
 ## What reaches the owner
 
 **The owner does not read chapters.** He owns the place; he does not work in it. Any plan
