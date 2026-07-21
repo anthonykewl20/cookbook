@@ -369,3 +369,74 @@ wrote whatever came back — which means it would have produced **a zero-byte br
 exactly like a thin one, and a zero-byte verdict that reads exactly like a page with no
 faults.** The fault the manager was caught for was also the fault that would have hidden this
 one.
+
+## Batch five — chapters 22 to 26
+
+| Chapter | Body words | Head chef | Taster (Hy3) | Sweep, 10 rules | Sent back |
+|---|---|---|---|---|---|
+| 22. Clearing down | 596 | pass | **SERVE** 5·5·5·5·5·5·5 | all NONE | — |
+| 23. Closing up | 533 → **510** | pass | **SERVE** 5·5·5·5·5·5·5 | all NONE | **once** |
+| 24. Reading the log back | 639 → **649** | pass | **SERVE** 5·5·5·5·5·5·5 | all NONE | **once** |
+| 25. Saying something is wrong | 548 | pass | **SERVE** 5·5·5·5·5·5·5 | flagged, **overruled** | — |
+| 26. Is everything still fit? | 650 → **671** | pass | **SERVE** 5·5·5·5·5·5·5 | all NONE | **once** |
+
+Part Three is complete but for chapter 27.
+
+### Three more chapters sent back, all three found by the reader again
+
+Every page above had already passed all three checks. The reader then found:
+
+**Chapter 26 had not done what the running order told it to.** The running order's words are
+*"the health of the people and of the building, and what a diagnosis is made of."* The page
+said what a diagnosis **produces** — the fault, the remedy, the role that carries it out —
+and never what it is **made from**. Its only stated method was reading the log, which cannot
+catch a worker who is degrading before anything about it has been written down. The reprint
+opens a section headed *"A diagnosis is made from what is seen and what is logged"*: direct
+observation, the log, and comparison over time — and it says plainly that faults raised by
+other people under chapter 25 are part of what the doctor reads, closing a gap between the
+two chapters.
+
+**Chapters 23 and 24 named nobody at all.** Not one role appeared on either page — measured,
+not estimated: zero mentions across both. Part Three is written for a restaurant with one of
+each role, and every other chapter in the batch names who does the work. These two told
+nobody in particular to close the records or read them back. Now chapter 23 says *"The head
+chef closes both records"*, and chapter 24 splits the reading by the three-checks rule
+already settled: the head chef reads whether the process was followed, the doctor reads
+whether the people and the building are still fit. **Both answers were derived from what was
+already established, not invented** — which is why neither reprint asserts anything new.
+
+### The contradiction sweep flagged a clean page, and was overruled on evidence
+
+Chapter 25 was flagged against two rules, quoting *"Say what went wrong or what could be
+better."* The taster had scored the same page 5/5 for contradiction. The two checks
+disagreed, which is exactly why they were split apart.
+
+**The manager did not decide it.** A third party that had produced neither verdict was given
+the sentence, the two rules, and the running order's own words, and asked to rule — including
+an explicit instruction that it should be willing to say the flag was real. It ruled FALSE
+POSITIVE, and quoted what decides it:
+
+> *"Something goes wrong or could be better → it is written into the log"*
+
+The running order puts opportunity in the log on purpose. **The check had flagged the book
+quoting its own settled rule** — the same failure that once flagged the photograph and the
+diary.
+
+**And the check was NOT changed.** The flag was wrong in the safe direction: it questioned a
+clean page rather than passing a broken one. Every failure that has cost this book ran the
+other way. A contradiction check softened at four in the morning to stop it asking awkward
+questions is precisely how a check stops biting, and adjudicating a rare false alarm costs
+pennies where a blunted check costs the book.
+
+### Seven chapters sent back tonight, and the same check found all seven
+
+Chapters 19, 20, 23, 24 and 26 — every one on a fault the reader raised, and not one on a
+fault raised by a check that gives a verdict.
+
+The three verdict-giving checks have not been wrong. The sweep was proved against a seeded
+page the same night and caught the planted reversal verbatim. The taster's judgement has held.
+**They simply cannot ask the question that keeps mattering.** The head chef's list, the taster
+and the sweep all ask whether what is written is correct. Only the reader asks whether it is
+all there — and in two batches that question has been the only one that found anything.
+
+That is now the evidence behind the first item in `FOR-THE-OWNER.md`.
