@@ -149,6 +149,36 @@ one, like everyone else.
 report of its output, not its output — and it is one instance. It moves the code-review
 question from "no evidence" to "one promising instance", which is not the same as proven.
 
+## Let go
+
+**Qwen — released by the owner, 2026-07-22.** It was never on the roster; it was used twice
+where a neutral party was needed, and its record should not be lost with it.
+
+- It judged the showdown for the printer's chair, because it was the only capable worker not
+  competing in it.
+- It tasted chapters 0 and 1, because DeepSeek had competed for chapter 1 and lost, and the
+  losing writer does not judge the winner's page.
+- **It sent chapter 0 back**, with two faults that were upheld — an invented analogy and four
+  label headings — in a chapter written by the print manager and named as the voice standard.
+
+It was also the most expensive per token of the metered workers, at $1.20 in and $4.80 out
+per million, and it carried the largest single line of accumulated spend.
+
+### The uncomfortable fact this leaves behind
+
+**Qwen is the only worker in this shop that has ever rejected a page.**
+
+The taster of record has now given **21 verdicts and 21 SERVEs**. Never once sent anything
+back — including a page seeded with three loud faults, which it served, and a page seeded with
+a rule reversal, which it served twice, scoring "no contradiction" 5/5 while holding it.
+
+It has found real things: it caught "worktree" jargon the script missed, and marked chapter 6
+down for a formula the manager had independently spotted. So it is not blind. **But it has
+never once used the word that makes a check a check.**
+
+A taster that cannot say SEND BACK is not a check. It is a delay with a scorecard. That is a
+staffing question about the taster of record, and it belongs to the owner.
+
 ## Tested and not hired
 
 **kimi-k3.** Proposed by the owner as an intern. Two facts, and they point the same way.
