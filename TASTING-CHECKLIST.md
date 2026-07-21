@@ -29,13 +29,25 @@ Judgement, not measurement. Run only on pages that passed the head chef.
 2. **Does it sound like chapters 0 and 1?** Those two are the voice standard: short
    declarative sentences, a statement for a heading, the reason attached to the claim in the
    same breath.
-3. **Are the analogies only the agreed ones** — the chain, the restaurant, its kitchen, a
-   dish, the chefs, the taster, the appliance, the recipe and the shopping list, the
-   telephone game, a building with doors? An invented analogy is a fault however good it is.
+3. **Are the analogies only the agreed ones, AND used only where they fit** — the chain, the
+   restaurant, its kitchen, a dish, the chefs, the taster, the appliance, the recipe and the
+   shopping list, the telephone game, a building with doors? An invented analogy is a fault
+   however good it is. **So is an agreed analogy stretched past where it fits** — that is the
+   commoner failure and the harder one to see, because the words are all approved.
 4. **Is anything asserted that nobody established?** Invented mechanism, invented commands,
    invented history. Confident and unfounded is worse than absent.
 5. **Does it earn its length?** Padding is a fault of its own. So is a chapter that hits the
    word limit by leaving out something it promised.
+6. **Does it contradict anything already settled?** The brief lists what this chapter must
+   not contradict, quoted. Read every one against the page. **A page that quietly reverses a
+   settled rule while sounding entirely sensible is the most dangerous page this book can
+   produce**, because nothing about it looks wrong. This item was added after both tasters
+   served a page that reversed "the log is never rewritten" — they were following the list,
+   and the list did not ask.
+7. **Does any word appear that only means something to a programmer?** The mechanical check
+   catches a fixed list and cannot catch what is not on it. If you see one, that is a SEND
+   BACK on its own — not a point deducted, not "it recovers afterwards". This item was added
+   after a taster spotted "worktree invariant" in a flat rule and served the page anyway.
 
 ## The verdict
 

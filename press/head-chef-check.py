@@ -7,7 +7,7 @@ JARGON = ["repository","repo","repos","commit","commits","API","APIs","JSON","YA
           "config","CLI","terminal","shell","git","branch","deploy","runtime","backend",
           "frontend","boolean","schema","endpoint","parameter","variable","function",
           "namespace","instantiate","refactor","dependency","syntax","parse","LLM",
-          "codebase","repo's"]
+          "codebase","repo's","worktree","worktrees","invariant","rebase","stdout","stderr","regex","daemon","cron","sandbox","stack trace"]
 def score(path):
     t = open(path).read()
     m = re.match(r"^#\s*(\d+)\.", t.strip())
@@ -17,10 +17,15 @@ def score(path):
     flat = t[flat_i:] if flat_i > 0 else ""
     u = body.find("## Unresolved")
     if u > 0: body = body[:u]
-    hits = {}
+    # Scan the WHOLE page, not just the body. An earlier version scanned the body
+    # only and walked straight past "worktree invariant" sitting in a flat rule —
+    # which is the part the appliance obeys, so if anything it matters more there.
+    hits, flat_hits = {}, {}
     for j in JARGON:
         n = len(re.findall(r"\b" + re.escape(j) + r"\b", body, re.I))
         if n: hits[j] = n
+        fn = len(re.findall(r"\b" + re.escape(j) + r"\b", flat, re.I))
+        if fn: flat_hits[j] = fn
     heads = re.findall(r"^##\s+(.+)$", body, re.M)
     return {
         "file": os.path.basename(path),
@@ -31,6 +36,7 @@ def score(path):
         "A4_body_words": len(body.split()),
         "A4_within_700": len(body.split()) <= 700,
         "A5_jargon_hits": hits,
+        "A5_jargon_in_flat_rules": flat_hits,
         "headings": heads,
         # Added after a seeded-fault control: BOTH tasters missed a label heading
         # ("Cost tracking") replacing a statement. Judgement missed it, so it moves

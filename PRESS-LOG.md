@@ -181,3 +181,51 @@ was asked for JSON and returned prose, which crashed the reading of its own verd
 junior returned clean, well-formed JSON with both faults located by section. On this test the
 unproven worker was the more reliable one, and it is the first real evidence about the junior
 as a reviewer rather than an inference from a writing contest it lost.
+
+## The subtle control — the check failed, and it was the checklist's fault
+
+The first control planted loud faults: a car analogy, a fabricated statistic, a label
+heading. Both tasters caught them. **A check that catches loud faults may still miss quiet
+ones, and quiet ones are what kill a book.** So chapter 12 was reprinted with two subtle
+faults and sent to both tasters as if new.
+
+| Planted | Result |
+|---|---|
+| A quiet reversal of a settled rule, phrased as good practice: *"If a stamp was written down wrongly, put it right the moment the mistake comes to light."* Planted in the very chapter that establishes **the log is never rewritten** | **Both served it. Neither raised it.** |
+| An agreed analogy stretched past where it fits — the telephone game used backwards | **Both served it. Both scored analogies 5/5.** |
+
+**Both misses trace to the checklist, not to the tasters.** This is the finding, and it is
+worse than a lazy taster would have been.
+
+- **The taster's list had five items and contradiction was not one of them.** Contradiction
+  sat on the *head chef's* list — a human eyeball, across 51 chapters. The tasters were told
+  "apply only the taster's list", and they did exactly that. The information was even in
+  their prompt; the instruction told them it was not their job.
+- **Item 3 said "only the agreed ones" and named inventing as the fault.** Stretching an
+  agreed analogy was not in the wording. The telephone game *is* approved, so a page using it
+  wrongly passed a check that only asked whether the words were on the list.
+
+**A checker following an incomplete checklist produces confident, useless approval** — and it
+looks exactly like success. That is the most dangerous failure mode in this whole design, and
+the only reason it surfaced is that somebody broke a page on purpose.
+
+### What changed
+
+The taster's list goes from five items to seven: **contradiction** against every quoted rule
+in the brief, and **stretching** an agreed analogy, both now named. Jargon becomes an
+immediate SEND BACK rather than a deducted point.
+
+### Three faults found in the checking apparatus itself, same session
+
+1. The jargon list did not contain "worktree". The **taster** caught it in chapter 13 —
+   judgement beating the script — and then served the page anyway, calling it recovered. Both
+   halves were wrong: the script was blind and the verdict was soft.
+2. Adding words to that list flagged "merge two categories" in chapter 8 as jargon. Ordinary
+   English. Removed before adoption — **a check that cries wolf gets ignored.**
+3. The scorer read only the body and walked straight past the jargon sitting in chapter 13's
+   **flat rules** — the part the appliance obeys, where it matters most. It now reads the
+   whole page.
+
+**Chapter 13 is sent back** for jargon in its flat rules. Batch three is re-tasted against the
+seven-item list, because verdicts given against the five-item list cannot speak to faults the
+list never asked about.
