@@ -1,0 +1,32 @@
+{
+  "printer-a": {
+    "B1": 20,
+    "B2": 16,
+    "B3": 14,
+    "why": "Strongest: the line 'a kitchen that names everything on day one collects names it never uses, and loose names drift' is pure Chapter 0 voice. Weakest: 'Let the blanks choose and the words are not yours. You will not recognise them under pressure' is opaque on first read \u2014 the reader cannot tell who 'you' is under pressure or why."
+  },
+  "printer-b": {
+    "B1": 22,
+    "B2": 16,
+    "B3": 14,
+    "why": "Strongest: the clearest structure of the four \u2014 numbered lists for the six things and two numbered failure modes make it scannable. Weakest: the voice is competent but flatter than Chapter 0; few sentences have the short punchy rhythm that characterises the standard, and 'Never make one kitchen's language the law' reads as a heading rather than a rule spoken to the reader."
+  },
+  "printer-c": {
+    "B1": 19,
+    "B2": 14,
+    "B3": 14,
+    "why": "Strongest: the concrete contrast 'if dish means a unit of work, it cannot later mean a plate of food' is the sharpest single example across all four candidates. Weakest: the 'Steps' section (1-5 numbered procedure) breaks the book's voice \u2014 Chapter 0 never uses procedural numbered steps in the body, and this reads like a training manual rather than a conversation with the owner."
+  },
+  "printer-d": {
+    "B1": 24,
+    "B2": 19,
+    "B3": 15,
+    "why": "Strongest: the 'done' example \u2014 one person thinks plated, the other thinks tasted-and-sent-back \u2014 is exactly the kind of concrete kitchen scenario Chapter 0 uses, and the sentence rhythm ('Not here. Not in a copy of this book. Not in a note you keep on your own machine.') matches the voice standard precisely. Weakest: slightly long in the 'words are then fixed' section, where two failure modes are explained in more words than Chapter 0 would use for the same idea."
+  },
+  "ranking": [
+    "printer-d",
+    "printer-b",
+    "printer-a",
+    "printer-c"
+  ]
+}
