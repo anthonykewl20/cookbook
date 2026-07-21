@@ -1,0 +1,14 @@
+{
+  "name": "cookbook",
+  "description": "The chain's standards, packaged so any kitchen can install them",
+  "owner": {
+    "name": "anthonykewl20"
+  },
+  "plugins": [
+    {
+      "name": "chain-standards",
+      "source": "./plugins/chain-standards",
+      "description": "Test print: verifies a rule delivered by this book is obeyed like a hand-taped one"
+    }
+  ]
+}
