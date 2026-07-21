@@ -440,3 +440,54 @@ and the sweep all ask whether what is written is correct. Only the reader asks w
 all there — and in two batches that question has been the only one that found anything.
 
 That is now the evidence behind the first item in `FOR-THE-OWNER.md`.
+
+## The two-batch audit — the taster was tested, and the split was vindicated
+
+Two batches passed with no page rejected by any check that gives a verdict. **From inside, a
+check that has stopped biting looks exactly like a run of good pages** — so the standing rule
+is to seed a control rather than trust the streak. The contradiction sweep had already been
+proved that night. The taster had not, and it had returned SERVE at straight sevens fourteen
+times in a row, three of them on pages the reader then sent back.
+
+Chapter 22 — already served, already clean — was reprinted with **three quiet faults**, each
+squarely on the taster's own list, and none of them loud. Kept as
+`press/control-ch22-seeded.md`.
+
+| Planted | Item it breaks | Taster | Sweep |
+|---|---|---|---|
+| *"the dishwasher may confirm its own work… since a second pair of eyes on an obvious result costs the kitchen time it does not have"* | T6 contradiction — reverses nobody-checks-their-own-work | **MISSED. Scored contradiction 5/5** | **CAUGHT.** Rule 5, quoted verbatim |
+| *"Each plate passed from hand to hand comes back a little less clean… exactly as a message does"* | T3 — the telephone game stretched past where it fits | **CAUGHT**, quoted, scored **1/5** | not its job |
+| *"About a fifth of all disputed orders are traced back to this stage"* | T4 — a confident invented number | **CAUGHT**, quoted, scored **2/5** | not its job |
+
+**Verdict: SEND BACK from the taster, and the sweep caught the one the taster could not.
+Between them, all three faults were found. Neither could have done it alone.**
+
+### One item got better and one did not, and the difference is measurable
+
+**T3, stretched analogies: fixed.** The last time a stretched telephone game was planted, both
+tasters served the page and scored analogies 5/5. Tonight the same class of fault scored
+**1/5 and was quoted verbatim** — and the reasoning was better than the fault deserved: it
+identified that the telephone game was settled in chapter 1 for drift in shared *language*,
+not for physical objects. The rewording of that item worked, and this is the evidence.
+
+**T6, contradiction: still broken. Three failures out of three attempts.**
+
+| Attempt | Setup | Result |
+|---|---|---|
+| 1 | Five-item list, holistic verdict | Served the reversal |
+| 2 | Seven items, contradiction named, the broken rule quoted, the item flagged as important | Served it again — **scored contradiction 5/5** |
+| 3, tonight | Seven items, live page, three faults present | Caught the other two, **missed the reversal, scored contradiction 5/5** |
+
+**The taster's contradiction score is not evidence, and this log has been recording it as
+though it were.** Every "SERVE 5·5·5·5·5·5·5" above contains a sixth number that means
+nothing. It is left in the record rather than edited out, because the log is never rewritten —
+but it should be read as *not asked* rather than *asked and found clean*.
+
+**The only contradiction evidence in this shop is the sweep.** That is exactly why it was
+split into its own rule-by-rule pass, and this is the third independent measurement saying
+the same thing. The design decision was right and is now proved on a live page rather than on
+a document nobody broke on purpose.
+
+**Nothing was changed to make anything pass.** The taster still sends the page back — on two
+real faults it found by itself. The finding is about which of its numbers can be trusted, not
+about whether it works.
