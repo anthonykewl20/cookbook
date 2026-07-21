@@ -61,6 +61,26 @@ Judgement, not measurement. Run only on pages that passed the head chef.
    BACK on its own — not a point deducted, not "it recovers afterwards". This item was added
    after a taster spotted "worktree invariant" in a flat rule and served the page anyway.
 
+8. **Is any sentence about THIS book's production rather than the reader's restaurant?**
+
+   The reader is running a kitchen. They must never be told which of our pages is queued for
+   a reprint, which wording conflict our owner has yet to rule on, or anything else about how
+   this book gets made. That is the print shop leaking into the product.
+
+   **The distinction is subtle and the commoner failure is overcorrecting.** *"Report it
+   upward and let the owner decide"* is CORRECT — the owner is a role inside the book and the
+   one door is a settled rule. A chapter may also say plainly what it does not cover and
+   where that is handled instead; chapter 29 does exactly that and is the better for it.
+
+   The test is one question: **is this sentence about the reader's restaurant, or about
+   ours?** If it is about ours, it is a SEND BACK.
+
+   This item was added after two chapters in one batch did it at once — one told the reader
+   that chapter 10 *"needs a reprint"*, the other that a naming conflict *"awaits the owner's
+   decision."* Both passed the head chef's list, a taster on seven items, and a rule-by-rule
+   sweep. **None of those three asks which world a sentence belongs to**, and the reader that
+   gives no verdict found both.
+
 ## The verdict
 
 One of two words, and a reason either way.

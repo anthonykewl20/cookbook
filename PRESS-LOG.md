@@ -568,3 +568,75 @@ chapter that never delivered its own line from the running order, a book that ha
 own growth, and a role called by two different names.
 
 The reader gives no verdict, cannot send a page back, and costs roughly ten pence a batch.
+
+## Batch seven — chapters 32 to 36
+
+Part Four finished; Part Five opened.
+
+| Chapter | Body words | Head chef | Taster | Sweep | Sent back |
+|---|---|---|---|---|---|
+| 32. When the pantry grows | 646 | pass | **SERVE** | all NONE | — |
+| 33. When the day is longer than one shift | 621 → **602** | pass | **SERVE** | all NONE | **once** |
+| 34. When one restaurant becomes two | 615 | pass | **SERVE** | all NONE | — |
+| 35. What a chain is | 528 | pass | **SERVE** | all NONE | — |
+| 36. Opening a new restaurant | 501 → **462** | pass | **SERVE** | all NONE | **once** |
+
+### The book had started talking about its own printing
+
+All five pages passed everything. The reader then found two chapters in one batch doing the
+same thing:
+
+> Ch. 36: *"Chapter 10 still lists the menu among the instructions without stating this
+> exception. **That page needs a reprint** to match the settled chain rule."*
+
+> Ch. 33: *"That conflict **awaits the owner's decision**; this chapter does not silently
+> settle it."*
+
+**A reader of this book is running a restaurant.** They must never be told which of our pages
+is queued for a reprint, or which wording conflict our owner has yet to rule on. That is the
+print shop leaking into the product, and neither sentence is anything a reader could act on
+in their own kitchen.
+
+**The distinction is subtle, and overcorrecting is the commoner danger.** Chapter 29 says
+*"report it upward and let the owner decide"* and that is correct — the owner is a role inside
+the book, and the one door is a settled rule. A chapter may also say plainly what it does not
+cover. The test is one question: **is this sentence about the reader's restaurant, or about
+ours?**
+
+Both reprints got it right without overcorrecting: the shop-talk is gone, and chapter 33 kept
+its legitimate warning that a shift handover may not be used to skip the unsettled method
+verdict.
+
+### The taster's list goes from seven items to eight
+
+The fault was found twice in one batch, which is a pattern rather than an incident, so it was
+fixed at the instruction. **Item 8 asks which world a sentence belongs to.** Neither the head
+chef's mechanical list, nor a taster on seven items, nor a rule-by-rule sweep against ten
+invariants asks that question — all three passed both pages.
+
+This is the fourth time this shop has corrected a check rather than a page, and every time the
+trigger was the same: the same fault appearing a second time.
+
+### One reader finding overruled, on the running order's own words
+
+It said chapter 34 should describe the area manager's weekly report and its two fixed
+questions. **It should not.** The running order gives that to chapter 38 — *"The area manager
+— one report a week, read across all of them at once"* — which has not been written yet.
+Chapter 34 pointing forward to Part Five is correct, and adding it would have taken another
+chapter's material.
+
+**The reader gives no verdict, and this is why that matters.** Its findings are read and
+judged, not obeyed. Two were acted on; one was declined against a quoted line of the running
+order.
+
+### Ten chapters sent back tonight. The reader found all ten.
+
+Four batches, twenty pages, three verdict-giving checks on every one of them. **Those three
+have not found a single fault in a page all night.** They are not asleep — both were tested
+against seeded pages the same night and both bit, quoting the planted faults verbatim.
+
+They are answering a different question. The head chef asks whether the page followed the
+template. The taster asks whether the writing is good. The sweep asks whether a settled rule
+is contradicted. **Not one of them can ask whether something is missing, or whether a sentence
+belongs to the reader's world at all** — and across four batches that has been the only
+question that found anything.

@@ -16,11 +16,12 @@ hands.
 
 The outgoing shift cannot hand over its memory. **Write the handover process well enough
 that a stranger can take over before adding the incoming shift.** It must say how to find
-open orders, read what happened and take responsibility for the next open job.
+open orders, read what happened and take responsibility for the next open job. If the
+incoming shift still needs the outgoing shift to explain, the handover is not ready.
 
-That carries Part Four's settled rule: written instruction comes before another pair of
-hands, and attention is the growth signal. The wider purpose of Part Four is not expanded
-here because the running order does not give that job to this chapter. It awaits the owner.
+Written instruction comes before another pair of hands, never after. This chapter handles
+only the handover between shifts. Adding cooks remains in chapter 29, pantry growth in
+chapter 32 and closing the day in chapter 23.
 
 ## One diary crosses the shift change
 
@@ -34,9 +35,9 @@ incoming shift adds what happens next. Neither shift depends on the other's memo
 
 ## Every separation crosses the shift change
 
-The maker never approves. The doctor never treats. Nobody judges themselves. **Those three
+The cook never approves. The doctor never treats. Nobody judges themselves. **Those three
 separations and the three pairs of hands must still hold across shifts.** An incoming checker
-must be separate from the outgoing maker whose work is being checked.
+must be separate from the outgoing cook whose work is being checked.
 
 The head chef, taster and doctor hats must all be covered without combining forbidden hats.
 If the incoming shift cannot do that, the kitchen closes until the missing check can be made.
@@ -50,13 +51,10 @@ verdict or guess who gives it.
 
 A handover is neither opening the restaurant for the day nor closing the day. **The
 stocktake remains a photograph and the log remains a diary.** If stock changed during the
-shift, rewrite the standing list to show what the restaurant has now. The shift change alone
-does not require a new photograph or a new rule.
+shift, the standing list must already have been rewritten to show what the restaurant has
+now. Rewrite it whenever stock changes. Do not rewrite it merely because the shift changes.
 
-## Unsettled words and faults stay visible
-
-This chapter calls the maker the cook throughout. Other parts also call that role the chef.
-That conflict awaits the owner's decision; this chapter does not silently settle it.
+## Handover faults go through one door
 
 Any fault seen at handover is added to the end of the log and reported upward. **The manual
 stays still until the owner decides through its one door and amends it once for everybody.**
@@ -79,19 +77,19 @@ obeys.*
 2. Add the incoming shift as wearers of the existing seven base roles. Never create a new
    role for the shift.
 3. Write the handover process well enough for a stranger before adding the incoming shift.
+   Do not add it while the incoming shift still needs an explanation from the outgoing
+   shift.
 4. Continue one operations log across shifts. Append what happened; never rewrite it or
    start another log at handover.
 5. Locate every open order by its last stamp. Require the incoming shift to read the end of
    the log and take the next open job from the writing.
 6. Preserve the three separations and three pairs of hands across shifts. Keep every incoming
-   checker separate from the outgoing maker whose work is checked.
+   checker separate from the outgoing cook whose work is checked.
 7. Close the kitchen when the incoming shift cannot cover the head chef, taster or doctor
    without breaking a separation. Append the stoppage to the log. No checker, no service.
 8. Do not use a shift change to decide, replace or skip the unsettled method verdict.
 9. Keep the stocktake as a photograph and the log as a diary. Rewrite the stocktake when
-   stock changes, not merely because the shift changes.
+   stock changes. Never rewrite it merely because the shift changes.
 10. Treat a shift change as a continuous handover, never as closing and opening the day.
-11. Use cook for the maker in this chapter. Leave the competing word chef for the owner's
-   decision.
-12. Append every handover fault to the log and report it upward. Let only the owner amend the
+11. Append every handover fault to the log and report it upward. Let only the owner amend the
    manual once for everybody, and give the owner a decision rather than a shift task.

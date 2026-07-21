@@ -34,10 +34,6 @@ The menu is the one local instruction. **A new restaurant does not inherit anoth
 restaurant's menu.** It chooses its own menu from the chain's dishes. It may choose fewer,
 never different ones. The recipes for every dish it does choose still arrive unchanged.
 
-Chapter 10 still lists the menu among the instructions without stating this exception. That
-page needs a reprint to match the settled chain rule. Until then, do not use that line to
-carry a menu into a new restaurant.
-
 ## Arrival changes nothing in the manual
 
 A different building may make a small rewrite look sensible. Do not make it. **A restaurant
