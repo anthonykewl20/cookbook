@@ -8,14 +8,16 @@ Read this first, every session. Name the step in your first line, every reply.
 
 ## The step we are on
 
-**Settling the table of contents — Part Three, running the restaurant.** Laying out the
-operations: what happens, in what order, from opening up to closing down. Every chapter must
-point back at something Part Two put in the building.
+**Settling the table of contents — Part Three, the base framework.** The standard run of
+service for a restaurant with **one of everything**: one waiter, one cook, one cashier, one
+dishwasher. Standards only — anything that differs between restaurants is not base, it is
+growth, and it belongs in Part Four.
 
-**Done looks like:** the owner says the run of service is right.
+**Done looks like:** the owner says the base framework is right, and agrees what counts as
+base versus growth.
 
-**Not this step:** writing any chapter. Reopening Part Two. Saying what each thing is in
-real terms rather than in cooking terms.
+**Not this step:** writing any chapter. Reopening Part Two. Working out the growth rules in
+detail. Saying what each thing is in real terms rather than in cooking terms.
 
 ## The four rules
 

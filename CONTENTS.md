@@ -126,7 +126,54 @@ only **memory**, because every chef is a stranger who leaves at the end of the s
 is now written on top of it, and every later chapter must point back at something Part Two
 put in the building.
 
-# Parts Three and beyond — being rebuilt
+# Part Three — The base framework
+
+**Standards only. No blanks, no local variation, nothing to fill in.**
+
+Written for a restaurant with **one of everything** — one waiter, one cook, one cashier, one
+dishwasher. The smallest place that still works. Every restaurant on earth starts here and
+every restaurant on earth does these things, so this part is true everywhere or it does not
+belong in this part.
+
+The chapters run in the order service actually runs.
+
+14. Opening up — the right building, the stock checked, who is here
+15. Taking the order — written down before it moves, and read back
+16. Into the kitchen — the hand-off from front to back
+17. Prep — the potatoes peeled before anyone cooks
+18. Cooking it — follow the recipe, one dish start to finish
+19. Checking it before it leaves the kitchen
+20. Serving it
+21. Taking the money
+22. Clearing down — collected, washed, and put back where it belongs
+23. Closing up — the stocktake redone, the log written
+24. Reading the log back — the procedure, the waste, the errors, the memory
+25. When it goes wrong — sent back, out of stock, and how to undo
+
+# Part Four — Growth
+
+**Where restaurants stop being the same as each other.**
+
+Nothing here is optional detail bolted onto Part Three. It is the same framework under load.
+A place with a hundred customers cannot be run by one waiter; a place with a thousand dishes
+on the menu changes what the waiter, the cashier, the cook and the pantry each have to do.
+The base framework does not break — it grows, and each growth has a rule.
+
+Each chapter names the strain, then what must become true before you can add the extra pair
+of hands without the two of them colliding.
+
+26. When one waiter is not enough
+27. When one cook is not enough — and why someone now has to run the kitchen
+28. Two people working at once, without colliding
+29. When the menu grows from ten dishes to a thousand
+30. When the pantry grows
+31. When the day is longer than one shift
+32. When one restaurant becomes two
+
+Chapter 32 is the hand-off into the next part: a chain is what growth turns into when it
+stops fitting in one building.
+
+# Parts Five and beyond — being rebuilt
 
 The material below is the previous draft, kept so nothing is lost. Treat it as raw stock,
 not as a running order.
