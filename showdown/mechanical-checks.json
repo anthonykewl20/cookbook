@@ -1,0 +1,46 @@
+[
+  {
+    "file": "printer-a",
+    "A1_title": true,
+    "A1_settles_line": true,
+    "A1_flat_rules": true,
+    "A1_flat_rules_numbered": true,
+    "A4_body_words": 681,
+    "A4_within_700": true,
+    "A5_jargon_hits": {},
+    "has_unresolved": false
+  },
+  {
+    "file": "printer-b",
+    "A1_title": true,
+    "A1_settles_line": true,
+    "A1_flat_rules": true,
+    "A1_flat_rules_numbered": true,
+    "A4_body_words": 612,
+    "A4_within_700": true,
+    "A5_jargon_hits": {},
+    "has_unresolved": false
+  },
+  {
+    "file": "printer-c",
+    "A1_title": true,
+    "A1_settles_line": true,
+    "A1_flat_rules": true,
+    "A1_flat_rules_numbered": true,
+    "A4_body_words": 737,
+    "A4_within_700": false,
+    "A5_jargon_hits": {},
+    "has_unresolved": false
+  },
+  {
+    "file": "printer-d",
+    "A1_title": true,
+    "A1_settles_line": true,
+    "A1_flat_rules": true,
+    "A1_flat_rules_numbered": true,
+    "A4_body_words": 903,
+    "A4_within_700": false,
+    "A5_jargon_hits": {},
+    "has_unresolved": false
+  }
+]
