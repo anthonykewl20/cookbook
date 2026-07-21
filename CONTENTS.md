@@ -1,7 +1,8 @@
 # The Cookbook — table of contents
 
-**Status: draft, nothing written yet.** This page decides what belongs in the book and in
-what order. It is the running order, not the book.
+**Status: SETTLED by the owner, 2026-07-21. Nothing written yet.** This page is the running
+order, not the book. It is now closed: chapters get written against it, and it is not
+reopened without the owner saying so.
 
 **Who this book is for:** an owner who wants to start and run their own chain — not one
 restaurant, but several, over time, without the standards rotting between them.

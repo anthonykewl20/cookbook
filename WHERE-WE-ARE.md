@@ -8,15 +8,22 @@ Read this first, every session. Name the step in your first line, every reply.
 
 ## The step we are on
 
-**Settling the table of contents — the chain part.** The last part still made of raw stock.
-One owner, several restaurants: what a new one inherits, what stays local, how a standards
-change reaches all of them, and where the area manager sits.
+**Writing chapter 0, and deriving the chapter template from having written it.**
 
-**Done looks like:** the owner says the chain part is right. At that point the whole running
-order is settled end to end and the contents can be signed off.
+The running order is settled and closed. Before 51 chapters can be handed to anybody, we
+have to know what a chapter *is* — and the book's own rule says you may not delegate a job
+until it is written down well enough for a stranger to do it. So chapter 0 gets written by
+hand, slowly, and the template comes out of the doing. The cook peels their own potatoes
+first.
 
-**Not this step:** writing any chapter. Reopening Parts Two or Three. Saying what each thing
-is in real terms rather than in cooking terms.
+Chapter 0 is the right one to start with for a second reason: it is the only chapter standing
+between a reader and everything else.
+
+**Done looks like:** the owner is happy with chapter 0, **and** there is a written template
+that a stranger could follow to produce chapter 1.
+
+**Not this step:** writing chapters 1 onward. Reopening the running order. Choosing who
+writes the rest.
 
 ## The five rules
 
@@ -52,6 +59,11 @@ Things worth deciding, at the step where they belong.
 - **First running order** — done, then rebuilt. The first draft ran straight into *how a
   chain is run* without ever saying what a restaurant contains. The owner caught it. The
   inventory now comes first, and everything else is written on top of it.
+- **The running order** — SETTLED end to end and signed off by the owner, 2026-07-21. Eight
+  parts, 51 chapters, every part carrying a governing rule. `CONTENTS.md` is closed.
+- **The chain part (Part Five)** — settled. Instructions travel, records never do. A new
+  restaurant inherits every written instruction unchanged and nothing else. The menu is
+  local; the recipe never is. A chain is a measuring instrument for the manual.
 - **The base framework (Part Three)** — settled. Seven roles and three pairs of hands, three
   checks on three different questions, one door for changing the manual, and no service
   without a checker. Part Four has its governing rule: nothing is delegated until it is
