@@ -1,116 +1,83 @@
 # The Cookbook — table of contents
 
-**Status: draft, nothing written yet.** This page decides what belongs in the book. It is
-the running order, not the book.
+**Status: draft, nothing written yet.** This page decides what belongs in the book and in
+what order. It is the running order, not the book.
 
-## Where this comes from
+**Who this book is for:** an owner who wants to start and run their own chain — not one
+restaurant, but several, over time, without the standards rotting between them.
 
-Compiled from everything the chain currently knows, not from memory:
+## What changed in this draft
 
-- the chain's standards, the wall notes themselves — `~/.claude/CLAUDE.md`, 123 lines
-- the restaurant's own local rules and vocabulary — `opencode-verify/CLAUDE.md`
-- the reasons and corrections behind the vocabulary — the `restaurant-vocabulary` memory
-- the automatic checks that run at every session start — 3 hooks in `~/.claude/settings.json`
-- the skills the standards actually lean on — `wayfinder`, `model-flow`, `handoff`, and others
+The first draft was a book about cooking one dish in one kitchen. That was wrong: it left
+out the whole reason the book exists — **running more than one restaurant.** Opening a new
+one, keeping several going at once, knowing which one you are standing in, deciding what is
+shared across all of them versus local to one, and pushing a change in the standards out to
+every restaurant at once. That is now Part Two, and it is the spine.
 
-## The sort: three piles, not two
-
-The plan said the notes split in two — the portable method, and the machine-specific staff.
-Reading them properly, there is a third pile, and it is the one that would have ruined the
-book if it went unnoticed.
+## The sort: three piles
 
 | Pile | What it is | Travels? |
 |---|---|---|
-| **How we cook** | True in any kitchen, whoever owns it, whoever staffs it | Yes — this is the book |
-| **What we call things** | Our cooking words are *this owner's* way of seeing. Another owner may think in workshops, or in plain blunt terms. | The **interview** travels; the words are personal |
+| **How things are run** | True for any chain, any owner, any staff | Yes — this is the book |
+| **What we call things** | Our cooking words are *this owner's* way of seeing. Another owner may think in workshops, or plain blunt terms. | The **interview** travels; the words are personal |
 | **Who works here** | The staff, their names, their commands, their file paths | No — filled in locally |
 
-Miss the middle pile and the book forces its own metaphor on every reader and claims to be
-universal while doing it. **The book teaches how to cook; the interview decides what
-language you cook in.** The recipes are unchanged either way.
-
-A fourth thing came out of the compile that the plan had not accounted for: **some rules are
-not words at all.** Three automatic checks already run at every session start on this
-machine — one of them is the doorman that stopped this very session and sent it to its own
-prep bench. A book that prints the rule but not the doorman is a book of good intentions.
-Part Four exists because of that.
+Some rules are **not words at all**: automatic checks that run whether anyone reads the book
+or not. A book that prints the rule but not the check is a book of good intentions. That is
+Part Five.
 
 ---
 
-# Part One — How we cook
+# Part One — Agreeing on words
 
-The method. Same in every kitchen, whatever it calls itself. This is the actual book.
+The first conversation in a new chain, before anything else.
 
-1. **Check you are standing somewhere real.** No handbook and no repository where you are
-   means no kitchen — say so and ask, do not proceed. First because everything else assumes it.
-2. **The words we use.** The roles: the owner, the one head chef who runs a place, the chefs
-   who cook, the taster who is never the cook. The things: a place, its setup, what it is
-   building, one job of work. And **the appliance** — the machine the chefs cook on; ours is
-   Claude Code. Carries the correction that one word must never do two jobs.
-3. **Who decides what.** The owner sets direction; one head chef per place runs it. Ask when
-   it is a preference, a coin-flip, hard to undo, or a guess. Decide alone when it is written
-   down, checkable, cheap to reverse. **Never ask a question you already know the best answer to.**
-4. **How to explain yourself.** One question at a time, carrying your recommendation, so
-   "yes" is a complete reply. When an explanation fails, rewrite it from scratch — adding
-   detail is what made it fail.
-5. **Every session is a stranger.** Nobody remembers yesterday, so the process lives where
-   the work lives, never in a conversation. The telephone game: `123456 → 12345 → 12`.
-6. **One job at a time, and claiming it.** A job being cooked wears a tag; nobody touches a
-   tagged job. One job, one chef, start to finish — who may call in specialists, and whose
-   work is always tasted by someone else. This is what stops two chefs reaching into one bowl.
-7. **Charting when you are lost — and only then.** A map is for fog: a goal too big to see
-   the way to. You stop mapping the moment the way is clear, and then you just cook. **A
-   recipe is not a map.** Most work needs no map at all, and drawing one anyway is ceremony.
-8. **Cooking without colliding.** Two chefs on two different jobs is normal; each gets their
-   own prep bench, never the shared counter. Save your work as you go. How to hand a finished
-   job back cleanly. Never rewrite history someone else is standing on.
-9. **Secrets never leave the building.** No keys, no private files, no owner-private material
-   sent to any outside worker — checked before the work is handed over, not after.
-10. **The tasting rules.** Nothing is finished until: you ran the tests yourself, an
-    independent taster who saw the *final* state approved it, you read every line of the change
-    and vouch for it, and the taster was asked outright whether it fully does what was asked.
-    **The taster is never the cook.** If a check is unavailable, say so — never silently skip it.
-11. **A worker never hires a worker.** A chef sent out to cook does not send someone else.
-    Stated as a principle here; the local names for it live in Part Three.
+1. The interview
+2. The roles that exist whatever you call them — the owner, the one who runs a place, the
+   ones who do the work, the one who checks it, and the appliance they all work on
 
-# Part Two — Agreeing on words
+# Part Two — Running a chain
 
-The book's first act in a new kitchen, before any cooking.
+The owner's view. The reason this book exists.
 
-12. **The interview.** The appliance sits down with its new owner and agrees a shared set of
-    words, together — how they see the work, how much they want explained, whether pictures
-    help or get in the way, how they want to be asked. The output is written down where the
-    work lives, so every later session inherits it instead of re-inventing it. Ships with
-    **this** kitchen's interview filled in as a complete worked example — restaurants, dishes,
-    tasters and all — clearly marked as one answer, not the answer.
+3. One owner, many restaurants
+4. What belongs to the whole chain, and what belongs to one restaurant only
+5. Opening a new restaurant
+6. Knowing which restaurant you are standing in
+7. Keeping several restaurants running at once
+8. Changing the standards everywhere at once
+9. Closing a restaurant down
 
-# Part Three — Who works here
+# Part Three — How we cook
+
+The method inside one kitchen, on one job.
+
+10. One job at a time, and claiming it
+11. Who decides what, and what never to ask the owner
+12. How to explain yourself
+13. Every session is a stranger
+14. Charting when you are lost — and only then
+15. Working without colliding
+16. Secrets never leave the building
+17. The tasting rules
+
+# Part Four — Who works here
 
 Forms, not answers. Every kitchen has different staff.
 
-13. **Naming your staff.** Who writes, who analyses, who tastes, who does the small
-    mechanical jobs — and which class of work each one is trusted with.
-14. **When someone is off sick.** What happens when a worker is unavailable: the stand-in,
-    and recording honestly that a stand-in was used rather than relabelling it.
-15. **Wiring them up.** Where credentials live on a machine, and why they never live in this
-    book.
+18. Naming your staff
+19. A worker never hires a worker
+20. When someone is off sick
+21. Wiring them up
 
-# Part Four — What the book enforces by itself
+# Part Five — What the book enforces by itself
 
-The rules that are not words.
-
-16. **The doorman.** The check at every session start that gives each chef their own prep
-    bench and keeps them out of each other's way.
-17. **What ships in the box.** *Decided: batteries included.* The book carries the handful of
-    tools its own rules depend on — roughly six. If the book says "chart it when you are lost"
-    and no map-making tool ships with it, the instruction is empty, and a rule nobody can
-    follow is exactly the drift this chain exists to prevent. The owner's other tools stay
-    private.
+22. The doorman
+23. What ships in the box — the tools the book's own rules depend on
 
 # Appendix
 
-18. **What we deliberately left out, and why.** So a later reader does not mistake a decision
-    for an oversight.
+24. What we deliberately left out, and why
 
 ---
 
@@ -120,25 +87,13 @@ Every section of the current wall notes, and where it went:
 
 | Wall note section | Goes to |
 |---|---|
-| Runtime role / recursion ban | Ch. 11 (principle) + Ch. 13 (local names) |
-| How to talk to me | Ch. 2, 3, 4, 5 (method) + Ch. 12 (the interview) |
-| Worktree invariant | Ch. 8 + Ch. 16 |
-| Model routing tables | Ch. 13, 14 — all of it local |
-| Secrets | Ch. 9 |
-| Final validation gate | Ch. 10 |
-| Hard constraints | split: method → Ch. 10; runner commands → Ch. 13 |
+| Runtime role / recursion ban | Ch. 19 (principle) + Ch. 18 (local names) |
+| How to talk to me | Ch. 1, 2 (the interview) + Ch. 11, 12, 13 (method) |
+| Worktree invariant | Ch. 15 + Ch. 22 |
+| Model routing tables | Ch. 18, 20 — all of it local |
+| Secrets | Ch. 16 |
+| Final validation gate | Ch. 17 |
+| Hard constraints | split: method → Ch. 17; runner commands → Ch. 18 |
 
-## Settled while drafting
-
-- **Batteries included** (Ch. 17) — the book carries the tools its rules depend on.
-- **A map is only for fog** (Ch. 7) — the map-making tool says so about itself. Recipes,
-  jobs and maps are three different things and were previously blurred into one chapter.
-- **One job, one chef** (Ch. 6) — plus an independent taster. Two chefs on one job is
-  prevented by *claiming*; two chefs on different jobs is normal and handled by the doorman.
-- **The appliance** (Ch. 2) — the machine the chefs cook on. Ours is Claude Code.
-
-## Open
-
-- **Where the job list lives** when a kitchen has no GitHub. Candidates weighed: plain
-  documents, a structured file, or a small database. Undecided — see the recommendation
-  put to the owner.
+Part Two has no wall-note source, because the wall notes were written for one restaurant.
+It is new material.
