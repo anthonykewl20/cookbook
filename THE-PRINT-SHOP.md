@@ -144,6 +144,14 @@ they do not work anywhere.
 5. **Every page is stamped in the log**: who printed it, what the manager found, what the
    taster found, and whether it was sent back.
 6. **The manager never prints.** A manager who writes pages stops rejecting them.
+   **Chapter 0 is the one stated exception**, because there was no template until somebody
+   had written a chapter and you cannot delegate what has never been done. It was declared,
+   not discovered, and it carries a consequence: **the manager may not taste what the manager
+   wrote.** Chapter 0 went to a taster like any other page. The exception covers that chapter
+   and does not renew.
+7. **The taster receives the chapter's brief**, not only the page. Otherwise "is anything
+   asserted that nobody established" cannot be answered, and a chapter gets marked down for
+   doing what it was told.
 
 ## What is not settled
 
