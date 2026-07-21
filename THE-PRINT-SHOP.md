@@ -109,8 +109,10 @@ that needs him to read fifty pages — or five — has quietly turned the owner 
 and the shop has failed before it printed anything.
 
 **His ear is already captured.** He chose the voice once, blind, on a real page. That
-decision did not evaporate when he made it: **chapters 0 and 1 together are now the written
-voice standard**, and the taster scores every later page against them. This is the book's own
+decision did not evaporate when he made it: **chapter 1 is the written voice standard** —
+the page he picked, which then passed tasting 5/5 — and the taster scores every later page
+against it. (Chapter 0 was the standard until it was tasted and sent back. A standard has to
+be a page that passed.) This is the book's own
 rule turned on the book — the owner's judgement was the undelegable thing, so it was done
 once, written down, and became delegable. He does not re-rule on voice fifty times. He ruled.
 
@@ -144,11 +146,11 @@ they do not work anywhere.
 5. **Every page is stamped in the log**: who printed it, what the manager found, what the
    taster found, and whether it was sent back.
 6. **The manager never prints.** A manager who writes pages stops rejecting them.
-   **Chapter 0 is the one stated exception**, because there was no template until somebody
-   had written a chapter and you cannot delegate what has never been done. It was declared,
-   not discovered, and it carries a consequence: **the manager may not taste what the manager
-   wrote.** Chapter 0 went to a taster like any other page. The exception covers that chapter
-   and does not renew.
+   **Chapter 0 was the one stated exception, and it is now RETIRED.** It existed because no
+   template did, and nothing may be delegated until it is written down. The template exists;
+   the reason has expired; the permission expired with it. Chapter 0 was tasted like any
+   other page, sent back with two faults, and reprinted by the printer. **No page in this
+   book is written by the manager.**
 7. **The taster receives the chapter's brief**, not only the page. Otherwise "is anything
    asserted that nobody established" cannot be answered, and a chapter gets marked down for
    doing what it was told.
