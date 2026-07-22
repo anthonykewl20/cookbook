@@ -134,8 +134,8 @@ end of it. Keeping them in one place ruins both: the photograph gets cluttered w
 and the diary gets edited.
 
 **Chapters 10 and 12 are the pair the whole book turns on.** Instructions say what *should*
-happen. The log says what *did*. When the two disagree, that is drift — and it is the only
-place drift can be seen at all.
+happen. The log says what *did*. When the two disagree, that is drift — and comparing them
+is the *sharpest* place drift shows — not the only place.
 
 ## Notes carried into Part Two chapters
 
