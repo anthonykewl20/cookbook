@@ -57,9 +57,10 @@ named amendment in its installed book, its version has not been verified.
 
 ## The local menu stays outside the amendment
 
-The menu is the one local instruction. **An amendment made everywhere covers travelling
-instructions, not a restaurant's menu.** A restaurant may remove a chain dish from its menu
-and add that removal to its log. It may never add a different dish or alter a shared recipe.
+The menu is a local record of which chain recipes this restaurant currently serves. **An
+amendment made everywhere covers travelling instructions, not a restaurant's menu.** A
+restaurant may remove a chain dish from its menu and add that removal to its log. It may never
+add a different dish or alter a shared recipe.
 
 ## A local amendment puts a restaurant outside the chain
 

@@ -34,8 +34,9 @@ change a recipe.
 
 Before the two places can work together without colliding, the line between them must be
 clear. **Each receives the same recipes, house rules, taster's checklist and job descriptions,
-unchanged.** The menu is the one local instruction: one restaurant may offer fewer dishes,
-but never different dishes, and the recipe itself never changes locally.
+unchanged.** The menu is a local record of which chain recipes each restaurant currently
+serves: one restaurant may offer fewer dishes, but never different dishes, and the recipe
+itself never changes locally.
 
 Each restaurant has its own building, stock and staff. Its stocktake is a photograph of that
 place alone. Its log is its own diary and begins empty. Combining either record across the

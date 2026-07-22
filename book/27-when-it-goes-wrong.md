@@ -29,8 +29,9 @@ for returns here.
 ## Missing stock takes the dish off this menu
 
 When a required ingredient is missing, the recipe cannot be followed. **Remove that dish
-from this restaurant's menu and log the removal.** This is the one settled local exception:
-the menu may become shorter, but the dish and its recipe may not become different.
+from this restaurant's menu and log the removal.** The menu records which recipes this
+restaurant currently serves: it may become shorter, but the dish and its recipe may not become
+different.
 
 Tell the customer the dish is unavailable. Then cancel the order, or undo it if action has
 already been taken, and add what happened to the end of the log. Leave every earlier entry

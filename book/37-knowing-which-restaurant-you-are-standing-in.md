@@ -26,7 +26,9 @@ Use both records. The stocktake answers, "Is this the place described here?" The
 
 ## The menu is local but the recipes are shared
 
-The menu is the one local instruction. **It may vary by restaurant, but only by offering fewer chain dishes, never different ones.** It can therefore help confirm which restaurant you are in.
+The menu is a local record of which chain recipes this restaurant currently serves. **It may
+vary by restaurant, but only by offering fewer chain dishes, never different ones.** It can
+therefore help confirm which restaurant you are in.
 
 The menu does not change the chain's promise. A shorter menu says that this restaurant does not serve one of the dishes. It does not say that the dish or its recipe changed. Chapter 42 settles this local right in full.
 
@@ -53,7 +55,8 @@ obeys.*
 2. Treat recipes, house rules, the taster's checklist, job descriptions and this book as travelling instructions that cannot identify one restaurant.
 3. Keep every restaurant's building, staff, stocktake and operations log with that restaurant alone.
 4. Match the stocktake and operations log to the building and staff in front of you. Stop if either belongs to another restaurant.
-5. Treat the menu as the one local instruction. Allow fewer chain dishes, never different ones.
+5. Treat the menu as a local record of which chain recipes this restaurant currently serves.
+   Allow fewer chain dishes, never different ones.
 6. Treat a shorter local menu as a local removal, never as a change to the shared recipe.
 7. Never treat one restaurant's log entry as proof that the chain's instructions changed.
 8. Identify the restaurant from its local life, then compare its instructions with its records.

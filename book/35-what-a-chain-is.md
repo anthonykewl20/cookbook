@@ -24,9 +24,9 @@ Sending another restaurant's records across would give the new restaurant somebo
 
 This chapter draws the line. Chapter 36 settles what happens when the new restaurant opens.
 
-## The menu is the one local instruction
+## The menu is a local record, so it does not travel
 
-There is one settled exception. **The menu is an instruction, but it does not travel.** A restaurant may serve fewer of the chain's dishes, never different ones. The recipes for every dish it does serve remain unchanged.
+The menu is a local record of which chain recipes this restaurant currently serves. **Records never travel.** A restaurant may serve fewer of the chain's dishes, never different ones. The recipes for every dish it does serve remain unchanged.
 
 That does not give a restaurant a general right to alter instructions. It gives one local right to the menu and nothing else. Chapter 42 settles that right fully.
 
@@ -34,7 +34,7 @@ That does not give a restaurant a general right to alter instructions. It gives 
 
 Part Two separated instructions from records. Chapter 10 named the writing that says what should happen. Chapters 11 and 12 named the stocktake and log that say what the restaurant has and what it did.
 
-**That same line decides what a chain is.** The instructions cross from restaurant to restaurant, apart from the local menu. The stocktake and log stay with the restaurant whose life they record.
+**That same line decides what a chain is.** The instructions cross from restaurant to restaurant unchanged. The menu, stocktake and log stay with the restaurant whose life they record.
 
 ## Never rewrite the promise on arrival
 
@@ -54,6 +54,6 @@ obeys.*
 3. Install this book in every restaurant. Never copy its words into local notes.
 4. Keep each restaurant's building, stock and staff with that restaurant.
 5. Never carry one restaurant's stocktake or log into another restaurant. Start each restaurant's log empty.
-6. Keep the menu local. Allow a restaurant to serve fewer chain dishes, never different ones, and never alter their recipes.
-7. Treat instructions as what should happen and the stocktake and log as records of what one restaurant has and did.
+6. Keep the menu as a local record of which chain recipes a restaurant currently serves. Allow a restaurant to serve fewer chain dishes, never different ones, and never alter their recipes.
+7. Treat instructions as what should happen and the menu, stocktake and log as records of what one restaurant has, serves and did.
 8. Never allow a restaurant to rewrite a travelling instruction on arrival. Treat any restaurant that does so as outside the chain.

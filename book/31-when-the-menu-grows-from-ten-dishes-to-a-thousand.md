@@ -20,10 +20,10 @@ already given.
 A restaurant keeps its own menu. It may offer any number of the chain's dishes, up to the
 full set. **It may offer fewer dishes than the chain, but never different ones.**
 
-The menu is local. The recipe is not. Every dish added to the local menu must already have a
-written recipe in the chain's manual. That recipe travels unchanged to the restaurant. A
-larger local menu selects more of those fixed dishes; it does not create local versions of
-them.
+The menu is a local record of which chain recipes this restaurant currently serves. The recipe
+is not. Every dish added to the local menu must already have a written recipe in the chain's
+manual. That recipe travels unchanged to the restaurant. A larger local menu selects more of
+those fixed dishes; it does not create local versions of them.
 
 This must be true before menu size leads to another pair of hands. A stranger must be able
 to make every offered dish from its writing. Otherwise, handing over the work changes the
@@ -46,9 +46,10 @@ those rules.
 
 ## The building already contains what the menu needs
 
-Part Two has already placed each part in the building. Chapter 10 names the menu and recipes
-as instructions. Chapter 7 names the ingredients as stock. Chapter 9 names the people by
-role. **A larger menu adds load to these categories; it does not invent a new category.**
+Part Two has already placed each part in the building. Chapter 10 names recipes as instructions
+and the menu as a local record. Chapter 7 names the ingredients as stock. Chapter 9 names the
+people by role. **A larger menu adds load to these categories; it does not invent a new
+category.**
 
 The pantry's work may become heavier because more recipes call for more kinds of stock.
 Chapter 32 handles how the pantry itself grows. Here, the point is only that it remains the
@@ -85,7 +86,8 @@ obeys.*
    because of menu size.
 5. Take a growth step only when someone's attention runs out. Never use the number of dishes
    or a pile of work alone as the signal.
-6. Treat menus and recipes as instructions, ingredients as stock and people as roles.
+6. Treat recipes as instructions, menus as local records, ingredients as stock and people as
+   roles.
 7. Leave the pantry's own growth to chapter 32.
 8. Keep the head chef's method check, the taster's quality check and the doctor's fitness
    check unchanged at every menu size.

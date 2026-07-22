@@ -30,7 +30,7 @@ diary lies about what happened here.
 
 ## The menu is chosen here
 
-The menu is the one local instruction. **A new restaurant does not inherit another
+The menu is a local record of which recipes this restaurant currently serves. **A new restaurant does not inherit another
 restaurant's menu.** It chooses its own menu from the chain's dishes. It may choose fewer,
 never different ones. The recipes for every dish it does choose still arrive unchanged.
 
@@ -68,7 +68,8 @@ obeys.*
    restaurant's stocktake.
 5. Start the new restaurant's operations log empty. Never carry in or combine another
    restaurant's log.
-6. Let each new restaurant choose its own menu from the chain's dishes. Allow fewer dishes,
+6. Let each new restaurant choose its own menu from the chain's dishes as a local record of which
+   recipes it currently serves. Allow fewer dishes,
    never different ones, and never inherit another restaurant's menu.
 7. Keep every travelling instruction unchanged on arrival. Treat a restaurant that rewrites
    one as outside the chain.

@@ -6,7 +6,7 @@
 
 The customer chooses a dish, and the waiter takes the order. **The menu says what may be ordered**, so it is the basis for every order the waiter accepts.
 
-The order records what the customer asked for. The recipe tells the cooks how to make the dish. They are not the same instruction. The menu and recipe both belong to the written instructions described in chapter 10, but the waiter uses the menu and does not touch the recipe.
+The order records what the customer asked for. The recipe tells the cooks how to make the dish. They are not the same instruction. The menu is a record of which recipes this restaurant currently serves. The recipe belongs to the written instructions described in chapter 10, but the waiter uses the menu and does not touch the recipe.
 
 **The waiter takes the order but never cooks it.** That boundary belongs to the waiter's role in chapter 9. Taking the request and making the dish remain separate jobs.
 

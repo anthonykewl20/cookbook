@@ -31,7 +31,7 @@ The order matters:
 
 A cook, head chef or whole restaurant may be certain that the repair is obvious. **None of them may amend a recipe, this book or any other instruction that travels.** A private repair gives one restaurant a different promise and hides the fault from the rest of the chain.
 
-The already-settled choice to shorten a restaurant's menu remains the one local exception. That removal is logged. It does not permit any other local change.
+The already-settled choice to shorten a restaurant's menu remains a local right: the menu records which recipes that restaurant currently serves. That removal is logged. It does not permit any other local change.
 
 ## Never turn a fault into a private improvement
 
@@ -50,4 +50,4 @@ Do not do it. Record the fault and send it upward. **The kitchen has the right t
 3. Record the observed fact. Never send the owner a task to discover what the kitchen already saw.
 4. Report the written fault upward, then keep following the instructions already in force.
 5. Never allow a cook, head chef or restaurant to amend any recipe or other instruction that travels.
-6. Preserve the one settled local exception: a restaurant may shorten its menu, and that removal is logged. Never treat it as permission for another local change.
+6. Preserve the settled local right: a restaurant may shorten its menu, which records which recipes it currently serves, and that removal is logged. Never treat it as permission for another local change.

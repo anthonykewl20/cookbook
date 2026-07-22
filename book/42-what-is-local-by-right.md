@@ -4,14 +4,14 @@
 
 ## The menu alone stays local
 
-The menu is an instruction. It tells the kitchen which dishes it may serve. But it is the
-one instruction that belongs to one restaurant rather than to the whole chain.
+The menu is a record of which recipes this restaurant currently serves. It tells the kitchen
+which dishes it may serve. But it belongs to one restaurant rather than to the whole chain.
 
-**Every other instruction travels unchanged from the chain to every restaurant.** The menu
-is the sole exception. Each restaurant keeps its own, because what it can honestly offer may
-be smaller than what the chain offers.
+**Every instruction travels unchanged from the chain to every restaurant.** Each restaurant
+keeps its own menu, because what it can honestly offer may be smaller than what the chain
+offers.
 
-This exception stops at the edge of the menu. The recipe itself is never local. Neither are
+This local right stops at the edge of the menu. The recipe itself is never local. Neither are
 the house rules, the job descriptions or any other instruction.
 
 ## A shorter menu keeps the promise
@@ -68,8 +68,8 @@ This is the only local right, and it is enough. **The menu is local. The recipe 
 *The same rules as above, with the explanation removed. This is the part the appliance
 obeys.*
 
-1. Treat the menu as an instruction and as the sole exception to travelling instructions.
-2. Keep every instruction other than the menu unchanged across the chain.
+1. Keep the menu as a local record of which recipes this restaurant currently serves.
+2. Keep every instruction unchanged across the chain.
 3. Allow each restaurant to serve fewer chain dishes, never different dishes.
 4. When a restaurant cannot follow a dish's recipe, remove that dish from its menu. Never
    substitute an ingredient or change the recipe locally.

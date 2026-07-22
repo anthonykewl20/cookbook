@@ -19,7 +19,7 @@ Instructions say what should happen. The operations log says what did happen. **
 the two is the sharpest place drift shows, not the only place.** If the recipe requires the
 taster's verdict before service but the log shows service came first, the disagreement is
 already enough. You do not need a second restaurant to prove it. A logged removal from the
-menu is the one exception, explained below.
+menu is a local record of which recipes this restaurant currently serves, explained below.
 
 The chain gives you another view. The area manager may find that one restaurant's log
 disagrees with the shared instructions while the others do not. Dishes may also differ

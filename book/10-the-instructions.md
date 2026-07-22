@@ -8,31 +8,31 @@
 
 The instructions include:
 
-- the menu;
 - the recipes;
 - the house rules on the wall;
-- each person's written job description; and
+- each person's written job description;
+- the taster's written checklist; and
 - this book installed in the kitchen.
 
-The menu says what may be ordered, the recipe how a dish is made, and the house rules how the place is run. A job description sets its holder's work. This book sets every restaurant's work.
+The recipe says how a dish is made, the house rules how the place is run, and the taster's checklist how a dish is checked. A job description sets its holder's work. This book sets every restaurant's work.
 
-**The menu is the one instruction that does not travel.** Each restaurant keeps its own menu. It may leave off dishes the chain serves, but it may never add a different dish or change one.
+**The menu is not an instruction.** It is a local record of which recipes this restaurant currently serves. Each restaurant keeps its own. It may list fewer chain dishes, but never a different dish or a changed recipe.
 
-Every other instruction crosses to a new restaurant unchanged.
+Every instruction crosses to a new restaurant unchanged.
 
 ## The manual is the one thing that holds still
 
-Taken together, the instructions are the manual. **Apart from shortening a local menu, the manual is static: it does not change during the work or because a cook prefers another way.**
+Taken together, the instructions are the manual. **The manual is static: it does not change during the work or because a cook prefers another way.**
 
 Your cooks are never the same twice, and none remembers yesterday. Filling gaps from memory or preference turns the result into a telephone game.
 
 If the people vary and the result must not, then the manual is the only thing allowed to hold still.
 
-Static does not mean that a bad instruction stays forever. It means every instruction other than the local menu applies to everybody until the owner changes it for everybody.
+Static does not mean that a bad instruction stays forever. It means every instruction applies to everybody until the owner changes it for everybody.
 
 ## Every change passes through one door
 
-Except for shortening a local menu, the manual changes only through this order:
+The manual changes only through this order:
 
 1. Something goes wrong or could be better.
 2. It is written into the log.
@@ -44,11 +44,11 @@ Except for shortening a local menu, the manual changes only through this order:
 
 Otherwise one restaurant begins serving a different promise from the rest.
 
-## Every other instruction travels unchanged
+## Every instruction travels unchanged
 
-When a new restaurant opens, it receives the recipes, house rules, job descriptions and this book unchanged. **Instructions promise what should happen. They do not record what happened in one place.**
+When a new restaurant opens, it receives the recipes, house rules, job descriptions, the taster's checklist and this book unchanged. **Instructions promise what should happen. They do not record what happened in one place.**
 
-The single exception is the menu. It stays local and contains only chain dishes: shorter, never different.
+The menu stays local because it records which chain recipes this restaurant currently serves, and it changes no recipe.
 
 The book is installed, not transcribed. To change it, use the one door above. Never make a second version for one kitchen.
 
@@ -64,7 +64,7 @@ It is not the only place drift can appear. Two written copies of one promise may
 
 ## The taster's checklist is an instruction
 
-The taster does not judge a dish by mood or memory. **The taster follows a written checklist, so every dish faces the same questions whoever is tasting.** That checklist is an instruction too. Chapter 19 gives it in detail.
+The taster does not judge a dish by mood or memory. **The taster follows a written checklist, so every dish faces the same questions whoever is tasting.** That checklist is an instruction. It lives in this book, which is installed in every kitchen, and it travels unchanged. Chapter 19 gives it in detail.
 
 ## Never let one restaurant fix its own recipe
 
@@ -80,12 +80,12 @@ Do not do it. **A private improvement changes the promise for one restaurant and
 obeys.*
 
 1. Treat anything written that tells someone what to do before they do it as an instruction.
-2. Include the menu, the recipes, the house rules, each person's written job description and this book among the instructions.
-3. Keep every instruction except the local menu static during the work. Apply it to everybody until the owner changes it for everybody.
+2. Include the recipes, the house rules, each person's written job description, the taster's written checklist and this book among the instructions.
+3. Keep every instruction static during the work. Apply it to everybody until the owner changes it for everybody.
 4. Raise every fault or possible improvement into the log, report it upward, obtain the owner's decision and amend the manual once for everybody.
 5. Never allow a cook, head chef or restaurant to amend its own copy of any instruction that travels.
-6. Keep the menu local. Allow it to leave off chain dishes, but never to add a different dish or change one.
-7. Carry every other instruction unchanged into each new restaurant. Treat it as the promise of what should happen, never as a record of what happened in one place.
+6. Treat the menu as a local record, not an instruction. Keep it local. Let it list fewer chain dishes, but never a different dish or a changed recipe.
+7. Carry every instruction unchanged into each new restaurant. Treat it as the promise of what should happen, never as a record of what happened in one place.
 8. Install this book; never transcribe it or create a second version for one kitchen.
 9. Compare what the instructions say should happen with what the log says did happen, and identify every disagreement as drift.
 10. Require the taster to follow the written checklist given in chapter 19.
