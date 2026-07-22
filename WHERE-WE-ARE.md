@@ -61,6 +61,17 @@ missing found it** — and the second fault was found only when that question wa
 rule, because asked as an impression the same worker replied "identical in every respect", which
 was false.
 
+**The printer's chair was re-contested on 2026-07-22 and CHANGED HANDS.** Codex 5.6 Terra took
+it from Sol, on measurement across three difficulty levels. Full record in `showdown2/RESULTS.md`,
+every page, diff and scorecard published beside it. **The enterprise level was designed and never
+run** — the owner called it on three levels, so the verdict rests on three.
+
+**The one finding worth carrying into any future work here:** at medium difficulty all five
+entries covered the brief 6/6 and swept clean. **The chair turned entirely on a harder level** —
+a brief that told the printer to break a settled rule. One of five refused. Two had the written
+escape hatch in front of them and spent it on a missing chapter number. **A test that only asks
+whether a worker can follow a good brief cannot staff a kitchen.**
+
 **The step is the open holes that a bound chapter still rests on**, in `KNOWN-HOLES.md`. The
 largest needs the owner:
 

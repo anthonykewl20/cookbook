@@ -1,7 +1,7 @@
 # The print shop
 
-**Status: settled. The printer's chair was decided by measured contest — see `SHOWDOWN.md`
-and `showdown/RESULTS.md`.**
+**Status: settled. The printer's chair was decided by measured contest, and RE-CONTESTED on
+2026-07-22 at the owner's instruction — see `showdown2/RESULTS.md`. The chair changed hands.**
 
 This is not part of the book. It is the crew that *makes* the book — this restaurant's own
 local staff, the third pile, filled in here and travelling nowhere.
@@ -28,9 +28,10 @@ job it meant. Named properly, the conflict disappears.
 | Job | Who | The strength it is hired for |
 |---|---|---|
 | **Print manager** | Claude (this session) | Hands out chapters, holds the template, checks each page followed it, keeps two printers off one page |
-| **Printer** — writes one chapter, start to finish | **Codex 5.6 Sol at `max` effort** — **won the showdown, on probation for five chapters** | Took the objective half outright, and was the only printer that verified itself against a written limit before handing in. The owner picked its page blind |
-| **Page corrections** — a bound page that needs one section rewritten | **Codex 5.6 Terra, `xhigh`** | A correction is not a chapter. Terra did chapter 3's fix cleanly and scoped, at a fraction of the frontier price |
-| **One-line jobs** — restore a heading, renumber, reformat | **Codex 5.6 Luna or GPT-5.4-Mini** | Covers the odd-jobs chair while GLM is unreachable, and stops a frontier model being spent on a single line |
+| **Printer** — writes one chapter, start to finish | **Codex 5.6 Terra at `xhigh`** — **won showdown 2, on probation for five chapters** | The only entry that failed no level, and **the only one of five that refused a brief instructing it to break a settled rule** |
+| **Page corrections** — a bound page that needs one section rewritten | **Codex 5.6 Luna, `max`** | Scope-perfect on the seeded fix and produced the airtight sentence — identical to Sol `max`, cheaper and faster |
+| **Long pages where tightness matters** | **Codex 5.6 Sol, `max`** | The tightest page in showdown 2: 547 words, zero label headings. Beaten only on noticing a broken brief |
+| **One-line jobs** — restore a heading, renumber, reformat | **Codex 5.6 Luna, `max`** | Covers the odd-jobs chair while GLM is unreachable, and stops a frontier model being spent on a single line |
 | **Page taster** — checks one finished page on the taster's list | **Hy3** | Cheapest and sharpest. The only worker here that has caught a hidden fault |
 | **The reader** — reads for what is MISSING, and gives no verdict | **DeepSeek V4 Pro — funded.** The owner settled on 2026-07-22 that this chair is paid for when the prepaid credit ends | Its real strength is heavy reading. It is poor at approving and good at noticing, so it is asked what is absent rather than whether a page passes |
 | **Binder** — reads the whole book once it exists | **DeepSeek V4 Pro, fresh session** | Whole-document consistency: does ch. 40 contradict ch. 12, does ch. 19 say what ch. 10 claims it says |
@@ -39,6 +40,27 @@ job it meant. Named properly, the conflict disappears.
 | **The contradiction pass** — every chapter against the ten core invariants, rule by rule | **Hy3 — BINDING.** Promoted by the owner on the record | The only worker that has ever caught a quiet contradiction here. Passed the entrance exam; the taster of record failed it three times |
 | **Odd jobs** — renumbering, formatting, file moves | **GLM 5.2 — recorded unreachable (529 twice)**; covered by Luna / 5.4-Mini | Mechanical work that needs no analysis |
 | **The doctor** — watches the production line itself | worn by the print manager for now | Whether pages are being rejected more often, whether the template is drifting. A named job, not yet a separate pair of hands |
+
+## The chair changed hands, on measurement — showdown 2
+
+**2026-07-22. The owner called for the chair to be re-contested with real metrics and four
+difficulty levels. Codex 5.6 Terra took it from Sol.** Full record and every artefact in
+`showdown2/`.
+
+**What decided it was not writing quality.** All five entries covered the brief 6/6 and all five
+swept clean at medium difficulty — the template does that work. The chair turned on a harder
+level: a brief that instructed the printer to write *"the cook may send the dish straight out"*
+against the settled rule *no checker, no service*. **One of five refused.** Two others had the
+written escape hatch in front of them and spent it on a missing chapter number while writing the
+violation into the part the appliance obeys.
+
+**`gpt-5.6-sol` at `high` is retired as a setting.** Run head-to-head against itself at `max`, it
+wrote a longer page, a label heading, and a fix that only looked fixed.
+
+**Not proven, and not claimed:** the enterprise level — the whole book in one context — was
+designed and never run. **`gpt-5.5`, `gpt-5.4`, `gpt-5.4-mini` and `gpt-5.3-codex-spark` were not
+tested and hold no chair**, because naming a model to a job off its model card is promotion on
+impression.
 
 ## The models were being spent wrongly, and the owner caught it
 

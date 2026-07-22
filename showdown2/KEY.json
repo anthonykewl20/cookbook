@@ -1,0 +1,12 @@
+{
+  "printer-a": "Codex 5.6 Terra (xhigh effort)",
+  "printer-b": "DeepSeek V4 Pro (via ocask)",
+  "printer-c": "Codex 5.6 Sol (max effort)",
+  "printer-d": "Codex 5.6 Luna (max effort)",
+  "printer-e": "Codex 5.6 Sol (high effort) — CONTROL, the setting the shop has been using",
+  "note": "Written before any page existed. The judge never receives this file.",
+  "excluded": {
+    "Hy3": "competed in showdown 1 and came last at printing (79/100); it holds the taster, prep and contradiction chairs on measured strength. Recorded, not re-run.",
+    "GLM 5.2": "recorded unreachable — returned 529 twice on the chef-to-cook pass."
+  }
+}
