@@ -957,3 +957,37 @@ Both are written up in `KNOWN-HOLES.md` rather than fixed in passing.
 Printer: **Codex 5.6 Sol, high effort**, one chapter each, start to finish, and the fix.
 Taster and contradiction sweep: **Hy3**. Reader: **DeepSeek V4 Pro**. The manager wrote no
 page — only the records, the ladder row and the invariant.
+
+---
+
+# The cook's taste note stands — 2026-07-22
+
+The owner decided question 2. **It stands exactly as written, and not one page changed.**
+
+Chapter 12 already carries it with its reason — *"The chef may record how the dish tasted,
+because a note is evidence, not a verdict"* — and chapter 18 gives it a section of its own.
+The four bound chapters resting on it were resting on solid ground. Checked before the
+decision was recorded rather than after.
+
+Put to three seats, one briefed to refute it. Upheld 3–0 at confidence 4, 5 and 5, and the
+refuter abandoned the case rather than dent it. **A cook who writes "this came out bitter"
+has told the truth about what happened. A cook who writes "this is fine to serve" has given
+a verdict, and that is banned.** The stamp records the first and never the second, so the
+note decides nothing.
+
+## What did change is the ruler
+
+Invariant 5 was absolute — *"Nobody ever checks their own work"* — with no room in it for a
+maker recording what happened. **That is the exact shape that made rules 4 and 8 flag correct
+text twice**, after the owner settled the menu exception and nobody told the invariants.
+
+So the carve-out went inside invariant 5, beside the rule it qualifies, matching how
+invariant 4 already carries its own settled exception. A twelfth rule was considered and
+rejected: the gate this book uses for adding anything to a floor is *name the promise that
+breaks without it*, and nothing breaks that invariant 5 cannot hold.
+
+**Then it was measured rather than assumed.** The sweep was re-run against chapters 12, 18
+and 19 — the three pages the amended rule exists to permit. All three clean. A ruler that has
+been the fault three times does not get changed and left unmeasured.
+
+Records only. No printer was needed and none was used.

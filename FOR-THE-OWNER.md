@@ -27,7 +27,24 @@ roster is asking it.
 
 ## 2. The cook writes down how the dish tasted. Does that stand?
 
-**Recommendation: yes, it stands as written — the note is evidence, never approval.**
+## ✅ DECIDED, 2026-07-22 — it stands, exactly as written
+
+**No page changes.** Chapter 12 already carries it with its reason, and chapter 18 gives it
+a section of its own. That is what "it stands" means: the four bound chapters resting on it
+were resting on solid ground.
+
+What did change is the ruler. Invariant 5 said only *"Nobody ever checks their own work"*,
+with no room in it for a maker writing down what happened. **The invariants have been the
+fault three times already, twice by flagging correct text after the owner settled an
+exception they had not been told about.** So the carve-out now sits inside invariant 5,
+beside the rule it qualifies — a maker may record a factual note, because a note is evidence
+and never a verdict.
+
+Tested rather than assumed: the contradiction sweep was re-run against chapters 12, 18 and
+19 with the amended rule, to check it does not now flag the very pages it was written to
+permit.
+
+**Recommendation as given, upheld: yes, it stands as written — the note is evidence, never approval.**
 
 This has been sitting open as needing your call, because the seven stamps came from your own
 design and the kitchen should not quietly edit your work. It is now load-bearing: chapters
