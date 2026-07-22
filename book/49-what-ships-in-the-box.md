@@ -65,6 +65,17 @@ whether or not anyone has read the book.
 A reminder may sound cheaper than a bench, safe, check or doorman. It cannot do their work.
 Keep every shipped tool working. **Never replace a tool with words.**
 
+## The appliance is one owner's worked example
+
+In one owner's picture, the appliance is a laptop or desktop computer with Claude Code
+open. The computer is the machine on the desk. Claude Code is a program that runs on the
+computer and lets the cooks work from the book.
+
+This is a worked example only, not the law or a requirement. Another owner may use a different
+machine and a different program; none is more correct.
+
+For a comparable setup, ask someone you trust who already uses computers to set it up with you.
+
 ---
 
 ## The rules, flat
@@ -92,3 +103,5 @@ obeys.*
    the operations log; never merge the photograph with the diary.
 10. Keep every shipped tool working whether or not anybody reads or remembers the book.
     Never replace a tool with words.
+11. Treat the laptop or desktop computer with Claude Code open as a worked example only.
+    Other machines and other programs are equally correct.
