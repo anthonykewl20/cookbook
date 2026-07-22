@@ -4,7 +4,7 @@
 
 ## Instructions speak before the work begins
 
-**An instruction is anything written that tells someone what to do, before they do it.** It tells the next stranger what the restaurant expects without relying on anybody who worked yesterday.
+**An instruction is anything written that tells someone what to do, before they do it.** It tells the next stranger what the restaurant expects without relying on yesterday's worker.
 
 The instructions include:
 
@@ -14,21 +14,21 @@ The instructions include:
 - the taster's written checklist; and
 - this book installed in the kitchen.
 
-The recipe says how a dish is made, the house rules how the place is run, and the taster's checklist how a dish is checked. A job description sets its holder's work. This book sets every restaurant's work.
+The recipe says how a dish is made, house rules how the place is run, and the taster's checklist how a dish is checked. A job description sets its holder's work; this book sets every restaurant's work.
 
-**The menu is not an instruction.** It is a local record of which recipes this restaurant currently serves. Each restaurant keeps its own. It may list fewer chain dishes, but never a different dish or a changed recipe.
+**The menu is not an instruction.** It is each restaurant's local record of recipes currently served. It may list fewer chain dishes, but never a different dish or changed recipe.
 
 Every instruction crosses to a new restaurant unchanged.
 
 ## The manual is the one thing that holds still
 
-Taken together, the instructions are the manual. **The manual is static: it does not change during the work or because a cook prefers another way.**
+Together, the instructions are the manual. **The manual is static: it does not change during the work or because a cook prefers another way.**
 
-Your cooks are never the same twice, and none remembers yesterday. Filling gaps from memory or preference turns the result into a telephone game.
+Cooks are never the same twice; none remembers yesterday. Filling gaps from memory or preference turns the result into a telephone game.
 
 If the people vary and the result must not, then the manual is the only thing allowed to hold still.
 
-Static does not mean that a bad instruction stays forever. It means every instruction applies to everybody until the owner changes it for everybody.
+Static does not keep a bad instruction forever. Every instruction applies to everybody until the owner changes it for everybody.
 
 ## Every change passes through one door
 
@@ -40,39 +40,39 @@ The manual changes only through this order:
 4. The owner decides.
 5. The manual is amended once, for everybody.
 
-**The door opens from below, but only the owner amends the manual.** Any cook may raise a fault. No cook, head chef or restaurant may repair its own copy of a recipe, even when the repair seems obvious.
+**The door opens from below, but only the owner amends the manual.** Any cook may raise a fault. No cook, head chef or restaurant may repair its recipe copy, even when the repair seems obvious.
 
-Otherwise one restaurant begins serving a different promise from the rest.
+Otherwise one restaurant serves a different promise from the rest.
 
 ## Every instruction travels unchanged
 
-When a new restaurant opens, it receives the recipes, house rules, job descriptions, the taster's checklist and this book unchanged. **Instructions promise what should happen. They do not record what happened in one place.**
+A new restaurant receives the recipes, house rules, job descriptions, the taster's checklist and this book unchanged. **Instructions promise what should happen. They do not record what happened in one place.**
 
-The menu stays local because it records which chain recipes this restaurant currently serves, and it changes no recipe.
+The menu stays local: it records this restaurant's current chain recipes and changes none.
 
-The book is installed, not transcribed. To change it, use the one door above. Never make a second version for one kitchen.
+The book is installed, not transcribed. Change it only through the door above; never make a second version for one kitchen.
 
 ## Instructions and the log reveal drift together
 
-**Instructions say what should happen. The log says what did.** This comparison is the pair the whole book turns on.
+**Instructions say what should happen. The log says what did.** The whole book turns on this comparison.
 
-When the two disagree, that is drift. It is the sharpest place drift can be seen, and the one this book is built around.
+When the two disagree, that is drift. It is the sharpest place to see drift, and the one this book is built around.
 
-Without the instructions, there is no promise to compare against. Without the log, there is no account of what the kitchen did.
+Without instructions, there is no promise to compare; without the log, no account of what the kitchen did.
 
-It is not the only place drift can appear. Two written copies of one promise may drift apart. So may what was said and what was written down.
+It is not the only place drift can appear. Two written copies of one promise may drift apart, as may what was said and written down.
 
 ## The taster's checklist is an instruction
 
-The taster does not judge a dish by mood or memory. **The taster follows a written checklist, so every dish faces the same questions whoever is tasting.** That checklist is an instruction. It lives in this book, which is installed in every kitchen, and it travels unchanged. Chapter 19 gives it in detail.
+The taster does not judge a dish by mood or memory. **The written checklist gives every dish the same questions, whoever is tasting.** This instruction lives in the book installed in every kitchen and travels unchanged. Chapter 19 gives it in detail.
 
 ## A job description also states how heavy the thinking is
 
-**Some dishes are almost all reasoning; most mostly follow the recipe.** State which, and match it to a hand of the same strength — the strongest hand for the heaviest reasoning, a cheaper one for light work. **This split is one kitchen's judgement from one service, not a measurement, and a proper one is still owed.**
+**Some dishes are almost all reasoning; most follow the recipe.** State which, then match the hand's strength to the reasoning: strongest for the heaviest, cheaper for light work. **This split is one kitchen's judgement from one service, not a measurement; a proper one is still owed.**
 
 ## Never let one restaurant fix its own recipe
 
-The tempting mistake is to correct a recipe where the fault was found. The correction may even improve that night's dish.
+The tempting mistake is correcting a recipe where the fault was found, even if it improves that night's dish.
 
 Do not do it. **A private improvement changes the promise for one restaurant and hides the disagreement from the owner.** Raise the fault from below, then let the owner amend the manual once for everybody.
 

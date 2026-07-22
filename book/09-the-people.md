@@ -4,9 +4,9 @@
 
 ## A role survives a change of staff
 
-The people category contains anyone who works here. **Name the role, never the person.** A name leaves with its owner. A role tells the next stranger which part of the restaurant is theirs.
+The people category covers everyone who works here. **Name the role, never the person.** A name leaves with its owner; a role tells the next stranger which part is theirs.
 
-The book ships a default set of roles, not a blank form. A kitchen renames them, but does not start from nothing. Renaming keeps local words natural. Keeping the full set preserves the promises behind them.
+The book ships a default set of roles, not a blank form. A kitchen renames them, but does not start from nothing. Renaming keeps local words natural; keeping the full set preserves the promises behind them.
 
 ## The starting roster gives every kind of work an owner
 
@@ -23,15 +23,15 @@ Each role may touch its own work and must stop at its boundary.
 | Doctor | Checks the health of the people and the building | Treating what it finds |
 | Dishwasher | Clears up after service and puts back what it washed where it belongs | The order, the cooking or a checking verdict |
 
-The prep cook is a growth role. **The work is written into the recipe from day one, but the cook does it themselves until volume forces the split.** The work exists before a separate person fills the role.
+The prep cook is a growth role. **The work is written into the recipe from day one, but the cook does it themselves until volume forces the split.** The work exists before a separate person fills it.
 
 ## A role must be stated, never assumed
 
-**An unstated role defaults to in charge, invisible from outside, since it spends the same attention either way.** State the role in the job description before the shift starts.
+**An unstated role defaults to in charge, invisible from outside, yet spends the same attention.** State the role in its job description before the shift.
 
 ## Seven jobs require three separate pairs of hands
 
-The seven base roles are present from day one: head chef, cook, taster, doctor, waiter, cashier and dishwasher. This is a floor of jobs, not seven hires. One person may hold compatible roles.
+The seven base roles are present from day one: head chef, cook, taster, doctor, waiter, cashier and dishwasher. This floor is jobs, not seven hires; one person may hold compatible roles.
 
 Three separations cannot bend. **The maker never approves. The diagnoser never treats. The person being judged never judges themselves.** They require three pairs of hands: one makes, one checks, and one watches whether both the people and the building remain fit. Waiter, cashier and dishwasher may be held by those people only where none of these separations is broken.
 
@@ -45,13 +45,13 @@ Nobody ever checks their own work. This is not a luxury bought later. The taster
 | Taster | “Is the quality right?” | The result |
 | Doctor | “Is everything still fit?” | The means: the people and the building |
 
-**These checks do not overlap.** The head chef does not replace the taster. The taster does not judge the method. The doctor diagnoses and prescribes, but never treats. Never let the person who made a dish give the checking verdict on that dish.
+**These checks do not overlap:** the head chef does not replace the taster, and the taster does not judge the method. The doctor diagnoses and prescribes, but never treats. Never let the person who made a dish give the checking verdict on that dish.
 
 ## Sickness removes service before it removes a check
 
-When someone is off sick, another person may cover the role only if every separation still holds. Otherwise the role remains empty. **No checker, no service.** The kitchen closes until the check can be made again, because an unchecked dish makes the promise of the same dish every time void. The stoppage is logged.
+When someone is sick, another person may cover the role only if every separation holds; otherwise the role remains empty. **No checker, no service.** The kitchen closes until the check can be made again, because an unchecked dish makes the promise of the same dish every time void. Log the stoppage.
 
-Hiring cannot solve this by quiet agreement. Hiring is an owner-level decision. A worker never hires a worker, including temporary cover.
+Quiet agreement cannot solve this: hiring is an owner-level decision. A worker never hires a worker, including temporary cover.
 
 The chain of responsibility stops at the owner. It does not create another checker forever. An area manager appears later, when the chain needs one; that does not change where responsibility ends.
 
