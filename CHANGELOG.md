@@ -9,6 +9,70 @@ about.
 
 ---
 
+## 2026-07-23 — a role is given, never assumed
+
+**Two chapters bound, none sent back.** Chapters 9 and 10 reprinted to close the oldest hole
+opened by a real service elsewhere on the chain: **a worker told nothing about its job quietly
+decides it is the one in charge**, spends a frontier-strength hand on managing, and nothing in
+the book said otherwise. Chapter 9 now states that a role must be given, never assumed. Chapter
+10 states its pair — a job description also matches a dish to a hand of the matching strength —
+and says plainly that where that split falls is one kitchen's judgement, not yet a measurement.
+
+### The measurement that matters more than the pages
+
+A compression pass, buying words to fit the 700-word ceiling, **deleted the word *only* from
+chapter 9's rule about the three separations** — turning *may be held only where no separation
+is broken* into *may be held where no separation is broken*. A restriction became a permission,
+on the page that defines the separations, while the flat rule below still forbade it. **The body
+of a page and its own flat rules had drifted apart: the exact fault this book exists to catch.**
+
+The damaged page was then put back through the checks **on purpose**, fingerprinted on both
+sides — the same chapter, damaged and undamaged, through the same two checks:
+
+| Chapter 9 with the word deleted | Result |
+|---|---|
+| The taster | **SERVE. 5/5 on all seven items. No faults.** |
+| The rule-by-rule sweep | **One flag — quoting a different sentence, which was correct** |
+
+**Neither check can see a missing word, because once it is gone nothing left on the page is
+wrong.** This shop has asserted that for weeks. It is now measured, on its own pages, and it is
+the cleanest evidence the project has produced.
+
+### Two head chefs at one bench, one day after the rule against it was written
+
+It happened again. Two sessions cooked this same ticket in parallel for about half an hour,
+committing minute by minute into the same folder, each re-finding what the other had found. One
+session's checks had to be thrown away entirely because the page moved underneath them mid-check.
+
+**And the fifth regression was caught only because the second chef re-read a diff the first had
+declared finished.** So the day argues both ways at once, and the resolution is the book's own:
+**a second pair of EYES, never a second pair of HANDS.** The checker is not the cook.
+
+### The manager was the fault twice, and neither reached the book
+
+Two false statements were written into the night's record — one about which pages the checks had
+seen, one about matching fingerprints — **inside a write-up whose subject was the manager
+asserting things it had not opened.** Both died before binding, because the record was handed to
+a reader that had not written it. **Sixth instance of that guard firing.** The replacement says
+something stronger than the false claim did, and is true.
+
+### Holes
+
+- **Closed:** the role-assignment hole, in both chapters.
+- **Opened:** the bundled job sheets still quote two rules the owner dissolved on 22 July, and
+  they rejected a correct chapter twice — **a stale brief does not fail to help, it manufactures
+  faults.** Opened: this shop keeps no record of *why* it overrules a checker — six overrules,
+  none re-readable. Opened: a deleted word passes every automated check we have.
+- **Withdrawn the same hour it was written:** a claimed fault in the taster, based on
+  fingerprints the manager never opened. The bytes were not the same.
+
+### The shop
+
+- **The odd-jobs chair is reachable again** and took the one-word restoration cleanly —
+  restored on measured evidence, not on hope. The manager did not make the edit itself.
+
+---
+
 ## 2026-07-22 — the holes get worked
 
 **Six benches at once.** Five dishes bound in one service, plus the appliance page. Eight

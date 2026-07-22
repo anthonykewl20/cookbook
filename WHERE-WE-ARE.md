@@ -53,10 +53,18 @@ central finding, and it came out of that job:
 2. **`press/taste.py` judges chapters 0 and 1 against themselves** — it feeds them in as the
    voice standard. Every tasting ever recorded for those two is worthless. Nothing else on the
    board invalidates evidence already written down.
-3. The smaller ones: a fourth copy of the brief's field names in `prep.py`, chapter 44 repeating
-   its own rule in eight lines, `press/briefs-*.json` still saying *chef*.
-4. **Needing the owner: what the operations log physically IS.** The book tells a reader to write
-   in it on nearly every service page and never says what they are writing on.
+3. **`press/briefs-*.json` still quote two rules the owner dissolved on 2026-07-22** — the menu
+   as an instruction, and drift being visible in *"the only place"*. **Measured on 2026-07-23:
+   a taster given one of these briefs rejected a correct chapter twice**, quoting two sentences
+   that are byte-identical to the bound page. **This one is worse than it looks, because it does
+   not merely fail to help — it manufactures faults, and a false fault buys a reprint of a page
+   that was already right.** It will bite the next job that uses a brief. Fix it before printing.
+4. The smaller ones: a fourth copy of the brief's field names in `prep.py`, chapter 44 repeating
+   its own rule in eight lines, `press/briefs-*.json` also still saying *chef*, and the shop
+   keeping no record of *why* it overrules a checker — six overrules, none re-readable.
+5. **Needing the owner: what the operations log physically IS.** The book tells a reader to write
+   in it on nearly every service page and never says what they are writing on. **This is the only
+   thing on this list the owner has to answer, and it is waiting.**
 
 **Not this step:** printing more — nothing in the running order is unprinted. Not this step:
 reopening the running order; it was reopened twice on 2026-07-22, each time on a ruling, and is
