@@ -33,16 +33,33 @@ the ruling and the reasoning kept rather than deleted. The reader is funded, the
 stands, the head chef keeps the method verdict at one cook and at fifty, and the role is
 called "cook" everywhere.
 
-**The step is the whole-book read.** It is the only job left and nothing has done it. Every
-check so far has judged one page or one batch — nothing has read fifty-one chapters end to end
-looking for chapter 19 disagreeing with chapter 40. **That is the binder's job, it is on the
-roster, and it has never been given.**
+**The whole-book read is DONE — 2026-07-22.** Fifty-one chapters read as one document, five
+times, each pass carrying one narrow question, and every pass run on two workers independently.
+Full record in `PRESS-LOG.md`.
 
-**Not this step:** printing more. There is nothing left in the running order to print.
+**Three of the five lenses came back completely empty from both workers.** The book does not
+contradict itself on its ten load-bearing rules, does not use one word two ways, and does not
+tell a reader to do opposite things. That is the result, and it is the one that took the most
+reading to earn.
 
-**After the read:** the holes in `KNOWN-HOLES.md` that a bound chapter still rests on — chiefly
-what the appliance concretely is and how a reader gets one, which the reader raised
-independently in four separate batches and which Part Seven was expected to close and did not.
+**Two findings survived, and they are the same fault in the same chapter.** Chapter 2 is where
+the book settles its vocabulary, and two other chapters lean on it for words it never settles.
+Ch. 1 sends the reader to agree **six** words; ch. 2 fixes five. Ch. 3 says *"Chapter 2 gives
+this category its settled name"* about the building, and chapter 2 never mentions the building.
+Neither fault is visible on its own page, which is why nothing caught them before.
+
+**The step is the open holes that a bound chapter still rests on**, in `KNOWN-HOLES.md`. Two
+of them now need the owner rather than a worker, and they should go up together:
+
+1. **Chapter 2's missing sixth word.** Fixing it means either giving chapter 2 a section it does
+   not have — which reopens the running order, and the running order is closed — or correcting
+   chapters 1 and 3 instead. That is a decision, not a task.
+2. **What the appliance concretely is, and how a reader gets one.** The reader raised this
+   independently in four separate batches; Part Seven was expected to close it and did not.
+
+**Not this step:** printing more. There is nothing left in the running order to print. Not this
+step: reopening the running order on our own authority — that is the decision above, and it is
+the owner's.
 
 ### Two sessions worked this repository at once, and it cost real work
 
@@ -64,6 +81,13 @@ anyone. Sending the owner anything that is not a decision.
 
 ## Steps behind us
 
+- **The whole-book read — done, 2026-07-22.** Ten whole-book passes for about thirteen pence.
+  Both surviving findings were raised by both workers independently, and every quote was checked
+  against the real chapter before it was believed. **The one thing it found that no page-level
+  check could:** chapter 2 does not merely omit the sixth word, **it uses it** — *"the people who
+  make the dishes"*, *"whether the dish is acceptable"* — taking this book's own worked-example
+  word for the one thing it never settled. No page-level check saw it,
+  because on chapter 2's own page there is nothing wrong.
 - **The overnight run — batches four to ten, chapters 17 to 50.** **Thirty-four chapters
   printed, checked four ways and bound in one night.** The book went from seventeen chapters
   to fifty-one. Parts Three, Four, Five, Six and Seven all written end to end.

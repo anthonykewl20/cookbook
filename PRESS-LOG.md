@@ -1155,3 +1155,116 @@ the same fault as three broken checks in the rename: **a confident claim about s
 nobody opened.**
 
 Every one of them was caught. None was caught by the person who made it.
+
+---
+
+# The whole-book read
+
+**2026-07-22. Fifty-one chapters read as one document for the first time.** Every page had
+already passed on its own. Nobody had ever asked whether two of them disagree.
+
+## How it was asked, and why not the obvious way
+
+The obvious way is to hand the book to the binder and ask "is it consistent?". This shop has
+already measured what that produces: **a check that returns one verdict for a whole document
+cannot find a fault that lives in one sentence.** It was tested three times and failed three
+times.
+
+So the book went in whole **five times**, each pass carrying one narrow question with only one
+place to hide:
+
+| | The only question that pass answered |
+|---|---|
+| L1 | Every pointer from one chapter to another — does the target actually say that? |
+| L2 | A rule stated flat early, quietly relaxed later |
+| L3 | One word carrying two meanings |
+| L4 | Counted sets and enumerated lists that disagree in number **or membership** |
+| L5 | Two chapters instructing a reader to do opposite things |
+
+Every finding was required to quote **both** chapters verbatim. A finding without two quotes
+was not accepted.
+
+## Two readers, not one — a manager's decision, recorded
+
+The roster names DeepSeek V4 Pro as the binder. This shop's own table records DeepSeek
+**missing a hidden contradiction three times**, and Hy3 as the only worker that has ever caught
+one. Staffing is the owner's and the roster was not touched. But running the binder's lenses on
+one worker whose recorded weakness is the binder's exact question would have been buying a
+verdict this log already knows not to trust.
+
+**So all five lenses ran on both, independently, neither seeing the other's answer.** Ten
+whole-book passes. That turns each finding into agreement or disagreement between two workers
+rather than one worker's opinion.
+
+## What came back
+
+| Lens | Hy3 | DeepSeek | Agreed? | Survived verification |
+|---|---|---|---|---|
+| L1 cross-references | 1 | 1 | **both, the same one** | **1** |
+| L2 rules relaxed | 0 | 0 | both empty | 0 |
+| L3 one word, two meanings | 0 | 0 | both empty | 0 |
+| L4 counts and lists | 2 | 1 | **both on one; Hy3 alone on the other** | **1** |
+| L5 opposite instructions | 0 | 0 | both empty | 0 |
+
+**Every quote was checked against the actual chapter file before anything was believed.** No
+finding was accepted on the model's word.
+
+**Cost: about thirteen pence for the whole run.** DeepSeek's cumulative total moved $0.44 →
+$0.49 across five whole-book passes; Hy3's five came to roughly $0.08. The whole-book read cost
+about a tenth of what the book has cost to date.
+
+## The one thing the whole-book read found that nothing else could
+
+Both surviving findings point at the same chapter, and **neither is a fault on that chapter's
+own page** — which is exactly why every page-level check run so far never saw it.
+
+**Chapter 2 is the book's vocabulary chapter, and two other chapters lean on it for words it
+never settles.**
+
+- **Chapter 1 sends the reader to agree six words. Chapter 2 fixes five.** Ch. 1 lists
+  *"6. One unit of work."* and its flat rule 4 instructs the machine to agree a word for
+  *"one unit of work"*. Ch. 2 says **five** in three separate places, carries exactly five
+  word-sections, and never settles that one. *(Already on the open list — but see below.)*
+- **NEW: chapter 3 claims chapter 2 named the building. It did not.**
+  `book/03-the-building.md:5` heads its opening section *"Chapter 2 gives this category its
+  settled name"* and line 7 opens *"Chapter 2 settled the words before anything was sorted. One
+  of those words now needs a firm edge."* **The word "building" appears nowhere in chapter 2,
+  or in chapter 1.**
+
+### The sharpening that matters, and that no worker reported
+
+Chapter 2 does not merely omit the sixth word. **It uses it.** Line 23 reads *"the people who
+make **the dishes**"* and line 31 *"whether **the dish** is acceptable."*
+
+The chapter whose entire job is stopping words from drifting **uses this book's own
+worked-example word for the one thing it never agreed** — the word chapter 1 spends its whole
+length insisting must be settled locally and never taken from this book. A reader who followed
+chapter 1 and chose *job*, *ticket* or *piece* finds chapter 2 talking about dishes.
+
+**This is the book committing, on page two, the exact fault it exists to prevent.**
+
+## What the run says about the workers
+
+- **They agreed on both real findings and disagreed only on the false one.** Hy3 raised one
+  extra L4 finding — chapter 1 naming five pictures against chapter 50's ten — and it was
+  discarded: chapter 1 never claims its list is complete, and chapter 50 holds the binding
+  "use only" list. That is this shop's known false-positive shape in new clothes, and it ran in
+  the safe direction again.
+- **DeepSeek wrapped prose around its JSON in three of five passes**, once burying the JSON in
+  a fenced block. This is the third time a DeepSeek answer's *shape* has cost this shop
+  something — the first time it made a tally miss a rejection and nearly cost a worker its job.
+  Any script parsing this worker must not assume it answers in the format it was told to.
+- **Three of the four assistants signalled idle without delivering a report**, repeatedly, while
+  their own background jobs were still running. The manager took their verification over rather
+  than keep re-prompting. Recorded as a fault of the run, not of the workers: **a job handed out
+  is not a job done, and the manager had no way to tell the difference except by looking.**
+
+## The honest summary
+
+**Three of the five lenses came back completely empty from both workers.** The book does not
+contradict itself on its ten load-bearing rules, does not use a word two ways, and does not
+tell a reader to do opposite things. **That is a real result and it is the one that took the
+most reading to earn.**
+
+The two findings that survived are both the same fault, in the same chapter, and it is the
+chapter the whole book's vocabulary rests on.
