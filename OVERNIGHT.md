@@ -28,7 +28,7 @@ task, and never a question you could have answered by reading.**
 
 **Already fixed and bound before the night began.** It said "this book on the shelf"; chapter 0
 settles the opposite in its opening paragraph. It now reads "this book installed in the
-kitchen", it was tasted SERVE with no faults, and it swept clean on all ten invariants. **Do
+kitchen", it was tasted SERVE with no faults, and it swept clean on all ten invariants (there are now eleven). **Do
 not send it back again.**
 
 Keep it as a worked example of two rules you will need tonight: a page can inherit a fault from

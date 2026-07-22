@@ -25,7 +25,7 @@ Read this first, every session. Name the step in your first line, every reply.
 ## The step we are on
 
 **The running order is printed. All fifty-one chapters are bound.** Every one has passed the
-head chef's mechanical list, a taster, and a rule-by-rule sweep against the ten invariants,
+head chef's mechanical list, a taster, and a rule-by-rule sweep against the eleven invariants,
 and every batch was read for what it left out.
 
 **All four decisions are settled** — see `FOR-THE-OWNER.md`, where each is marked DECIDED with
@@ -72,19 +72,43 @@ a brief that told the printer to break a settled rule. One of five refused. Two 
 escape hatch in front of them and spent it on a missing chapter number. **A test that only asks
 whether a worker can follow a good brief cannot staff a kitchen.**
 
-**The step is the open holes that a bound chapter still rests on**, in `KNOWN-HOLES.md`. The
-largest needs the owner:
+**Five dishes bound on 2026-07-22, working six benches in parallel.** Eight holes closed, seven
+opened. Full record in `PRESS-LOG.md`, and read it before printing anything else — the *how* is
+worth more than the *what*.
 
-1. **What the appliance concretely is, and how a reader gets one.** The reader raised this
-   independently in four separate batches; Part Seven was expected to close it and did not.
-   Chapter 2 settles the *word*. Nothing settles the *thing*.
-2. **Two new process holes from the chapter 2 run**, both about how work is handed out rather
-   than how it is written: a printer bound its own page before its checks returned, and the
-   manager sent a checker a comparison with one side missing.
+| Bound | |
+|---|---|
+| The running order stops claiming instructions-vs-log is the only place drift shows | |
+| Chapter 29 says what coordinating actually is | partial — see the hole |
+| Eight parts' governing rules reach the reader, in the chapter that opens each | |
+| **The menu becomes a record, not an instruction** — 12 chapters, 3 invariants | the book's oldest live contradiction |
+| The shop's own tools stop drifting from the book they produce | |
+
+**The two findings that matter more than the dishes:**
+
+1. **The taster returned SERVE 5/5 on every page checked, and caught none of the five faults
+   found that night.** Every one was found by a checker looking for something specific, or by the
+   manager reading a diff and re-doing arithmetic. A verdict confirms that what is on the page is
+   correct; it cannot see what was deleted, skipped, or miscounted.
+2. **The taster has been judging chapters 0 and 1 against themselves** — `press/taste.py` feeds
+   those two in as the voice standard. Every tasting ever recorded for them is worthless. Found by
+   a checker nobody asked to look.
+
+**The step is the holes that are left**, in `KNOWN-HOLES.md`. In priority order:
+
+1. **`press/taste.py` judging chapters 0 and 1 against themselves.** Nothing else on the board
+   invalidates evidence already recorded.
+2. **`press/print.py` still cannot reach most of the book**, so the designated runner cannot be
+   used, so chefs keep dying after writing but before checking. Four attempts to fix it have timed
+   out. **This is the hole that causes the other holes.**
+3. The smaller ones: a fourth copy of the brief's field names, chapter 44 repeating itself, the
+   two briefs files still saying *chef*.
+4. **Still needing the owner: what the operations log physically IS.** The book tells a reader to
+   write in it on nearly every service page and never says what they are writing on.
 
 **Not this step:** printing more. Nothing in the running order is unprinted. Not this step:
-reopening the running order further — it was reopened for one line, on one ruling, and it is
-closed again.
+reopening the running order — it was reopened twice today, each time on a ruling, and is closed
+again.
 
 ### Two sessions worked this repository at once, and it cost real work
 

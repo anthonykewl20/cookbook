@@ -1408,3 +1408,102 @@ being underfed.
 it was not swapped on an impression — that would be the quiet promotion this book exists to
 prevent. Chapter 3's correction was the first job under the new routing and went to Terra, which
 handled it cleanly at a fraction of the cost.
+
+---
+
+# The night the open holes were worked in parallel
+
+**2026-07-22.** Six benches at once, one chef each, plus independent checkers. Five dishes bound.
+Eight holes closed, seven opened — **and every one of the seven was found by a checker or by the
+manager reading a diff, not by a verdict.**
+
+## What bound
+
+| Dish | Chef | Sent back? |
+|---|---|---|
+| The drift overclaim in the running order | Terra `xhigh` | no |
+| Chapter 29 finally says what coordinating is | Terra `xhigh` | **once** |
+| Eight parts' governing rules reach the reader | Luna `max` | no |
+| The menu becomes a record — 12 chapters, 3 invariants | Terra `xhigh` + Sol `max` | **twice** |
+| The shop's own tools stop drifting from the book | Sol `max` | **once** |
+
+## The taster said SERVE 5/5 to everything, and caught nothing
+
+Across every page checked tonight the taster returned **SERVE, straight fives on all seven
+questions, every time.** Not one of the following was found by it:
+
+- Chapter 29 came in at 703 words against a hard 700 limit, having deleted settled sentences
+  from a bound page to make room. *Found by the manager reading the diff.*
+- The menu chef reported no other chapter needed changing. *One search found four; the job
+  eventually ran to twelve.*
+- The same chef then skipped five chapters as "already over 700 words — 941, 873, 770, 703, 927".
+  Those are whole-FILE counts. The body counts are 666, 675, 615, 550, 630. **Every one was
+  inside the limit.** *Found by the manager re-running the arithmetic.*
+- The press-tools fix removed two hand-maintained copies of one list and **introduced a third**.
+  *Found by a checker, unprompted.*
+- Chapter 44 states its governing rule twice in eight lines. *Found by a checker, unprompted.*
+
+**The pattern is now measured rather than suspected: a verdict-giving check confirms that what is
+on the page is correct. It cannot see what was removed, what was never reached, or what was
+counted wrongly.**
+
+## The taster has been judging two chapters against themselves
+
+**The single most important finding of the night, and nobody asked for it.**
+
+`press/taste.py` feeds chapters 0 and 1 into its own prompt as the voice standard. So tasting
+either of them asks the taster to compare a page **with itself**. It returns SERVE and its reason
+gives the game away: *"The page is the approved voice-standard chapter 0."*
+
+**Every tasting ever recorded for chapters 0 and 1 is worthless** — including two the manager
+reported as clean that same night, in this log, before the finding arrived. The record has been
+corrected: nine tastings were reported, seven were real.
+
+## The ruler was the fault, for the fifth and sixth time
+
+Chapter 48's sentence *"Written instructions still travel unchanged to every restaurant"* had been
+flagged as a violation **five times**. It was never wrong. `press/core-invariants.json` was.
+
+With the menu reclassified as a record, invariant 8 lost its exception and invariant 4 lost its
+carve-out. **The flag is gone and the check was not loosened by a single word.** Invariant 9 also
+gained *"Every menu removal is logged"* — something the book has always required and the ruler
+never said.
+
+Two residual flags were put to a worker that produced neither the pages nor the flags, and ruled
+NOT REAL: the book quoting its own settled rule, the checker's known failure mode, third and
+fourth instances. It also noticed, unasked, that chapter 10's *"list a changed recipe"* is now
+mildly imprecise under the new framing — recorded, not acted on, because it is cosmetic.
+
+## The interface was quietly producing unchecked work
+
+The owner asked whether the MCP was faster and more reliable than the designated runner. The
+honest answer was that nobody had measured it. **By the end of the night it was measured, and the
+answer is no.**
+
+- **Four chefs were killed at exactly 1800 seconds**, the silent idle timeout. Three had written
+  their page and had NOT run the verification they were told to run. One wrote nothing at all.
+- Both times an unchecked page reached the manager, it carried a real fault.
+- The designated runner enforces `owned_paths`; this interface does not. **That is why a printer
+  was able to commit its own page onto `main` this morning.**
+
+One mitigation worked immediately and cost nothing: briefs were rewritten to say *make the edit,
+then IMMEDIATELY run the check, then stop.* The same model on the same job that had burned 1800
+seconds and written nothing then finished, checked and reported **in under two minutes.**
+
+The structural fix — teaching `press/print.py` to cover the whole book so `codex-exec` can be used
+— was assigned and **timed out four times without producing anything.** It remains open, which
+means the shop's most-used interface is still the one that loses work.
+
+## Faults by the manager, recorded
+
+1. **A cost estimate that was wrong, on which the owner decided.** The menu ruling was
+   recommended with the words *"Chapter 10 stops listing the menu among the instructions. Nothing
+   else moves."* Twelve chapters and three invariants moved. **The ruling was right and the
+   estimate was not**, and the owner chose on the estimate.
+2. **Two counts taken from files that were still being written.** printer-d's word count in the
+   showdown, and "7 of 8 parts" on the part-rules track — the latter briefed a checker on a false
+   premise. Same family as reporting a tally without opening what it matched, which this log
+   already records twice.
+3. **Six benches assigned without checking for file overlap.** Two tracks were given
+   `press/print.py` at the same time. Caught before it bit, but by luck of noticing rather than by
+   process.
