@@ -1,6 +1,6 @@
 # 9. The people
 
-**What this chapter settles:** which roles every kitchen starts with, where each role stops, and whose hands must remain separate.
+**What this chapter settles:** which roles every kitchen starts with, where each role stops, whose hands must remain separate, and how a worker learns which role it is holding.
 
 ## A role survives a change of staff
 
@@ -24,6 +24,10 @@ Each role may touch its own work and must stop at its boundary.
 | Dishwasher | Clears up after service and puts back what it washed where it belongs | The order, the cooking or a checking verdict |
 
 The prep cook is a growth role. **The work is written into the recipe from day one, but the cook does it themselves until volume forces the split.** The work exists before a separate person fills the role.
+
+## A role must be stated, never assumed
+
+**An unstated role defaults to in charge, invisible from outside, since it spends the same attention either way.** State the role in the job description before the shift starts.
 
 ## Seven jobs require three separate pairs of hands
 
@@ -61,13 +65,14 @@ The chain of responsibility stops at the owner. It does not create another check
 2. Start with the book's default roles. Allow local renaming, but never begin from a blank form.
 3. Keep each role inside the work and boundary stated in the starting roster.
 4. Write prep work into every recipe from day one. Let the cook perform it until volume requires a separate prep cook.
-5. Keep the seven base roles present from day one: head chef, cook, taster, doctor, waiter, cashier and dishwasher.
-6. Treat the seven roles as jobs, not seven required hires. Allow compatible roles to share one person.
-7. Never let a maker approve their own work, a diagnoser treat what they find, or anyone judge themselves.
-8. Keep three separate pairs of hands: maker, checker and doctor.
-9. Ask only the role's own checking question: head chef for method, taster for result and doctor for means.
-10. Never let the person who made a dish give a checking verdict on that dish.
-11. Cover sickness only with a person whose other roles preserve every required separation.
-12. Close the kitchen whenever a required check cannot be made. Log the stoppage and resume only when the check is available again.
-13. Reserve every hiring decision for the owner. Never let a worker hire a worker.
-14. End the chain of responsibility at the owner. Introduce the area manager only at chain level.
+5. State every worker's role in its job description before the shift starts. Never let a worker infer its own role from silence.
+6. Keep the seven base roles present from day one: head chef, cook, taster, doctor, waiter, cashier and dishwasher.
+7. Treat the seven roles as jobs, not seven required hires. Allow compatible roles to share one person.
+8. Never let a maker approve their own work, a diagnoser treat what they find, or anyone judge themselves.
+9. Keep three separate pairs of hands: maker, checker and doctor.
+10. Ask only the role's own checking question: head chef for method, taster for result and doctor for means.
+11. Never let the person who made a dish give a checking verdict on that dish.
+12. Cover sickness only with a person whose other roles preserve every required separation.
+13. Close the kitchen whenever a required check cannot be made. Log the stoppage and resume only when the check is available again.
+14. Reserve every hiring decision for the owner. Never let a worker hire a worker.
+15. End the chain of responsibility at the owner. Introduce the area manager only at chain level.

@@ -1,6 +1,6 @@
 # 10. The instructions
 
-**What this chapter settles:** what counts as an instruction, what stays fixed across the chain, and how it may be changed.
+**What this chapter settles:** what counts as an instruction, what stays fixed across the chain, how it may be changed, and how a job description matches a dish to a hand strong enough for it.
 
 ## Instructions speak before the work begins
 
@@ -66,6 +66,10 @@ It is not the only place drift can appear. Two written copies of one promise may
 
 The taster does not judge a dish by mood or memory. **The taster follows a written checklist, so every dish faces the same questions whoever is tasting.** That checklist is an instruction. It lives in this book, which is installed in every kitchen, and it travels unchanged. Chapter 19 gives it in detail.
 
+## A job description also states how heavy the thinking is
+
+**Some dishes are almost all reasoning; most mostly follow the recipe.** State which, and match it to a hand of the same strength — the strongest hand for the heaviest reasoning, a cheaper one for light work. **This split is one kitchen's judgement from one service, not a measurement, and a proper one is still owed.**
+
 ## Never let one restaurant fix its own recipe
 
 The tempting mistake is to correct a recipe where the fault was found. The correction may even improve that night's dish.
@@ -89,3 +93,5 @@ obeys.*
 8. Install this book; never transcribe it or create a second version for one kitchen.
 9. Compare what the instructions say should happen with what the log says did happen, and identify every disagreement as drift.
 10. Require the taster to follow the written checklist given in chapter 19.
+11. State in every job description whether a dish needs heavy reasoning or mostly follows the recipe, and give it a hand of matching strength.
+12. Treat the split between heavy and light work as an unmeasured judgement, owed a real measurement, never a settled count.
