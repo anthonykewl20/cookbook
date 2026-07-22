@@ -46,7 +46,7 @@ This book may call that object a dish when it uses its own restaurant picture. T
 
 Use that word for one unit of work only. Never use it for a person, the appliance or a responsibility. Keeping the object separate from its maker and checker makes every handover clear.
 
-## Never send the owner unfinished work to perform
+## Never send the owner a task to perform
 
 It is tempting for the person running the place to pass difficult work upward and call that ownership. Do not. **Send the owner only a decision that only the owner can make, never a task to perform.**
 

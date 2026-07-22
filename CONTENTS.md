@@ -75,7 +75,17 @@ that already exists.
 
 1. The interview
 2. The handful of words you need before you can talk at all — the owner, the one who runs a
-   place, the ones who do the work, the one who checks it, and the machine they work on
+   place, the ones who do the work, the one who checks it, the machine they work on, and
+   **one unit of work**
+
+**The sixth word was added by the owner on 2026-07-22, and this is the only line reopened.**
+Chapter 1 has always sent the reader off to agree six words; this line gave chapter 2 five,
+and chapter 2 was written from this line. The whole-book read found the gap, and found worse:
+chapter 2 does not merely omit the sixth word, it *uses* it — talking about "the dishes" and
+"the dish" while never settling what this kitchen calls one. **The book's own example word,
+standing in for the one thing it told the reader to name themselves.** Corrected at source
+rather than patched on the page, because a page written from a wrong line will be written
+wrong again by the next stranger.
 
 # Part Two — What is in a restaurant
 
