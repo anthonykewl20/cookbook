@@ -15,17 +15,11 @@ import tempfile
 import time
 import urllib.request
 
+from brief_contract import BRIEF_FIELDS, BRIEF_LIST_FIELDS
+
 
 PRESS_WORK = os.environ.get("PRESS_WORK") or os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BRIEF_LIST_FIELDS = (
-    "must_cover",
-    "must_not_cover",
-    "must_not_contradict",
-    "known_holes",
-    "traps",
-    "hooks",
-)
 
 
 def read_repo(relative_path):
@@ -77,7 +71,7 @@ def parse_json_reply(text):
 def validate_brief(value, chapter, title):
     if not isinstance(value, dict):
         raise ValueError("brief must be a JSON object")
-    expected = {"chapter", "title", *BRIEF_LIST_FIELDS}
+    expected = set(BRIEF_FIELDS)
     if set(value) != expected:
         raise ValueError(
             f"brief fields do not match the required shape; "
@@ -155,7 +149,7 @@ chapters. You gather what goes into ONE chapter before the printer starts, so th
 spends its effort writing rather than searching.
 
 The book teaches a NON-TECHNICAL owner to run a chain of restaurants, where the restaurants
-are software projects, the chefs are AI agents and the dishes are units of work.
+are software projects, the cooks are AI agents and the dishes are units of work.
 
 Prepare the brief for **CHAPTER {chapter}: {title}** and no other chapter.
 

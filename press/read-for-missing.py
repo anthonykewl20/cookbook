@@ -90,7 +90,7 @@ you are not being asked whether these pages are good.
 Answer one question only: **what is MISSING?**
 
 The book teaches a NON-TECHNICAL owner to run a chain of restaurants, where the restaurants
-are software projects, the chefs are AI agents and the dishes are units of work. The reader
+are software projects, the cooks are AI agents and the dishes are units of work. The reader
 has never written a line of code.
 
 These {len(pages)} chapters were just printed as one batch. Read them together, against the

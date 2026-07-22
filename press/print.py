@@ -11,12 +11,10 @@ Run these two at a time, never six. Six at once came back empty and silent.
 """
 import json, os, re, subprocess, sys
 
+from brief_contract import BRIEF_FIELDS, BRIEF_LIST_FIELDS
+
 SP = os.environ.get("PRESS_WORK") or os.path.dirname(os.path.abspath(__file__))
 CB = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BRIEF_LIST_FIELDS = (
-    "must_cover", "must_not_cover", "must_not_contradict",
-    "known_holes", "traps", "hooks",
-)
 # Preserve the one established filename that intentionally abbreviates its CONTENTS title.
 FILENAME_OVERRIDES = {19: "19-checking-it.md"}
 
@@ -80,7 +78,7 @@ def load_brief(path, chapter, title):
         brief = parse_json_document(handle.read(), path)
     if not isinstance(brief, dict):
         raise ValueError(f"{path} must contain a JSON object")
-    expected = {"chapter", "title", *BRIEF_LIST_FIELDS}
+    expected = set(BRIEF_FIELDS)
     if set(brief) != expected:
         raise ValueError(
             f"{path} has the wrong fields; "
@@ -116,12 +114,17 @@ brief_path = os.path.join(SP, f"brief-{chapter}.json")
 brief_data = load_brief(brief_path, chapter, title)
 brief = json.dumps(brief_data, ensure_ascii=False, indent=2)
 
+# The invariant total is read once from the canonical JSON and counted, never hard-coded, so
+# the heading and the review-quality bar below cannot state a number the file does not match.
+invariants_source = r("press/core-invariants.json")
+invariant_count = len(json.loads(invariants_source))
+
 prompt = f"""[CONTEXT]
 Latest user request: write chapter {ch} of a book, from the brief below.
 
 You are the printer in a print shop. The shop is writing a book that teaches a
 NON-TECHNICAL owner to run a chain of restaurants — where the restaurants are software
-projects, the chefs are AI agents, and the dishes are units of work. The reader has never
+projects, the cooks are AI agents, and the dishes are units of work. The reader has never
 written a line of code and never will.
 
 Authoritative sources, in this order of authority:
@@ -159,8 +162,8 @@ It is chapter {ch}. Its first line is exactly:
 ===== VOICE STANDARD: CHAPTER 1 (passed the taster, chosen blind by the owner) =====
 {r("book/01-the-interview.md")}
 
-===== THE TEN CORE INVARIANTS — every chapter is swept against all ten, rule by rule =====
-{r("press/core-invariants.json")}
+===== THE {invariant_count} CORE INVARIANTS — every chapter is swept against all {invariant_count}, rule by rule =====
+{invariants_source}
 
 [CONSTRAINTS]
 Scope: one file, book/{fname}. Nothing else.
@@ -181,7 +184,7 @@ Hard limits, each of which a mechanical check will measure before any human read
   same rules with the reasoning removed — the shopping list printed from the recipe. A flat
   rule with nothing above it explaining it is a promise nobody argued for.
 - **Analogies come from the agreed set only**: the chain, a restaurant, its kitchen, a
-  dish, the chefs, the taster, the appliance, the recipe and the shopping list, the
+  dish, the cooks, the taster, the appliance, the recipe and the shopping list, the
   telephone game, a building with doors, a photograph and a diary. Anything from outside
   that world is a fault however good it is — and so is one of these stretched past where it
   fits, which is the commoner failure. The restaurant itself is the SETTING, not an
@@ -197,7 +200,7 @@ honest; a chapter that quietly leaves it out is a hole.
 
 Permissions: full access, but you write one file.
 Review quality bar: the page is read by a taster on seven questions and then swept against
-all ten invariants above, rule by rule, with any violating sentence quoted verbatim. Write
+all {invariant_count} invariants above, rule by rule, with any violating sentence quoted verbatim. Write
 as though that has already happened.
 
 [VALIDATION]

@@ -1,7 +1,10 @@
 import json, os, sys, time, urllib.request, glob
 SP=os.environ.get("PRESS_WORK") or os.path.dirname(os.path.abspath(__file__))
 CB=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # repo root, wherever it is
-rules=json.load(open(f"{SP}/invariants.json"))
+# The ruler is the canonical repo file, read directly so two copies of one promise
+# can never drift apart inside the checker built to catch exactly that. It is never read
+# from PRESS_WORK and callers never stage a copy.
+rules=json.load(open(f"{CB}/press/core-invariants.json"))
 a=json.load(open(os.path.expanduser('~/.local/share/opencode/auth.json')))['openrouter']
 key=a.get('key') or a.get('apiKey') or a.get('api_key')
 path=sys.argv[1]; name=os.path.basename(path)
