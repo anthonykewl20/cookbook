@@ -26,6 +26,8 @@ The log's stamp records which role and shift cooked, what they cooked and how th
 
 Many cooks create another strain because the head chef's attention runs out while holding all their work in view together. **The head chef's job gains coordinating many cooks. It does not give up the method verdict on any dish.**
 
+Coordinating means reading the open orders and routing each to a cook by the written rule before cooking starts, never watching benches or collisions.
+
 The method check is a reading job, not a watching job. The head chef reads what the instructions said should happen. The head chef then reads the log's truthful account of what the cook did and compares the two on that dish. The check never required standing over a bench and watching somebody work. Watching every cook cannot grow with the kitchen. Reading each dish's written account can.
 
 Every dish still gets two verdicts from two different heads. The head chef decides whether the method was followed. The taster decides whether the quality is right and never cooks that dish. This remains true with one cook or fifty. The doctor still checks whether the people and building are fit. **No checker, no service.**
@@ -57,7 +59,7 @@ obeys.*
 2. Add another cook only after the whole cook job is written well enough for a stranger to perform, including every prep and cooking step in order.
 3. Add each extra pair of hands as another wearer of the cook hat. Identify every cook by role and shift, never by person.
 4. Stamp what each cook did in the log. Treat a cook's taste note as evidence, never approval.
-5. Make the head chef coordinate every cook while keeping the method verdict on every dish. Compare the written instructions with the log's account of that dish.
+5. Make the head chef coordinate every cook while keeping the method verdict on every dish. Compare the written instructions with the log's account of that dish. Coordination means reading the open orders and routing each to a cook by the written rule before cooking, never by watching a bench.
 6. Keep the checks separate at every kitchen size. The head chef checks method, the taster checks quality without cooking that dish, and the doctor checks whether the people and building are fit. If any required checker is absent, do not serve. No checker, no service.
 7. Raise any missing coordination instruction as a fault. Write it into the log and report it upward. Let the owner amend the manual once for everybody; never give the owner a coordination task or repair the recipe locally.
 8. Keep cooks at the doorman's separate benches and use the log's role-and-shift stamps. Leave detailed collision rules to chapter 30.
