@@ -3,11 +3,50 @@
 Decisions only. Each one is a question with a recommendation. Nothing here asks you to read,
 check or confirm anything — that is the kitchen's job.
 
+> **All four were decided on 2026-07-22.** Two recommendations were upheld, one was upheld
+> with its urgency corrected, and **one was wrong** — question 3, where the hole reported was
+> not the hole that existed. Each is kept as originally written with the decision above it,
+> rather than edited to look right afterwards. A page that quietly corrects itself is the
+> failure this book is about.
+>
+> | | Question | Outcome |
+> |---|---|---|
+> | 1 | Pay for the reader | **Funded.** Cost measured at $0.44 for the whole book so far |
+> | 2 | The cook's taste note | **Stands as written.** No page changed; the ruler did |
+> | 3 | Who checks the method | **The head chef keeps it.** The recommendation below was wrong |
+> | 4 | *chef* or *cook* | **"Cook" everywhere.** 87 lines, 26 files, *head chef* untouched |
+
 ---
 
 ## 1. When DeepSeek's credit runs out, do we pay to keep the reader?
 
-**Recommendation: yes, pay for it.**
+## ✅ DECIDED, 2026-07-22 — yes, the reader's chair is funded
+
+Recorded in `THE-PRINT-SHOP.md`, on the roster row and in the section that used to say the
+job ends with the credit.
+
+**Two things measured rather than assumed, and both cut against how this page framed it:**
+
+- **The whole book to date has cost $0.44 of DeepSeek V4 Pro** — every use, not just the
+  reader. Fifty chapters printed, bound and checked. A reader pass over a batch is well under
+  a penny. *That is this shop's own running tally; the balance held at the provider was not
+  read, so the ~$9.57 figure in the print shop is our record, not a fresh one.*
+- **The question was posed as urgent and is not.** It asks what happens when the credit runs
+  out. The credit is barely touched.
+
+**One correction to the case made below.** A check briefed to refute this argued the
+pass-counter story was false — chapters 19 and 20 *do* use the pass counter, so the reader
+never found a real hole. It read today's book and concluded the injury never happened: the
+pass counter is in those chapters **because the reader found it missing and both pages were
+sent back and reprinted** (`PRESS-LOG.md`, and commit `10959bd`). The refutation collapses.
+
+**And the argument was made again the same day, without being asked.** Chapter 29 was
+reprinted, three checks passed it at straight fives with no faults, and the reader caught that
+the reprint had silently deleted a strain the running order assigns to that chapter. Nothing
+asking *"is this correct?"* could have found it, because everything left on the page was
+correct. **Only "what is missing?" finds a deletion.**
+
+**Recommendation as given, upheld: yes, pay for it.**
 
 It was kept on the roster on the argument that its credit was already spent, so using it cost
 nothing extra. That argument expires with the credit. Tonight it stopped being the argument

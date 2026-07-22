@@ -30,7 +30,7 @@ job it meant. Named properly, the conflict disappears.
 | **Print manager** | Claude (this session) | Hands out chapters, holds the template, checks each page followed it, keeps two printers off one page |
 | **Printer** — writes one chapter, start to finish | **Codex 5.6 Sol**, high effort — **won the showdown, on probation for five chapters** | Took the objective half outright, and was the only printer that verified itself against a written limit before handing in. The owner picked its page blind |
 | **Page taster** — checks one finished page on the taster's list | **Hy3** | Cheapest and sharpest. The only worker here that has caught a hidden fault |
-| **The reader** — reads for what is MISSING, and gives no verdict | **DeepSeek V4 Pro**, until its credits run out | Its real strength is heavy reading. It is poor at approving and good at noticing, so it is asked what is absent rather than whether a page passes |
+| **The reader** — reads for what is MISSING, and gives no verdict | **DeepSeek V4 Pro — funded.** The owner settled on 2026-07-22 that this chair is paid for when the prepaid credit ends | Its real strength is heavy reading. It is poor at approving and good at noticing, so it is asked what is absent rather than whether a page passes |
 | **Binder** — reads the whole book once it exists | **DeepSeek V4 Pro, fresh session** | Whole-document consistency: does ch. 40 contradict ch. 12, does ch. 19 say what ch. 10 claims it says |
 | **Prep cook** — gathers the ingredients for a chapter before the printer writes | **Hy3** (Tencent, via OpenRouter) | Cheap, parallel, and the output is checkable before it matters. A trial junior belongs where a mistake is caught early |
 | **Shadow taster** — tastes alongside the taster of record, verdict not binding | **Hy3** | How a junior earns promotion on evidence rather than impression |
@@ -174,8 +174,31 @@ asks whether what is present is correct. A chapter can pass every check and stil
 the thing a reader needed. **The reader answers a question no verdict can:** what did this
 page leave out, and what would confuse someone who has never done this?
 
-It gives **no verdict**. It cannot send a page back and is not asked to. When the credits are
-gone, the job goes with it unless it has proved itself worth paying for.
+It gives **no verdict**. It cannot send a page back and is not asked to. ~~When the credits are
+gone, the job goes with it unless it has proved itself worth paying for.~~
+
+**It proved it, and the owner funded the chair on 2026-07-22.** The argument that kept it here
+was that its credit was already spent, so using it cost nothing extra. That argument expires
+with the credit, and it is no longer the argument.
+
+**Every check that gives a verdict asks whether what is written is correct. Only the reader
+asks whether anything is missing.** Nothing else on this roster is asking that question, and
+across seven batches it is the only question that has ever found anything.
+
+Two measurements settled the price, rather than an estimate:
+
+- **The whole book to date has cost $0.44 of DeepSeek V4 Pro**, across every use, not just the
+  reader's. At $0.27 per million words in and $1.10 out, a reader pass over a batch is well
+  under a penny. *This is the shop's own running tally; the balance held at the provider was
+  not read, so the roughly $9.57 recorded above is this shop's figure and not a fresh one.*
+- **The question was framed as urgent and is not.** It asked what happens when the credit runs
+  out. Fifty chapters were printed, bound and checked for about a twenty-third of it.
+
+**A cheap check that finds nothing is not cheap.** The reason to pay is not the price — it is
+that on the day this was settled, three checks passed a page at straight fives and the reader
+caught that the reprint had silently deleted something the running order promised. Nothing
+asking *"is this correct?"* could have found it, because everything left on the page was
+correct. Only *"what is missing?"* finds a deletion.
 
 ## Let go
 

@@ -1098,3 +1098,60 @@ write the shop's tools, and a tool is not repaired in the middle of the job that
 Odd jobs: **GLM 5.2** — unavailable, 529 twice. Fell to **Codex 5.6 Terra**. Whole-book
 consistency: **DeepSeek V4 Pro** as binder. Taster and sweep: **Hy3**. The manager wrote no
 page and no tool — only the records.
+
+---
+
+# The reader's chair is funded — 2026-07-22
+
+The owner decided question 1, and with it all four. **The reader is paid for when the prepaid
+credit ends.** Recorded on the roster and in the section of `THE-PRINT-SHOP.md` that used to
+say the job ends with the credit.
+
+## The price was measured, not estimated
+
+**$0.44 of DeepSeek V4 Pro for the whole book to date** — every use, not only the reader.
+Fifty chapters printed, bound and checked. At $0.27 per million in and $1.10 out, a reader
+pass over a batch costs well under a penny.
+
+Stated honestly: that is this shop's own running tally. **The balance actually held at the
+provider was not read**, so the ~$9.57 recorded in the print shop remains our figure and not a
+fresh one. It is a number worth refreshing before anyone leans on it.
+
+**Which means the question was posed as urgent and is not.** It asked what happens when the
+credit runs out. The credit is barely touched.
+
+## The reason to pay is not the price
+
+**A cheap check that finds nothing is not cheap, and a check that cries all-clear is worse
+than no check.** The case for this chair is not that it is inexpensive. It is that nothing
+else on the roster asks its question.
+
+Twice on the day it was settled, without being prompted:
+
+- A seat briefed to refute the case argued the pass-counter story was false, since chapters 19
+  and 20 plainly use the pass counter. It read today's book and concluded the injury never
+  happened. **The pass counter is in those chapters because the reader found it missing and
+  both pages were sent back** — the refutation is a timing error, and it collapses on the log.
+- Chapter 29 was reprinted and passed the manager's list, the taster at straight fives, and
+  the contradiction sweep. **The reader caught that the reprint had silently deleted a strain
+  the running order assigns to that chapter.** Everything left on the page was correct, so no
+  check asking *"is this correct?"* could have seen it. Only *"what is missing?"* finds a
+  deletion.
+
+## All four decided
+
+| | Question | Outcome |
+|---|---|---|
+| 1 | Pay for the reader | **Funded** |
+| 2 | The cook's taste note | **Stands as written.** No page changed; invariant 5 did |
+| 3 | Who checks the method | **The head chef keeps it.** The recommendation to the owner was wrong |
+| 4 | *chef* or *cook* | **"Cook" everywhere.** 87 lines, 26 files, all 119 *head chef* untouched |
+
+**One of the four recommendations put to the owner was wrong, and it was the one that
+mattered most** — question 3 reported that the method verdict had been given to nobody, when
+two bound chapters already gave it to the head chef. The page was written from chapter 29
+without opening chapters 30 and 31. That is the same fault as the false hole in chapter 12 and
+the same fault as three broken checks in the rename: **a confident claim about something
+nobody opened.**
+
+Every one of them was caught. None was caught by the person who made it.
