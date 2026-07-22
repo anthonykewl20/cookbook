@@ -8,6 +8,9 @@ Every restaurant needs a written answer to a simple question: who works here? **
 gives you a blank form, not a finished answer.** Each kitchen fills in its own form because
 its staff and its way of calling them in belong to that place.
 
+This whole part is governed by one line: **blank forms, not answers.** Each kitchen fills these
+in for itself, and none of it travels.
+
 Keep the completed form in that kitchen. Do not send it to another restaurant or write its
 answers back into this book. A new restaurant receives the same blank form and supplies its
 own answers.

@@ -7,6 +7,10 @@
 This book is unusual in one way, and it matters before anything else: **the machine reads it
 too.**
 
+This part of the book is governed by one sentence: **before any of it applies, a
+reader has to open the box.** Until that is done, the rest of the book is only words on a
+page.
+
 An ordinary cookbook sits on a shelf. Somebody takes it down, reads a page, puts it back, and
 then cooks from memory. This one does not work like that. It is fitted into the kitchen
 itself — and once it is in, every cook who comes on shift is already working to it, whether

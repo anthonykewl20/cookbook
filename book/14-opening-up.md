@@ -6,7 +6,10 @@
 
 The restaurant is ready to work. **Opening up means checking that what is already there is ready for this day.** You are not deciding what belongs in the restaurant again.
 
-Every restaurant opens with the same three checks, in the same order. There are no local choices to fill in. The building, the stocktake and the roster now have a job to do.
+**This part of the book is governed by one line: standards only — no blanks, no local
+variation, nothing to fill in.** Every restaurant opens with the same three checks, in the
+same order, because opening is true everywhere or it does not belong in this part. The
+building, the stocktake and the roster now have a job to do.
 
 ## Three checks open the day
 

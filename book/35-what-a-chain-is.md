@@ -8,9 +8,9 @@ One owner with several restaurants does not yet have a chain. **A chain is one o
 
 The cooks may change. The buildings will differ. What must remain steady is the written answer to how every restaurant should work. If each restaurant can change that answer when it arrives, the owner has several separate restaurants using a familiar name.
 
-## Instructions travel and records never do
+This whole part is governed by one line: **Instructions travel. Records never do.**
 
-This is the rule that governs this part of the book: **Instructions travel. Records never do.**
+## Instructions travel and records never do
 
 The recipes, house rules, taster's checklist and job descriptions travel to every restaurant unchanged. They tell each new cook what should happen. The taster's checklist belongs here because it tells the taster how to judge a dish. That makes it an instruction, as chapter 10 settled.
 

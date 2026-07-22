@@ -10,13 +10,17 @@ waiting on the pass counter at the same time.** One of them disappears from noti
 waiter attends to another.
 
 That is the signal to grow. Work may pile up during a brief rush while every order remains in
-sight. Adding hands for every pile would make growth a guess. Attention gives you the firmer
-test: the waiter can no longer keep the whole job in view.
+sight. Adding hands for every pile would make growth a guess. **Attention is the only thing in
+a restaurant that cannot be bought in bulk** — you can always hire more hands, but never more
+of one person's attention. So attention gives you the firmer test: the waiter can no longer
+keep the whole job in view.
 
 ## The whole waiter job is already written down
 
-Nothing may be handed to a stranger until the stranger could do it from the writing. **The
-written job must come before the extra pair of hands.**
+This whole part is governed by one rule: **nothing is handed to someone else until it is
+written down well enough that a stranger could do it.** You have to know how to do a job
+before you are allowed to give it away — so the written job must come before the extra pair
+of hands.
 
 For the waiter, taking the order is already written in chapter 15. Collecting an approved dish
 from the pass counter, serving it and recording the customer's answer are already written in

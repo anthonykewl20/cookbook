@@ -4,8 +4,9 @@
 
 ## Some rules act instead of speaking
 
-Most rules in this book are words. They tell a cook what should happen, and they must be read
-and followed.
+This whole part is governed by one line: **rules that are not words, and do not depend on
+anybody reading them.** Most rules in this book are words. They tell a cook what should
+happen, and they must be read and followed.
 
 The doorman is different. **The doorman is an automatic guard, not a written instruction and
 not a role for a member of staff.** It acts whether or not anybody has read the rule it keeps.

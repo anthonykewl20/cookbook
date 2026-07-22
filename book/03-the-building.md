@@ -6,6 +6,11 @@
 
 This chapter gives the building its first definition. Chapter 2's opening interview settled what the people, the machine and the unit of work are called; the building was not one of those agreed words. It is the first category this part sorts. **The building is not every thing you can see in the restaurant. It is the part fixed to the ground.**
 
+This whole part is the inventory of everything the building contains, sorted into categories
+rather than listed item by item. It is governed by one shape: **each chapter is one category,
+and each category carries a test for what belongs in it.** The building is the first category,
+and the test for it follows.
+
 That edge matters because the cooks will not be the same next time. A category that depends on what one cook happens to call the place will drift. A test can be repeated by anyone.
 
 ## The building stays when you move premises

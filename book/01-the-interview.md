@@ -6,6 +6,10 @@
 
 Two people can use the same word and mean different things. They can also use different words for the same thing. **Until both sides mean the same thing by the same word, no promise is clear.**
 
+This part of the book is governed by one line: **language only.** The first conversation
+in a new chain settles words and nothing else — the staff, the building and the promises all
+come later.
+
 That makes words the first business of a new chain. A dish cannot be handed over if one side means the work and the other means the finished result. It cannot be checked if nobody agrees who checks it. Nothing else in this book can hold steady while its words move underneath it.
 
 ## You arrive at the words together
