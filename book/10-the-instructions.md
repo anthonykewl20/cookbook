@@ -16,7 +16,7 @@ The instructions include:
 
 The recipe says how a dish is made, house rules how the place is run, and the taster's checklist how a dish is checked. A job description sets its holder's work; this book sets every restaurant's work.
 
-**The menu is not an instruction.** It is each restaurant's local record of recipes currently served. It may list fewer chain dishes, but never a different dish or changed recipe.
+**The menu is not an instruction.** It is each restaurant's local record of recipes currently served. It may list fewer chain dishes, never a different dish or changed recipe.
 
 Every instruction crosses to a new restaurant unchanged.
 
@@ -64,7 +64,7 @@ It is not the only place drift can appear. Two written copies of one promise may
 
 ## The taster's checklist is an instruction
 
-The taster does not judge a dish by mood or memory. **The written checklist gives every dish the same questions, whoever is tasting.** This instruction lives in the book installed in every kitchen and travels unchanged. Chapter 19 gives it in detail.
+The taster does not judge by mood or memory. **The written checklist gives every dish the same questions, whoever is tasting.** This instruction lives in the book installed in every kitchen and travels unchanged. Chapter 19 gives it in detail.
 
 ## A job description also states how heavy the thinking is
 
@@ -74,7 +74,7 @@ The taster does not judge a dish by mood or memory. **The written checklist give
 
 The tempting mistake is correcting a recipe where the fault was found, even if it improves that night's dish.
 
-Do not do it. **A private improvement changes the promise for one restaurant and hides the disagreement from the owner.** Raise the fault from below, then let the owner amend the manual once for everybody.
+Do not. **A private improvement changes the promise for one restaurant and hides the disagreement from the owner.** Raise the fault from below; let the owner amend the manual once for everybody.
 
 ---
 

@@ -33,7 +33,7 @@ The prep cook is a growth role. **The work is written into the recipe from day o
 
 The seven base roles are present from day one: head chef, cook, taster, doctor, waiter, cashier and dishwasher. This floor is jobs, not seven hires; one person may hold compatible roles.
 
-Three separations cannot bend. **The maker never approves. The diagnoser never treats. The person being judged never judges themselves.** They require three pairs of hands: one makes, one checks, and one watches whether both the people and the building remain fit. Waiter, cashier and dishwasher may be held by those people only where none of these separations is broken.
+Three separations cannot bend. **The maker never approves. The diagnoser never treats. The person being judged never judges themselves.** They require three pairs of hands: one makes, one checks, and one watches whether both the people and the building remain fit. Waiter, cashier and dishwasher may be held by them only where no separation is broken.
 
 Nobody ever checks their own work. This is not a luxury bought later. The taster is load-bearing: if the cook approves their own plate, the restaurant has no check at all.
 
