@@ -28,15 +28,42 @@ job it meant. Named properly, the conflict disappears.
 | Job | Who | The strength it is hired for |
 |---|---|---|
 | **Print manager** | Claude (this session) | Hands out chapters, holds the template, checks each page followed it, keeps two printers off one page |
-| **Printer** — writes one chapter, start to finish | **Codex 5.6 Sol**, high effort — **won the showdown, on probation for five chapters** | Took the objective half outright, and was the only printer that verified itself against a written limit before handing in. The owner picked its page blind |
+| **Printer** — writes one chapter, start to finish | **Codex 5.6 Sol at `max` effort** — **won the showdown, on probation for five chapters** | Took the objective half outright, and was the only printer that verified itself against a written limit before handing in. The owner picked its page blind |
+| **Page corrections** — a bound page that needs one section rewritten | **Codex 5.6 Terra, `xhigh`** | A correction is not a chapter. Terra did chapter 3's fix cleanly and scoped, at a fraction of the frontier price |
+| **One-line jobs** — restore a heading, renumber, reformat | **Codex 5.6 Luna or GPT-5.4-Mini** | Covers the odd-jobs chair while GLM is unreachable, and stops a frontier model being spent on a single line |
 | **Page taster** — checks one finished page on the taster's list | **Hy3** | Cheapest and sharpest. The only worker here that has caught a hidden fault |
 | **The reader** — reads for what is MISSING, and gives no verdict | **DeepSeek V4 Pro — funded.** The owner settled on 2026-07-22 that this chair is paid for when the prepaid credit ends | Its real strength is heavy reading. It is poor at approving and good at noticing, so it is asked what is absent rather than whether a page passes |
 | **Binder** — reads the whole book once it exists | **DeepSeek V4 Pro, fresh session** | Whole-document consistency: does ch. 40 contradict ch. 12, does ch. 19 say what ch. 10 claims it says |
 | **Prep cook** — gathers the ingredients for a chapter before the printer writes | **Hy3** (Tencent, via OpenRouter) | Cheap, parallel, and the output is checkable before it matters. A trial junior belongs where a mistake is caught early |
 | **Shadow taster** — tastes alongside the taster of record, verdict not binding | **Hy3** | How a junior earns promotion on evidence rather than impression |
 | **The contradiction pass** — every chapter against the ten core invariants, rule by rule | **Hy3 — BINDING.** Promoted by the owner on the record | The only worker that has ever caught a quiet contradiction here. Passed the entrance exam; the taster of record failed it three times |
-| **Odd jobs** — renumbering, formatting, file moves | **GLM 5.2** | Mechanical work that needs no analysis |
+| **Odd jobs** — renumbering, formatting, file moves | **GLM 5.2 — recorded unreachable (529 twice)**; covered by Luna / 5.4-Mini | Mechanical work that needs no analysis |
 | **The doctor** — watches the production line itself | worn by the print manager for now | Whether pages are being rejected more often, whether the template is drifting. A named job, not yet a separate pair of hands |
+
+## The models were being spent wrongly, and the owner caught it
+
+**Owner direction, 2026-07-22: stop defaulting every job to one model, and use more of the
+reasoning depth available.** Both halves were right, and the evidence was in the run that
+prompted it — **a frontier model at `high` effort was spent reverting a single heading.**
+
+**Seven Codex models are available, not one.**
+
+| Model | Reasoning levels | What it is for here |
+|---|---|---|
+| **gpt-5.6-sol** | low → **max**, **ultra** | The printer's chair. Frontier |
+| **gpt-5.6-terra** | low → max, ultra | Balanced. Corrections to bound pages |
+| **gpt-5.6-luna** | low → max | Fast and cheap. One-line jobs |
+| gpt-5.5 / 5.4 / 5.4-mini / 5.3-codex-spark | low → xhigh | Older, small, ultra-fast |
+
+**Sol supports `max` and `ultra`, two levels above the `high` this shop had been using.** So the
+chair that was correctly staffed was also being underfed, which is the second half of the
+owner's point and the half that is easy to miss.
+
+**What was NOT done, deliberately.** The printer's chair was won by measured contest
+(`SHOWDOWN.md`). It was not swapped for Terra or Luna on the strength of one clean correction —
+**that is promotion on impression, which is the thing this book exists to prevent.** Terra holds
+the corrections chair, where it has evidence, and nothing more. **Re-contesting the printer's
+chair is the owner's to call**, and it should be a measured showdown, not a preference.
 
 ## The junior
 

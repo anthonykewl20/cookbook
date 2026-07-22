@@ -39,8 +39,7 @@ Full record in `PRESS-LOG.md`.
 
 **Three of the five lenses came back completely empty from both workers.** The book does not
 contradict itself on its ten load-bearing rules, does not use one word two ways, and does not
-tell a reader to do opposite things. That is the result, and it is the one that took the most
-reading to earn.
+tell a reader to do opposite things.
 
 **Two findings survived, and they are the same fault in the same chapter.** Chapter 2 is where
 the book settles its vocabulary, and two other chapters lean on it for words it never settles.
@@ -48,18 +47,33 @@ Ch. 1 sends the reader to agree **six** words; ch. 2 fixes five. Ch. 3 says *"Ch
 this category its settled name"* about the building, and chapter 2 never mentions the building.
 Neither fault is visible on its own page, which is why nothing caught them before.
 
-**The step is the open holes that a bound chapter still rests on**, in `KNOWN-HOLES.md`. Two
-of them now need the owner rather than a worker, and they should go up together:
+**Chapter 2's missing sixth word is CLOSED — 2026-07-22.** The owner ruled, the running order
+was reopened for that one line and no other, and chapter 2 was reprinted with its sixth word and
+with all five existing sections stopped from borrowing it. **Chapter 3 is closed too** — it now
+owns its own definition of the building and credits chapter 2 with nothing. Both are bound.
+Full record in `PRESS-LOG.md`.
 
-1. **Chapter 2's missing sixth word.** Fixing it means either giving chapter 2 a section it does
-   not have — which reopens the running order, and the running order is closed — or correcting
-   chapters 1 and 3 instead. That is a decision, not a task.
-2. **What the appliance concretely is, and how a reader gets one.** The reader raised this
+**Read that record before printing anything else.** The reprint was sent back twice, and neither
+fault was found by the checks that give a verdict. The mechanical check, the taster at straight
+fives, and the eleven-rule sweep all passed a page that had quietly turned *"never send the owner
+a task"* into *"never send the owner unfinished work"*. **Only the chair that asks what is
+missing found it** — and the second fault was found only when that question was re-asked rule by
+rule, because asked as an impression the same worker replied "identical in every respect", which
+was false.
+
+**The step is the open holes that a bound chapter still rests on**, in `KNOWN-HOLES.md`. The
+largest needs the owner:
+
+1. **What the appliance concretely is, and how a reader gets one.** The reader raised this
    independently in four separate batches; Part Seven was expected to close it and did not.
+   Chapter 2 settles the *word*. Nothing settles the *thing*.
+2. **Two new process holes from the chapter 2 run**, both about how work is handed out rather
+   than how it is written: a printer bound its own page before its checks returned, and the
+   manager sent a checker a comparison with one side missing.
 
-**Not this step:** printing more. There is nothing left in the running order to print. Not this
-step: reopening the running order on our own authority — that is the decision above, and it is
-the owner's.
+**Not this step:** printing more. Nothing in the running order is unprinted. Not this step:
+reopening the running order further — it was reopened for one line, on one ruling, and it is
+closed again.
 
 ### Two sessions worked this repository at once, and it cost real work
 
@@ -88,6 +102,13 @@ anyone. Sending the owner anything that is not a decision.
   word, **it uses it** — *"the people who make the dishes"*, *"whether the dish is acceptable"* —
   taking this book's own worked-example word for the one thing it never settled. No page-level
   check saw it, because on chapter 2's own page there is nothing wrong.
+- **Chapter 2 reprinted and chapter 3 corrected — done, 2026-07-22.** Both faults the whole-book
+  read found are now closed and bound. **The run's real finding was not about the page.** Three
+  checks that ask *"is what is written correct?"* passed a reprint that had weakened a
+  load-bearing rule, because everything left on the page was correct. The chair that asks *"what
+  is missing?"* caught it, for the second time here. **The owner also caught that a frontier
+  model was being spent on one-line jobs while never being run at its top reasoning levels; the
+  routing in `THE-PRINT-SHOP.md` was rewritten on that direction.**
 - **The record of that read was itself checked, and it was wrong.** The manager wrote it, so two
   checkers that did not write it were given it. One caught the manager crediting the workers with
   the manager's own catch — **a confident claim about something nobody opened, the fifth

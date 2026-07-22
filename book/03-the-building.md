@@ -2,9 +2,9 @@
 
 **What this chapter settles:** what counts as the building, so every restaurant begins with the same clear boundary around what is fixed in place.
 
-## Chapter 2 gives this category its settled name
+## This chapter gives the building its first definition
 
-Chapter 2 settled the words before anything was sorted. One of those words now needs a firm edge. **The building is not every thing you can see in the restaurant. It is the part fixed to the ground.**
+This chapter gives the building its first definition. Chapter 2's opening interview settled what the people, the machine and the unit of work are called; the building was not one of those agreed words. It is the first category this part sorts. **The building is not every thing you can see in the restaurant. It is the part fixed to the ground.**
 
 That edge matters because the cooks will not be the same next time. A category that depends on what one cook happens to call the place will drift. A test can be repeated by anyone.
 

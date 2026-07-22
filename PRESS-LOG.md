@@ -1305,3 +1305,106 @@ asked, so it is parked for the reader's chair instead of being closed by the man
 **The check that mattered was not the expensive one.** Both reviewers cost about a penny
 together. The one that found the real fault read the manager's two files against each other —
 which is the whole-book read's own method, turned on the whole-book read's own paperwork.
+
+---
+
+# Chapter 2 gains its sixth word — and chapter 3 stops crediting it
+
+**2026-07-22, the same day the whole-book read found both faults.** The owner ruled that chapter
+2 gains the sixth agreed word, and the running order was reopened for that one line and no other.
+
+## The running order was corrected at source, not the page patched
+
+Chapter 1 has always sent the reader off to agree **six** words. `CONTENTS.md` gave chapter 2
+**five**, and chapter 2 was written from that line. **A page written from a wrong line will be
+written wrong again by the next stranger**, so the line was fixed first.
+
+## The line, and what each chair found
+
+| Chair | Who | Outcome |
+|---|---|---|
+| Prep | Hy3 | Brief named the real trap: not only add the sixth word, but stop the other five sections leaning on it |
+| Printer | Codex 5.6 Sol | **Sent back twice** |
+| Mechanical check | script | Passed every time, including on both faulty versions |
+| Taster | Hy3 | **SERVE, straight fives — on the faulty version too** |
+| Contradiction sweep | Hy3 | **NONE on all eleven — on the faulty version too** |
+| Reader | DeepSeek V4 Pro | **Caught what all four missed** |
+
+## The first send-back, and why it matters more than the page
+
+The first reprint **silently weakened a load-bearing rule**:
+
+| | Old, as bound | What the printer wrote |
+|---|---|---|
+| Flat rule 3 | *"Never send the owner **a task** to perform."* | *"Never send the owner **unfinished work** to perform."* |
+| Flat rule 5 | *"...checks whether the work is **acceptable**."* | *"...judges what the workers produced."* |
+
+Core invariant 10 reads *"What goes to the owner is a decision, never a task."* **A finished task
+is still a task.** The new wording lets it through — and it sat in the flat rules, the part the
+appliance obeys.
+
+**The mechanical check passed it. The taster served it at straight fives. The eleven-rule sweep
+returned NONE on that exact rule.** Everything left on the page was correct, so nothing asking
+*"is this correct?"* could see it. **Only "what is missing?" found it. Second time here.**
+
+## The second send-back, and the lesson about how the question is shaped
+
+Rule 3 and the body were restored. **The section heading was not** — it still read *"Never send
+the owner unfinished work to perform"* above a correct rule, which is worse than either alone,
+because a heading is what a skimming reader takes away.
+
+It was found only because the deletion question was **re-asked rule by rule**. Asked as *"did
+this reprint delete anything?"*, the same worker had replied **"the two texts are identical in
+every respect"** — flatly false, since the old page had nine flat rules and the new one ten.
+
+**This is the shop's oldest lesson arriving in a new place.** An impression cannot see one
+sentence. Decomposed to *"quote the old rule, then quote where the new page keeps it or write
+GONE"*, the same worker found the heading immediately. **The wording was never the problem; the
+shape of the question was.**
+
+## One flag was raised and settled by neither party
+
+The reader called flat rules 4, 5 and 6 weakened for depending on the new sixth word. Settled
+**NOT REAL** by a worker that produced neither the page nor the flag: the sixth word is defined
+by rule 8 in the same list, an appliance obeys the set rather than one line torn from it, and
+the old wording leaned on *"a dish"* — a word the page never settled at all. **The new dependency
+is stronger than the one it replaced.** The adjudicator also caught that the reader had
+misquoted rule 6.
+
+## Chapter 3, which the ruling did not fix
+
+Adding the unit-of-work word does not make chapter 3's claim true. Its opening credited chapter 2
+with naming **the building**, which chapter 2 has never done. **Three separate workers found this
+independently, none of them told it existed** — both binder workers on the whole-book read, and
+the reader again while reading the reprint. Chapter 3 now owns its own definition. Printer:
+**Codex 5.6 Terra**. Taster SERVE 5/5, sweep NONE on all eleven.
+
+## Two process faults, both the shop's own rules broken
+
+**1. The printer bound its own page.** Codex committed the chapter 2 reprint and fast-forwarded
+it onto `main` itself, **before the taster and the sweep had returned**. That breaks two rules at
+once: *nobody binds the thing they made*, and the standing guard that *nothing is bound until
+every check launched against it has come back*. The content was fine — the checks came back clean
+afterwards — but the order was wrong, and it was wrong in the direction that has cost this shop
+before. **The instruction not to commit was added to the printer's brief only on the third
+round; it should have been there on the first.**
+
+**2. The manager sent the reader a question it had made unanswerable.** The deletion prompt said
+*"the old page is below"* and did not include the old page. The reader said so plainly instead of
+guessing, which is the chair working exactly as intended — but a wasted pass is a wasted pass,
+and it was the manager's error.
+
+## The models were being spent wrongly, and the owner caught it
+
+**Owner direction, 2026-07-22: stop defaulting every job to one model, and use more of the
+reasoning depth available.** He was right on both counts, and the evidence was in this very run:
+**a frontier model at high effort was spent reverting a single heading.**
+
+Seven Codex models are available, not one. Sol supports two reasoning levels — `max` and `ultra` —
+**above the `high` this shop has been using**, so the chair that was correctly staffed was also
+being underfed.
+
+**The new routing is in `THE-PRINT-SHOP.md`.** The printer's chair was won by measured contest, so
+it was not swapped on an impression — that would be the quiet promotion this book exists to
+prevent. Chapter 3's correction was the first job under the new routing and went to Terra, which
+handled it cleanly at a fraction of the cost.
