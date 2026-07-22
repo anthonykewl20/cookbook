@@ -46,7 +46,7 @@ with money.
 ## Stock exists before anyone decides how to use it
 
 **Stock belongs in the furnished building.** This part of the book says the ingredients
-exist there and identifies who supplies each one. It does not say how a chef uses them.
+exist there and identifies who supplies each one. It does not say how a cook uses them.
 
 Part Two says a thing exists. Part Three says how it is used. Keep that boundary here,
 because deciding use now would mix furnishing the restaurant with running it.

@@ -36,7 +36,7 @@ it is a promise nobody argued for, and it is the exact drift this book exists to
    commands may appear as evidence beside a claim — never inside the sentence doing the
    explaining.
 2. **Analogies come from the agreed set only.** The chain, the restaurant, its kitchen, a
-   dish, the chefs, the taster, the appliance, the recipe and the shopping list, the
+   dish, the cooks, the taster, the appliance, the recipe and the shopping list, the
    telephone game, a building with doors. Do not invent competing ones. Do not stretch one
    past where it fits.
 3. **Short declarative sentences.** If a sentence has three commas in it, it is two sentences.

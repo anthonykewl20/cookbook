@@ -8,7 +8,7 @@ The written order is in the kitchen, and the ingredients are ready. **Now the co
 
 At the smallest restaurant, the same cook also did the prep work in chapter 17. That work still came first and had its own written steps. Cooking begins after it and is the active making of the dish.
 
-The doorman from chapter 13 allows the cook to work only at a separate bench. **The dish is made there, never in the shared main kitchen**, because separation keeps one chef's work from being mixed with shared work before it is admitted.
+The doorman from chapter 13 allows the cook to work only at a separate bench. **The dish is made there, never in the shared main kitchen**, because separation keeps one cook's work from being mixed with shared work before it is admitted.
 
 ## The written recipe leads every step
 

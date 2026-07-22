@@ -18,7 +18,7 @@ The order book holds the whole life of every order. **Stamp it at every hand-off
 
 1. The waiter took it, and took it accurately.
 2. It reached the kitchen.
-3. It identifies the chef by role and shift, never by personal name, and says what they cooked, how they cooked it and how it tasted.
+3. It identifies the cook by role and shift, never by personal name, and says what they cooked, how they cooked it and how it tasted.
 4. It was served, with when and by whom.
 5. It says whether the customer was satisfied.
 6. The plates were collected and handed to the dishwasher.
@@ -26,17 +26,17 @@ The order book holds the whole life of every order. **Stamp it at every hand-off
 
 An order is not finished while any stamp is missing. The seven stamps are the final check that its whole journey was recorded. They do not set the rules for tasting it.
 
-The chef may record how the dish tasted, because **a note is evidence, not a verdict**. The chef may never approve their own work. Approval belongs to the taster.
+The cook may record how the dish tasted, because **a note is evidence, not a verdict**. The cook may never approve their own work. Approval belongs to the taster.
 
 ## Open orders become the kitchen’s job list
 
 The order book also keeps work moving when the kitchen has no shared job list. **The last stamp shows where each order is; the next missing stamp shows what still needs doing.**
 
-This means a stranger can arrive, read the end of the book and take the next open job without relying on a chef who has left.
+This means a stranger can arrive, read the end of the book and take the next open job without relying on a cook who has left.
 
 ## Decisions stay visible in their own book
 
-The decisions book records each decision in the order it was made. That keeps a choice from surviving only in one chef’s memory, and lets a later stranger see what the kitchen actually decided.
+The decisions book records each decision in the order it was made. That keeps a choice from surviving only in one cook’s memory, and lets a later stranger see what the kitchen actually decided.
 
 Record the decision; do not quietly turn it into a local recipe change. A decision that should alter the recipe must remain visible until the recipe itself is changed through its proper door.
 
@@ -50,7 +50,7 @@ Never make the diary agree by rewriting it, and never write what the recipe aske
 
 Logs earn their place because they **show the procedure actually followed**, **show where time is being wasted**, **show where things went wrong**, and provide the restaurant’s only **memory**.
 
-Every chef is a stranger who leaves at the end of the shift, so unwritten events leave with them.
+Every cook is a stranger who leaves at the end of the shift, so unwritten events leave with them.
 
 ## Never improve the past
 
@@ -68,8 +68,8 @@ Add what happened, then add whatever happened next.
 2. Keep an order book and a decisions book as the two parts of the operations log.
 3. Add only to the end of the log. Never erase, tidy or rewrite an earlier entry; append any correction.
 4. Keep the operations log separate from the stocktake.
-5. Stamp every order when the waiter takes it accurately; when it reaches the kitchen; when a chef identified by role and shift, never by personal name, takes and cooks it, including what they cooked, how they cooked it and how it tasted; when it is served, including when and by whom; when customer satisfaction is known; when the plates reach the dishwasher; and when the dishwasher cleans them properly and puts everything back.
-6. Treat the chef’s note about taste as evidence, never approval. Never let the chef approve their own work; leave approval to the taster.
+5. Stamp every order when the waiter takes it accurately; when it reaches the kitchen; when a cook identified by role and shift, never by personal name, takes and cooks it, including what they cooked, how they cooked it and how it tasted; when it is served, including when and by whom; when customer satisfaction is known; when the plates reach the dishwasher; and when the dishwasher cleans them properly and puts everything back.
+6. Treat the cook’s note about taste as evidence, never approval. Never let the cook approve their own work; leave approval to the taster.
 7. Leave an order open until all seven stamps are present.
 8. Use the last stamp to locate each open order and the next missing stamp as the kitchen’s next job.
 9. Record each decision in the decisions book in the order it was made. Never hide a decision in a local recipe change.

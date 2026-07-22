@@ -6,13 +6,13 @@
 
 One owner with several restaurants does not yet have a chain. **A chain is one owner, several restaurants and one promise that does not rot between them.**
 
-The chefs may change. The buildings will differ. What must remain steady is the written answer to how every restaurant should work. If each restaurant can change that answer when it arrives, the owner has several separate restaurants using a familiar name.
+The cooks may change. The buildings will differ. What must remain steady is the written answer to how every restaurant should work. If each restaurant can change that answer when it arrives, the owner has several separate restaurants using a familiar name.
 
 ## Instructions travel and records never do
 
 This is the rule that governs this part of the book: **Instructions travel. Records never do.**
 
-The recipes, house rules, taster's checklist and job descriptions travel to every restaurant unchanged. They tell each new chef what should happen. The taster's checklist belongs here because it tells the taster how to judge a dish. That makes it an instruction, as chapter 10 settled.
+The recipes, house rules, taster's checklist and job descriptions travel to every restaurant unchanged. They tell each new cook what should happen. The taster's checklist belongs here because it tells the taster how to judge a dish. That makes it an instruction, as chapter 10 settled.
 
 The book travels too, but it is installed, never copied into local notes. A copied promise can be changed in one place and not another. That is how the same words begin giving different orders.
 

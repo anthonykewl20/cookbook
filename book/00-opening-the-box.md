@@ -9,7 +9,7 @@ too.**
 
 An ordinary cookbook sits on a shelf. Somebody takes it down, reads a page, puts it back, and
 then cooks from memory. This one does not work like that. It is fitted into the kitchen
-itself — and once it is in, every chef who comes on shift is already working to it, whether
+itself — and once it is in, every cook who comes on shift is already working to it, whether
 or not any of them ever opens it.
 
 That is the whole point. Your staff are never the same twice, and a book on a shelf depends
@@ -22,7 +22,7 @@ machine.
 
 Two things, and nothing else.
 
-- **The appliance** — the machine your chefs work on.
+- **The appliance** — the machine your cooks work on.
 - **The address of the box** — `anthonykewl20/cookbook`.
 
 Nothing to pay for, no account to make, nothing to set up first.

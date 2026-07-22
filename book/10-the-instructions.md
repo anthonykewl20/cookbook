@@ -22,9 +22,9 @@ Every other instruction crosses to a new restaurant unchanged.
 
 ## The manual is the one thing that holds still
 
-Taken together, the instructions are the manual. **Apart from shortening a local menu, the manual is static: it does not change during the work or because a chef prefers another way.**
+Taken together, the instructions are the manual. **Apart from shortening a local menu, the manual is static: it does not change during the work or because a cook prefers another way.**
 
-Your chefs are never the same twice, and none remembers yesterday. Filling gaps from memory or preference turns the result into a telephone game.
+Your cooks are never the same twice, and none remembers yesterday. Filling gaps from memory or preference turns the result into a telephone game.
 
 If the people vary and the result must not, then the manual is the only thing allowed to hold still.
 
@@ -40,7 +40,7 @@ Except for shortening a local menu, the manual changes only through this order:
 4. The owner decides.
 5. The manual is amended once, for everybody.
 
-**The door opens from below, but only the owner amends the manual.** Any chef may raise a fault. No chef, head chef or restaurant may repair its own copy of a recipe, even when the repair seems obvious.
+**The door opens from below, but only the owner amends the manual.** Any cook may raise a fault. No cook, head chef or restaurant may repair its own copy of a recipe, even when the repair seems obvious.
 
 Otherwise one restaurant begins serving a different promise from the rest.
 
@@ -83,7 +83,7 @@ obeys.*
 2. Include the menu, the recipes, the house rules, each person's written job description and this book among the instructions.
 3. Keep every instruction except the local menu static during the work. Apply it to everybody until the owner changes it for everybody.
 4. Raise every fault or possible improvement into the log, report it upward, obtain the owner's decision and amend the manual once for everybody.
-5. Never allow a chef, head chef or restaurant to amend its own copy of any instruction that travels.
+5. Never allow a cook, head chef or restaurant to amend its own copy of any instruction that travels.
 6. Keep the menu local. Allow it to leave off chain dishes, but never to add a different dish or change one.
 7. Carry every other instruction unchanged into each new restaurant. Treat it as the promise of what should happen, never as a record of what happened in one place.
 8. Install this book; never transcribe it or create a second version for one kitchen.

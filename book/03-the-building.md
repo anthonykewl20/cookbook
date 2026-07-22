@@ -6,7 +6,7 @@
 
 Chapter 2 settled the words before anything was sorted. One of those words now needs a firm edge. **The building is not every thing you can see in the restaurant. It is the part fixed to the ground.**
 
-That edge matters because the chefs will not be the same next time. A category that depends on what one chef happens to call the place will drift. A test can be repeated by anyone.
+That edge matters because the cooks will not be the same next time. A category that depends on what one cook happens to call the place will drift. A test can be repeated by anyone.
 
 ## The building stays when you move premises
 

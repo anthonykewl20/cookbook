@@ -10,7 +10,7 @@ This chapter settles the next category. It says what belongs there. It does not 
 
 ## Utensils are picked up to do the work
 
-**A utensil is anything picked up by hand to do the work.** The picking up matters because the thing works through the hands of a chef. The purpose matters too. A thing does not become a utensil merely because someone can lift it.
+**A utensil is anything picked up by hand to do the work.** The picking up matters because the thing works through the hands of a cook. The purpose matters too. A thing does not become a utensil merely because someone can lift it.
 
 Knives, pans, plates, crates and trays all belong here. They differ in shape and size, but each is taken in hand as part of the work.
 
@@ -33,7 +33,7 @@ All four answers must fit. This test keeps the category steady when two restaura
 
 ## The category exists before any directions begin
 
-Part Two furnishes the building. **Here, the only promise is that the utensils exist and are sorted by the same test.** Directions for handling a knife, pan, plate, crate or tray come later, because directions tell the chefs what to do.
+Part Two furnishes the building. **Here, the only promise is that the utensils exist and are sorted by the same test.** Directions for handling a knife, pan, plate, crate or tray come later, because directions tell the cooks what to do.
 
 ---
 

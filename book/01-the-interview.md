@@ -16,7 +16,7 @@ You are not filling blanks chosen by somebody else. A form would decide the shap
 
 ## This book's pictures belong to one owner
 
-This book says restaurant, kitchen, dish, chef and taster. **Those words are a worked example, not the law.** They belong to one owner, who happens to think in pictures.
+This book says restaurant, kitchen, dish, cook and taster. **Those words are a worked example, not the law.** They belong to one owner, who happens to think in pictures.
 
 You may see workshops instead. You may see studios. You may prefer plain, blunt terms with no picture in them at all. None is more correct. Publishing one owner's pictures as the required language would impose that owner's way of seeing on every kitchen.
 
@@ -63,7 +63,7 @@ obeys.*
 
 1. Interview the owner before any work begins, and agree shared meanings for the necessary words.
 2. Ask questions and arrive at the words with the owner. Never present a form of terms chosen in advance.
-3. Treat restaurant, kitchen, dish, chef and taster as worked examples only. Allow workshops, studios or plain terms instead.
+3. Treat restaurant, kitchen, dish, cook and taster as worked examples only. Allow workshops, studios or plain terms instead.
 4. Agree local words for who owns the place, who runs it day to day, who does the work, who checks it, the machine everyone works on and one unit of work.
 5. Leave every other word unsettled until it is needed.
 6. Write the agreed words down locally in that kitchen. Never write them back into this book; keep the book blank on local language.

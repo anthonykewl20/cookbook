@@ -4,7 +4,7 @@
 
 ## Some rules act instead of speaking
 
-Most rules in this book are words. They tell a chef what should happen, and they must be read
+Most rules in this book are words. They tell a cook what should happen, and they must be read
 and followed.
 
 The doorman is different. **The doorman is an automatic guard, not a written instruction and
@@ -13,12 +13,12 @@ That makes it the clearest example of a rule that is not words.
 
 ## The doorman keeps work at the proper bench
 
-Each chef has a separate bench for a dish. **The doorman allows work only at the proper
-separate bench and refuses work in the shared main kitchen.** The chef does not win that
+Each cook has a separate bench for a dish. **The doorman allows work only at the proper
+separate bench and refuses work in the shared main kitchen.** The cook does not win that
 separation by remembering a sentence. The guard keeps it in place at the door.
 
 This is not a taster's verdict. The doorman does not decide whether a dish is good. It keeps
-one chef's work apart from shared work before there is anything to taste.
+one cook's work apart from shared work before there is anything to taste.
 
 ## The guard works before service begins
 
@@ -34,20 +34,20 @@ tools.
 
 ## Staff can change while the rule holds
 
-A written instruction depends on each arriving chef receiving it and following it. The
-doorman does not. **A new chef meets the same refusal at the same door.** The protection
+A written instruction depends on each arriving cook receiving it and following it. The
+doorman does not. **A new cook meets the same refusal at the same door.** The protection
 therefore survives a change of staff without depending on anybody's memory.
 
 Written instructions still travel unchanged to every restaurant. Automatic protections are
 different: they must be working in every restaurant. One cannot stand in for the other. A
-sentence about separate benches does not replace the guard that keeps chefs there.
+sentence about separate benches does not replace the guard that keeps cooks there.
 
 ## Never turn the doorman into a reminder
 
 It is tempting to write "use the separate bench" and call the door protected. That is only
 another instruction for somebody to read.
 
-**Keep the refusal automatic.** Once it depends on a chef remembering, the doorman is gone
+**Keep the refusal automatic.** Once it depends on a cook remembering, the doorman is gone
 even if the words remain.
 
 ---
@@ -65,6 +65,6 @@ obeys.*
 4. Require the doorman to be working before service begins. If it cannot refuse work in the
    shared main kitchen, do not begin service.
 5. Keep the doorman automatic through every change of staff. Never depend on memory to keep
-   chefs at separate benches.
+   cooks at separate benches.
 6. Send written instructions unchanged to every restaurant, but never use an instruction in
    place of an automatic protection.

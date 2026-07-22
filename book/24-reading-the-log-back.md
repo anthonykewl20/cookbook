@@ -53,7 +53,7 @@ one happen.
 
 ## The log remembers after every shift leaves
 
-Every chef is a stranger who leaves at the end of the shift. The next stranger cannot ask
+Every cook is a stranger who leaves at the end of the shift. The next stranger cannot ask
 the vanished shift what it did or why it waited. **The log is the restaurant's only
 memory because it stays when the people do not.**
 

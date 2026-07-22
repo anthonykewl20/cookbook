@@ -8,7 +8,7 @@ Installing the book does more than put words on the wall. **It brings with it th
 restaurant those words depend on.** The fittings from Part Two are already joined up before
 Part Three begins to use them.
 
-Each chef has a separate bench. The shared main kitchen, pass counter and till are in place.
+Each cook has a separate bench. The shared main kitchen, pass counter and till are in place.
 The doorman is at the door. The hygiene checks, safe and fire exit work. The stocktake and
 operations log are ready as two separate records.
 
@@ -19,7 +19,7 @@ Nothing has to be remembered into existence on the first day of service.
 Each thing is in the box because a rule would fail without it.
 
 - **The separate benches and the doorman** make “never share a bench for one dish” true. A
-  chef works at one separate bench, and the doorman keeps that work out of the shared main
+  cook works at one separate bench, and the doorman keeps that work out of the shared main
   kitchen. Chapter 48 gives the doorman's full job.
 - **The pass counter** makes the hand-off real. A finished dish leaves its maker's bench
   before judgment and has one known place to wait for checking.
@@ -75,8 +75,8 @@ obeys.*
 1. Ship every restaurant with separate benches, the shared main kitchen, pass counter, till,
    doorman, hygiene checks, safe, fire exit, stocktake and operations log fitted and working
    before service begins.
-2. Give each chef one separate bench for a dish. Never share a bench for one dish, and never
-   allow a chef's work into the shared main kitchen.
+2. Give each cook one separate bench for a dish. Never share a bench for one dish, and never
+   allow a cook's work into the shared main kitchen.
 3. Move every finished dish from its maker's bench to the pass counter before judgment. Keep
    it there for checking.
 4. Keep the takings in the till.

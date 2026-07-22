@@ -25,11 +25,11 @@ door.
 
 ## Separate benches must already hold
 
-Chapter 13 already furnished the doorman and the benches. Before two chefs work at once,
-**the doorman must allow each chef to work only at the proper separate bench.** The dish is
+Chapter 13 already furnished the doorman and the benches. Before two cooks work at once,
+**the doorman must allow each cook to work only at the proper separate bench.** The dish is
 never made in the shared main kitchen, because work mixed there can no longer be kept apart.
 
-Two chefs do not share one bench, even when they are working on the same order. Each works at
+Two cooks do not share one bench, even when they are working on the same order. Each works at
 the bench allowed for their part of the work.
 
 ## One written instruction gives each dish one responsible worker
@@ -40,7 +40,7 @@ responsibility for each dish or order at a time, before either worker touches it
 responsibility changes, the instruction must make clear when it passes before the next
 worker begins.
 
-The log then records what actually happened. Its third stamp identifies the chef by role and
+The log then records what actually happened. Its third stamp identifies the cook by role and
 shift, never by personal name. It says what they cooked, how they cooked it and how it tasted.
 That makes the hands behind each dish visible, so two workers touching the same work can be
 seen. The cook's taste note remains evidence, never approval.
@@ -64,7 +64,7 @@ made. If any required checker is absent, the kitchen does not serve. No checker,
 
 ## Never share a bench for one dish
 
-It is tempting to let two chefs crowd onto one bench for one urgent dish. Do not. The
+It is tempting to let two cooks crowd onto one bench for one urgent dish. Do not. The
 doorman's separation is what keeps one worker's work from being mixed with another's before
 it is admitted. Urgency does not make mixed work safe.
 
@@ -81,13 +81,13 @@ obeys.*
    it. Put the written instruction before the extra pair of hands, never after.
 3. Hand prep to a prep cook only after every prep step is written in the recipe. Hand cooking
    to another cook only after the recipe leads a stranger through the whole dish.
-4. Require the doorman to keep each chef at the proper separate bench. Never let chefs work
+4. Require the doorman to keep each cook at the proper separate bench. Never let cooks work
    in the shared main kitchen or share one bench.
 5. When two workers must coordinate, assign one worker responsibility for each dish or order
    at a time in writing before either touches it. Make clear when responsibility passes
    before the next worker begins.
 6. Use the open orders in the operations log as the kitchen's job list. In the third stamp,
-   identify the chef by role and shift, never by personal name, and record what they cooked,
+   identify the cook by role and shift, never by personal name, and record what they cooked,
    how they cooked it and how it tasted.
 7. Treat the cook's taste note as evidence, never approval.
 8. Add another prep cook or cook as a wearer of an existing role. Name the worker by role,

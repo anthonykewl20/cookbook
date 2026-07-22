@@ -21,7 +21,7 @@ So the people cannot be the constant. The process has to be.
 > If the people vary and the result must not, then the manual is the only thing allowed to
 > hold still.
 
-That is why the manual is **static**. It does not bend for a busy night, an experienced chef,
+That is why the manual is **static**. It does not bend for a busy night, an experienced cook,
 or a clever shortcut. It changes when the owner changes it, and at no other time and by no
 other hand. Everything else in this book — the roles, the checks, the log, the locks — exists
 to make that one sentence true in practice.
@@ -94,9 +94,9 @@ Each chapter is one category, and each category carries a test for what belongs 
    behind. *The path to the door, the signage, the mat, the door itself, how the rooms are
    laid out.*
 4. **The furniture** — anything you could carry out, but never use up. *Tables, chairs,
-   shelves, the pass counter, the benches chefs stand at.*
+   shelves, the pass counter, the benches cooks stand at.*
 5. **The equipment** — anything powered that does work for you. *Ovens, fridges, the
-   dishwashing machine, and the appliance the chefs cook on.*
+   dishwashing machine, and the appliance the cooks cook on.*
 6. **The utensils** — anything picked up by hand to do the work. *Knives, pans, plates,
    crates, trays.*
 7. **The stock** — anything that runs out and has to be reordered. *The ingredients, and who
@@ -104,7 +104,7 @@ Each chapter is one category, and each category carries a test for what belongs 
 8. **The money** — anything that costs or earns. *The till, the takings, what an ingredient
    costs to use, what the owner is willing to spend in a day.*
 9. **The people** — anyone who works here, named by role and never by person. *The head chef,
-   the chefs, the prep cook, the waiter, the cashier, the taster, the doctor, the dishwasher.*
+   the cooks, the prep cook, the waiter, the cashier, the taster, the doctor, the dishwasher.*
 10. **The instructions** — anything written that tells someone what to do, before they do it.
     *The menu, the recipes, the house rules on the wall, each person's job description, and
     this book itself.*
@@ -136,8 +136,8 @@ blank form; a kitchen renames them, but does not start from nothing.
 
 | Role | Does |
 |---|---|
-| The head chef | Runs the kitchen and manages the chefs |
-| The chefs | Cook the dishes |
+| The head chef | Runs the kitchen and manages the cooks |
+| The cooks | Cook the dishes |
 | The prep cook | Peels the potatoes — gets ingredients ready before anyone cooks. **A growth role:** the work is written into the recipe from day one, but the cook does it themselves until volume forces the split |
 | The waiter | Takes the order from the customer, carries the finished dish back out |
 | The cashier | Takes the money |
@@ -153,7 +153,7 @@ hand-off:
 
 1. The waiter took it — and took it **accurately**
 2. It reached the kitchen
-3. Which chef took it, what they cooked, how they cooked it, how it tasted
+3. Which cook took it, what they cooked, how they cooked it, how it tasted
 4. It was served — when, and by whom
 5. Whether the customer was satisfied
 6. The plates were collected and handed to the dishwasher
@@ -161,7 +161,7 @@ hand-off:
 
 Four reasons to keep them: they **show the procedure** actually followed; they **show where
 time is being wasted**; they **show where things went wrong**; and they are the restaurant's
-only **memory**, because every chef is a stranger who leaves at the end of the shift.
+only **memory**, because every cook is a stranger who leaves at the end of the shift.
 
 ---
 

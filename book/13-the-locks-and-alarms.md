@@ -6,7 +6,7 @@
 
 A written rule protects the restaurant only when somebody reads and follows it. Locks and alarms are different. **They protect the building whether or not a person is reading.**
 
-Some keep the wrong person out. Some keep what matters out of sight. Some stop an unsafe dish from leaving. Some leave a safe way out. Their shared purpose is protection, and that protection does not depend on a chef's memory.
+Some keep the wrong person out. Some keep what matters out of sight. Some stop an unsafe dish from leaving. Some leave a safe way out. Their shared purpose is protection, and that protection does not depend on a cook's memory.
 
 ## The safe protects what must stay secret
 
@@ -14,11 +14,11 @@ The safe is where secrets and other valuables are protected. **What makes it a s
 
 Without that protection, something that must stay secret could be seen or taken by someone who should not have it. The safe belongs with the locks and alarms because its purpose is to prevent that access.
 
-## The doorman keeps chefs at separate benches
+## The doorman keeps cooks at separate benches
 
 The doorman is an automatic guard, not another piece of furniture. **The doorman controls the door and refuses work in the shared main kitchen.**
 
-Each chef has a separate bench for a dish. The doorman keeps that separation in place by allowing work only at the proper bench. This protects one chef's work from being mixed with the restaurant's shared work before it is admitted.
+Each cook has a separate bench for a dish. The doorman keeps that separation in place by allowing work only at the proper bench. This protects one cook's work from being mixed with the restaurant's shared work before it is admitted.
 
 ## Hygiene checks protect every departing dish
 
@@ -47,7 +47,7 @@ obeys.*
 
 1. Treat every protection that works whether or not a person is reading as a lock or alarm.
 2. Keep secrets and other valuables protected by the safe.
-3. Have the doorman allow each chef to work only at a separate bench. Never allow a chef to work in the shared main kitchen.
+3. Have the doorman allow each cook to work only at a separate bench. Never allow a cook to work in the shared main kitchen.
 4. Run hygiene checks automatically before any dish leaves the kitchen.
 5. Keep hygiene checks separate from the taster's verdict.
 6. Keep the fire exit present as a protective way out.

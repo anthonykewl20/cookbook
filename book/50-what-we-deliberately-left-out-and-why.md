@@ -22,7 +22,7 @@ They do not belong in the explanation that helps you decide what should happen.
 
 ## The pictures are examples rather than law
 
-This book uses a restaurant, a kitchen, a dish, chefs, a taster, an appliance, a recipe, a
+This book uses a restaurant, a kitchen, a dish, cooks, a taster, an appliance, a recipe, a
 shopping list, a telephone game, and a building with doors. **That agreed set is one owner's
 worked example, not required language for every owner.**
 
@@ -73,7 +73,7 @@ obeys.*
 
 1. Write every travelling instruction in words a non-technical owner can understand. Keep
    programmers' vocabulary out of every page.
-2. Use only the agreed pictures: restaurant, kitchen, dish, chefs, taster, appliance, recipe,
+2. Use only the agreed pictures: restaurant, kitchen, dish, cooks, taster, appliance, recipe,
    shopping list, telephone game, and building with doors.
 3. Treat those pictures as one owner's worked example, never as required language for every
    owner.

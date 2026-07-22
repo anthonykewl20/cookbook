@@ -64,7 +64,7 @@ and add that removal to its log. It may never add a different dish or alter a sh
 ## A local amendment puts a restaurant outside the chain
 
 A restaurant may want to repair the instruction where it found the fault. That feels quick,
-but it creates a second promise. **No chef, head chef or restaurant may amend its own copy
+but it creates a second promise. **No cook, head chef or restaurant may amend its own copy
 of a travelling instruction.** Any restaurant that does so is outside the chain. Send the
 fault through the one door and wait for the one amendment for everybody.
 
@@ -96,5 +96,5 @@ obeys.*
 9. Keep the menu outside chain-wide amendments. Allow a restaurant to remove a chain dish
    from its local menu and log the removal; never allow a different dish or a changed
    recipe.
-10. Never allow a chef, head chef or restaurant to amend its own copy of a travelling
+10. Never allow a cook, head chef or restaurant to amend its own copy of a travelling
     instruction. Treat a restaurant that does so as outside the chain.

@@ -991,3 +991,110 @@ and 19 — the three pages the amended rule exists to permit. All three clean. A
 been the fault three times does not get changed and left unmeasured.
 
 Records only. No printer was needed and none was used.
+
+---
+
+# One role, one name — 2026-07-22
+
+The owner decided question 4. **"Cook" everywhere.** 87 lines across 26 files, all 119 uses
+of *head chef* untouched, and every changed line proved to differ by nothing but that word.
+
+## What the page did not know
+
+The owner's page named chapter 30 as the worst case — fifteen of one word and eight of the
+other on a page. **Chapter 9 is worse, and it matters more.** It is the chapter that *defines*
+the seven roles, and it listed *"Chefs | Cook the dishes"* in its roster table and *"the seven
+base roles: head chef, cook, taster…"* twelve lines later. The page that names the staff could
+not hold their name steady.
+
+The page also said *cook* took over from Part Three onward. It did not: chapters 35, 39, 40,
+48, 49 and 50 revert to *chef*, and chapter 48 uses it nine times with no *cook* at all. The
+real scope was **twenty-five chapters, not twenty** — counted before the pass, not estimated.
+
+## Cleared before it was touched
+
+A rename is irreversible in the sense that matters: if two words meant different things
+anywhere, merging them destroys a distinction and nothing downstream can tell. So the binder
+read the whole book first and answered three questions — does any chapter use them
+differently, would any sentence become false, and are there uses that are not the maker role.
+**None, none, and three places that DECLARE the book's own vocabulary** — chapter 1, chapter
+50 and the chapter template. Those three were the reason to do it, not exceptions to protect,
+and the brief said so explicitly so the printer would not "protect" them.
+
+## Corrected at source, again
+
+Same lesson as the method verdict earlier the same day. Fixing the pages alone would have left
+the running order and the chapter template still saying *the chefs*, ready to reinfect the next
+page written from them.
+
+## What the manager got wrong, three times, all the same way
+
+**A check that returns nothing is not the same as a check that found nothing.**
+
+1. A grep for remaining *chef* used `-o`, which strips each match to the bare word — so the
+   "except head chef" filter had no context left to match against and reported **116 false
+   hits**. The rename was fine; the check was broken.
+2. A rewrite of that check missed that markdown hard-wraps, so *head* and *chef* can sit on
+   different lines. Two more false hits. Zero once whitespace was collapsed.
+3. The script proving every line differed only by the word swap was fed by
+   `git diff | python3 - <<EOF` — the heredoc and the pipe both claim stdin, the heredoc wins,
+   **the diff was silently discarded, and it printed a confident "0 lines changed by anything
+   else."** It had examined nothing. Rewritten to a file and re-run: 87 removed, 87 added, 0
+   differing by anything but the word.
+
+The third is the dangerous one, and it is the same fault this shop has now recorded five
+times: **a confident answer produced by a check that never looked at the thing.** The first two
+cried wolf, which is survivable. The third cried all-clear.
+
+## Two chairs, one empty
+
+**GLM 5.2 holds the odd-jobs chair and returned 529 twice.** One retry was made — knowing the
+cause, not blindly — and then the work went to Codex, recorded as `DEGRADED_GLM_UNAVAILABLE`.
+The manager did not do it himself: a 51-file rename is not setting the table, and the standing
+guard about the manager doing the shop's own work was written after exactly that excuse.
+
+**The roster says who does each job and is silent on who covers when a chair is empty.** The
+book answers this for a kitchen — cover only where every separation still holds, and otherwise
+*no checker, no service*. The shop that makes the book has no equivalent written down. Logged.
+
+## A hole that was never real
+
+Checking whether the rename touched chapter 12 turned up that its recorded hole — *"a flat rule
+in chapter 12 says 'a named chef'"* — describes a phrase that **appears nowhere in chapter 12**.
+Its rule has read *"a chef identified by role and shift, never by personal name"* since batch
+three, which states the book's naming rule correctly. The chapter has never been reprinted.
+
+**A false hole is the expensive kind.** A real one left open costs a gap; a false one buys a
+reprint of a correct chapter. Withdrawn in the open rather than deleted.
+
+## Checks
+
+| | |
+|---|---|
+| Whole-book consistency read, before any change | no distinction destroyed, no sentence made false |
+| Every changed line differs only by chef→cook | proved mechanically, 87/87 |
+| *head chef* count, before and after | **119 = 119** |
+| *head cook* anywhere | none |
+| Files touched outside scope | none |
+| Taster on the three heaviest-changed pages | SERVE, straight fives, no faults |
+| Contradiction sweep on the same three | two clean, one flag |
+
+**The flag was a false positive and the fourth on the same seam.** Chapter 48's *"Written
+instructions still travel unchanged to every restaurant"* omits the settled menu exception —
+a sentence untouched by this work and byte-identical on the bound page, verified before it was
+dismissed. Rule 8 has now flagged correct text four times on the menu seam that
+`KNOWN-HOLES.md` already records as two rules genuinely disagreeing.
+
+## Left undone, on purpose
+
+The shop's own scripts still brief every worker with *"the chefs are AI agents"*, and
+`press/print.py` still hands printers an agreed picture set containing *the chefs*. **The book
+now says cook and the instructions that produce the book still say chef** — the exact fault the
+rename was carried out to end, living one directory away. Not fixed here: the manager does not
+write the shop's tools, and a tool is not repaired in the middle of the job that found it.
+
+## Roles this run
+
+Odd jobs: **GLM 5.2** — unavailable, 529 twice. Fell to **Codex 5.6 Terra**. Whole-book
+consistency: **DeepSeek V4 Pro** as binder. Taster and sweep: **Hy3**. The manager wrote no
+page and no tool — only the records.

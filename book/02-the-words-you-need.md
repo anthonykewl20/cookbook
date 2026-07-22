@@ -22,7 +22,7 @@ This person does not turn their own work into the owner's work. When the owner's
 
 ## Your work word names the people who make the dishes
 
-The third word means the people who do the work. In this book's picture, they are the chefs and their work produces a dish. **The word names the people responsible for making what was asked for.**
+The third word means the people who do the work. In this book's picture, they are the cooks and their work produces a dish. **The word names the people responsible for making what was asked for.**
 
 It does not mean the owner merely because the owner asked. It does not mean the person checking merely because checking is also work. Each word answers a different question: who owns, who runs, who makes and who checks.
 

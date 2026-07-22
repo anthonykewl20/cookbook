@@ -7,7 +7,7 @@
 A restaurant follows a recipe and produces one dish. That result may be good every time.
 It still cannot show that the recipe contains every instruction.
 
-The same chefs may be supplying a missing step from memory. They may all assume an
+The same cooks may be supplying a missing step from memory. They may all assume an
 ingredient, or use a temperature nobody wrote down. The dish appears to prove the recipe
 works, when it may only prove that this shift knew what the recipe forgot.
 
@@ -39,12 +39,12 @@ each restaurant's own log. **Instructions travel. Records never do.** The logs r
 separate, but each one shows what its kitchen did and whether it followed the written
 process.
 
-When both did, the verdict is plain: **the recipe is wrong, not the chef.** The writing
+When both did, the verdict is plain: **the recipe is wrong, not the cook.** The writing
 allowed two kitchens to obey it and still produce different dishes. This is the four-way
 verdict at chain scale: process followed in both places, results differ, so the fault is in
 the writing.
 
-Blaming either chef would hide the useful finding. The chain has found a sentence the
+Blaming either cook would hide the useful finding. The chain has found a sentence the
 manual needs but does not yet contain.
 
 ## The difference passes through the one door
@@ -87,7 +87,7 @@ obeys.*
 4. Read each restaurant's own log and establish that both kitchens followed the written
    process before judging why their dishes differ. Keep the logs separate.
 5. When both kitchens followed the process but their dishes differ, find the fault in the
-   recipe and never blame either chef.
+   recipe and never blame either cook.
 6. Treat every assumed step, ingredient or temperature exposed by the comparison as missing
    writing, not as knowledge the next shift may be expected to remember.
 7. Raise the difference as a fault from below. Write it into the operations log of the

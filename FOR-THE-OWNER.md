@@ -124,7 +124,29 @@ second cook cannot hold.
 
 ## 4. The book calls the same role "chef" in one half and "cook" in the other. Which wins?
 
-**Recommendation: "cook" everywhere, and fix it in one mechanical pass rather than by
+## ✅ DECIDED, 2026-07-22 — "cook" everywhere, done in one mechanical pass
+
+**87 lines across 26 files. All 119 uses of "head chef" untouched.** Corrected at source as
+well as in the pages: the running order, the chapter template's agreed picture set, and
+chapters 1 and 50 where the book declares its own vocabulary — because a book whose own list
+of its words still said *chefs* would not have been renamed at all.
+
+Two corrections to what this page told you, both found while doing it:
+
+- **The sharpest fact was not chapter 30.** It was **chapter 9 — the chapter that *defines*
+  the seven roles** — listing *"Chefs | Cook the dishes"* and *"the seven base roles: head
+  chef, cook, taster…"* on the same page. The page naming the staff could not hold their
+  name steady.
+- **"Part Three onward says cook" was not true.** Chapters 35, 39, 40, 48, 49 and 50 revert
+  to *chef*, and chapter 48 uses it nine times with no *cook* at all. The real scope was
+  **twenty-five chapters, not twenty**.
+
+Cleared before anything was touched by a whole-book consistency read, which confirmed no
+chapter used the two words for different things and no sentence became false. Then every
+changed line was proved to differ by **nothing but that word** — checked mechanically rather
+than by eye, because eighty-seven lines is more than an eye should be trusted with.
+
+**Recommendation as given, upheld: "cook" everywhere, and fix it in one mechanical pass rather than by
 reprinting.**
 
 Counted rather than guessed: Part Two says *chef* almost throughout, Part Three onward says

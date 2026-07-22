@@ -14,8 +14,8 @@ Each role may touch its own work and must stop at its boundary.
 
 | Role | Does | Must not touch |
 |---|---|---|
-| Head chef | Runs the kitchen and manages the chefs | A checking verdict on any dish they cooked |
-| Chefs | Cook the dishes from the recipe | A checking verdict on a dish they cooked |
+| Head chef | Runs the kitchen and manages the cooks | A checking verdict on any dish they cooked |
+| Cooks | Cook the dishes from the recipe | A checking verdict on a dish they cooked |
 | Prep cook | Gets ingredients ready before anyone cooks | Cooking or checking the dish |
 | Waiter | Takes the order and carries the finished dish back out | The recipe, the cooking or a checking verdict |
 | Cashier | Takes the money | The order, the dish or a checking verdict |
