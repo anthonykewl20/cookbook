@@ -29,6 +29,19 @@ against the eleven invariants and read for what they left out. The whole-book re
 menu contradiction — the oldest live one — is closed. `README.md` and `CHANGELOG.md` tell the
 truth about the state.
 
+**Chapters 9 and 10 are bound, 2026-07-23.** The role-assignment rule is in the book: a role is
+given, never assumed, and a job description matches a dish to a hand of the matching strength.
+Measured, tasted, swept, adjudicated and bound. **Read the entry in `PRESS-LOG.md` before
+touching a compression pass ever again** — the shop now has its cleanest measurement of its own
+central finding, and it came out of that job:
+
+> **The same page, damaged and undamaged, fingerprinted on both sides, through the same two
+> checks.** A compression pass deleted the word *only* from a rule about the three separations,
+> turning a restriction into a permission. **The taster returned SERVE, five out of five on all
+> seven items. The sweep flagged a different sentence, which was correct.** Neither check can see
+> a missing word, because once it is gone nothing on the page is wrong. It was found by a person
+> re-reading the diff against the bound page.
+
 **The step is the holes that are left**, in `KNOWN-HOLES.md`. In priority order:
 
 1. **`press/print.py` cannot reach most of the book.** It is hard-limited to chapters 17-50, so
@@ -69,6 +82,22 @@ work, which had found the real fault and corrected the running order at source.
 **This is chapters 30 and 37 happening to the shop that printed them** — two workers at one
 bench, and a session unsure which copy it was standing in. If more than one session works here
 again, one of them owns the repository and the other reads only.
+
+**It happened again on 2026-07-23, one day later.** Two head chefs cooked the same ticket —
+chapters 9 and 10 — in parallel for about half an hour, committing into the same folder minute
+by minute, each mostly re-finding what the other had already found. **The rule above did not
+prevent it, because neither session could tell it was happening until commits appeared under
+its feet.** Two things came out of it, and they point opposite ways:
+
+- **The duplication was pure waste**, and one session's checks had to be thrown away entirely
+  because the page changed underneath them mid-check.
+- **It is also the only reason the fifth regression was caught**, because the second chef
+  re-read a diff the first had already declared finished.
+
+**That is an argument for a second pair of EYES. It is not an argument for a second pair of
+HANDS.** The lesson is the one the book already teaches: the checker is not the cook. A second
+session that only reads costs nothing and catches things; a second session that also writes
+costs the work twice and moves the page while it is being checked.
 
 **Done looks like:** every chapter written, tasted, swept for contradictions, and bound into a
 book that does not contradict itself.

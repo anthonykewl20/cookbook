@@ -1507,3 +1507,113 @@ means the shop's most-used interface is still the one that loses work.
 3. **Six benches assigned without checking for file overlap.** Two tracks were given
    `press/print.py` at the same time. Caught before it bit, but by luck of noticing rather than by
    process.
+
+## Chapters 9 and 10 — the role-assignment reprint, bound 2026-07-23
+
+| Stamp | Record |
+|---|---|
+| Printed by | The draft was written on this branch before today; the tightening pass was **Codex `gpt-5.6-sol`**; the final one-word restoration was **GLM 5.2** |
+| Head chef's list | Passed both. **Chapter 9: 700 body words** (at the ceiling, after the restoration). **Chapter 10: 699.** Zero jargon in either, every flat rule numbered |
+| Taster | **Hy3.** Chapter 9 **SERVE**, 5/5 on all seven, no faults. Chapter 10 **SEND BACK**, twice, on two faults — **both adjudicated NOT REAL** |
+| Contradiction sweep | **Hy3, binding.** Both chapters clean on all eleven invariants, on two separate runs |
+| Adjudicator | **DeepSeek V4 Pro**, which produced neither page nor verdict |
+| Verdict | **BOUND** |
+
+### The rejection was the brief's fault, not the page's
+
+Chapter 10 was sent back for two sentences: *"The menu is not an instruction"* and *"It is not
+the only place drift can appear."* Both are correct, both agree with `core-invariants.json`, and
+**both are byte-identical to the bound `main` page** — they predate this branch entirely.
+
+What disagreed with them was `press/briefs-7to11.json`, which still carries the menu among the
+instructions and still calls instructions-versus-log *"the only place drift can be seen at all"*.
+**The owner dissolved both on 2026-07-22.** The scripts were corrected when the book was; the
+briefs those scripts read were not.
+
+**A stale brief does not merely fail to help. It manufactures faults.** This one would have
+bought a reprint of a correct chapter — the same expensive shape as the withdrawn "a named chef"
+hole, and the seventh time a document of ours rather than a page has been the fault.
+
+### The compression introduced five faults, and the round that fixed four declared victory
+
+The tightening pass hit its word count by damaging text it did not write. Four were caught by a
+line-by-line read of the diff and fixed: an inverted causal claim in the new rule itself, a broken
+sentence, a deleted instance of addressing the owner as *you*, and one clunky phrase.
+
+**The fifth was not caught, and it was the worst of them.** To pay for those fixes, the pass had
+deleted the word **only** from a rule about the three separations:
+
+> *may be held by them **only** where no separation is broken* → *may be held by them where no separation is broken*
+
+It was written down as *"a non-load-bearing `only`"*. It is load-bearing. Without it the sentence
+stops forbidding and starts permitting — on the page that defines the separations, while flat rule
+12 immediately below still carried the restriction. **The body of the page and its own flat rules
+had drifted apart, which is the fault this entire book exists to catch.**
+
+It was found by one head chef re-reading a diff another had already declared finished.
+
+### So the damaged page was put back through the checks on purpose, and they passed it
+
+This is the closest thing to a controlled measurement this shop has managed. The **same chapter**,
+damaged and undamaged, fingerprinted on both sides, through the **same two checks**.
+
+| Chapter 9, fingerprint `8a89d72e…`, the word *only* deleted | Result |
+|---|---|
+| Taster (Hy3, with the brief) | **SERVE. 5 out of 5 on all seven items. No faults.** |
+| Rule-by-rule sweep (Hy3, against the eleven invariants) | **One flag — quoting a different sentence, which was correct** |
+
+The sweep's flag named *"Never let the person who made a dish give the checking verdict on that
+dish."* That sentence is fine, and it swept clean on both runs where the page was undamaged. **So
+the sweep did not find the deletion either — it produced noise on the same page, and a manager in a
+hurry could have written that down as a catch.**
+
+**Neither check can see a missing word, because nothing on the page is wrong once it is gone.**
+That is not a criticism of either check. It is the shape of the question they are asked.
+
+### A claim in this entry was false, and it was caught before it was bound
+
+The paragraph above originally read *"every automated check passed it, twice each."* **Untrue.**
+The word was deleted at 00:16 and restored before either of this manager's check runs, so **no
+check had ever seen the damaged page** at the time the sentence was written. A second claim — that
+the taster scored the same bytes differently — was also untrue: the two runs were on files with
+different fingerprints, and three sentences had changed between them.
+
+**Both were caught by giving the manager's own record to a reader that had not written it**, which
+is the rule this shop already had, and the sixth time that rule has caught this exact fault. The
+false claims were then replaced with the measurement above — which says something stronger than the
+claim did, and is true.
+
+### Verified rather than inherited: the no-brief route
+
+The earlier close of this hole recorded both chapters as SERVE with no brief supplied. That was
+another session's claim, so it was re-run rather than copied: **chapter 9 SERVE 5/5, chapter 10
+SERVE 5/5, no faults, no brief.** The claim stands, and it is now this shop's own measurement.
+
+### Two sessions worked this branch at once, again
+
+**The second occurrence, one day after the first was written up as the reason a session must own
+the repository alone.** Two head chefs cooked this same ticket in parallel for roughly half an
+hour, committing into the same folder minute by minute. Most of what each found, the other found
+too, by a different route.
+
+The duplication was the waste — but **it is also the only reason the fifth regression was caught**,
+because the second chef read a diff the first had already closed. That is an argument for a second
+pair of eyes, and **not** an argument for two hands on one page: the second chef spent its first
+checks on a page that changed underneath it, and had to throw them away.
+
+### Faults by the manager, recorded
+
+1. **The checks were run against the live folder, not a frozen copy** — so when the page changed
+   mid-check, four completed checks became worthless. **The standing guard telling us to certify a
+   fingerprint rather than a directory was already written down**, from the last time this
+   happened. It was not followed until after it had cost the work a second time. Every later check
+   in this entry certifies an md5.
+2. **The owner was told twice that the other session was a problem before its work had been read.**
+   It was doing careful, correct work and had found four real faults. The report was accurate about
+   the collision and unfair about the worker.
+3. **Two false claims were written into this very entry** — one about fingerprints, one about what
+   the checks had seen — **inside a write-up whose subject was the manager asserting things it had
+   not opened.** Neither survived, because the record went to a reader that had not written it.
+   **The guard was already written down. It does not hold by intention; it held because something
+   other than the manager read the words.** That is the sixth instance, and the third recorded in
+   this log where the manager was the fault and a checker was the reason it did not ship.
