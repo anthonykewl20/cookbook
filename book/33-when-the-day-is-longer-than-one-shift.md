@@ -43,9 +43,9 @@ The head chef, taster and doctor hats must all be covered without combining forb
 If the incoming shift cannot do that, the kitchen closes until the missing check can be made.
 The stoppage is added to the log. No checker, no service.
 
-Chapter 29 leaves unsettled who gives the method verdict when the head chef stops checking
-each dish. A second shift does not answer that question. Do not use handover to skip the
-verdict or guess who gives it.
+Both shifts leave each dish with two verdicts by handover: the head chef gives the method
+verdict and the taster gives the quality verdict. Never let an incoming cook check an outgoing
+cook's dish. The ban follows the dish, not the clock.
 
 ## A shift change does not close the day
 
@@ -87,7 +87,7 @@ obeys.*
    checker separate from the outgoing cook whose work is checked.
 7. Close the kitchen when the incoming shift cannot cover the head chef, taster or doctor
    without breaking a separation. Append the stoppage to the log. No checker, no service.
-8. Do not use a shift change to decide, replace or skip the unsettled method verdict.
+8. Keep both verdicts and their givers unchanged across every shift change.
 9. Keep the stocktake as a photograph and the log as a diary. Rewrite the stocktake when
    stock changes. Never rewrite it merely because the shift changes.
 10. Treat a shift change as a continuous handover, never as closing and opening the day.

@@ -350,7 +350,7 @@ The ladder:
 | Strain | What is added | Whose attention ran out |
 |---|---|---|
 | One cook cannot keep up | More cooks | The cook's |
-| Many cooks | The head chef stops checking and starts coordinating | The head chef's |
+| Many cooks | The head chef **adds** coordinating — and keeps the method verdict, because checking is reading the log against the recipe, not watching a bench | The head chef's |
 | Many restaurants | **The area manager** — holds the head chefs so the owner does not have to | The owner's |
 
 Each chapter names the strain, then what must become true before you can add the extra pair

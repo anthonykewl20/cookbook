@@ -48,7 +48,39 @@ Saying nothing leaves four bound chapters resting on a decision that was never m
 
 ## 3. When the head chef stops checking each dish, who checks the method?
 
-**Recommendation: the second cook checks the first cook's dish, and never their own.**
+## ✅ DECIDED, 2026-07-22 — and the recommendation below was WRONG
+
+**Settled: the head chef keeps the method verdict, at one cook and at fifty.** Chapter 29
+corrected, chapter 33 corrected, the running order's growth ladder corrected at source, an
+eleventh core invariant added. **A restaurant may now add a second cook.**
+
+The recommendation below is kept as written rather than edited away, because a record that
+quietly corrects itself is the failure this book is about. Three things it got wrong:
+
+- **The verdict was never given to nobody.** Chapter 30 — the chapter about adding a second
+  worker — already prints *"The head chef still checks the process."* Chapter 31 prints
+  *"At ten dishes and at a thousand, the head chef checks the method."* The hole was not
+  *"nobody holds this"*; it was **chapter 29 contradicting chapters 30 and 31**, one page
+  against two, and chapter 33 then copied chapter 29.
+- **Chapter 29's reasoning was the fault.** It said the head chef *"cannot check each dish
+  and still hold all the cooks in view"* — costing the method check as watching a bench.
+  Chapter 19 defines it as reading the instructions against the log. **Watching does not
+  grow with the kitchen. Reading does.**
+- **"Adds no new role" was true and misleading.** The second cook moves a *checking verdict*
+  onto a *making* role, which is a larger change to the book's spine than adding a role, and
+  it would have put four chapters out of step instead of fixing two.
+
+**The owner's own proposal — give it to the taster — was tested and rejected 3–0**, by a
+panel that included a seat briefed to argue for it. The case for it is real: the taster's
+independence is structural, never situational. But chapter 9 prints *"The taster does not
+judge the method"*, and chapter 19 prints a rule forbidding the taster from reasoning *"the
+process was followed, so the plate must be fine"* — a fence that needs two heads to stand
+between. One head answering both verdicts also collapses chapter 19's four-outcome table,
+which is what tells you whether a bad dish is the cook's fault or the recipe's.
+
+---
+
+**Original recommendation, superseded: the second cook checks the first cook's dish, and never their own.**
 
 This one blocks growth, so it is the most important of the three.
 

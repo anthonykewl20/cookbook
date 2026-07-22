@@ -858,3 +858,102 @@ chapter used, two chapters that named nobody, chapters that skipped their own li
 running order, a book that had blocked its own growth past one cook, a role called by two
 names, a book describing its own reprint queue, and an argument that contradicted the page
 before it.
+
+---
+
+# The method verdict, settled — 2026-07-22
+
+The owner decided question 3. **The head chef keeps the method verdict, at one cook and at
+fifty.** Chapter 29 and chapter 33 reprinted, the running order's growth ladder corrected,
+an eleventh core invariant added, and the ban on adding a second cook lifted.
+
+## The hole was not the one that was reported
+
+The owner's page said the method verdict had been given to nobody, and that a restaurant
+therefore could not add a second cook at all. That was wrong, and two bound chapters said
+so already:
+
+- **Chapter 30** — the chapter about adding a second worker — line 53: *"The head chef still
+  checks the process."*
+- **Chapter 31** — ten dishes to a thousand — line 59: *"At ten dishes and at a thousand, the
+  head chef checks the method."*
+
+**Chapter 29 was one page against two.** And it was not the origin either: the running order's
+own growth ladder printed *"The head chef stops checking and starts coordinating"*. Chapter 29
+copied the ladder; chapter 33 copied chapter 29. **The telephone game, caught with all three
+copies still on the table** — which is the first time this shop has seen the whole chain at
+once rather than the last link.
+
+The correction went in at the source. Only correcting chapters 29 and 33 would have left the
+ladder ready to re-infect the next page written from it.
+
+## Why chapter 29 was the page that was wrong
+
+Its argument: *"The head chef cannot check each dish and still hold all the cooks in view."*
+That prices the method check as **watching a bench**. Chapter 19 defines it as **reading the
+instructions against the log and comparing the two**. Watching does not grow with the kitchen.
+Reading does. The premise was wrong, not the rule.
+
+Checked before relying on it: chapter 18's rule 6 stamps the log *after cooking and before the
+dish reaches the pass*, so the head chef genuinely has something to read at the moment of
+checking. The reasoning would have collapsed if the log were written after service.
+
+## The owner's own proposal was tested, not waved away
+
+The owner asked why the method verdict could not go to the taster, who never cooks at all —
+structural independence rather than the second cook's situational kind. It was put to three
+seats, **one of them briefed to argue for it as hard as it could honestly be argued**. It was
+rejected 3–0 against chapter 9's *"The taster does not judge the method"*, and the advocate
+abandoned the case in one line.
+
+The reason worth keeping: chapter 19 prints a rule forbidding the taster from reasoning *"the
+process was followed, so the plate must be fine."* **That fence needs two heads to stand
+between.** A note from someone else can be set aside; your own conclusion cannot. One head
+holding both verdicts would also collapse chapter 19's four-outcome table, which is the only
+thing in the book that tells you whether a bad dish is the cook's fault or the recipe's.
+
+## What the checks did
+
+| Check | Chapter 29 | Chapter 33 |
+|---|---|---|
+| Manager's list (jargon, headings, template) | clean, 663 words | clean, 606 words |
+| Taster (Hy3) | SERVE, straight fives, no faults | SERVE, straight fives, no faults |
+| Contradiction sweep against 11 invariants (Hy3, binding) | clean | clean |
+| **Reader (DeepSeek), which gives no verdict** | **SENT BACK** | — |
+
+**Straight fives from every check that gives a verdict, and the reader still sent a page back.
+That is now the fourth batch running where the same thing happened**, and the fault was the
+manager's, not the printer's.
+
+The ladder's third column says the many-cooks strain is *the head chef's attention running
+out*. The old chapter 29 named that strain — and attached it to the wrong conclusion, that the
+head chef must therefore stop checking. The reprint removed the wrong conclusion **and the
+strain went with it.** Nobody who asks "is this correct?" could have caught that, because
+everything left on the page was correct. Only "what is missing?" finds a deletion.
+
+Sent back with the fault named, fixed by the printer in one pass — *"Many cooks create another
+strain because the head chef's attention runs out while holding all their work in view
+together"* — and all three checks re-run afterwards, because **the page that was checked was no
+longer the page on the table.** The reader confirmed the fault closed.
+
+The printer also fixed a mismatch nobody had assigned it: the page's own title did not match
+the running order.
+
+## Faults in the shop, recorded
+
+- **The contradiction sweep reads a copy of the ruler.** It loads `invariants.json` from a work
+  directory; the ruler is `press/core-invariants.json`, and nothing makes the copy match. Two
+  copies of one promise, drifting apart — inside the checker built to catch exactly that.
+- **Shop rule 8 says the taster receives the chapter's brief. `press/taste.py` sends only the
+  page.** So *"is anything asserted that nobody established"* has never actually been askable,
+  and this shop has been banking straight fives on a question the tool did not let the taster
+  ask. Not fixed here — a tool is not repaired in the middle of the job that found it, and the
+  manager does not write the shop's tools.
+
+Both are written up in `KNOWN-HOLES.md` rather than fixed in passing.
+
+## Roles this run
+
+Printer: **Codex 5.6 Sol, high effort**, one chapter each, start to finish, and the fix.
+Taster and contradiction sweep: **Hy3**. Reader: **DeepSeek V4 Pro**. The manager wrote no
+page — only the records, the ladder row and the invariant.
