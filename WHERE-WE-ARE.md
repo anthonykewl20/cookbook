@@ -24,91 +24,39 @@ Read this first, every session. Name the step in your first line, every reply.
 
 ## The step we are on
 
-**The running order is printed. All fifty-one chapters are bound.** Every one has passed the
-head chef's mechanical list, a taster, and a rule-by-rule sweep against the eleven invariants,
-and every batch was read for what it left out.
-
-**All four decisions are settled** — see `FOR-THE-OWNER.md`, where each is marked DECIDED with
-the ruling and the reasoning kept rather than deleted. The reader is funded, the taste note
-stands, the head chef keeps the method verdict at one cook and at fifty, and the role is
-called "cook" everywhere.
-
-**The whole-book read is DONE — 2026-07-22.** Fifty-one chapters read as one document, five
-times, each pass carrying one narrow question, and every pass run on two workers independently.
-Full record in `PRESS-LOG.md`.
-
-**Three of the five lenses came back completely empty from both workers.** The book does not
-contradict itself on its ten load-bearing rules, does not use one word two ways, and does not
-tell a reader to do opposite things.
-
-**Two findings survived, and they are the same fault in the same chapter.** Chapter 2 is where
-the book settles its vocabulary, and two other chapters lean on it for words it never settles.
-Ch. 1 sends the reader to agree **six** words; ch. 2 fixes five. Ch. 3 says *"Chapter 2 gives
-this category its settled name"* about the building, and chapter 2 never mentions the building.
-Neither fault is visible on its own page, which is why nothing caught them before.
-
-**Chapter 2's missing sixth word is CLOSED — 2026-07-22.** The owner ruled, the running order
-was reopened for that one line and no other, and chapter 2 was reprinted with its sixth word and
-with all five existing sections stopped from borrowing it. **Chapter 3 is closed too** — it now
-owns its own definition of the building and credits chapter 2 with nothing. Both are bound.
-Full record in `PRESS-LOG.md`.
-
-**Read that record before printing anything else.** The reprint was sent back twice, and neither
-fault was found by the checks that give a verdict. The mechanical check, the taster at straight
-fives, and the eleven-rule sweep all passed a page that had quietly turned *"never send the owner
-a task"* into *"never send the owner unfinished work"*. **Only the chair that asks what is
-missing found it** — and the second fault was found only when that question was re-asked rule by
-rule, because asked as an impression the same worker replied "identical in every respect", which
-was false.
-
-**The printer's chair was re-contested on 2026-07-22 and CHANGED HANDS.** Codex 5.6 Terra took
-it from Sol, on measurement across three difficulty levels. Full record in `showdown2/RESULTS.md`,
-every page, diff and scorecard published beside it. **The enterprise level was designed and never
-run** — the owner called it on three levels, so the verdict rests on three.
-
-**The one finding worth carrying into any future work here:** at medium difficulty all five
-entries covered the brief 6/6 and swept clean. **The chair turned entirely on a harder level** —
-a brief that told the printer to break a settled rule. One of five refused. Two had the written
-escape hatch in front of them and spent it on a missing chapter number. **A test that only asks
-whether a worker can follow a good brief cannot staff a kitchen.**
-
-**Five dishes bound on 2026-07-22, working six benches in parallel.** Eight holes closed, seven
-opened. Full record in `PRESS-LOG.md`, and read it before printing anything else — the *how* is
-worth more than the *what*.
-
-| Bound | |
-|---|---|
-| The running order stops claiming instructions-vs-log is the only place drift shows | |
-| Chapter 29 says what coordinating actually is | partial — see the hole |
-| Eight parts' governing rules reach the reader, in the chapter that opens each | |
-| **The menu becomes a record, not an instruction** — 12 chapters, 3 invariants | the book's oldest live contradiction |
-| The shop's own tools stop drifting from the book they produce | |
-
-**The two findings that matter more than the dishes:**
-
-1. **The taster returned SERVE 5/5 on every page checked, and caught none of the five faults
-   found that night.** Every one was found by a checker looking for something specific, or by the
-   manager reading a diff and re-doing arithmetic. A verdict confirms that what is on the page is
-   correct; it cannot see what was deleted, skipped, or miscounted.
-2. **The taster has been judging chapters 0 and 1 against themselves** — `press/taste.py` feeds
-   those two in as the voice standard. Every tasting ever recorded for them is worthless. Found by
-   a checker nobody asked to look.
+**The book is bound and the front door is honest.** All 51 chapters written, tasted, swept
+against the eleven invariants and read for what they left out. The whole-book read is done. The
+menu contradiction — the oldest live one — is closed. `README.md` and `CHANGELOG.md` tell the
+truth about the state.
 
 **The step is the holes that are left**, in `KNOWN-HOLES.md`. In priority order:
 
-1. **`press/taste.py` judging chapters 0 and 1 against themselves.** Nothing else on the board
-   invalidates evidence already recorded.
-2. **`press/print.py` still cannot reach most of the book**, so the designated runner cannot be
-   used, so chefs keep dying after writing but before checking. Four attempts to fix it have timed
-   out. **This is the hole that causes the other holes.**
-3. The smaller ones: a fourth copy of the brief's field names, chapter 44 repeating itself, the
-   two briefs files still saying *chef*.
-4. **Still needing the owner: what the operations log physically IS.** The book tells a reader to
-   write in it on nearly every service page and never says what they are writing on.
+1. **`press/print.py` cannot reach most of the book.** It is hard-limited to chapters 17-50, so
+   the designated runner (`codex-exec`, the only one enforcing `owned_paths`) cannot be used for
+   anything else. **This is the hole that causes the other holes:** because of it, work runs
+   through an interface with no path enforcement and a silent 1800-second timeout, which on
+   2026-07-22 let a printer commit its own page to `main` and killed four chefs after they had
+   written but before they had checked. Four attempts to fix it have timed out.
+2. **`press/taste.py` judges chapters 0 and 1 against themselves** — it feeds them in as the
+   voice standard. Every tasting ever recorded for those two is worthless. Nothing else on the
+   board invalidates evidence already written down.
+3. The smaller ones: a fourth copy of the brief's field names in `prep.py`, chapter 44 repeating
+   its own rule in eight lines, `press/briefs-*.json` still saying *chef*.
+4. **Needing the owner: what the operations log physically IS.** The book tells a reader to write
+   in it on nearly every service page and never says what they are writing on.
 
-**Not this step:** printing more. Nothing in the running order is unprinted. Not this step:
-reopening the running order — it was reopened twice today, each time on a ruling, and is closed
-again.
+**Not this step:** printing more — nothing in the running order is unprinted. Not this step:
+reopening the running order; it was reopened twice on 2026-07-22, each time on a ruling, and is
+closed again.
+
+**Everything that happened and why is in `PRESS-LOG.md`.** Read it before printing anything. The
+*how* is worth more than the *what*, and one finding matters more than any dish:
+
+> **The checks that give a verdict do not find the faults.** On 2026-07-22 the taster returned
+> SERVE 5/5 on every page it saw and caught none of the six faults found that day. Every one came
+> from a checker sent to hunt something specific, or from reading a diff and redoing arithmetic.
+> A verdict confirms that what is on the page is correct. It cannot see what was deleted, what was
+> never reached, or what was counted wrongly.
 
 ### Two sessions worked this repository at once, and it cost real work
 
