@@ -18,16 +18,3 @@ The installable plugin carries only one rule right now — the test print — no
 ```
 
 Then prove it worked. Start a **fresh session** — not the one you installed from — and send the word `pineapple-check`. If the reply begins with `COOKBOOK RULE ACTIVE`, the plugin can deliver a rule and have it obeyed like any instruction. This confirms the test rule, not that the whole book is installed; the plugin carries only that rule today.
-
-## Where things are
-
-| | |
-|---|---|
-| `book/` | the 51 chapters |
-| `CONTENTS.md` | the running order — settled and closed |
-| `KNOWN-HOLES.md` | what is still wrong, and where it gets closed |
-| `PRESS-LOG.md` | what happened, including the mistakes |
-| `CHANGELOG.md` | what changed and when |
-| `THE-PRINT-SHOP.md` | who does which job, and on what evidence |
-| `showdown2/RESULTS.md` | the contest that staffed the printer’s chair |
-| `press/` | the tools that run the checks |
