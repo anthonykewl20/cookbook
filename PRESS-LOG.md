@@ -1210,8 +1210,10 @@ rather than one worker's opinion.
 finding was accepted on the model's word.
 
 **Cost: about thirteen pence for the whole run.** DeepSeek's cumulative total moved $0.44 →
-$0.49 across five whole-book passes; Hy3's five came to roughly $0.08. The whole-book read cost
-about a tenth of what the book has cost to date.
+$0.49 across five whole-book passes — the $0.44 is `THE-PRINT-SHOP.md`'s recorded figure before
+this run, the $0.49 is `ocask cost --json` read after it. Hy3's five came to roughly $0.08, from
+the per-call cost OpenRouter returns on each reply; only the first was recorded exactly
+($0.0159), so the Hy3 total is an estimate and is marked as one.
 
 ## The one thing the whole-book read found that nothing else could
 
@@ -1259,12 +1261,47 @@ chapter 1 and chose *job*, *ticket* or *piece* finds chapter 2 talking about dis
   than keep re-prompting. Recorded as a fault of the run, not of the workers: **a job handed out
   is not a job done, and the manager had no way to tell the difference except by looking.**
 
-## The honest summary
+## The summary
 
 **Three of the five lenses came back completely empty from both workers.** The book does not
 contradict itself on its ten load-bearing rules, does not use a word two ways, and does not
-tell a reader to do opposite things. **That is a real result and it is the one that took the
-most reading to earn.**
+tell a reader to do opposite things.
 
 The two findings that survived are both the same fault, in the same chapter, and it is the
 chapter the whole book's vocabulary rests on.
+
+## The record of this run was checked, and it was wrong
+
+**The manager wrote the record above, so the manager may not certify it.** It went to two
+checkers that did not write it. Both found a fault, and one of them found the fault this shop
+keeps writing down.
+
+**Hy3: the record credited the workers with the manager's own catch.** The `KNOWN-HOLES` entry
+read *"Re-found independently by the whole-book read, by both binder workers agreeing — and it
+is worse than recorded here... it uses it."* **No worker reported the "uses it" sharpening.**
+Both found the count mismatch and stopped there. The manager found the rest while checking
+their quotes — and the press log said so, in a heading two files away reading *"the sharpening
+that matters, and that no worker reported."* **The record contradicted itself and handed the
+credit to the wrong party.**
+
+That is this shop's recorded failure mode — *a confident claim about something nobody opened* —
+committed by the manager, in the entry documenting a run whose whole purpose was catching two
+documents that disagree. **Fifth instance.** Corrected: what the workers found and what the
+manager found are now stated separately in that entry.
+
+**DeepSeek: three claims rested on evidence not in the packet, and the tone was doing work the
+facts should do.** The cost figures now name where each number came from and the Hy3 total is
+marked as the estimate it is. *"The honest summary"* is now *"The summary"* — a heading that
+calls itself honest is planting a credential, not stating a fact — and a line praising how much
+reading the empty result took has been cut. The result is that three lenses found nothing; how
+hard it was is not the record's business.
+
+**They disagreed about the discarded finding, and the disagreement is now on the open list.**
+DeepSeek said the manager waved away an inconvenient flag. Hy3 — which had raised the flag
+itself — said the discard was correct. Both agree it is not a contradiction, so it stays out of
+the binder's findings; but *"would this confuse a reader"* is a question the binder was never
+asked, so it is parked for the reader's chair instead of being closed by the manager.
+
+**The check that mattered was not the expensive one.** Both reviewers cost about a penny
+together. The one that found the real fault read the manager's two files against each other —
+which is the whole-book read's own method, turned on the whole-book read's own paperwork.

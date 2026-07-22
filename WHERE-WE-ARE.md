@@ -83,11 +83,18 @@ anyone. Sending the owner anything that is not a decision.
 
 - **The whole-book read — done, 2026-07-22.** Ten whole-book passes for about thirteen pence.
   Both surviving findings were raised by both workers independently, and every quote was checked
-  against the real chapter before it was believed. **The one thing it found that no page-level
-  check could:** chapter 2 does not merely omit the sixth word, **it uses it** — *"the people who
-  make the dishes"*, *"whether the dish is acceptable"* — taking this book's own worked-example
-  word for the one thing it never settled. No page-level check saw it,
-  because on chapter 2's own page there is nothing wrong.
+  against the real chapter before it was believed. **The sharpest thing found was the manager's,
+  not a worker's, and it came out of that checking:** chapter 2 does not merely omit the sixth
+  word, **it uses it** — *"the people who make the dishes"*, *"whether the dish is acceptable"* —
+  taking this book's own worked-example word for the one thing it never settled. No page-level
+  check saw it, because on chapter 2's own page there is nothing wrong.
+- **The record of that read was itself checked, and it was wrong.** The manager wrote it, so two
+  checkers that did not write it were given it. One caught the manager crediting the workers with
+  the manager's own catch — **a confident claim about something nobody opened, the fifth
+  instance, inside the entry recording a run whose entire purpose was catching two documents that
+  disagree.** Corrected, and the correction is in `PRESS-LOG.md`. **The lesson is not that the
+  manager slipped. It is that the record was only right because something other than the manager
+  read it.**
 - **The overnight run — batches four to ten, chapters 17 to 50.** **Thirty-four chapters
   printed, checked four ways and bound in one night.** The book went from seventeen chapters
   to fifty-one. Parts Three, Four, Five, Six and Seven all written end to end.
