@@ -12,21 +12,33 @@ Read this first, every session. Name the step in your first line, every reply.
 head chef's mechanical list, a taster, and a rule-by-rule sweep against the ten invariants,
 and every batch was read for what it left out.
 
-**The step is no longer printing. It is deciding.** Four decisions wait in
-`FOR-THE-OWNER.md`, each a single question with a recommendation, and **two of them are
-load-bearing on pages already bound**:
+**All four decisions are settled** — see `FOR-THE-OWNER.md`, where each is marked DECIDED with
+the ruling and the reasoning kept rather than deleted. The reader is funded, the taste note
+stands, the head chef keeps the method verdict at one cook and at fifty, and the role is
+called "cook" everywhere.
 
-- **A restaurant may not add a second cook** until the owner settles who gives the method
-  verdict once the head chef stops checking each dish. Chapters 29 and 33 say so plainly and
-  honestly, and they stay that way until he rules.
-- **The book calls the same role "chef" in one half and "cook" in the other**, breaking
-  chapter 1's own rule against a competing word. About twenty chapters either way.
+**The step is the whole-book read.** It is the only job left and nothing has done it. Every
+check so far has judged one page or one batch — nothing has read fifty-one chapters end to end
+looking for chapter 19 disagreeing with chapter 40. **That is the binder's job, it is on the
+roster, and it has never been given.**
 
 **Not this step:** printing more. There is nothing left in the running order to print.
 
-**What is left, in order:** the owner's four decisions; then the holes in `KNOWN-HOLES.md`
-that a bound chapter still rests on; then a whole-book read, which no session has yet done —
-every check so far has judged one page or one batch, never the book end to end.
+**After the read:** the holes in `KNOWN-HOLES.md` that a bound chapter still rests on — chiefly
+what the appliance concretely is and how a reader gets one, which the reader raised
+independently in four separate batches and which Part Seven was expected to close and did not.
+
+### Two sessions worked this repository at once, and it cost real work
+
+On 2026-07-22 two sessions carried out the same four decisions in parallel. One of them asked
+the owner about the method verdict on a false premise — chapter 29 declared the question open,
+and **chapters 30 and 31 had already answered it in the bound book.** Its version would have
+put the contradiction back in. It was discarded and this branch reset to the other session's
+work, which had found the real fault and corrected the running order at source.
+
+**This is chapters 30 and 37 happening to the shop that printed them** — two workers at one
+bench, and a session unsure which copy it was standing in. If more than one session works here
+again, one of them owns the repository and the other reads only.
 
 **Done looks like:** every chapter written, tasted, swept for contradictions, and bound into a
 book that does not contradict itself.
