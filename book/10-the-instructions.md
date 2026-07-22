@@ -14,7 +14,7 @@ The instructions include:
 - the taster's written checklist; and
 - this book installed in the kitchen.
 
-The recipe says how a dish is made, house rules how the place is run, and the taster's checklist how a dish is checked. A job description sets its holder's work; this book sets every restaurant's work.
+The recipe says how a dish is made, house rules how the place is run, and the taster's checklist how a dish is checked. A job description sets its holder's work; this book, every restaurant's.
 
 **The menu is not an instruction.** It is each restaurant's local record of recipes currently served. It may list fewer chain dishes, never a different dish or changed recipe.
 
@@ -24,7 +24,7 @@ Every instruction crosses to a new restaurant unchanged.
 
 Together, the instructions are the manual. **The manual is static: it does not change during the work or because a cook prefers another way.**
 
-Cooks are never the same twice; none remembers yesterday. Filling gaps from memory or preference turns the result into a telephone game.
+Your cooks are never the same twice; none remembers yesterday. Filling gaps from memory or preference turns the result into a telephone game.
 
 If the people vary and the result must not, then the manual is the only thing allowed to hold still.
 
@@ -40,7 +40,7 @@ The manual changes only through this order:
 4. The owner decides.
 5. The manual is amended once, for everybody.
 
-**The door opens from below, but only the owner amends the manual.** Any cook may raise a fault. No cook, head chef or restaurant may repair its recipe copy, even when the repair seems obvious.
+**The door opens from below, but only the owner amends the manual.** Any cook may raise a fault. No cook, head chef or restaurant may repair its own recipe copy, even when the repair seems obvious.
 
 Otherwise one restaurant serves a different promise from the rest.
 

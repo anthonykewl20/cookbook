@@ -6,7 +6,7 @@
 
 The people category covers everyone who works here. **Name the role, never the person.** A name leaves with its owner; a role tells the next stranger which part is theirs.
 
-The book ships a default set of roles, not a blank form. A kitchen renames them, but does not start from nothing. Renaming keeps local words natural; keeping the full set preserves the promises behind them.
+The book ships a default set of roles, not a blank form. A kitchen renames them, but does not start from nothing. Renaming keeps local words natural; keeping the full set preserves the promises.
 
 ## The starting roster gives every kind of work an owner
 
@@ -27,13 +27,13 @@ The prep cook is a growth role. **The work is written into the recipe from day o
 
 ## A role must be stated, never assumed
 
-**An unstated role defaults to in charge, invisible from outside, yet spends the same attention.** State the role in its job description before the shift.
+**An unstated role defaults to in charge, invisible from outside, since it spends the same attention either way.** State the role in its job description before the shift.
 
 ## Seven jobs require three separate pairs of hands
 
-The seven base roles are present from day one: head chef, cook, taster, doctor, waiter, cashier and dishwasher. This floor is jobs, not seven hires; one person may hold compatible roles.
+The seven base roles are present from day one: head chef, cook, taster, doctor, waiter, cashier and dishwasher. This is a floor of jobs, not seven hires; one person may hold compatible roles.
 
-Three separations cannot bend. **The maker never approves. The diagnoser never treats. The person being judged never judges themselves.** They require three pairs of hands: one makes, one checks, and one watches whether both the people and the building remain fit. Waiter, cashier and dishwasher may be held by them only where no separation is broken.
+Three separations cannot bend. **The maker never approves. The diagnoser never treats. The person being judged never judges themselves.** They require three pairs of hands: one makes, one checks, and one watches whether both the people and the building remain fit. Waiter, cashier and dishwasher may be held by them where no separation is broken.
 
 Nobody ever checks their own work. This is not a luxury bought later. The taster is load-bearing: if the cook approves their own plate, the restaurant has no check at all.
 
@@ -53,7 +53,7 @@ When someone is sick, another person may cover the role only if every separation
 
 Quiet agreement cannot solve this: hiring is an owner-level decision. A worker never hires a worker, including temporary cover.
 
-The chain of responsibility stops at the owner. It does not create another checker forever. An area manager appears later, when the chain needs one; that does not change where responsibility ends.
+The chain of responsibility stops at the owner. It never creates another checker. An area manager appears later, when the chain needs one; that does not change where responsibility ends.
 
 ---
 
