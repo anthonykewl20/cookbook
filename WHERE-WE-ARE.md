@@ -6,6 +6,22 @@ it alone.
 
 Read this first, every session. Name the step in your first line, every reply.
 
+## Read these, in this order
+
+1. **This page** — the step we are on, and the five rules. Nothing else until you have read it.
+2. `THE-PRINT-SHOP.md` — who does which job, and why each of them is there. **You are the print
+   manager.** You hand out work and check it; you do not do it. That rule has been broken here
+   and it is written down as a fault.
+3. `CONTENTS.md` — the running order. **Settled and closed.** Correct a phrase a bound chapter
+   has proved wrong; never redesign it.
+4. `TASTING-CHECKLIST.md` and `THE-CONTRADICTION-PASS.md` — how a page is checked, and why the
+   contradiction pass is separate from the taster.
+5. `PRESS-LOG.md` and `KNOWN-HOLES.md` — what happened, and what is still wrong.
+6. `CHAPTER-TEMPLATE.md` with `book/00-opening-the-box.md` and `book/01-the-interview.md` —
+   only if you are printing. **Nothing is left to print.**
+7. `OVERNIGHT.md` — **a completed order.** Read it for the rules it learned, never for the
+   task. Its goal is finished.
+
 ## The step we are on
 
 **The running order is printed. All fifty-one chapters are bound.** Every one has passed the

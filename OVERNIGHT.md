@@ -1,4 +1,12 @@
-# The overnight goal
+# The overnight goal — **COMPLETED 2026-07-22. Do not carry it out again.**
+
+> **This order is finished.** All fifty-one chapters are printed, checked and bound. A session
+> that reads the goal below and starts printing will be looking for work that does not exist.
+>
+> **Go to `WHERE-WE-ARE.md`. It names the step we are actually on.**
+>
+> This page is kept, not deleted, because the rules it learned the hard way are still binding
+> and the log should show what was asked. **Read it for the rules, never for the task.**
 
 **Written 2026-07-22, for a session running while the owner sleeps.**
 
