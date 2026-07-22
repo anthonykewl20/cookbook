@@ -1583,6 +1583,23 @@ is the rule this shop already had, and the sixth time that rule has caught this 
 false claims were then replaced with the measurement above — which says something stronger than the
 claim did, and is true.
 
+### What in this entry is inherited, and was not opened by the session that wrote it
+
+Two head chefs worked this ticket, so this entry is part first-hand and part second-hand, and a
+stranger cannot tell which unless it is said. **Everything above rests on evidence this session
+ran and fingerprinted, except these, which came from the other session's record and were taken on
+trust:** the four earlier compression regressions and their fixes; the sweep flag it reported on
+chapter 9 against a different sentence; and that chapter 10 held 699 words throughout.
+
+**None of them is doubted. All of them are unverified**, and the difference matters here more than
+most places, because the entry directly above records this manager twice writing down things it had
+not opened. **Saying which half of a record you actually checked is the cheapest honesty available**,
+and this shop has now twice paid for not doing it.
+
+One thing genuinely missing rather than merely inherited: **the adjudication that cleared chapter 10
+was run and read, but its output was not kept.** The verdict is in this log; the reasoning is not
+anywhere. That is a gap in the evidence trail and it is written up as a hole.
+
 ### Verified rather than inherited: the no-brief route
 
 The earlier close of this hole recorded both chapters as SERVE with no brief supplied. That was
