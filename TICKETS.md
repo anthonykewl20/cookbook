@@ -20,6 +20,12 @@ Read `WHERE-WE-ARE.md` first (the step we are on), then this board.
 
 ---
 
+## 🔴🔴 Highest priority — the head-chef driver belongs in the cookbook (2026-07-23, owner)
+
+| # | Ticket | Why it matters | Done when | Evidence |
+|---|---|---|---|---|
+| **T-21** | The head-chef operating model — *assign to chefs, run dishes in parallel, check every dish, never cook* — is **not in the cookbook**. The plugin `plugins/chain-standards` ships a SessionStart hook whose channel is **proven** (the `pineapple-check` test-print binds a fresh session with CLAUDE.md force), but it carries only that test rule. The driver lives only in the session's external global config, which does not travel with the restaurant. | This is the root cause of the manager's most-repeated fault (cooking instead of delegating — logged four times) and the book failing its own central thesis: *the process must live in the repo or a stranger will not follow it.* The role that runs everything is the one process left out of the restaurant. | The plugin delivers the head-chef operating model (in the SessionStart standing rules, or a plugin skill they point to), **and a MEASURED probe passes**: a fresh session given only the plugin (no external global config, no prior context) works the board by *assigning to chefs, running dishes in parallel, and checking* — and does **not** edit content with its own hands. Measure, do not assert. | `KNOWN-HOLES.md` — "The head-chef driver is not in the cookbook"; this session's four-times-logged manager-cooks fault |
+
 ## 🔴 Blocking — before the next page is printed
 
 These poison the press itself: one invalidates evidence already written down, one
