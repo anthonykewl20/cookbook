@@ -78,6 +78,15 @@ else:
                  + "\nItem 4 asks whether anything is asserted that nobody established, and "
                    "item 6 reads every must_not_contradict quotation against the page. The "
                    "brief above is what those two items are judged against.")
+if chapter==0:
+    voice_standards=("===== VOICE STANDARD: CHAPTER 0 =====\n[WITHHELD: THIS PAGE IS CHAPTER 0, ONE OF THE VOICE-STANDARD CHAPTERS; IT MUST BE JUDGED AGAINST CHAPTER 1, NOT ITSELF.]\n"
+                     +"===== VOICE STANDARD: CHAPTER 1 =====\n"+r("book/01-the-interview.md"))
+elif chapter==1:
+    voice_standards=("===== VOICE STANDARD: CHAPTER 0 =====\n"+r("book/00-opening-the-box.md")+"\n"
+                     +"===== VOICE STANDARD: CHAPTER 1 =====\n[WITHHELD: THIS PAGE IS CHAPTER 1, ONE OF THE VOICE-STANDARD CHAPTERS; IT MUST BE JUDGED AGAINST CHAPTER 0, NOT ITSELF.]")
+else:
+    voice_standards=("===== VOICE STANDARD: CHAPTER 0 =====\n"+r("book/00-opening-the-box.md")+"\n"
+                     +"===== VOICE STANDARD: CHAPTER 1 =====\n"+r("book/01-the-interview.md"))
 a=json.load(open(os.path.expanduser('~/.local/share/opencode/auth.json')))['openrouter']
 key=a.get('key') or a.get('apiKey') or a.get('api_key')
 q=f"""You are the taster. Judge one finished chapter against the checklist below. You did not
@@ -89,10 +98,7 @@ are software projects, the cooks are AI agents and the dishes are units of work.
 Apply "The taster's list" — all SEVEN items.
 
 {r("TASTING-CHECKLIST.md")}
-===== VOICE STANDARD: CHAPTER 0 =====
-{r("book/00-opening-the-box.md")}
-===== VOICE STANDARD: CHAPTER 1 =====
-{r("book/01-the-interview.md")}
+{voice_standards}
 {brief_block}
 ===== THE PAGE YOU ARE TASTING =====
 {page_text}

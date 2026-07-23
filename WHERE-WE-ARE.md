@@ -93,10 +93,14 @@ central finding, and it came out of that job:
    directory, so a fallen-off terminal chapter raises instead of being silently accepted. Crucial
    `model-flow`, Codex writer, Codex + DeepSeek final review APPROVED, host-authored test green.
    Full record in `PRESS-LOG.md`. **The remaining priorities below move up.**
-2. **`press/taste.py` judges chapters 0 and 1 against themselves** — it feeds them in as the
-   voice standard. Every tasting ever recorded for those two is worthless. Nothing else on the
-   board invalidates evidence already written down.
-3. **`press/briefs-*.json` still quote two rules the owner dissolved on 2026-07-22** — the menu
+2. **DONE, 2026-07-23 (T-12) — `press/taste.py` no longer judges chapters 0 and 1 against
+   themselves.** It withholds the page-under-test from its own voice standard and judges it
+   against the other (ch0↔ch1). Codex writer via `model-flow mf-3007ffb50229`, fresh Codex
+   reviewer verified the fix. **Measured: the tell is gone — ch0 flipped SERVE 5/5 → SEND BACK
+   (a real fault, the jargon word *plugin*); ch1 SERVEs on a genuine comparison to ch0.** A
+   handbook conflict surfaced during review is now waiting on the owner (see below and
+   `PRESS-LOG.md`). **The remaining blocker, T-10, moves up.**
+3. **T-10 — `press/briefs-*.json` still quote two rules the owner dissolved on 2026-07-22** — the menu
    as an instruction, and drift being visible in *"the only place"*. **Measured on 2026-07-23:
    a taster given one of these briefs rejected a correct chapter twice**, quoting two sentences
    that are byte-identical to the bound page. **This one is worse than it looks, because it does
@@ -106,8 +110,12 @@ central finding, and it came out of that job:
    its own rule in eight lines, `press/briefs-*.json` also still saying *chef*, and the shop
    keeping no record of *why* it overrules a checker — six overrules, none re-readable.
 5. **Needing the owner: what the operations log physically IS.** The book tells a reader to write
-   in it on nearly every service page and never says what they are writing on. **This is the only
-   thing on this list the owner has to answer, and it is waiting.**
+   in it on nearly every service page and never says what they are writing on. It is waiting.
+6. **Needing the owner: which handbook governs the writer.** Closing T-12 exposed that
+   `~/.claude/CLAUDE.md` (Codex writes substantial code for a Claude host) and `~/.codex/AGENTS.md`
+   (GLM writes; Codex only reviews) flatly disagree. Every substantial Claude-host code job will
+   draw a false BLOCK from its own Codex reviewer until this is reconciled. **A decision only the
+   owner can make** — full evidence in `PRESS-LOG.md`.
 
 **Not this step:** printing more — nothing in the running order is unprinted. Not this step:
 reopening the running order; it was reopened twice on 2026-07-22, each time on a ruling, and is

@@ -22,14 +22,13 @@ Read `WHERE-WE-ARE.md` first (the step we are on), then this board.
 
 ## 🔴 Blocking — before the next page is printed
 
-These two poison the press itself: one invalidates evidence already written down, one
-manufactures false faults. Nothing prints correctly until they are fixed. **Do them in the
-order shown — T-12 first: nothing else on the board invalidates evidence already recorded**
-(the tie-break `WHERE-WE-ARE.md` draws, restated here so this board stands on its own).
+These poison the press itself: one invalidates evidence already written down, one
+manufactures false faults. Nothing prints correctly until they are fixed. **T-12 is now CLOSED
+(2026-07-23); T-10 is the remaining blocker before the next page is printed.**
 
 | # | Ticket | Why it matters | Done when | Evidence |
 |---|---|---|---|---|
-| **T-12** | `press/taste.py` feeds chapters 0 and 1 into its own prompt **as the voice standard they are then scored against** — so it compares each page with itself. | **Every tasting ever recorded for chapters 0 and 1 is worthless**, including two reported to the owner as clean. Nothing else on the board invalidates evidence, so this is do-first. | The taster judges 0 and 1 against something other than themselves, or refuses and says so; a re-taste no longer gives the tell *"the page is the approved voice-standard chapter 0."* | "The taster judges chapters 0 and 1 against themselves" |
+| ~~**T-12**~~ | ~~`press/taste.py` feeds chapters 0 and 1 into its own prompt **as the voice standard they are then scored against** — so it compares each page with itself.~~ **CLOSED 2026-07-23.** Fixed: the page-under-test is withheld from its own voice standard and judged against the other (ch0↔ch1). Codex writer via `model-flow mf-3007ffb50229`, fresh Codex reviewer verified the fix correct. **Measured: the tell is gone from both — ch0 flipped SERVE 5/5 → SEND BACK (real fault: jargon *plugin*); ch1 SERVEs on a genuine comparison to ch0.** See `KNOWN-HOLES.md` and `PRESS-LOG.md`. | done | The taster judges 0 and 1 against something other than themselves; re-taste no longer gives the *"voice-standard chapter 0"* tell — **measured PASS**. | "The taster judges chapters 0 and 1 against themselves" (closed) |
 | **T-10** | The two bundled brief files quote two rules the owner **dissolved** on 2026-07-22 — the menu as an *instruction*, and instructions-vs-log as *"the only place drift can be seen"*. | Measured: a taster handed a brief built from these files rejected a **correct** chapter 10 **twice**, quoting sentences byte-identical to the bound page. A stale brief does not just fail to help — it buys a reprint of a page that was already right. | Both claims are gone from `press/briefs-2to6.json` and `press/briefs-7to11.json`, and **the ch10 probe that returned SEND BACK twice now returns SERVE**. | "The bundled briefs still carry two rules the owner dissolved" |
 
 ## 👤 Needs the owner — a decision, not a task
