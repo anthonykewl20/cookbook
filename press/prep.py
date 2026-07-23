@@ -144,6 +144,46 @@ def main(argv):
             )
     neighbours = "\n\n".join(written_sections)
 
+    list_field_placeholders = dict(
+        zip(
+            BRIEF_LIST_FIELDS,
+            (
+                "...",
+                "... (belongs to chapter N)",
+                "QUOTED VERBATIM from the running order or an already-written chapter",
+                "a hole from KNOWN-HOLES.md that touches this chapter, and what the printer should do about it",
+                "...",
+                "a settled decision in the running order this chapter must carry",
+            ),
+        )
+    )
+    list_field_rule_texts = dict(
+        zip(
+            BRIEF_LIST_FIELDS,
+            (
+                None,
+                "**{field} names the chapter the material belongs to instead.** \"Not this\" without\n"
+                '  "it is over there" makes the printer guess.',
+                "**{field} entries are QUOTATIONS.** Copy the sentence exactly. A paraphrase\n"
+                "  cannot be checked against the page later, and this list is what the taster reads.",
+                "If the running order gives this chapter something that CONTRADICTS an already-written\n"
+                '  chapter or a core invariant, say so plainly in "{field}". Finding that before the\n'
+                "  printer trips over it is the whole point of prep.",
+                None,
+                None,
+            ),
+        )
+    )
+    list_field_intro_rules = "\n".join(
+        f'- {list_field_rule_texts[BRIEF_LIST_FIELDS[index]].format(field=BRIEF_LIST_FIELDS[index])}'
+        for index in (2, 1)
+    )
+    list_field_tail_rule = f'- {list_field_rule_texts[BRIEF_LIST_FIELDS[3]].format(field=BRIEF_LIST_FIELDS[3])}'
+    example_shape_fields = "\n".join(
+        f'  "{field}": [{json.dumps(placeholder)}]{"," if i + 1 < len(BRIEF_LIST_FIELDS) else ""}'
+        for i, (field, placeholder) in enumerate(list_field_placeholders.items())
+    )
+
     prompt = f"""You are the prep cook for a print shop that is writing a book. You do not write
 chapters. You gather what goes into ONE chapter before the printer starts, so the printer
 spends its effort writing rather than searching.
@@ -173,25 +213,15 @@ Return ONLY valid JSON, no prose around it, in exactly this shape:
 {{
   "chapter": {chapter},
   "title": {json.dumps(title)},
-  "must_cover": ["..."],
-  "must_not_cover": ["... (belongs to chapter N)"],
-  "must_not_contradict": ["QUOTED VERBATIM from the running order or an already-written chapter"],
-  "known_holes": ["a hole from KNOWN-HOLES.md that touches this chapter, and what the printer should do about it"],
-  "traps": ["..."],
-  "hooks": ["a settled decision in the running order this chapter must carry"]
+{example_shape_fields}
 }}
 
 Rules for the brief itself:
 - Keep "chapter" and "title" exactly as shown. They prevent a brief being handed to the
   wrong printer under a plausible filename.
-- **must_not_contradict entries are QUOTATIONS.** Copy the sentence exactly. A paraphrase
-  cannot be checked against the page later, and this list is what the taster reads.
-- **must_not_cover names the chapter the material belongs to instead.** "Not this" without
-  "it is over there" makes the printer guess.
+{list_field_intro_rules}
 - Do not invent material the running order never assigned to this chapter.
-- If the running order gives this chapter something that CONTRADICTS an already-written
-  chapter or a core invariant, say so plainly in "known_holes". Finding that before the
-  printer trips over it is the whole point of prep.
+{list_field_tail_rule}
 """
 
     body = json.dumps(
