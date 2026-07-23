@@ -74,6 +74,7 @@ None of these change a printed word, but each will bite a future job.
 | # | Ticket | Track |
 |---|---|---|
 | **T-18** | **Give every one of the 51 table-of-contents pages a proper, recorded, comparable metric set — and harvest the data over time.** | measure-every-Enhancement |
+| **T-22** | **A static, deterministic, versioned SCORER for every cookbook page/chapter** — the same instrument being prototyped for the head-chef *role*, applied to *pages*. Same input → same score, forever; changes only when the scorer version changes; no LLM judge; diffable snapshots. Absorbs T-18's metric side. **Mirrors GitHub issue [#3](https://github.com/anthonykewl20/cookbook/issues/3)** (filed at the owner's request; flat files stay the tracker, so the issue is recorded here so the two cannot drift). Gated on the per-role scorer pattern being proven first (static + valid + ungameable). | measure-every-Enhancement |
 
 **The goal (owner, 2026-07-23):** harvest as much measurable data on the cookbook as we can. Every
 page carries numbers we can re-read and compare, not a one-word verdict.
