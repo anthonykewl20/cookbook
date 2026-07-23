@@ -9,6 +9,26 @@ about.
 
 ---
 
+## 2026-07-23 — research: the skill-eval framework gets its independent review (the 22 gaps)
+
+**`research/agent-skill-effectiveness-framework-gaps.md` arrived** — the independent review of the `skill-eval`
+design spec landed earlier today. The framework is "strong as a measurement design" but "not yet a complete
+implementation contract, and definitely not real-world proof yet": 15 critical gaps and 7 operational gaps,
+of which the most serious is **meta-validation** — proving the evaluator itself can distinguish a useful skill
+from placebo, harm, leakage, grader failure and infrastructure noise before any report is trusted. This is the
+framework's *taster* (the second pair of eyes, never the cook), and meta-validation is "proof over authority"
+turned on the evaluator itself.
+
+Two of the 22 gaps rest on a **MEASURED** anchor and so carry the most weight: randomise and interleave
+conditions (Anthropic's infrastructure-noise ~6 pp swing) and qualify the graders / meta-validate (Anthropic's
+broken-grader result, 42% → 95%). The rest — NIST AI RMF population-scoping, the protocol freeze, the causal
+intention-to-treat framing, the OWASP adversarial suite (itself an incubator project, not a binding standard)
+— is sound normative **ASSERTED** guidance. Content preserved as provided; the provenance tags it carries are
+left exactly as written. The summary file now points to this review; the spec itself is left untouched as
+moved. No page reprinted.
+
+---
+
 ## 2026-07-23 — research: how to prove a skill works (method, measured evidence, and the question inventory)
 
 **`research/skill-effectiveness-evaluation.md` arrived** — research for an experimental feature: an

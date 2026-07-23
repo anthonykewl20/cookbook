@@ -16,6 +16,11 @@
 > engineering skills; 39 of 49 skills gave zero improvement) and **SkillLearnBench** (stronger models did
 > not consistently make or use better skills; self-feedback caused recursive drift). Read that file as the
 > spec; this one as the method and the open questions behind it.
+>
+> **Independent review.** That spec has since been audited in
+> `research/agent-skill-effectiveness-framework-gaps.md` — 22 gaps, of which the most serious is
+> **meta-validation**: prove the evaluator itself can tell a useful skill from placebo, harm, leakage,
+> grader failure and infrastructure noise before any of its reports are trusted.
 
 > **Headline.** The one defensible method is a **controlled, paired evaluation**: run the same real
 > tasks with and without the skill under identical conditions, grade the resulting artifacts with
