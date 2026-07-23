@@ -1665,3 +1665,24 @@ and still let a discovery live only in chat an hour later. Remembering to log is
 The prevention has to be a checker, not a firmer resolve, and the owner has asked for one — a harness
 reminder that fires whether or not the manager remembers. It is being chosen now; this entry exists so
 the finding is kept while the mechanism is built, which is the whole point.
+
+## No enhancement ships on impression — the fix is measured, or it is an opinion (2026-07-23)
+
+Immediately after the entry above, the manager reoffended in a new shape. Asked how to make
+discovery-logging reliable, it invented three hook designs and asked the owner to pick one. **Neither
+of them knew the correct answer, so the question was a guess wearing the clothes of a decision** — and
+asking the owner to choose between unmeasured guesses is both *spending the owner's attention* and
+*promotion on impression*, the two faults this shop is built to refuse.
+
+**The owner's ruling, and it is a standing method now: an Enhancement earns its place the way a cook
+does here — by measured audition, not by sounding right.** Anything proposed as an improvement must be
+(1) researched against real-world prior art on the web and GitHub, (2) reduced to a testable theory,
+(3) probed with a small prototype, and (4) measured against a metric it must actually move. Only a
+measurable gain is an *Enhancement*. A thing that cannot be measured is an opinion, and opinions do
+not ship here.
+
+This is the showdown applied to process instead of to cooks. The printer's chair, the taster, the
+reader — every seat in this shop was filled by measurement, never by a model card or a good argument.
+Method changes now go through the same door. The first thing put through it is the very question that
+produced this ruling: how to make a discovery reliably reach the record. It is being researched, not
+guessed.
