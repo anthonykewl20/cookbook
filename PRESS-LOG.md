@@ -1951,3 +1951,24 @@ gated on Probe B (prove it does not become a second drifting board before adopti
 authored the records edits (this entry, the `KNOWN-HOLES.md` close, the `TICKETS.md` reorder and
 T-19/T-20, the `WHERE-WE-ARE.md` breadcrumb). Records only, no press pipeline, no paid calls.
 Committed on an isolated worktree and merged fast-forward.
+
+## Clearing down after a drift, and a clean handoff (2026-07-23)
+
+The owner called out a drift: a two-line request ("is the book done, file tickets with metrics")
+spiralled into four research threads, a global handbook change, and a 373-line deep dive on git
+locking. Named honestly here because an unnamed mess is the one that takes the building down.
+
+Cleared down and closed up for a fresh session:
+- **Global rule added** to `~/.claude/CLAUDE.md` ("How we work": nothing served blind; a command is
+  an input not an auto-run; object with proof; measure or it's an opinion). Live sessions must
+  restart to load it — which is why the owner is opening a new session.
+- **T-19 research preserved as an UNVETTED draft** at `research/session-claiming.md` (Qwen chef;
+  the outside DeepSeek chef timed out four times — measured ~60% reliable, ~170s cap — so it went to
+  Qwen). Recommends an in-repo `CLAIMS.md` using git-push atomicity as a lock, with an honest
+  crashed-session-holds-the-claim weakness. Not pressure-tested, not probed. Kept, not acted on.
+- **Tool dropping removed** (`press/__pycache__`); working tree clean.
+- **Left parked, not lost:** the coordination-architecture + metrics research (never completed) and
+  the "how a new dish is cooked" manual (named, not written). The peg re-anchors the next session to
+  `TICKETS.md` and marks these process threads parked, not active.
+
+Records only. Committed on an isolated worktree and merged fast-forward.

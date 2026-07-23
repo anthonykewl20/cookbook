@@ -32,6 +32,27 @@ Read this first, every session. Name the step in your first line, every reply.
 
 ## The step we are on
 
+**Re-anchor (2026-07-23, after a drift the owner called out).** A simple request — "is the book
+done, and file tickets with metrics" — spiralled into four research threads, a global rule
+change, and a deep dive into git-locking mechanics. **This is a finished book with a to-do list
+to work through, not a research lab.** Start from `TICKETS.md`. Do not reopen the process
+questions below unless the owner asks — they are parked, not active.
+
+What settled this session, and what is parked:
+- **DONE:** where the work is tracked (flat files in the repo; Issues only as a bug mailbox) —
+  proven by Probe A, closed. See `research/where-work-is-tracked.md`.
+- **NEW, global:** the "How we work" rules were added to the global handbook (`~/.claude/CLAUDE.md`):
+  nothing served blind, a command is an input not an auto-run, object with proof, measure or it's
+  an opinion. **A live session must be restarted to load them.**
+- **PARKED, unvetted:** `research/session-claiming.md` — a Qwen-chef draft for T-19 (two sessions
+  claiming one ticket). It recommends an in-repo `CLAIMS.md` using git-push atomicity, and flags
+  its own weak spot (a crashed session holding a claim). **Not pressure-tested, not probed — do not
+  act on it until Probe C is run.**
+- **NOT DONE:** the coordination-architecture + measurable-metrics research (the outside DeepSeek
+  chef timed out four times; measured ~60% reliable and slow — prefer `qwen3.7-plus`, or split the
+  task, next time). The standing "how a new dish is cooked" manual was named as a goal and NOT
+  written.
+
 **The book is bound and the front door is honest.** All 51 chapters written, tasted, swept
 against the eleven invariants and read for what they left out. The whole-book read is done. The
 menu contradiction — the oldest live one — is closed. `README.md` and `CHANGELOG.md` tell the
