@@ -91,11 +91,12 @@
   "10": {
     "must_cover": [
       "Define instructions as anything written that tells someone what to do, before they do it.",
-      "Include the menu, the recipes, the house rules on the wall, each person's job description, and this book on the shelf.",
+      "Include the recipes, the house rules on the wall, each person's written job description, the taster's written checklist and this book installed in the kitchen; state plainly that the menu is NOT an instruction but each restaurant's local record of recipes served.",
       "State instructions are the static manual: they change only through one door (log \u2192 owner \u2192 amend once for everybody).",
-      "Flag that chapters 10 and 12 are the pair the whole book turns on: instructions say what should happen, the log says what did; their disagreement is the only place drift is seen.",
+      "Flag that chapters 10 and 12 are the pair the whole book turns on: instructions say what should happen, the log says what did; their disagreement is drift, and comparing them is the SHARPEST place drift shows \u2014 not the only place.",
       "Note instructions travel to new restaurants unchanged (they are the promise, not a record).",
-      "Note the taster's checklist is a written instruction (detailed later in chapter 19)."
+      "Note the taster's checklist is a written instruction (detailed later in chapter 19).",
+      "State that a job description also says how heavy the thinking is \u2014 some dishes are almost all reasoning, most follow the recipe \u2014 and match a hand of matching strength (strongest for the heaviest, cheaper for light work); note this split is one kitchen's judgement from one service, not yet a measurement."
     ],
     "must_not_cover": [
       "The operations log and its diary nature (chapter 12).",
@@ -104,8 +105,8 @@
       "The money or stock categories (chapters 8, 7)."
     ],
     "must_not_contradict": [
-      "The instructions \u2014 anything written that tells someone what to do, before they do it. *The menu, the recipes, the house rules on the wall, each person's job description, and this book on the shelf.*",
-      "Chapters 10 and 12 are the pair the whole book turns on. Instructions say what should happen. The log says what did. When the two disagree, that is drift \u2014 and it is the only place drift can be seen at all.",
+      "An instruction is anything written that tells someone what to do, before they do it: the recipes, the house rules on the wall, each person's written job description, the taster's written checklist, and this book installed in the kitchen. The menu is not an instruction \u2014 it is each restaurant's local record of recipes currently served.",
+      "Instructions say what should happen. The log says what did. When the two disagree, that is drift. It is the sharpest place to see drift, and the one this book is built around \u2014 but it is not the only place drift can appear.",
       "If the people vary and the result must not, then the manual is the only thing allowed to hold still.",
       "Something goes wrong or could be better \u2192 it is written into the log \u2192 the log is read and reported upward \u2192 the owner decides \u2192 the manual is amended once, for everybody.",
       "The book is installed. It is not transcribed. If you want it to say something different, you change the book \u2014 and there is exactly one door for that, described in Part Three."

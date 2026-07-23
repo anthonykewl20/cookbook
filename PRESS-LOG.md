@@ -2027,3 +2027,55 @@ every substantial Claude-host code job will draw the same false BLOCK from its o
 Worktree `t12-taster-self-compare` merged fast-forward and removed; `press/__pycache__` (created by
 running the taster) stays git-ignored; working tree clean. Board updated: T-12 struck, **T-10 is now
 the last blocker before the next page prints.**
+
+## T-10 CLOSED — chapter 10's brief realigned to the bound page; the last blocker is gone (2026-07-23)
+
+| Stamp | Record |
+|---|---|
+| Job | Close the last blocking hole: chapter 10's brief in `press/briefs-7to11.json` quoted two rules the owner dissolved on 2026-07-22 — the menu as an *instruction*, and instructions-vs-log as *"the only place drift can be seen"* — so a taster handed that brief manufactured false faults against the correct bound page |
+| Channel | Isolated worktree `t10-stale-briefs`; mechanical content-alignment (host), wording pre-determined from the authoritative bound page + `core-invariants.json`, certified by the objective taster probe |
+| Acceptance test | **Head-chef-run, measured on the live taster** across three runs on chapter 10 (see below) |
+| Verdict | **BOUND to `main`.** One commit: the brief fix plus the record updates |
+
+### The fix, and what the measurement found beyond the ticket
+
+The two dissolved rules were corrected to match the bound chapter 10 and `core-invariants.json`:
+the menu is a local **record**, not an instruction (inv. 8/9); instructions-vs-log is the
+**sharpest** place drift shows, not the only place (inv. 3). `press/briefs-2to6.json` was checked
+and carried neither rule — already clean, so the "both files" done-condition was half-satisfied
+before I started.
+
+**The taster measured the fix in three runs, and each removed exactly its predicted false fault:**
+
+1. **Stale brief → SEND BACK**, `t6_contradiction 1`. It flagged the two *correct* sentences — the
+   page saying "the menu is not an instruction" and "not the only place drift can appear" — as
+   contradictions of the brief. The page is right; the brief was wrong. This is the baseline the
+   ticket predicted, reproduced live.
+2. **After fixing the two dissolved rules → SEND BACK**, but `t6_contradiction` now `5` (both false
+   faults gone) and a NEW `t4_unfounded` fault appeared: the "a job description states how heavy the
+   thinking is" section (flat rules 11–12) called an "invented mechanism … not established by the
+   brief." That is a **third** staleness: the brief predates the 2026-07-23 chapters 9/10
+   role-assignment reprint that added that content to the page, so the brief did not authorise it.
+   Same disease as the ticket — a brief drifted from the bound page manufacturing a false fault —
+   one the ticket had not named because nobody had measured this far.
+3. **After adding the reasoning-weight coverage to `must_cover` → SERVE, zero faults**, `t4` and
+   `t6` both `5`. Done-condition met.
+
+**Scope call, labelled.** Extending the fix past the two rules the ticket named was a head-chef
+decision, not a silent one: the done-condition is *the probe returns SERVE*, and it cannot be
+reached while the brief stays stale in a third place with the same root cause. It is a brief edit,
+revertable, and certified by an objective probe — decide-and-log territory, not an owner question.
+
+### Why the taster certified this instead of a code reviewer
+
+This was a content-alignment edit — four corrected strings and one added `must_cover` item, wording
+lifted from the bound page — not new logic. The strongest possible check for "does the brief now
+match the page" is the taster itself run against the bound page, and it is independent of the hand
+that made the edit. A clean SERVE with zero faults, from SEND BACK on the same page, is a measured
+pass that no read-through could match.
+
+### Clearing down
+
+Worktree `t10-stale-briefs` merged fast-forward and removed; `press/__pycache__` stays git-ignored;
+working tree clean. **Both blocking tickets (T-12, T-10) are now closed — no blocker remains before
+the next page is printed.**

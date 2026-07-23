@@ -100,22 +100,26 @@ central finding, and it came out of that job:
    (a real fault, the jargon word *plugin*); ch1 SERVEs on a genuine comparison to ch0.** A
    handbook conflict surfaced during review is now waiting on the owner (see below and
    `PRESS-LOG.md`). **The remaining blocker, T-10, moves up.**
-3. **T-10 — `press/briefs-*.json` still quote two rules the owner dissolved on 2026-07-22** — the menu
-   as an instruction, and drift being visible in *"the only place"*. **Measured on 2026-07-23:
-   a taster given one of these briefs rejected a correct chapter twice**, quoting two sentences
-   that are byte-identical to the bound page. **This one is worse than it looks, because it does
-   not merely fail to help — it manufactures faults, and a false fault buys a reprint of a page
-   that was already right.** It will bite the next job that uses a brief. Fix it before printing.
+3. **DONE, 2026-07-23 (T-10) — chapter 10's brief no longer manufactures false faults.** The two
+   dissolved rules (menu-as-instruction, *"the only place"* drift) were realigned to the bound page
+   and `core-invariants.json`; `briefs-2to6.json` was already clean. **Measured: the ch10 probe
+   flipped SEND BACK → SERVE, zero faults.** The measurement also caught and fixed a *third*
+   staleness (the brief predated the ch9/10 role-assignment reprint). Full record in `PRESS-LOG.md`.
+   **With T-12 and T-10 closed, no blocker remains before the next page is printed** — the press no
+   longer invalidates evidence or manufactures false faults.
 4. The smaller ones: a fourth copy of the brief's field names in `prep.py`, chapter 44 repeating
    its own rule in eight lines, `press/briefs-*.json` also still saying *chef*, and the shop
    keeping no record of *why* it overrules a checker — six overrules, none re-readable.
 5. **Needing the owner: what the operations log physically IS.** The book tells a reader to write
    in it on nearly every service page and never says what they are writing on. It is waiting.
-6. **Needing the owner: which handbook governs the writer.** Closing T-12 exposed that
+6. **RESOLVED by the owner, 2026-07-23 — the writer handbook.** Closing T-12 exposed that
    `~/.claude/CLAUDE.md` (Codex writes substantial code for a Claude host) and `~/.codex/AGENTS.md`
-   (GLM writes; Codex only reviews) flatly disagree. Every substantial Claude-host code job will
-   draw a false BLOCK from its own Codex reviewer until this is reconciled. **A decision only the
-   owner can make** — full evidence in `PRESS-LOG.md`.
+   (GLM writes; Codex only reviews) flatly disagree, so every substantial Claude-host code job draws
+   a false BLOCK from its own Codex reviewer. **The owner ruled `~/.claude/CLAUDE.md` is the law:
+   Codex writes.** That routing BLOCK is therefore a known invalid false-positive (heed real code
+   findings, disregard the writer-is-Codex objection). **Pending follow-up:** reconciling
+   `~/.codex/AGENTS.md` to match is a global-config edit that needs the owner's live Codex sessions
+   restarted, so it was left for the owner, not changed unprompted.
 
 **Not this step:** printing more — nothing in the running order is unprinted. Not this step:
 reopening the running order; it was reopened twice on 2026-07-22, each time on a ruling, and is
