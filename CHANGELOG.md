@@ -9,24 +9,30 @@ about.
 
 ---
 
-## 2026-07-23 — the ocask boundary is untangled: research asset in, four gaps named honestly
+## 2026-07-23 — the ocask boundary is untangled: how-we-cook design work re-homes here
 
-**ocask's experimental kitchen ran a cross-family review of its own "how we cook" design tickets
-(#71, #72, #74, #75, #76) against this book's bound chapters, then handed the result across the
-boundary rather than asserting the tickets closed.** Two things moved:
+**The owner decided how-we-cook design work moves off the ocask board and onto this one: the
+ocask board returns to pure ocask (its drift-guard engine and real product bugs), and this book's
+own `KNOWN-HOLES.md` becomes the tracker for its still-open design questions.** ocask's #67 map
+and its four design tickets (#71, #72, #74, #75), plus #76, **close on ocask** as part of that
+re-home — but before closing anything, ocask's experimental kitchen ran a cross-family review of
+its own tickets against this book's bound chapters, so the closures carry the honest state rather
+than a false "answered." Two things moved:
 
 - **`research/proof-over-authority.md` arrived** — the literature review behind "settle contested
   claims by proof, not by who's speaking," written on the ocask side as the linked asset for
   cookbook #1 and staged there until this book was ready to receive it. Content preserved exactly;
   it was not rewritten to arrive.
-- **`KNOWN-HOLES.md` gained four entries**, not four closures. The review found #71, #72, #74 and
-  #75 each **PARTIALLY** answered by this book — never fully — and said so specifically rather than
-  in the aggregate: #71's start-of-work check, #72's serving bar and override mechanism, #74's
-  applied per-checkpoint lock evaluation, and #75's still-broken dependency chain. A fifth entry
-  records #76 (whether a real drift-guard dish was ever driven through the kitchen's own process) as
-  an open question, not an answer either way. **Closing on the strength of a chapter's title, when
-  the chapter only partly answers the question, is exactly the kind of overclaim this book's own
-  `KNOWN-HOLES.md` exists to refuse** — so the gaps are carried over intact instead.
+- **`KNOWN-HOLES.md` gained two entries, closing five ocask tickets — but tracking gaps, not
+  claiming answers.** The review found #71, #72, #74 and #75 each **PARTIALLY** answered by this
+  book — never fully — and said so specifically rather than in the aggregate: #71's start-of-work
+  check, #72's serving bar and override mechanism, #74's applied per-checkpoint lock evaluation,
+  and #75's still-broken dependency chain. A second entry records #76 (whether a real drift-guard
+  dish was ever driven through the kitchen's own process) as an open question, not an answer
+  either way. **Asserting a ticket "answered" on the strength of a chapter's title, when the
+  chapter only partly answers the question, is exactly the kind of overclaim this book's own
+  `KNOWN-HOLES.md` exists to refuse** — so the gaps are carried over intact and tracked here,
+  closed on ocask but not settled.
 
 No page was reprinted and no verdict from this book's own binding was reopened; this is a boundary
 hand-off, not a press-shop job.
