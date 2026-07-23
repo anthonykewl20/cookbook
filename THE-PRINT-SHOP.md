@@ -332,6 +332,16 @@ they do not work anywhere.
 8. **The taster receives the chapter's brief**, not only the page. Otherwise "is anything
    asserted that nobody established" cannot be answered, and a chapter gets marked down for
    doing what it was told.
+9. **No check without separation.** A chair may be covered only where doing so breaks none of the
+   book's three separations: the maker never approves its own work, the diagnoser never
+   treats what it diagnoses, and nobody judges itself. The printer is maker, the taster is
+   checker, and the doctor diagnoses fitness (people, template, and production line), never
+   a page's content. The taster's question is content and quality, and it is a separate check.
+   The printer's odd-jobs cover while GLM returned 529 breaks none of these, because odd-jobs
+   is not a check. But the taster's chair may never be covered by the page's own writer, and
+   the doctor's chair may never be folded into a worker whose fitness it is diagnosing. If no hand
+   can cover a required check without breaking one of the three, the book's rule holds here too:
+   **no checker, no service** — the work waits rather than being checked by a conflicted hand.
 
 ## What is not settled
 
