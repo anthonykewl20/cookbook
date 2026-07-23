@@ -1,0 +1,11 @@
+{"meta":{"model":"opus","harness":"claude-code"}}
+{"turn":1,"tool":"Task","target":"delegate: implement rate-limit middleware for the payments API","claimed_lines":40,"ts_start":1700000000.0,"ts_end":1700000600.0,"outcome":{"subagent_produced_lines":35,"checked":true,"gate_passed":true}}
+{"turn":2,"tool":"Task","target":"delegate: build the retry/backoff wrapper for the outbound webhook client","claimed_lines":45,"ts_start":1700000100.0,"ts_end":1700000700.0,"outcome":{"subagent_produced_lines":40,"checked":true,"gate_passed":true}}
+{"turn":3,"tool":"Task","target":"delegate: add input validation to the signup form handler","claimed_lines":30,"ts_start":1700000900.0,"ts_end":1700001400.0,"outcome":{"subagent_produced_lines":25,"checked":true,"gate_passed":true}}
+{"turn":4,"tool":"Task","target":"delegate: write the new refund-calculation module and its tests","claimed_lines":55,"ts_start":1700001500.0,"ts_end":1700002200.0,"outcome":{"subagent_produced_lines":50,"checked":true,"gate_passed":true}}
+{"turn":5,"tool":"Task","target":"delegate: migrate the session store to the new cache backend","claimed_lines":35,"ts_start":1700002300.0,"ts_end":1700002900.0,"outcome":{"subagent_produced_lines":30,"checked":true,"gate_passed":true}}
+{"turn":6,"tool":"Task","target":"delegate: add structured logging to the order-processing pipeline","claimed_lines":50,"ts_start":1700003000.0,"ts_end":1700003600.0,"outcome":{"subagent_produced_lines":45,"checked":true,"gate_passed":true}}
+{"turn":7,"tool":"Edit","target":"src/app.py","actual_lines":11,"files_touched":1,"ts_start":1700000650.0,"ts_end":1700000660.0}
+{"turn":8,"tool":"Edit","target":"src/app.py","actual_lines":9,"files_touched":1,"ts_start":1700002250.0,"ts_end":1700002260.0}
+{"turn":9,"tool":"Edit","target":"src/config/routes.py","actual_lines":10,"files_touched":1,"ts_start":1700000750.0,"ts_end":1700000760.0}
+{"turn":10,"tool":"Edit","target":"src/config/routes.py","actual_lines":8,"files_touched":1,"ts_start":1700003650.0,"ts_end":1700003660.0}

@@ -43,6 +43,22 @@ plugin, only in external config. Do not repeat it.
 
 ## The step we are on
 
+**LATEST, 2026-07-23 — the head-chef / per-role SCORER, myth-busted to a hard finding.** The owner's
+bigger goal surfaced this session: ship a *static* per-role scorer so a cookbook user can measure any
+LLM in a role (head chef, cook, taster) and decide whether to hire it. Ran the molecular-gastronomy
+recipe — three adversarial prototype rounds, measured not asserted. **Finding: a static deterministic
+scorer over hook-captured facts can measure behavioural *shape* (delegate vs cook, volumes, gates,
+outcomes) but CANNOT measure *allocation quality* — whether the work that mattered was delegated or
+self-cooked — because importance is a judgment about work content, not recoverable from
+counts/paths/gate-facts. Every deterministic composite got gamed on that axis (v1 90/50, v2 80/40,
+both broken by white-box adversaries respecting the real threat model); the only fix signals are
+another gameable heuristic or an LLM judge that fluctuates (a broken ruler).** So a single
+un-gameable static "hire score" is not achievable; the honest tool is a *dashboard of static facts +
+explicit gates*. Full record and preserved artifacts: `research/scorer-myth-busting-findings.md` and
+`experiments/scorer-myth-busting/`. **A fork is waiting for the owner** (single-score vs
+facts-dashboard; and whether to pursue importance-via-declared-work-class). T-21's driver landed in
+the plugin as delivered-but-not-proven; T-22 (page scorer) inherits the same ceiling.
+
 **Re-anchor (2026-07-23, after a drift the owner called out).** A simple request — "is the book
 done, and file tickets with metrics" — spiralled into four research threads, a global rule
 change, and a deep dive into git-locking mechanics. **This is a finished book with a to-do list

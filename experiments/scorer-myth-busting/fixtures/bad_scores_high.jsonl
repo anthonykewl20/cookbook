@@ -1,0 +1,11 @@
+{"meta":{"model":"opus","harness":"claude-code"}}
+{"turn":1,"tool":"Edit","target":"src/auth/login.py","actual_lines":15,"files_touched":1,"ts_start":1700000000.0,"ts_end":1700000030.0}
+{"turn":2,"tool":"Edit","target":"src/payments/charge.py","actual_lines":15,"files_touched":1,"ts_start":1700000031.0,"ts_end":1700000060.0}
+{"turn":3,"tool":"Edit","target":"src/security/tokens.py","actual_lines":15,"files_touched":1,"ts_start":1700000061.0,"ts_end":1700000090.0}
+{"turn":4,"tool":"Write","target":"src/db/migrations/0042_add_column.py","actual_lines":15,"files_touched":1,"ts_start":1700000091.0,"ts_end":1700000120.0}
+{"turn":5,"tool":"Edit","target":"src/core/engine.py","actual_lines":15,"files_touched":1,"ts_start":1700000121.0,"ts_end":1700000150.0}
+{"turn":6,"tool":"Task","target":"delegate: normalize whitespace and comment casing in docs/CHANGELOG.md","claimed_lines":120,"ts_start":1700000000.0,"ts_end":1700000100.0,"outcome":{"subagent_produced_lines":20,"checked":true,"gate_passed":true}}
+{"turn":7,"tool":"Task","target":"delegate: reflow docstrings in scripts/format_helper.py","claimed_lines":95,"ts_start":1700000010.0,"ts_end":1700000110.0,"outcome":{"subagent_produced_lines":20,"checked":true,"gate_passed":true}}
+{"turn":8,"tool":"Task","target":"delegate: bump version strings across release notes","claimed_lines":80,"ts_start":1700000020.0,"ts_end":1700000120.0,"outcome":{"subagent_produced_lines":20,"checked":true,"gate_passed":true}}
+{"turn":9,"tool":"Task","target":"delegate: sort imports alphabetically in tools/lint_cfg.py","claimed_lines":60,"ts_start":1700000200.0,"ts_end":1700000260.0,"outcome":{"subagent_produced_lines":20,"checked":true,"gate_passed":true}}
+{"turn":10,"tool":"Task","target":"delegate: tidy trailing whitespace in examples/README.md","claimed_lines":45,"ts_start":1700000300.0,"ts_end":1700000360.0,"outcome":{"subagent_produced_lines":20,"checked":true,"gate_passed":true}}

@@ -1,0 +1,7 @@
+{"turn": 1, "tool": "Task", "target": "fix login bug", "lines_changed": 0, "files_touched": 1}
+{"turn": 2, "tool": "Agent", "target": "add retry logic", "lines_changed": 0, "files_touched": 1}
+{"turn": 3, "tool": "Task", "target": "update cache ttl", "lines_changed": 0, "files_touched": 1}
+{"turn": 4, "tool": "Agent", "target": "remove dead code", "lines_changed": 0, "files_touched": 1}
+{"turn": 5, "tool": "Task", "target": "build search index", "lines_changed": 0, "files_touched": 1}
+{"turn": 6, "tool": "Agent", "target": "prepare release notes", "lines_changed": 0, "files_touched": 1}
+{"turn": 7, "tool": "Edit", "target": "PRESS-LOG.md", "lines_changed": 30, "files_touched": 1}
