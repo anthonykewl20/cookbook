@@ -54,7 +54,7 @@
   "9": {
     "must_cover": [
       "Define the people category: anyone who works here, named by role and never by person.",
-      "Present the starting roster exactly as parked: head chef (runs kitchen, manages chefs), chefs (cook dishes), prep cook (growth role: gets ingredients ready, work written into recipe from day one, cook does it until volume forces split), waiter (takes order, carries dish), cashier (takes money), taster (checks dish, never cooked it), doctor (checks health of people and building, never treats), dishwasher (clears up, puts back).",
+      "Present the starting roster exactly as parked: head chef (runs kitchen, manages cooks), cooks (cook dishes), prep cook (growth role: gets ingredients ready, work written into recipe from day one, cook does it until volume forces split), waiter (takes order, carries dish), cashier (takes money), taster (checks dish, never cooked it), doctor (checks health of people and building, never treats), dishwasher (clears up, puts back).",
       "State the book ships a default set of roles, not a blank form; a kitchen renames them but does not start from nothing.",
       "Cover what each role may and may not touch.",
       "Cover who may hire (owner-level decision; note the held rule that a worker never hires a worker).",
