@@ -9,6 +9,42 @@ about.
 
 ---
 
+## 2026-07-23 — research: the skill-eval evidence is deepened — and then validated against its sources
+
+**`research/skill-effectiveness-deepened-evidence.md` arrived** — the fourth note in the skill-evaluation
+investigation, and the first to come out of a `deep-research` sweep. The owner ran the sweep anchored on the
+three earlier notes (method, spec, 22-gap review) looking for *additional* measured evidence — real GitHub
+benchmarks and eval harnesses, not more guidance — and then did the part that matters more than gathering:
+**the host validated every load-bearing finding against its primary source, rather than transcribing the
+workflow's synthesis.** A research note built from "the workflow said so" would be an authority-shaped object
+— exactly the failure this book exists to refuse — so the deliverable is the *validation pass*, and the doc is
+its artefact. (Recorded as standing feedback: validate, don't log.)
+
+The sweep was **capped at the 30-agent mark on the owner's instruction** mid-run, which left its synthesis
+incomplete by design. The host then opened six primaries by hand and confirmed the numbers: **τ-bench**
+(`sierra-research/tau-bench`) decays `pass¹→pass⁴` exactly 0.460→0.225 / 0.692→0.462, and its own README warns
+its LLM error-grader *"may lead to inaccurate error identifications"*; **Scott Spence's sandboxed eval** runs
+`claude -p` in Daytona sandboxes, parses JSONL for `Skill()` events, and measured a forced-commitment hook at
+**100% activation vs a 55% baseline that swung ~5 pp run-to-run** — all for **$5.59** across ~250 invocations;
+the **"SWE-Bench Illusion"** (arXiv 2506.12286) shows 76% vs 53% / 35% vs 18% contamination gaps verbatim;
+JUDGE-BENCH, Play-Favorites, InjecAgent and Inspect AI were confirmed in scope. Six findings are **VERIFIED**
+with their numbers; four more are **VERIFIED** in scope with one figure still sitting in the paper PDF;
+**five remain CLAIMED-BY-WORKFLOW** and are filed in their own section as the next to open — the most
+load-bearing being a (still-unopened) report that correcting SWE-Bench's grader swings **40.9%** of its
+leaderboard's rankings.
+
+**The headline for the rest of the book:** the harvest does not rewrite the method, the spec, or the gaps
+review — it **converts their most serious ASSERTED warnings into MEASURED anchors.** The gaps review's single
+scariest gap, *meta-validation* (prove the evaluator can tell a useful skill from grader failure, leakage and
+noise), is no longer hypothetical: the noisy grader (JUDGE-BENCH), the noisy benchmark-grader (τ-bench), the
+self-biased grader family (Play-Favorites), the contamination-prone dataset (SWE-Bench) and the
+variance-exposing metric (pass^k) all now exist as *measured, citable fixtures* a meta-validation experiment
+can be built from. And the spec's activation-funnel section gained a concrete, cheap, copyable harness design
+plus a result that a forced-commitment hook takes activation noise to zero while keeping precision. No page
+reprinted, no verdict reopened; this is a research note, validated not asserted.
+
+---
+
 ## 2026-07-23 — research: the skill-eval framework gets its independent review (the 22 gaps)
 
 **`research/agent-skill-effectiveness-framework-gaps.md` arrived** — the independent review of the `skill-eval`
