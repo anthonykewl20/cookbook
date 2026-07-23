@@ -8,6 +8,11 @@ building down.
 closed — or the chapter says plainly what it does not cover and where that is handled
 instead.
 
+**This file is the frozen *record* — what went wrong and the evidence for it. The live *plan* —
+what open work is claimed and finished, each with a measurable done-condition — lives in
+`TICKETS.md`, which points back here for the evidence. When a ticket closes, strike its hole
+here in the same commit so the record and the plan cannot drift apart.**
+
 ## Closed
 
 | Hole | How it was closed |

@@ -17,6 +17,9 @@ Read this first, every session. Name the step in your first line, every reply.
 4. `TASTING-CHECKLIST.md` and `THE-CONTRADICTION-PASS.md` — how a page is checked, and why the
    contradiction pass is separate from the taster.
 5. `PRESS-LOG.md` and `KNOWN-HOLES.md` — what happened, and what is still wrong.
+5a. `TICKETS.md` — **the live work board.** Open work, claimed and finished, each with a
+   measurable done-condition. It points back to `KNOWN-HOLES.md` for the evidence. Start here to
+   pick up the next job.
 6. `CHAPTER-TEMPLATE.md` with `book/00-opening-the-box.md` and `book/01-the-interview.md` —
    only if you are printing. **Nothing is left to print.**
 7. `OVERNIGHT.md` — **a completed order.** Read it for the rules it learned, never for the

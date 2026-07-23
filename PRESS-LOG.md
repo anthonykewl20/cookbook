@@ -1864,3 +1864,48 @@ current printing run. The manager did not draft any chapter text on it; the desi
 would live, the six-word budget in chapter 29, the queue-length-is-not-the-trigger distinction to
 preserve) is captured in the ticket so a future session inherits the reasoning rather than the
 guess. The chapter 30 redo remains a separate parked ticket.
+
+## Owner ruling — file tickets for all open work, and harvest measurable data on the book (2026-07-23)
+
+The book is complete: all 51 table-of-contents pages (0–50) are written and bound, and the
+printer's own reach test (`press/test_printer_reach.py`) confirms the catalogue covers 0..50 with
+a page for every listed chapter — green 5/5. Nothing in the running order is unprinted. What is
+left is the open holes.
+
+The owner ruled two things. **First: file tickets for all of it** — turn the open holes and
+corrections into a proper, claimable work board. **Second: add proper measurable metrics on every
+one of the table-of-contents pages**, in service of a standing goal — *"harvest as much data as we
+can on our cookbook."*
+
+**What the head chef decided (mechanics, not owner calls):**
+
+- **A single live board, `TICKETS.md`.** The precedent had buried one ticket inside
+  `KNOWN-HOLES.md`, but that file is the frozen *record* of faults, not a work queue. Splitting a
+  *plan* from a *record* is the book's own instructions-vs-records distinction, so the two are not
+  "two copies of one promise": `TICKETS.md` is the plan and points back to `KNOWN-HOLES.md` for the
+  evidence, and a header note added to the record names the board as the live source of truth so
+  they cannot drift. When a ticket closes, its hole is struck in the same commit.
+- **Every ticket carries a *measurable* done-condition** — a probe that flips, a number that moves,
+  a check that passes — never an opinion. That is the owner's measure-every-Enhancement rule applied
+  to the tickets themselves.
+- **Scope filed: 17 tickets plus the metrics initiative.** Two blocking (stale briefs manufacture
+  false rejections; `taste.py` judges chapters 0 and 1 against themselves), two owner-decisions (what
+  the operations log physically is; what the appliance is), six book corrections, five shop-tool
+  corrections, and the data-harvest initiative. Standing guards (the manager never does the work;
+  never report an unread count; nothing bound mid-check) were **not** ticketed — they are adopted
+  discipline, not units of work. Two old book-content rows (ch. 25, ch. 12) were flagged as needing
+  a verify pass before they earn a ticket, not filed on assumption.
+
+**First data harvest taken the same session.** `press/head-chef-check.py` already emits per-page
+numbers (body-word count, within-700, jargon, flat-rule presence) and — measured here — **nothing
+ever stored them**; every run was discarded. All 51 pages were run and the result stored as
+`data/page-metrics-2026-07-23.json` — the first snapshot the next one can be diffed against.
+Baseline: mean 577 body words, none over the 700 ceiling, no jargon hits, every page carries its
+flat-rules section; tightest pages ch9 (700), ch2 (699), ch10 (699), ch29 (694) — which matches
+the word counts already in the record. **The metric *design* is deliberately left as a
+measure-every-Enhancement job** (research → theory → probe → a metric that must actually move),
+captured in ticket T-18 rather than asserted on impression.
+
+**Records only, not run through the press** — the same class of clerical/records work as the
+staffing ticket above: organizing existing findings, no chapter text drafted, no paid model calls
+beyond the free mechanical harvest. Committed on an isolated worktree and merged fast-forward.
