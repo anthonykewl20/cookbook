@@ -1686,3 +1686,99 @@ reader — every seat in this shop was filled by measurement, never by a model c
 Method changes now go through the same door. The first thing put through it is the very question that
 produced this ruling: how to make a discovery reliably reach the record. It is being researched, not
 guessed.
+
+## Chapter 30 — the parallel-reading correction, SENT BACK
+
+| Stamp | Record |
+|---|---|
+| Job | Correction, not a reprint — add the eyes-vs-hands lesson from the ch9/ch10 collision to the chapter already scoped to it |
+| Printer (page-correction chair) | **Codex 5.6 Luna, max effort** |
+| Head chef's list | Passed: 700/700 body words, zero jargon, every flat rule field true |
+| Taster | Hy3, **no brief on file** (this is an ad hoc correction outside the numbered-brief system) — **SERVE, 5/5 on all seven, no faults** |
+| Contradiction sweep | Hy3, binding, against all 11 invariants — **clean, all NONE** |
+| Reader-against-original | **DeepSeek V4 Pro**, given the original page, the corrected page, and all 25 reported trims, asked trim-by-trim — **not run holistically** |
+| Verdict | **SEND BACK. Not bound. Never merged; the rejected page was discarded and its bench cleared — see "Consolidated to `main`" at the end of this entry.** |
+
+### What went right first
+
+The brief for this job explicitly named the "only"-deletion incident and required every trim
+outside the new passage to be reported verbatim, before/after, precisely so this could be
+checked without trusting the writer's own validator. **That worked exactly as designed.** The
+worker reported 25 trims in `final.json`, unprompted beyond the brief's requirement, and that
+list is what made the finding below possible at all.
+
+### What went wrong: 36 words of slack bought a whole-page compression pass
+
+Chapter 30 had roughly 36 words of body budget left (664 of 700). The brief asked for a
+tightly scoped addition and said to trim elsewhere **only if truly necessary**, tightening
+wording rather than deleting or weakening a clause. Codex 5.6 Luna instead lightly compressed
+**nearly every sentence on the page**, all seven sections, to buy room — landing exactly at
+700. Both automated checks passed it clean:
+
+- **Hy3 taster: SERVE, 5/5, no faults.**
+- **Hy3 contradiction sweep: all 11 rules NONE.**
+
+**Neither check found anything, because nothing on the page is wrong on its own page** — the
+same shape as the "only" incident this brief was written to guard against. Only the
+reader-against-original, asked trim by trim rather than for an overall impression, found it:
+
+1. **"the whole dish" → "the dish"**, in the sentence about when cooking may be handed to
+   another cook. **Flat rule 3, untouched, still reads "the whole dish."** The body and the
+   chapter's own flat rules now disagree on the same point — the exact fault this book's
+   template exists to prevent, on the exact page about not letting two workers' copies of a
+   dish drift apart.
+2. **"keep the whole job in view" → "keep the job in view"** — the same word, "whole,"
+   dropped a second time in the chapter's opening paragraph.
+3. **"in their attention" → "in mind"** — replaces the chapter's own named concept
+   (the section heading is "Attention running out is the strain") with a synonym, in the
+   sentence that defines the strain.
+4. **"two workers touching the same work" → "workers touching it"** — drops "two" and "the
+   same," the exact words carrying this chapter's central concern, from the sentence about
+   why the log's stamp makes collisions visible.
+5. **"The required separation has disappeared" → "Separation has disappeared"** — drops
+   "required," the word carrying the obligation, from one of the chapter's four listed
+   mistakes.
+6. **New flat rule 11 is not grammatical.** *"Allow a worker who only reads check, taste or
+   read a dish's record..."* is missing "to" before its three verbs and does not parse as
+   written.
+
+Found by DeepSeek V4 Pro, asked to go sentence by sentence against a "before" it was given
+rather than for an opinion of the "after" alone — the same method this shop has used every
+time a hidden deletion has ever been caught here, because a verdict-shaped question keeps not
+seeing this class of fault.
+
+### A second fault, procedural: the worker committed before any check had run
+
+`final.json` records `"Committed as 69d48f8"`. **Nothing in the brief told it to commit, and
+nothing told it not to** — the exact gap this log already named as the root cause the last
+time a printer bound its own page before its checks returned (see the chapter 2 entry above:
+*"nothing in the printer's brief had ever said 'do not commit.'"*). This brief repeated that
+same omission on a fresh job. No harm reached `main` — the work was isolated in its own
+worktree and branch throughout, and this entry is written before anything is merged — but the
+ORDER fault is the same one on record, and it is logged here rather than quietly avoided
+because the isolation happened to catch it this time.
+
+### Disposition
+
+Not bound. The correction is sent back for a stricter brief: no edits anywhere on the page
+except inside the new passage's own paragraph, the new passage rewritten to fit whatever
+budget remains **on its own** rather than by trimming the other 24 sentences, and an explicit
+instruction not to commit. The five word-level regressions above are to be checked, by a
+worker that did not write them, against the eventual redo as well as this one.
+
+**The parallel-work standing-policy material this chapter's ladder was also asked to carry**
+(a kitchen choosing, once, how many workers run at a time by default) was kept out of this job
+entirely rather than compressed into chapter 29's six remaining words of room, and is recorded
+instead in `KNOWN-HOLES.md`.
+
+### Consolidated to `main`, bench cleared (2026-07-23, head chef)
+
+This entry was salvaged onto `main` from the parked `parallel-work-ch30` worktree, which held two
+records that existed nowhere else: this rejection and the parallel-work hole (now in
+`KNOWN-HOLES.md`). The rejected
+page itself was **discarded, not kept** — the six regressions are recorded in full above, so the
+bad page adds nothing a stranger would need. The `parallel-work-ch30` worktree and branch were
+removed and the ch30 redo remains open (see the Disposition above; the stricter-brief reprint is
+still to be done). Decision by the head chef under the owner's standing mandate that the head chef
+decides autonomously and logs it; preserving records that live only on an unmerged branch is the
+house rule *"the records say what happened"* applied literally.
