@@ -44,6 +44,25 @@ plugin, only in external config. Do not repeat it.
 
 ## The step we are on
 
+**END OF 2026-07-24 SESSION — handoff for tomorrow. Where we actually stand:**
+
+- **Board flip: DONE, measured, pushed public.** Open work lives in **GitHub Issues** (`gh issue list`);
+  `TICKETS.md` is frozen with a T→issue map. Content gaps = #9–#16; migrated tickets = #17–#24.
+- **The cookbook-on-trial measurement is LIVE in another session, not this one.** This session designed a
+  three-arm SWE-bench A/B (single-Sonnet control), PROVED the pipeline end-to-end — de-contamination via
+  `claude --safe-mode` verified live, leakage guard held, measured cost ≈ **$95** for a full 24-task run —
+  then **stood it down** in favour of another session's more faithful pilot (code-writer held constant =
+  **Codex both sides**, only the handbook/supervision layer toggled, **3× repeats**). Full record + the
+  measured numbers + next steps are in **issue #24**; the other session's harness is **#25**.
+- **Reusable gotcha banked:** `claude -p` silently loads the whole cookbook into context — use
+  `--safe-mode` for any clean baseline, or a Claude-based eval is contaminated toward "no effect" (see #24, #17).
+- **NEXT (tomorrow):** read the other session's handbook-lift results; apply the pre-registered rule
+  **+10pp & McNemar p<0.05** on the paired delta (report delta-not-absolute for contamination); inconclusive →
+  escalate N or build the orchestration-stress battery, do NOT re-read. Then **#17** (scenario-eval, reuses the
+  `--safe-mode` de-contamination) and **#3** (page scorer, same outcome-lift method).
+
+_The blocks below (SCORER, "step now — updated") are earlier-in-the-day context; this block supersedes their "what is active now."_
+
 **LATEST, 2026-07-24 — the per-role/skill SCORER: research corrected the whole approach; the OUTCOME
 ruler is now built and verified.** The owner's goal: ship a *static* per-role scorer so a cookbook
 user can measure any LLM/skill in a role and decide whether to use it. Path so far:
