@@ -1850,3 +1850,17 @@ interface that enforces `owned_paths`, instead of the path-blind interface that 
 printer commit its own page and killed four chefs mid-task. The `worktree-fix-printer-reach` branch
 that held the parked partial is superseded — its good work (the 0–50 range, stray-list skipping,
 filename overrides) is now on `main` inside the bound fix — and is deleted.
+
+## Owner ruling — staffing by order size, and it must be myth-busted before it is written (2026-07-23)
+
+Asked how many workers a kitchen should put on one job at a time, the owner rejected a fixed
+default and ruled the answer **scales with the order's size**: a small order stays with one
+worker; a large one is split among more, so no cook loses the whole job from sight. Then the
+sharper instruction: **"this needs a myth-buster type of thing"** — it is a *hypothesis*, not a
+rule, and does not enter the book until it has been probed and measured against real work, the
+same *measure-every-Enhancement* bar every process change now clears. **Recorded as a ticket in
+`KNOWN-HOLES.md`, not run through the press** — the owner said plainly this is not part of the
+current printing run. The manager did not draft any chapter text on it; the design (where it
+would live, the six-word budget in chapter 29, the queue-length-is-not-the-trigger distinction to
+preserve) is captured in the ticket so a future session inherits the reasoning rather than the
+guess. The chapter 30 redo remains a separate parked ticket.
