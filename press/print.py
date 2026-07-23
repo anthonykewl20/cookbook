@@ -15,8 +15,12 @@ from brief_contract import BRIEF_FIELDS, BRIEF_LIST_FIELDS
 
 SP = os.environ.get("PRESS_WORK") or os.path.dirname(os.path.abspath(__file__))
 CB = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# Preserve the one established filename that intentionally abbreviates its CONTENTS title.
-FILENAME_OVERRIDES = {19: "19-checking-it.md"}
+# Preserve established filenames that intentionally abbreviate their CONTENTS titles.
+FILENAME_OVERRIDES = {
+    2: "02-the-words-you-need.md",
+    13: "13-the-locks-and-alarms.md",
+    19: "19-checking-it.md",
+}
 
 
 def r(relative_path):
@@ -24,29 +28,60 @@ def r(relative_path):
         return handle.read()
 
 
-def parse_chapter(value):
-    if not re.fullmatch(r"(?:1[7-9]|[2-4][0-9]|50)", value):
-        raise ValueError("chapter must be a whole number from 17 through 50")
-    return int(value)
+def book_chapter_numbers():
+    numbers = set()
+    for name in os.listdir(os.path.join(CB, "book")):
+        match = re.fullmatch(r"(\d+)-.*\.md", name)
+        if match:
+            numbers.add(int(match.group(1)))
+    return numbers
+
+
+def parse_chapter(value, catalog=None):
+    if catalog is None:
+        catalog = chapter_catalog(r("CONTENTS.md"))
+    max_chapter = max(catalog) if catalog else 0
+    if not re.fullmatch(r"(?:0|[1-9]\d?)", value):
+        raise ValueError(f"chapter must be a whole number from 0 through {max_chapter}")
+    number = int(value)
+    if number not in catalog:
+        raise ValueError(f"chapter must be a whole number from 0 through {max_chapter}")
+    return number
 
 
 def chapter_catalog(contents):
     titles = {}
+    expected_number = 0
     for line in contents.splitlines():
         match = re.fullmatch(r"(\d+)\.\s+(?:\*\*)?(.+?)(?:\*\*)?\s*", line)
         if not match:
             continue
         number = int(match.group(1))
-        if 17 <= number <= 50:
-            title = match.group(2).split(" — ", 1)[0].strip().rstrip("*").strip()
-            if not title or number in titles:
-                raise ValueError(f"CONTENTS.md has an ambiguous title for chapter {number}")
-            titles[number] = title
-    expected = set(range(17, 51))
+        if number > expected_number:
+            raise ValueError(
+                "CONTENTS.md must contain exactly one title for every chapter from 0 to 50; "
+                f"missing={expected_number}"
+            )
+        if number < expected_number:
+            # If we already consumed `number`, a repeated chapter marker and a low-numbered
+            # stray list item look the same; we intentionally keep this as a non-fatal skip.
+            continue
+        title = match.group(2).split(" — ", 1)[0].strip().rstrip("*").strip()
+        if not title or number in titles:
+            raise ValueError(f"CONTENTS.md has an ambiguous title for chapter {number}")
+        titles[number] = title
+        expected_number += 1
+    expected = set(range(0, expected_number))
     if set(titles) != expected:
         raise ValueError(
-            "CONTENTS.md must contain exactly one title for every chapter from 17 to 50; "
+            "CONTENTS.md must contain exactly one title for every chapter from 0 to 50; "
             f"missing={sorted(expected - set(titles))}"
+        )
+    missing = book_chapter_numbers() - set(titles)
+    if missing:
+        raise ValueError(
+            "CONTENTS.md has no title for existing book chapters; "
+            f"missing={sorted(missing)}"
         )
     return {
         number: {
@@ -101,13 +136,15 @@ def load_brief(path, chapter, title):
 
 
 if len(sys.argv) == 2 and sys.argv[1] == "--catalog":
-    print(json.dumps(chapter_catalog(r("CONTENTS.md")), ensure_ascii=False, indent=2))
+    contents = r("CONTENTS.md")
+    print(json.dumps(chapter_catalog(contents), ensure_ascii=False, indent=2))
     raise SystemExit(0)
 if len(sys.argv) != 2:
-    raise SystemExit("usage: python3 press/print.py CHAPTER (17-50)")
-chapter = parse_chapter(sys.argv[1])
+    raise SystemExit("usage: python3 press/print.py CHAPTER (0-50)")
+contents = r("CONTENTS.md")
+catalog = chapter_catalog(contents)
+chapter = parse_chapter(sys.argv[1], catalog)
 ch = str(chapter)
-catalog = chapter_catalog(r("CONTENTS.md"))
 title = catalog[chapter]["title"]
 fname = catalog[chapter]["filename"]
 brief_path = os.path.join(SP, f"brief-{chapter}.json")
