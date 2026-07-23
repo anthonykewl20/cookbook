@@ -1832,9 +1832,14 @@ re-readable reason is the fault this file records six times. Instead the root ca
 the source, and the review was **re-run**; attempt-002 put the verdict in `summary` (a field the
 parser reads) and classified cleanly APPROVED by both reviewers. The block was a format gap, not a
 defect. **This is a real hole in the shop's shared supervisor, not in this book** — it lives in
-`~/.claude/skills`, whose change requires restarting live sessions, so it is the owner's to fix. It
-is surfaced to the owner and recorded here so the next crucial job is not blocked — or, worse,
-tempted into an override — by the same false negative. The lesson is the one the whole shop turns
+`~/.claude/skills`. **FIXED the same day on the owner's go-ahead:** `_codex_final_verdict` now also
+scans the reviewer's list fields (`open_issues`, `verification`, `changes`) for the `VERDICT:` line,
+so a structured-only APPROVED is no longer read as BLOCKED; `parse_verdict` still matches only an
+explicit `VERDICT: <token>`, so prose in those fields cannot forge a verdict. Verified against the
+attempt-001 shape (now APPROVED), the attempt-002 shape (still APPROVED), a real BLOCKED (still
+BLOCKED), and no-verdict (still None); the tool's own 85-test suite passes. It is surfaced to the
+owner and recorded here so the next crucial job is not blocked — or, worse, tempted into an
+override — by the same false negative. The lesson is the one the whole shop turns
 on: **a red verdict from a checker is investigated to its root and resolved with evidence, never
 waved past because the manager read the outputs and liked them.**
 
