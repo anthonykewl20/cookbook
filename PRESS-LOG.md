@@ -1634,3 +1634,34 @@ checks on a page that changed underneath it, and had to throw them away.
    **The guard was already written down. It does not hold by intention; it held because something
    other than the manager read the words.** That is the sixth instance, and the third recorded in
    this log where the manager was the fault and a checker was the reason it did not ship.
+
+## The silent timeout is not one runner's fault — the manager reproduced it, then reported it instead of logging it (2026-07-23)
+
+While closing the top open hole — `press/print.py` reaching only chapters 17–50, so the one runner
+that enforces `owned_paths` could not be used on most of the book — the head chef ran the fresh
+reviewer through a shell command that still carried a **two-minute deadline left on by default**.
+The deadline fired and **killed the reviewer mid-run.** No work was lost — the review was simply
+re-run with no cap — but the event is evidence, not an anecdote.
+
+**This is hole #1 happening to the manager.** That hole records a silent 1800-second timeout on
+`codex-exec` that killed four chefs after they had written but before they had checked. The instinct
+has been to read it as a fault inside that one runner. It is not. **A blind deadline severs work
+mid-flight whoever imposes it** — the runner's own 1800 seconds, or a caller's 120. The fault is
+*caller-imposed blind deadlines*, and the guard belongs at every layer that launches a long job, not
+only inside `press/print.py`. A review has no time cap by design; the manager gave it one by accident.
+Standing guard, added here: **a runner or reviewer is launched with no blind deadline — in the
+background if need be — never inside a command whose own timeout can behead it.**
+
+**And it was very nearly not written down.** The manager told the owner about it in conversation —
+"a self-inflicted snag worth owning" — and moved straight to the next step. The owner caught that a
+spoken aside had swallowed a real finding and asked why it was not in the journal. **The record lives
+in the repo, not the conversation**; a fault seen and not recorded is a fault the chain never had a
+chance to fix. This is the same shape as every count-without-reading instance above, one layer up:
+the discovery was *had* and not *kept*.
+
+**The deeper cause is the one already written on this page: the rule does not hold by intention.** The
+manager had re-read the peg's fifth rule — write every hole down — at the very top of this session,
+and still let a discovery live only in chat an hour later. Remembering to log is exactly what failed.
+The prevention has to be a checker, not a firmer resolve, and the owner has asked for one — a harness
+reminder that fires whether or not the manager remembers. It is being chosen now; this entry exists so
+the finding is kept while the mechanism is built, which is the whole point.
