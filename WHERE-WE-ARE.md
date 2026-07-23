@@ -20,6 +20,11 @@ Read this first, every session. Name the step in your first line, every reply.
 5a. `TICKETS.md` — **the live work board.** Open work, claimed and finished, each with a
    measurable done-condition. It points back to `KNOWN-HOLES.md` for the evidence. Start here to
    pick up the next job.
+5b. `research/where-work-is-tracked.md` — **why the board is a flat file in the repo and not
+   GitHub Issues.** Read it before anyone proposes moving the tracker: the work-list is a record,
+   the process must live in the repo so a stranger finds it offline, and a GitHub Issue is not in
+   a `git clone`. Answered the book's own self-referential open hole. Backed by a measured probe,
+   not an opinion (see the step below).
 6. `CHAPTER-TEMPLATE.md` with `book/00-opening-the-box.md` and `book/01-the-interview.md` —
    only if you are printing. **Nothing is left to print.**
 7. `OVERNIGHT.md` — **a completed order.** Read it for the rules it learned, never for the
@@ -31,6 +36,19 @@ Read this first, every session. Name the step in your first line, every reply.
 against the eleven invariants and read for what they left out. The whole-book read is done. The
 menu contradiction — the oldest live one — is closed. `README.md` and `CHANGELOG.md` tell the
 truth about the state.
+
+**Where the work is tracked is settled, 2026-07-23 — and it was measured.** The book's own
+self-referential open hole ("where the job list lives") is closed. The work-list stays as
+**flat files in the repo** (`TICKETS.md` the live plan, `KNOWN-HOLES.md` the frozen record);
+GitHub Issues get a place only as a one-way public bug **mailbox**, never a second board. The
+deciding rule is this project's own — the process lives in the repo so a stranger session finds
+it offline — and a GitHub Issue is not in a `git clone`. **This was not settled by argument:
+Probe A ran a fresh session on the repo alone, with no GitHub and no prior context, and it
+correctly named the top open ticket, its done-condition and its evidence row from the mandated
+reading order — measured PASS.** Two follow-ups stayed open as tickets: **T-19** (two isolated
+sessions can still both claim one ticket — the real coordination gap; the "write your claim in
+the row" fix does not work across separate worktree branches) and **T-20** (the reader mailbox,
+gated on Probe B). Full record in `research/where-work-is-tracked.md` and `PRESS-LOG.md`.
 
 **Chapters 9 and 10 are bound, 2026-07-23.** The role-assignment rule is in the book: a role is
 given, never assumed, and a job description matches a dish to a hand of the matching strength.

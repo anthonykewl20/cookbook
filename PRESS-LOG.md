@@ -1909,3 +1909,45 @@ captured in ticket T-18 rather than asserted on impression.
 **Records only, not run through the press** — the same class of clerical/records work as the
 staffing ticket above: organizing existing findings, no chapter text drafted, no paid model calls
 beyond the free mechanical harvest. Committed on an isolated worktree and merged fast-forward.
+
+## Decision — the work-tracker stays flat files in the repo; Issues only as a bug mailbox (2026-07-23)
+
+The owner questioned whether the tracker should be GitHub Issues rather than the in-repo flat
+files, and — the standing method — asked for research and proof, not a rubber-stamp, from either
+side. The research was run off-session (`research/where-work-is-tracked.md`, commit 341d19a;
+grounding reads GLM 5.2, writing Sonnet 5 after an Opus 429, citations spot-checked by the owner
+as host). The host then pressure-tested the finished file rather than accepting it.
+
+**The decision.** The in-repo flat files stay the system of record — `TICKETS.md` the live plan,
+`KNOWN-HOLES.md` the frozen record. GitHub Issues earn a place only as a **one-way public mailbox**
+for plugin readers to report bugs, triaged into the repo each session and closed with a pointer,
+never a second board. This closes the book's own self-referential open hole, "where the job list
+lives for a kitchen with no shared tracker."
+
+**Why (the load-bearing plank, stated honestly).** The deciding rule is *the process lives in the
+repo so a stranger session finds it offline* — a GitHub Issue is not in a `git clone`, confirmed
+against GitHub's own docs. The research also leaned on "records never travel," but the host's
+pressure-test flagged that plank as borrowed: "records are local" most directly means *tied to
+this one restaurant, does not propagate to the others*, which an Issue actually satisfies. The
+conclusion survives on the repo-alone rule, which is the real load-bearer.
+
+**Proven, not asserted (Probe A, measured this session).** A fresh Explore session was given only
+the repo — no GitHub, no prior context — and asked to pick up the next open job and say what "done"
+means. Reading the mandated order alone (`WHERE-WE-ARE.md` → `TICKETS.md` → `KNOWN-HOLES.md`) it
+correctly named the top open ticket (T-12), its measurable done-condition, and its evidence row —
+**measured PASS**. It also caught a real gap the research missed: `TICKETS.md` alone treated the
+two P1s as co-equal, so the do-first order existed only in `WHERE-WE-ARE.md`. Fixed — the board now
+carries its own tie-break (T-12 before T-10).
+
+**The one loose bolt, kept open honestly.** The research declared parallel-session collisions
+"solved by discipline," but its proposed rule — write your claim into the ticket row before
+starting — does not work under the worktree invariant: each session is on its own branch and never
+sees the other's claim until merge, which is the exact 2026-07-23 collision. Real live-claiming
+needs shared immediately-visible state, the one property a flat file on a private branch cannot
+give. Filed as **T-19** rather than papered over. The reader bug-mailbox is filed as **T-20**,
+gated on Probe B (prove it does not become a second drifting board before adopting it).
+
+**Provenance of this session's work:** host read the full research file and ran the probe; host
+authored the records edits (this entry, the `KNOWN-HOLES.md` close, the `TICKETS.md` reorder and
+T-19/T-20, the `WHERE-WE-ARE.md` breadcrumb). Records only, no press pipeline, no paid calls.
+Committed on an isolated worktree and merged fast-forward.

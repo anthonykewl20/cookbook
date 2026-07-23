@@ -22,13 +22,15 @@ Read `WHERE-WE-ARE.md` first (the step we are on), then this board.
 
 ## 🔴 Blocking — before the next page is printed
 
-These two poison the press itself: one manufactures false faults, one invalidates evidence
-already written down. Nothing prints correctly until they are fixed.
+These two poison the press itself: one invalidates evidence already written down, one
+manufactures false faults. Nothing prints correctly until they are fixed. **Do them in the
+order shown — T-12 first: nothing else on the board invalidates evidence already recorded**
+(the tie-break `WHERE-WE-ARE.md` draws, restated here so this board stands on its own).
 
 | # | Ticket | Why it matters | Done when | Evidence |
 |---|---|---|---|---|
+| **T-12** | `press/taste.py` feeds chapters 0 and 1 into its own prompt **as the voice standard they are then scored against** — so it compares each page with itself. | **Every tasting ever recorded for chapters 0 and 1 is worthless**, including two reported to the owner as clean. Nothing else on the board invalidates evidence, so this is do-first. | The taster judges 0 and 1 against something other than themselves, or refuses and says so; a re-taste no longer gives the tell *"the page is the approved voice-standard chapter 0."* | "The taster judges chapters 0 and 1 against themselves" |
 | **T-10** | The two bundled brief files quote two rules the owner **dissolved** on 2026-07-22 — the menu as an *instruction*, and instructions-vs-log as *"the only place drift can be seen"*. | Measured: a taster handed a brief built from these files rejected a **correct** chapter 10 **twice**, quoting sentences byte-identical to the bound page. A stale brief does not just fail to help — it buys a reprint of a page that was already right. | Both claims are gone from `press/briefs-2to6.json` and `press/briefs-7to11.json`, and **the ch10 probe that returned SEND BACK twice now returns SERVE**. | "The bundled briefs still carry two rules the owner dissolved" |
-| **T-12** | `press/taste.py` feeds chapters 0 and 1 into its own prompt **as the voice standard they are then scored against** — so it compares each page with itself. | **Every tasting ever recorded for chapters 0 and 1 is worthless**, including two reported to the owner as clean. | The taster judges 0 and 1 against something other than themselves, or refuses and says so; a re-taste no longer gives the tell *"the page is the approved voice-standard chapter 0."* | "The taster judges chapters 0 and 1 against themselves" |
 
 ## 👤 Needs the owner — a decision, not a task
 
@@ -104,6 +106,16 @@ per page.
 
 ---
 
+## 🟠 Coordination and intake — from the where-work-is-tracked research (2026-07-23)
+
+The research in `research/where-work-is-tracked.md` settled where the work lives (in-repo flat
+files stay the record; see `PRESS-LOG.md`). It also surfaced two real open items.
+
+| # | Ticket | Priority | Done when | Evidence |
+|---|---|---|---|---|
+| **T-19** | **Two worktree-isolated sessions can still both claim the same ticket.** The recorded fix — "write your claim into the ticket row before starting" — does **not** work under the worktree invariant: each session is on its own branch and never sees the other's claim until the branches merge, which is exactly the "commits appeared under its feet" collision of 2026-07-23. A claim needs a spot both sessions see *immediately*, and that is the one property a flat file on a private branch cannot give. | 🟠 | A claiming mechanism exists that a parallel session actually observes before starting (Probe C in the research is its test): run two sessions on the repo alone; **at most one works a given ticket, or the clash is caught before a duplicate commit lands.** | `research/where-work-is-tracked.md` §3; `WHERE-WE-ARE.md` parallel-sessions section (the two real collisions) |
+| **T-20** | **No public button for plugin readers to report a bug** — the one criterion the flat files genuinely fail (C7). The research's answer: open GitHub Issues as a **one-way intake mailbox only**, never a second board. **Gated on Probe B** — prove the mailbox does not become a second drifting tracker before adopting it. | 🟡 | Probe B passes: a filed `intake` issue is, within one session, mirrored into `KNOWN-HOLES.md` (evidence) + `TICKETS.md` (plan) and **closed with a comment pointing at the commit and ticket row**, with no contradiction between issue and repo. If it keeps drifting across a few real intakes, drop it and accept the limit (readers open a PR). | `research/where-work-is-tracked.md` §4–5 |
+
 ## Parked / already filed — not fresh work
 
 - **T-09 — Staffing by order size.** Already filed as a ticket in `KNOWN-HOLES.md` (2026-07-23):
@@ -116,6 +128,8 @@ Some open rows in `KNOWN-HOLES.md` are **standing guards** — rules the shop ha
 about how it works (the manager hands out work and never does it; never report a count without
 opening what it matched; nothing is bound while a check is in flight; a checker certifies a hash,
 not a directory). Those are adopted discipline, not units of work, so they stay in the faults
-record and are not ticketed here. Two old book-content rows (ch. 25 "a fault seen and not
-recorded"; ch. 12 "where the job list lives") predate the finished chapters and **need a verify
-pass** to confirm they are still open before they earn a ticket — flagged, not filed.
+record and are not ticketed here. The old ch. 12 row "where the job list lives" is now
+**answered** — the where-work-is-tracked research closed it (see `KNOWN-HOLES.md` and
+`PRESS-LOG.md`). One old book-content row remains (ch. 25 "a fault seen and not recorded"): it
+predates the finished chapters and **needs a verify pass** to confirm it is still open before it
+earns a ticket — flagged, not filed.
