@@ -43,21 +43,34 @@ plugin, only in external config. Do not repeat it.
 
 ## The step we are on
 
-**LATEST, 2026-07-23 — the head-chef / per-role SCORER, myth-busted to a hard finding.** The owner's
-bigger goal surfaced this session: ship a *static* per-role scorer so a cookbook user can measure any
-LLM in a role (head chef, cook, taster) and decide whether to hire it. Ran the molecular-gastronomy
-recipe — three adversarial prototype rounds, measured not asserted. **Finding: a static deterministic
-scorer over hook-captured facts can measure behavioural *shape* (delegate vs cook, volumes, gates,
-outcomes) but CANNOT measure *allocation quality* — whether the work that mattered was delegated or
-self-cooked — because importance is a judgment about work content, not recoverable from
-counts/paths/gate-facts. Every deterministic composite got gamed on that axis (v1 90/50, v2 80/40,
-both broken by white-box adversaries respecting the real threat model); the only fix signals are
-another gameable heuristic or an LLM judge that fluctuates (a broken ruler).** So a single
-un-gameable static "hire score" is not achievable; the honest tool is a *dashboard of static facts +
-explicit gates*. Full record and preserved artifacts: `research/scorer-myth-busting-findings.md` and
-`experiments/scorer-myth-busting/`. **A fork is waiting for the owner** (single-score vs
-facts-dashboard; and whether to pursue importance-via-declared-work-class). T-21's driver landed in
-the plugin as delivered-but-not-proven; T-22 (page scorer) inherits the same ceiling.
+**LATEST, 2026-07-24 — the per-role/skill SCORER: research corrected the whole approach; the OUTCOME
+ruler is now built and verified.** The owner's goal: ship a *static* per-role scorer so a cookbook
+user can measure any LLM/skill in a role and decide whether to use it. Path so far:
+
+1. **Myth-busting (2026-07-23):** three adversarial rounds proved that scoring an agent's BEHAVIOUR
+   from its own action log is gameable (v1 scored a bad session 90/100, v2 80/100). I wrongly
+   concluded "no robust static score is achievable." Record: `research/scorer-myth-busting-findings.md`
+   (now stamped with the correction), artifacts in `experiments/scorer-myth-busting/`.
+2. **Owner correction:** that conclusion was shallow-research error — this problem is solved prior art.
+   Proper research done against SkillsBench, OpenAI, Anthropic (docs the owner named). **The answer:
+   score real task OUTCOMES with a deterministic verifier the agent can't see; the score is the
+   LIFT (with-skill vs without) over a held-out suite; the trajectory is only an anti-cheat audit.**
+   Full record: `research/prior-art-agent-skill-evaluation.md`. Precedent: SWE-Skills-Bench found 39
+   of 49 skills gave zero lift — most skills don't help, so you MEASURE.
+3. **Batteries.** The measurement is a pluggable set of objective outcome "batteries." **SWE-Bench is
+   the first, and it is VERIFIED on this machine as a working STATIC ruler** (gold→resolved,
+   empty/wrong→unresolved, gold repeatable byte-identical). Ruler-proof artifacts:
+   `scratchpad/swebench-ruler/`. Operational caveats: ~1 min/task once the repo image is cached; heavy
+   first builds; **281GB Docker build cache already present — use `--cache_level env` + prune before any
+   sweep**; network (HF) required.
+
+**The step now:** design + build the with-vs-without **lift harness** on the SWE-Bench battery, then
+run a measured pilot. Open design fork for the owner: WHAT to measure first — a model comparison
+(SWE-Bench's native use), a coding skill's lift, or the head-chef handbook's lift (honest caveat:
+SWE-Bench Lite is single-file bug-fixes, so it under-tests orchestration; the handbook likely needs
+its own orchestration-stress battery). **The "static single hire-score is impossible" fork is
+WITHDRAWN** — that was the wrong frame. T-22 (page scorer) is the same outcome-lift method applied to
+pages.
 
 **Re-anchor (2026-07-23, after a drift the owner called out).** A simple request — "is the book
 done, and file tickets with metrics" — spiralled into four research threads, a global rule

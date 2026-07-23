@@ -1,5 +1,17 @@
 # Myth-busting a static head-chef scorer — what three adversarial rounds proved
 
+> **⚠️ CORRECTION, 2026-07-24 — the conclusion below ("a single un-gameable static score is not
+> achievable") was WRONG, and the owner caught why: we prototyped without doing the prior-art
+> research first.** What these rounds validly proved is narrower and still true: **scoring an agent's
+> BEHAVIOR from its own action log is gameable** (a proxy the agent optimizes — Goodhart). The error
+> was concluding "no robust score exists." The established field scores the OPPOSITE thing — real task
+> **OUTCOMES** with a deterministic verifier the agent can't see, and reports the **lift** (with-skill
+> vs without) over a held-out suite. That is robust and hard to game, and the trajectory is demoted to
+> an anti-cheat audit that can only invalidate a run, never inflate it. See
+> `research/prior-art-agent-skill-evaluation.md` (SkillsBench / OpenAI / Anthropic, cited) and the
+> SWE-Bench outcome ruler now verified on this machine. **Read this document as "why behavioral
+> self-report scoring fails," not as a limit on measurement.**
+
 **Date:** 2026-07-23. **Method:** the molecular-gastronomy recipe — isolated-box prototypes, each with a
 kill-criterion, adversarially attacked, measured not asserted. **Owner requirement being tested:** a
 scorer that is *static* (same input → same number, forever; changes only when the scorer changes),
