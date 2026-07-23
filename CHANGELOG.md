@@ -9,6 +9,38 @@ about.
 
 ---
 
+## 2026-07-23 — research: how to prove a skill works (method, measured evidence, and the question inventory)
+
+**`research/skill-effectiveness-evaluation.md` arrived** — research for an experimental feature: an
+evaluator that decides whether an agent *skill* actually works. It preserves two captured analyses in one
+file: **Part A** the defensible method (controlled, paired with/without-skill evaluation under identical
+conditions, graded by independent verifiers) and the measured evidence behind it; **Part B** the exhaustive
+25-section question inventory that must be answered before that method is operationalised into a real
+system. Content preserved, not rewritten to arrive; the only thing added is this book's own lens — every
+claim tagged **MEASURED** or **ASSERTED**.
+
+The one **MEASURED** anchor it leans on is SkillsBench v4 (9,396 trajectories, deterministic verifiers):
+curated skills lifted pass rates roughly +16–20 pp on average, **but 13 of 87 real tasks got measurably
+worse** — so the honest prior is "a skill can help, do nothing, or actively damage," which is itself the
+measured reason the method insists on paired baselines and regression checks. Everything else (the method,
+the Anthropic/OpenAI guidance, the grading hierarchy, the proposed release gate, the question inventory) is
+normative **ASSERTED** guidance, consistent with the anchors but not itself measured here. That is the same
+FACT/ASSUMPTION split applied in `research/proof-over-authority.md`. No page was reprinted and no verdict
+reopened; this is a research note, not a press-shop job.
+
+**A second file moved in alongside it — `research/agent-skill-effectiveness-framework.md`**, the answered
+design spec that turns those 25 questions into a buildable system (working name `skill-eval`): a
+vendor-neutral external harness with Claude Code and Codex adapters, paired with/without-skill conditions,
+deterministic → human → calibrated-model grading, paired-bootstrap statistics, and CI release gates. It
+carries its own provenance labels (`[OFFICIAL-WEB]`, `[RESEARCH-WEB]`, `[DERIVED]`, `[ASSUMPTION]`,
+`[USER-DECISION]`, `[UNKNOWN]`) and a fuller source registry, and reaches two more **MEASURED** anchors the
+summary does not — **SWE-Skills-Bench** (only +1.2% mean lift for software-engineering skills; 39 of 49
+skills gave zero improvement) and **SkillLearnBench** (self-feedback caused recursive drift; external
+feedback helped). Moved in exactly as the owner provided it; not rewritten. The two files are one
+investigation: the framework is the answer, the summary is the method and the open questions behind it.
+
+---
+
 ## 2026-07-23 — the ocask boundary is untangled: how-we-cook design work re-homes here
 
 **The owner decided how-we-cook design work moves off the ocask board and onto this one: the
