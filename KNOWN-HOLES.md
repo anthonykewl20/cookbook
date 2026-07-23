@@ -10,8 +10,9 @@ instead.
 
 **This file is the frozen *record* — what went wrong and the evidence for it. The live *plan* —
 what open work is claimed and finished, each with a measurable done-condition — lives in
-`TICKETS.md`, which points back here for the evidence. When a ticket closes, strike its hole
-here in the same commit so the record and the plan cannot drift apart.**
+**GitHub Issues** (`gh issue list`), as of 2026-07-24; each issue's "Evidence" line points back
+here. (`TICKETS.md` was the plan until the board flipped; it is now frozen history.) When an
+issue closes, strike its hole here in the same commit so the record and the plan cannot drift apart.**
 
 ## Closed
 

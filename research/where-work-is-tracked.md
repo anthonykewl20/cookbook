@@ -1,5 +1,14 @@
 # Where the work is tracked — flat files in the repo, or GitHub Issues?
 
+> **⚠️ SUPERSEDED 2026-07-24 — the answer flipped.** This file recommended flat files stay the
+> board with Issues a mailbox only. Its whole case rested on one pillar — "a fresh session reads
+> the board offline; a GitHub Issue is not in a `git clone`." A later A/B read-probe measured a
+> fresh session reading a **GitHub-Issues** board and naming the top job + its exact done-condition
+> **5/5, as reliably as off the flat files**, and the owner ruled the offline pillar moot (he works
+> across machines; a model needs internet to run at all). **The owner flipped the board to GitHub
+> Issues.** Read the analysis below for its reasoning and the criteria — they still hold — but the
+> conclusion is reversed. Live rule now lives in `WHERE-WE-ARE.md`.
+
 > **About this file.** This is the open hole this book leaves in its own faults record: "Where
 > the job list lives for a kitchen with no shared tracker"
 > (`KNOWN-HOLES.md`, the self-referential OPEN row whose "where it closes" points at "Part Two,

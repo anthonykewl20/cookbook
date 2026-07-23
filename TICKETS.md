@@ -1,6 +1,21 @@
-# Tickets — the live work board
+# Tickets — FROZEN (the board moved to GitHub Issues, 2026-07-24)
 
-This is the one place open work is **claimed, worked and finished**. It is a *plan*, not a
+> **This is no longer the live board.** The owner flipped the work board to **GitHub Issues** on
+> 2026-07-24 (`gh issue list`, or github.com/anthonykewl20/cookbook/issues). Pick up work THERE.
+> This file is kept as frozen history: the closed rows below are the record of what was done, and
+> the map here says which ticket became which issue. Do not add new tickets here. See
+> `WHERE-WE-ARE.md` and `research/where-work-is-tracked.md` for why the board moved (a measured
+> read-probe killed the "offline" argument; Issues give shared live state a private branch cannot).
+>
+> **Open tickets → issues:** T-01→#11 · T-02→#12 · T-03→#9 · T-04→#13 · T-06→#15 · T-07→#14 ·
+> T-08→#18 · T-09→#22 · T-14→#20 · T-15→#21 · T-16→#19 · T-19→#23 · T-21→#17 · T-22→#3.
+> **New (no predecessor):** #10 (ch.29 can't picture the head chef's day) · #16 (re-homed design
+> gaps) · #24 (SWE-bench A/B ruler for the process). **Folded/closed by the flip:** T-18 → into
+> the page-scorer #3 · T-20 (bug mailbox) → subsumed, Issues is now the whole board.
+>
+> _The description below is how the board worked when it was these flat files._
+
+This was the one place open work was **claimed, worked and finished**. It is a *plan*, not a
 record: `KNOWN-HOLES.md` holds the frozen evidence of every fault we ever found, and each
 ticket below points back to it rather than repeating it — so the two cannot drift apart. When a
 ticket is done, strike it here and update its hole in `KNOWN-HOLES.md` in the same commit.

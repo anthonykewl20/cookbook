@@ -28,14 +28,15 @@ plugin, only in external config. Do not repeat it.
 4. `TASTING-CHECKLIST.md` and `THE-CONTRADICTION-PASS.md` — how a page is checked, and why the
    contradiction pass is separate from the taster.
 5. `PRESS-LOG.md` and `KNOWN-HOLES.md` — what happened, and what is still wrong.
-5a. `TICKETS.md` — **the live work board.** Open work, claimed and finished, each with a
-   measurable done-condition. It points back to `KNOWN-HOLES.md` for the evidence. Start here to
-   pick up the next job.
-5b. `research/where-work-is-tracked.md` — **why the board is a flat file in the repo and not
-   GitHub Issues.** Read it before anyone proposes moving the tracker: the work-list is a record,
-   the process must live in the repo so a stranger finds it offline, and a GitHub Issue is not in
-   a `git clone`. Answered the book's own self-referential open hole. Backed by a measured probe,
-   not an opinion (see the step below).
+5a. **GitHub Issues — the live work board** (`gh issue list`, or github.com/anthonykewl20/cookbook/issues).
+   Open work lives here now, each issue carrying a measurable done-condition and an "Evidence"
+   pointer back to `KNOWN-HOLES.md`. **Start here to pick up the next job.** `TICKETS.md` is the
+   FROZEN PREDECESSOR — kept for its closed history and the T→issue map, no longer the board.
+5b. `research/where-work-is-tracked.md` — the reasoning trail. **Note: its headline finding
+   (flat files stay, Issues a mailbox only) was SUPERSEDED on 2026-07-24** — a measured read-probe
+   showed a fresh session reads a GitHub-Issues board 5/5, and the owner ruled the offline
+   argument moot (he works across machines; a model needs internet to run at all). The board is
+   now GitHub Issues. Read the file for the full history, not for the live rule.
 6. `CHAPTER-TEMPLATE.md` with `book/00-opening-the-box.md` and `book/01-the-interview.md` —
    only if you are printing. **Nothing is left to print.**
 7. `OVERNIGHT.md` — **a completed order.** Read it for the rules it learned, never for the
@@ -75,12 +76,14 @@ pages.
 **Re-anchor (2026-07-23, after a drift the owner called out).** A simple request — "is the book
 done, and file tickets with metrics" — spiralled into four research threads, a global rule
 change, and a deep dive into git-locking mechanics. **This is a finished book with a to-do list
-to work through, not a research lab.** Start from `TICKETS.md`. Do not reopen the process
+to work through, not a research lab.** Start from the GitHub Issues board (`gh issue list`). Do not reopen the process
 questions below unless the owner asks — they are parked, not active.
 
 What settled this session, and what is parked:
-- **DONE:** where the work is tracked (flat files in the repo; Issues only as a bug mailbox) —
-  proven by Probe A, closed. See `research/where-work-is-tracked.md`.
+- **DONE, then SUPERSEDED 2026-07-24:** Probe A settled the board as flat files (Issues a mailbox
+  only). A later read-probe knocked out its one pillar — a fresh session reads a GitHub-Issues
+  board 5/5, and "readable offline" protects a case that cannot happen (a model needs internet to
+  run). **The owner flipped the board to GitHub Issues, 2026-07-24.** See `research/where-work-is-tracked.md`.
 - **NEW, global:** the "How we work" rules were added to the global handbook (`~/.claude/CLAUDE.md`):
   nothing served blind, a command is an input not an auto-run, object with proof, measure or it's
   an opinion. **A live session must be restarted to load them.**
@@ -98,18 +101,24 @@ against the eleven invariants and read for what they left out. The whole-book re
 menu contradiction — the oldest live one — is closed. `README.md` and `CHANGELOG.md` tell the
 truth about the state.
 
-**Where the work is tracked is settled, 2026-07-23 — and it was measured.** The book's own
-self-referential open hole ("where the job list lives") is closed. The work-list stays as
-**flat files in the repo** (`TICKETS.md` the live plan, `KNOWN-HOLES.md` the frozen record);
-GitHub Issues get a place only as a one-way public bug **mailbox**, never a second board. The
-deciding rule is this project's own — the process lives in the repo so a stranger session finds
-it offline — and a GitHub Issue is not in a `git clone`. **This was not settled by argument:
-Probe A ran a fresh session on the repo alone, with no GitHub and no prior context, and it
-correctly named the top open ticket, its done-condition and its evidence row from the mandated
-reading order — measured PASS.** Two follow-ups stayed open as tickets: **T-19** (two isolated
-sessions can still both claim one ticket — the real coordination gap; the "write your claim in
-the row" fix does not work across separate worktree branches) and **T-20** (the reader mailbox,
-gated on Probe B). Full record in `research/where-work-is-tracked.md` and `PRESS-LOG.md`.
+**Where the work is tracked — FLIPPED to GitHub Issues, 2026-07-24 (owner).** The paragraph below
+records the earlier decision and is kept as history; it no longer states the live rule. **What
+changed:** Probe A's case rested on "a fresh session reads the board offline; a GitHub Issue is
+not in a `git clone`." A later read-probe measured a fresh session reading a GitHub-Issues board
+and naming the top job + its exact done-condition **5/5, as reliably as off the flat files**, and
+the owner knocked out the offline pillar — he works across machines and a model needs internet to
+run at all, so "readable offline" guards a case that cannot happen. Issues also give the one thing
+a private worktree branch cannot: **shared live state**, which is most of the T-19 collision. The
+board is now GitHub Issues; `TICKETS.md` is frozen history with a T→issue map.
+
+_History (superseded):_ **Where the work is tracked was settled, 2026-07-23 — and it was measured.**
+The book's self-referential open hole ("where the job list lives") was closed by keeping the
+work-list as **flat files in the repo** (`TICKETS.md` the live plan, `KNOWN-HOLES.md` the frozen
+record), with GitHub Issues only a one-way bug **mailbox**. The deciding rule was the process
+living in the repo so a stranger finds it offline. **Probe A** ran a fresh session on the repo
+alone, with no GitHub, and it correctly named the top open ticket, its done-condition and its
+evidence row — measured PASS. Two follow-ups stayed open: **T-19** (parallel-claim collision) and
+**T-20** (the reader mailbox). Full record in `research/where-work-is-tracked.md` and `PRESS-LOG.md`.
 
 **Chapters 9 and 10 are bound, 2026-07-23.** The role-assignment rule is in the book: a role is
 given, never assumed, and a job description matches a dish to a hand of the matching strength.
