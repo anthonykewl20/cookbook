@@ -1782,3 +1782,66 @@ removed and the ch30 redo remains open (see the Disposition above; the stricter-
 still to be done). Decision by the head chef under the owner's standing mandate that the head chef
 decides autonomously and logs it; preserving records that live only on an unmerged branch is the
 house rule *"the records say what happened"* applied literally.
+
+## Hole #1 CLOSED — the printer's reach, bound at last after five attempts (2026-07-23)
+
+| Stamp | Record |
+|---|---|
+| Job | Close the top open hole: `press/print.py` reached only chapters 17–50, so `codex-exec` — the one runner enforcing `owned_paths` — could not be used on most of the book. Blocked for four+ attempts; the last parked-not-bound on a real defect (a fallen-off TERMINAL chapter silently accepted) |
+| Channel | **`model-flow`, crucial**, flow `mf-4b395a4559af`. Receipts, owned-path lock (`press/print.py`), secret scan, host-authored verify command |
+| Writer | **Codex `gpt-5.6`** (implementation phase, exclusive writer lock) |
+| Acceptance test | **Head-chef-authored** `press/test_printer_reach.py` — drives the real `--catalog` CLI against fixture repos; A (full 0..50), B (terminal drop REJECTED), C (unwritten page still works). Reproduced the defect before the fix (B red), all green after |
+| Final review | **Fresh Codex reviewer + DeepSeek V4 Pro, concurrent, on the frozen snapshot.** Both **APPROVED** (attempt-002) |
+| Verdict | **BOUND to `main`.** Two clean commits: the `print.py` fix and the test |
+
+### The fix
+
+`chapter_catalog()` built its "expected" set purely from the chapters it had already consumed, so
+it had **no independent knowledge of where the book ends** — drop the chapter-50 line from
+`CONTENTS.md` and it returned a 0..49 catalog with exit 0. The fix adds an **external anchor**:
+`book_chapter_numbers()` reads the `book/` directory (the pages that physically exist), and any
+on-disk page the running order does not reach now raises. The hard constraint holds — a chapter
+in `CONTENTS.md` with **no page yet** is still catalogued (launching a printer to write a missing
+page is the whole purpose), and a new chapter beyond the on-disk maximum is allowed. Only a page
+the catalog cannot account for — a fallen-off terminal chapter — is the fault it now catches. This
+is exactly the design the prior blocking review asked for, and the head chef reproduced the defect
+first so the test was grounded, not assumed.
+
+### Two process findings, both logged rather than smoothed over
+
+**1. The manager ran the writer under the wrong phase, and re-ran it clean.** The first Codex run
+was launched as the `plan` phase while the brief was implementation-shaped, so it wrote the code
+under a plan receipt. `review final` binds an *implementation* receipt, so the plan output could
+not have been reviewed coherently. Rather than bind on an incoherent receipt, the tree was reset
+and the writer re-run as `implementation` — a proper receipt, exclusive lock, the same fix. The
+plan run was not wasted: it confirmed the external-anchor design before a coherent pass. Cost: one
+extra Codex run. The alternative — binding crucial work on a mislabelled receipt — is the kind of
+provenance rot this shop exists to refuse.
+
+**2. `model-flow`'s crucial review recorded an APPROVED Codex reviewer as BLOCKED — a false
+negative in the shop's own gate.** On the first `review final` (attempt-001), the Codex reviewer
+finished cleanly (exit 0) and **APPROVED** — its `final.json` said *"No findings … both passed"*
+and carried `VERDICT: APPROVED` inside its `open_issues` array, with an empty `final.txt`.
+DeepSeek APPROVED the same snapshot. But `model-flow` reported the whole review **BLOCKED**
+(`process_failure: true`). Root cause, read in the code (`~/.claude/skills/model-flow/scripts/model-flow.py`,
+`_codex_final_verdict`, ~L1546–1562): the verdict is extracted only from a top-level `verdict`
+field, the `summary`, or `final.txt` — **never from `open_issues`.** When a Codex reviewer emits
+structured-only output and puts its verdict line in `open_issues`, a genuine APPROVED is scored as
+BLOCKED. **The manager did NOT override the red verdict** — overruling a checker with no
+re-readable reason is the fault this file records six times. Instead the root cause was proven in
+the source, and the review was **re-run**; attempt-002 put the verdict in `summary` (a field the
+parser reads) and classified cleanly APPROVED by both reviewers. The block was a format gap, not a
+defect. **This is a real hole in the shop's shared supervisor, not in this book** — it lives in
+`~/.claude/skills`, whose change requires restarting live sessions, so it is the owner's to fix. It
+is surfaced to the owner and recorded here so the next crucial job is not blocked — or, worse,
+tempted into an override — by the same false negative. The lesson is the one the whole shop turns
+on: **a red verdict from a checker is investigated to its root and resolved with evidence, never
+waved past because the manager read the outputs and liked them.**
+
+### What is now unblocked
+
+The designated runner can be pointed at any chapter 0–50, so future page work runs through the one
+interface that enforces `owned_paths`, instead of the path-blind interface that on 2026-07-22 let a
+printer commit its own page and killed four chefs mid-task. The `worktree-fix-printer-reach` branch
+that held the parked partial is superseded — its good work (the 0–50 range, stray-list skipping,
+filename overrides) is now on `main` inside the bound fix — and is deleted.

@@ -44,12 +44,13 @@ central finding, and it came out of that job:
 
 **The step is the holes that are left**, in `KNOWN-HOLES.md`. In priority order:
 
-1. **`press/print.py` cannot reach most of the book.** It is hard-limited to chapters 17-50, so
-   the designated runner (`codex-exec`, the only one enforcing `owned_paths`) cannot be used for
-   anything else. **This is the hole that causes the other holes:** because of it, work runs
-   through an interface with no path enforcement and a silent 1800-second timeout, which on
-   2026-07-22 let a printer commit its own page to `main` and killed four chefs after they had
-   written but before they had checked. Four attempts to fix it have timed out.
+1. **DONE, 2026-07-23 — `press/print.py` now reaches the whole book.** It was hard-limited to
+   chapters 17-50, so the designated runner (`codex-exec`, the only one enforcing `owned_paths`)
+   could not be used elsewhere — the hole that caused the other holes. Bound on the fifth attempt:
+   the range now comes from `CONTENTS.md` and the completeness check anchors on the `book/`
+   directory, so a fallen-off terminal chapter raises instead of being silently accepted. Crucial
+   `model-flow`, Codex writer, Codex + DeepSeek final review APPROVED, host-authored test green.
+   Full record in `PRESS-LOG.md`. **The remaining priorities below move up.**
 2. **`press/taste.py` judges chapters 0 and 1 against themselves** — it feeds them in as the
    voice standard. Every tasting ever recorded for those two is worthless. Nothing else on the
    board invalidates evidence already written down.
