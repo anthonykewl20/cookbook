@@ -65,19 +65,38 @@ user can measure any LLM/skill in a role and decide whether to use it. Path so f
    first builds; **281GB Docker build cache already present — use `--cache_level env` + prune before any
    sweep**; network (HF) required.
 
-**The step now:** design + build the with-vs-without **lift harness** on the SWE-Bench battery, then
-run a measured pilot. Open design fork for the owner: WHAT to measure first — a model comparison
-(SWE-Bench's native use), a coding skill's lift, or the head-chef handbook's lift (honest caveat:
-SWE-Bench Lite is single-file bug-fixes, so it under-tests orchestration; the handbook likely needs
-its own orchestration-stress battery). **The "static single hire-score is impossible" fork is
-WITHDRAWN** — that was the wrong frame. T-22 (page scorer) is the same outcome-lift method applied to
-pages.
+**The step now — 2026-07-24, updated:**
+
+- **The board flipped to GitHub Issues** (owner-ruled; measured — a blind fresh-session probe read
+  the repo cold, landed on `gh issue list`, and named the top job with its exact done-condition).
+  `TICKETS.md` is frozen with a T→issue map. Pick up work from Issues.
+- **The SWE-Bench lift harness is DESIGNED and the pilot is APPROVED — the open fork above is
+  RESOLVED: we measure the head-chef handbook's lift.** Three arms — Baseline / Self-refine (the
+  more-compute control) / Cookbook — on **24** repo-stratified Verified tasks, half single-file
+  (tests the *separation* claim, which SWE-Bench measures cleanly) and half multi-file (gives the
+  *coordination* claim its fairest shot on a battery that can only weakly probe it). Pre-registered:
+  paired within-task Δ, **+10pp & McNemar p<0.05**, delta-not-absolute for contamination, external
+  tests as the judge. Design frozen at `scratchpad/swe-bench-ruler-design.md`. Gate before any
+  spend: a gold re-confirm smoke. Issue #24.
+- **Three rulers, cleanly separated** (from the eval methodology the owner fed in — Anthropic
+  develop-tests, Tessl scenarios/review): **SWE-Bench** (real tests → does the process fix real
+  bugs); a **scenario-eval** (deterministic behaviour checks, with-plugin vs baseline → does a
+  session *act* as head chef — the real probe **#17** needs); a static **review rubric** (**#3**,
+  the page scorer — the same outcome-lift method applied to pages). We take the *pattern*, not a
+  third-party dependency, because the process must live in the repo.
+- **Priority, reconciled** (the fresh-session probe flagged the peg and the labelled board
+  disagreeing): **#17** (head-chef driver into the plugin) is the highest-priority-BY-LABEL standing
+  job; the measurement track above is the infrastructure to CLOSE it with a real probe instead of an
+  assertion. Same road, not two.
 
 **Re-anchor (2026-07-23, after a drift the owner called out).** A simple request — "is the book
 done, and file tickets with metrics" — spiralled into four research threads, a global rule
 change, and a deep dive into git-locking mechanics. **This is a finished book with a to-do list
 to work through, not a research lab.** Start from the GitHub Issues board (`gh issue list`). Do not reopen the process
-questions below unless the owner asks — they are parked, not active.
+questions below unless the owner asks — they are parked, not active. **(2026-07-24: the measurement
+track in "The step now" above IS owner-directed and active — it is not the drift this re-anchor
+warned about. This caution still binds the *parked* process questions, not the ruler work the owner
+asked for.)**
 
 What settled this session, and what is parked:
 - **DONE, then SUPERSEDED 2026-07-24:** Probe A settled the board as flat files (Issues a mailbox
