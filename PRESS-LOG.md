@@ -6,6 +6,25 @@ book's own operations log, kept the way the book says to keep one.
 A stocktake would answer *which chapters exist*. This answers *what was done to them*. Those
 are two different records and they are not merged.
 
+## LLM guardrails added as a chain-wide rule — kept out of CLAUDE.md (2026-07-24)
+
+The owner directed that four of Anthropic's guardrail topics become chain-wide house rules for any
+dish that calls an LLM: reduce hallucinations, increase consistency, mitigate jailbreaks & prompt
+injection, and reduce prompt leak. They apply to every project, scaled to the stakes.
+
+**They were NOT inlined into the global handbook.** A first attempt that did so was reverted as
+bloat. The handbook `~/.claude/CLAUDE.md` stays lean — Anthropic targets it under ~200 lines, longer
+files reduce adherence, and task-specific content belongs in modular rules, not the always-loaded
+handbook. The guardrails now live at `~/.claude/rules/llm-guardrails.md`, the modular user-level
+location that applies to every project.
+
+**The rule is distilled and self-contained.** An agent acts on the actual guidance in the file and
+never needs to open a link — the source docs are cited only as provenance. A bare URL that forces an
+agent to fetch and scan it is wasted work, not a rule.
+
+Loading the new rule requires live Claude/Codex sessions to be restarted; this was flagged, not
+forced.
+
 ## The head chef's own review missed a measurement bias — the second family caught it (2026-07-24)
 
 This is the head chef recording its own mistake, deliberately, for the next session. It is not
