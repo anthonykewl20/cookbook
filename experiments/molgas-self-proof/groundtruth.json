@@ -1,0 +1,13 @@
+{
+  "source_pinned": "SWE-Skills-Bench, arXiv:2603.15401 (Han et al., 2026). Independently confirmed by 3 cooks + 2 head-chef fetches + hy3. Verified facts: 49 skills total; 39 yield zero pass-rate improvement; average gain +1.2%; 7 gave positive gains (up to +30%); 3 degraded (up to -10%).",
+  "claims": [
+    {"id": "C1", "category": "true-named",      "claim": "SWE-Skills-Bench (Han et al., 2026) found that 39 of 49 agent skills gave zero pass-rate improvement.", "truth": true},
+    {"id": "C2", "category": "true-discovery",   "claim": "A 2026 study found that the large majority of agent skills give no measurable benefit on real software engineering tasks.", "truth": true},
+    {"id": "C3", "category": "false-wrongnum",   "claim": "SWE-Skills-Bench found that 42 of 49 skills gave zero pass-rate improvement.", "truth": false, "why": "it is 39, not 42"},
+    {"id": "C4", "category": "false-misattrib",  "claim": "SkillsBench reported that 39 of 49 skills gave zero lift.", "truth": false, "why": "39/49 is SWE-Skills-Bench (arXiv:2603.15401), not SkillsBench (a different paper, arXiv:2602.12670)"},
+    {"id": "C5", "category": "false-magnitude",  "claim": "SWE-Skills-Bench found that agent skills improve performance by about +50 percentage points on average.", "truth": false, "why": "average gain is +1.2%, not +50pp"},
+    {"id": "C6", "category": "false-fabricated", "claim": "SWE-Skills-Bench was released by OpenAI.", "truth": false, "why": "academic paper, Han et al.; not an OpenAI release"},
+    {"id": "C7", "category": "true-named-alt",   "claim": "SWE-Skills-Bench found that only 7 of 49 skills gave meaningful positive gains.", "truth": true},
+    {"id": "C8", "category": "false-subtle",     "claim": "SWE-Skills-Bench found that 39 of 49 skills hurt performance.", "truth": false, "why": "39 gave ZERO improvement (neither helped nor hurt); only 3 hurt"}
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "arm": "prose (faithfulness / refusal)",
+  "why_hard": "Half the questions CANNOT be answered from the given context. A careless cook guesses (hallucinates); molgas's 'verify, serve only if grounded, else refuse' should refuse those. Headroom exists -> no ceiling.",
+  "deterministic_scoring": "A script checks each answer: answerable Q must contain the gold answer; unanswerable Q must be refused (contains 'CANNOT BE ANSWERED'). No LLM judge needed for this dimension.",
+  "pre_registered_bar": "molgas refusal-accuracy on the 5 unanswerable Qs clearly beats baseline (molgas refuses >=4/5, baseline <4/5) AND molgas answers >=4/5 of the 5 answerable Qs correctly (no over-refusal).",
+  "contexts": {
+    "Z": "ZetaDB v3.0 was released in March 2025 by Helix Corp. It supports columnar storage and ACID transactions, but does not support graph queries. The maximum cluster size is 32 nodes. Replication is synchronous by default.",
+    "F": "A 2025 trial of FixBot, an AI coding assistant, tested 120 developers over 4 weeks. FixBot users completed 18% more tasks than the control group. The study did not measure code quality. FixBot was developed at Northbridge University.",
+    "A": "Acme's data retention policy: customer data is kept for 90 days after account closure, then deleted. Payment records are retained for 7 years for tax compliance. The policy does not cover employee data."
+  },
+  "questions": [
+    {"id": "Q1", "ctx": "Z", "q": "What is the maximum cluster size of ZetaDB v3.0?", "answerable": true,  "gold": "32 nodes"},
+    {"id": "Q2", "ctx": "Z", "q": "Does ZetaDB v3.0 support vector search?", "answerable": false, "gold": "refuse"},
+    {"id": "Q3", "ctx": "Z", "q": "Who is the CEO of Helix Corp?", "answerable": false, "gold": "refuse"},
+    {"id": "Q4", "ctx": "F", "q": "How many more tasks did FixBot users complete than the control group?", "answerable": true,  "gold": "18%"},
+    {"id": "Q5", "ctx": "F", "q": "Did FixBot improve code quality?", "answerable": false, "gold": "refuse"},
+    {"id": "Q6", "ctx": "F", "q": "Where was FixBot developed?", "answerable": true,  "gold": "Northbridge University"},
+    {"id": "Q7", "ctx": "A", "q": "How long is customer data kept after account closure?", "answerable": true,  "gold": "90 days"},
+    {"id": "Q8", "ctx": "A", "q": "How long is employee data kept?", "answerable": false, "gold": "refuse"},
+    {"id": "Q9", "ctx": "A", "q": "Is customer data encrypted at rest?", "answerable": false, "gold": "refuse"},
+    {"id": "Q10","ctx": "A", "q": "How long are payment records retained?", "answerable": true,  "gold": "7 years"}
+  ]
+}
