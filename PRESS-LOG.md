@@ -6,6 +6,45 @@ book's own operations log, kept the way the book says to keep one.
 A stocktake would answer *which chapters exist*. This answers *what was done to them*. Those
 are two different records and they are not merged.
 
+## The head chef's own review missed a measurement bias — the second family caught it (2026-07-24)
+
+This is the head chef recording its own mistake, deliberately, for the next session. It is not
+softened.
+
+While building the #24 cookbook-parts ablation harness (`research/molecular-gastronomy/ab_run.py`),
+the head chef reviewed the failure-handling code line by line and **praised** the mechanism that
+dropped failed or awkward cells to `None` — counted them invalid and removed them from the maths —
+calling it *"good anti-bias design"* on the reasoning that an infrastructure failure should not
+count as a model failure.
+
+**That judgement was wrong.** The `None`-drop was itself a bias, and a dangerous one: it was
+**arm-correlated.** It silently censored the likely-failures — a part's honest *"this fix is bad"*
+verdict (P4), and reviewer and revision hiccups — out of the PART arms only, never out of the bare
+baseline. That tilts the parts' published numbers upward. **A harness that hides a part's failures
+cannot judge that part.** Had the head chef's approval been the only gate, a rigged ruler would have
+shipped.
+
+**DeepSeek V4 Pro — a full, independent model family at max effort — also missed it and returned
+APPROVED.** It was `openrouter/tencent/hy3` (Tencent Hunyuan, a second independent family,
+hand-invoked at the owner's explicit instruction) that caught the bias and returned
+CHANGES-REQUIRED. The head chef adjudicated the split **on the merits, not by vote count**, and
+ruled hy3 correct on two grounds DeepSeek had not weighed: the drop violated the frozen contract
+(*"a failure counts as UNRESOLVED, not dropped"*), and the censoring was outcome- and
+arm-correlated.
+
+The fix — score every cell on whatever diff exists; a failure counts as unresolved, never dropped;
+P4 can never invalidate a cell; reviewer hiccups fall back to the last good diff — was then
+validated by DeepSeek (APPROVED), the head chef's own re-review, and a live `p4_measured` cell that
+scored with `invalid=0`. hy3's re-audit was left running non-blocking after it went slow and flaky
+(an upstream 504); the owner chose to proceed on the triple validation.
+
+**The lesson.** The rule *the taster is never the cook* extends to the head chef's OWN review: the
+head chef is not immune to missing a subtle bias, and even one strong independent reviewer can miss
+it too. What saved this measurement was **two independent model families plus adjudication on
+evidence.** This entry is the concrete proof that the multi-family review discipline earns its cost —
+logged so the next session does not quietly trust a single sign-off on a number that decides
+ship/no-ship.
+
 ## The orphan-bench clean-down (2026-07-24)
 
 A clear-down of stranded work, not a page printed. Seven settle-by-proof research files
