@@ -11,6 +11,7 @@ from pathlib import Path
 from common import (
     DEFAULT_COOK_CMD,
     DEFAULT_COOK_MODEL,
+    assert_no_secret_like_text,
     capture_source_patch,
     fresh_checkout,
     load_json,
@@ -166,6 +167,7 @@ def main(argv: list[str] | None = None) -> int:
             )
             if not patch.strip():
                 raise RuntimeError(f"{key}: cook produced an empty source patch")
+            assert_no_secret_like_text(patch, label=f"{key} candidate patch")
             patch_dir = patch_root / instance_id
             patch_dir.mkdir(parents=True, exist_ok=True)
             patch_path = patch_dir / f"candidate-{index}.patch"

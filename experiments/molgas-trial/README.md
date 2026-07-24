@@ -28,8 +28,9 @@ All examples below run from `experiments/molgas-trial/`.
 ## `COOK_CMD` convention
 
 `gen_candidates.py` and `run_trial.py` receive one configurable shell template
-from `--cook-cmd` or `COOK_CMD`. The default is the non-runnable
-`REPLACE_WITH_COOK_CMD` placeholder. The harness:
+from `--cook-cmd` or `COOK_CMD`, plus an exact model identifier from
+`--cook-model` or `COOK_MODEL`. Both defaults are non-runnable placeholders.
+The harness:
 
 - runs the command with the isolated checkout as its current directory;
 - supplies the prompt on stdin and in `{prompt_file}`;
@@ -39,6 +40,7 @@ from `--cook-cmd` or `COOK_CMD`. The default is the non-runnable
 - records only the SHA-256 of the command, never the command text or environment;
 - starts the cook with an allowlisted path/locale environment (no inherited
   API keys, tokens, or credentials);
+- gives each call isolated `HOME` and `TMPDIR` directories under `{run_dir}`;
 - exposes only the harness values as `MOLGAS_*` environment variables; and
 - reads optional numeric token accounting from `{usage_file}`.
 
@@ -58,8 +60,10 @@ Available placeholders are:
 | `{output_file}` | Absolute path where the wrapper may write the final response |
 | `{usage_file}` | Optional JSON token-usage path |
 | `{checkout}` | Absolute isolated checkout |
-| `{tag}` / `{phase}` | Stable cell label and call phase |
+| `{model}` | Required: the fixed `COOK_MODEL` identifier |
+| `{max_compute_tokens}` | Required: this call's share of the reasoning/compute-token cap |
 | `{max_tokens}` | Required: this call's share of the matched token cap |
+| `{max_tool_calls}` | Required: this call's share of the tool-call cap |
 | `{timeout_seconds}` | This call's share of the matched wall cap |
 | `{safe_mode}` | Expands to `--safe-mode` for a command containing `claude` |
 
@@ -70,30 +74,37 @@ shell-quotes path values. A wrapper that produces token accounting should write:
 {
   "input_tokens": 1000,
   "output_tokens": 500,
-  "total_tokens": 1500
+  "total_tokens": 1500,
+  "compute_tokens": 400,
+  "tool_calls": 12
 }
 ```
 
 For example, a local wrapper could be configured as:
 
 ```bash
-export COOK_CMD='my-cook-wrapper --run-dir {run_dir} --max-tokens {max_tokens} --usage {usage_file}'
+export COOK_CMD='my-cook-wrapper --model {model} --run-dir {run_dir} --max-tokens {max_tokens} --max-compute-tokens {max_compute_tokens} --max-tool-calls {max_tool_calls} --usage {usage_file}'
+export COOK_MODEL='exact-provider-model-id'
 ```
 
 Authenticate that wrapper through a local credential store or broker. The
 harness deliberately does not make inherited secret environment variables
-available to model-facing processes.
+available to model-facing processes. For a non-Claude cook, the wrapper must
+also enforce filesystem/network de-contamination equivalent to Claude
+`--safe-mode`; the harness prompts forbid access beyond the isolated checkout.
 
 For a Claude-based command, the harness fails closed unless the literal
 `--safe-mode` or `{safe_mode}` appears in `COOK_CMD`. Use a wrapper that both
 applies that flag and enforces the passed token cap, for example:
 
 ```bash
-export COOK_CMD='my-claude-wrapper {safe_mode} --max-tokens {max_tokens} --usage {usage_file}'
+export COOK_CMD='my-claude-wrapper {safe_mode} --model {model} --max-tokens {max_tokens} --max-thinking-tokens {max_compute_tokens} --max-tool-calls {max_tool_calls} --run-dir {run_dir} --usage {usage_file}'
 ```
 
-Real execution is rejected if `{max_tokens}` is absent. If the chosen CLI does
-not report token usage, condition 7 cannot pass: the
+Real execution is rejected unless `{model}`, `{max_compute_tokens}`,
+`{max_tokens}`, and `{max_tool_calls}` are all present. The same exact command,
+model, and aggregate caps are frozen for both arms; B splits each cap across its
+two calls. If the chosen CLI does not report token usage, condition 7 cannot pass: the
 scorer reports the token-cost ratio as unavailable. Use a wrapper that writes
 `{usage_file}`. The same exact `COOK_CMD` is frozen and used for both arms.
 
@@ -124,8 +135,8 @@ outcomes.
 
 This writes 60 source-only patches plus `artifacts/candidates.json`. Public-test
 changes are excluded exactly as in the reference harness and recorded in the
-manifest. Every result, including an empty source patch or a failed cook, is
-frozen; there is no cherry-picking.
+manifest. A failed cook, cap/screening violation, or empty source patch stops
+the fixed generation run; successful artifacts are never cherry-picked.
 
 ### 3. Calibrate every selected ruler before candidate outcomes
 
@@ -157,27 +168,38 @@ truth is materialized:
 
 ```bash
 ~/.swebench-venv/bin/python run_trial.py --dry-run
-~/.swebench-venv/bin/python run_trial.py --phase plans
-~/.swebench-venv/bin/python run_trial.py --phase decisions
+~/.swebench-venv/bin/python run_trial.py --phase decision-pipeline
 ```
 
-All B plans are frozen before the first candidate decision. Decision-cell order
+The decision pipeline freezes all B plans before the first candidate decision.
+It is also resumable as separate `--phase plans` and `--phase decisions` calls.
+Decision-cell order
 is seeded and randomized across arms. Each A artifact gets the entire matched
-token/wall cap in one call. Each B artifact gets the identical total cap split
-evenly across its candidate-blind plan and candidate-visible validation calls.
+compute-token/token/tool-call/wall cap in one call. Each B artifact gets the
+identical aggregate caps split evenly across its candidate-blind plan and
+candidate-visible validation calls.
 Both arms see the same base repository, candidate, and public tests; neither
 receives gold, `test_patch`, `FAIL_TO_PASS`, or `PASS_TO_PASS`.
 
 The decision phase creates `artifacts/trial/fidelity-audit-input.json`, which is
-blind to SWE-bench outcomes, and `fidelity-result.template.json`. Run the frozen
-cross-family GLM-5.2/DeepEval audit over both-arm trajectories, then write
-`artifacts/trial/fidelity-result.json` with the same fields and bound
-`audit_input_sha256`. The fidelity audit may veto for leakage or failed
+blind to SWE-bench outcomes. Configure a DeepEval wrapper and run the
+cross-family auditor:
+
+```bash
+export DEEPEVAL_CMD='my-deepeval-wrapper --model {model} --input {prompt_file} --output {output_file} --max-tokens {max_tokens} --max-thinking-tokens {max_compute_tokens} --max-tool-calls {max_tool_calls}'
+~/.swebench-venv/bin/python audit_fidelity.py --dry-run
+~/.swebench-venv/bin/python audit_fidelity.py
+```
+
+`audit_fidelity.py` fixes the auditor to GLM-5.2, refuses to run after
+`oracle.json` exists, requires one evidence-bearing assessment per arm/candidate
+cell, and deterministically derives the fidelity summary. It writes the bound
+`artifacts/trial/fidelity-result.json`. The audit may veto for leakage or failed
 discipline; it never supplies candidate truth.
 
 ### 5. Freeze repeated SWE-bench truth
 
-Only after all decisions—and preferably the blinded fidelity audit—are frozen:
+Only after all decisions and the blinded fidelity audit are frozen:
 
 ```bash
 ~/.swebench-venv/bin/python run_trial.py --phase oracle \
@@ -191,9 +213,9 @@ repeats = four evaluator runs. A candidate must receive the same verdict twice.
 Oracle work directories are temporary; `artifacts/trial/oracle.json` retains
 only repeated boolean verdicts and hashes.
 
-For an uninterrupted head-chef run, `run_trial.py --phase all` executes plans,
-decisions, and oracle in that order. Phase commands are resumable: already
-frozen cells are checked and skipped, and a changed configuration is rejected.
+Oracle execution is blocked until the bound GLM-5.2/DeepEval result exists.
+Phase commands are resumable: already frozen cells are checked and skipped, and
+a changed configuration is rejected.
 
 ### 6. Score against the eight-condition bar
 
@@ -228,5 +250,6 @@ python3 select_tasks.py --help
 python3 gen_candidates.py --dry-run
 python3 calibrate.py --dry-run
 python3 run_trial.py --dry-run
+python3 audit_fidelity.py --dry-run
 python3 score.py --help
 ```

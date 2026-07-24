@@ -14,13 +14,14 @@ from typing import Any
 
 from common import (
     directory_sha256,
+    extract_json_object,
     load_json,
     payload_sha256,
     sha256_file,
     validate_task_bank,
     write_json,
 )
-from run_trial import validate_calibration, validate_candidate_bank
+from run_trial import load_plan, validate_calibration, validate_candidate_bank
 
 HERE = Path(__file__).resolve().parent
 DEFAULT_TASKS = HERE / "tasks.json"
@@ -148,6 +149,7 @@ def normalized_cell(
     trial_dir: Path,
     candidate: dict[str, Any],
     arm: str,
+    frozen_config: dict[str, Any],
     resolves: bool,
 ) -> dict[str, Any]:
     path = decision_path(trial_dir, candidate["candidate_id"], arm)
@@ -182,19 +184,31 @@ def normalized_cell(
         probability = 0.0
     utility = 1 if serve and resolves else -4 if serve and not resolves else 0
     current_execution = record.get("execution") or {}
+    if (
+        current_execution.get("model") != frozen_config.get("cook_model")
+        or current_execution.get("command_sha256")
+        != frozen_config.get("cook_command_sha256")
+    ):
+        errors.append("decision did not use the frozen cook/model")
     wall_seconds: float | None = current_execution.get("wall_seconds")
     tokens = numeric_total_tokens(current_execution)
     calls = 1
     plan_adherence = decision.get("plan_adherence")
     deviations = decision.get("deviations") or []
     if arm == "B":
-        plan = load_json(plan_path(trial_dir, candidate["candidate_id"]))
+        plan = load_plan(trial_dir, candidate["candidate_id"])
         if plan.get("plan_sha256") != record.get("plan_sha256"):
             errors.append("decision is not bound to its frozen plan")
             serve = False
             probability = 0.0
             utility = 0
         plan_execution = plan.get("execution") or {}
+        if (
+            plan_execution.get("model") != frozen_config.get("cook_model")
+            or plan_execution.get("command_sha256")
+            != frozen_config.get("cook_command_sha256")
+        ):
+            errors.append("plan did not use the frozen cook/model")
         plan_wall = plan_execution.get("wall_seconds")
         if isinstance(wall_seconds, (int, float)) and isinstance(plan_wall, (int, float)):
             wall_seconds = float(wall_seconds) + float(plan_wall)
@@ -203,6 +217,38 @@ def normalized_cell(
         plan_tokens = numeric_total_tokens(plan_execution)
         tokens = tokens + plan_tokens if tokens is not None and plan_tokens is not None else None
         calls = 2
+    cap_fields = (
+        ("max_compute_tokens", "total_compute_token_cap_per_artifact"),
+        ("max_tokens", "total_token_cap_per_artifact"),
+        ("max_tool_calls", "total_tool_call_cap_per_artifact"),
+    )
+    for execution_field, config_field in cap_fields:
+        observed = current_execution.get(execution_field)
+        if arm == "B":
+            observed_plan = plan_execution.get(execution_field)
+            observed = (
+                observed + observed_plan
+                if isinstance(observed, int) and isinstance(observed_plan, int)
+                else None
+            )
+        if observed != frozen_config.get(config_field):
+            errors.append(f"{execution_field} was not matched across arms")
+    expected_wall = frozen_config.get("total_timeout_seconds_per_artifact")
+    observed_wall_cap = current_execution.get("timeout_seconds")
+    if arm == "B":
+        observed_plan_wall = plan_execution.get("timeout_seconds")
+        observed_wall_cap = (
+            observed_wall_cap + observed_plan_wall
+            if isinstance(observed_wall_cap, int)
+            and isinstance(observed_plan_wall, int)
+            else None
+        )
+    if observed_wall_cap != expected_wall:
+        errors.append("wall-time cap was not matched across arms")
+    if errors:
+        serve = False
+        probability = 0.0
+        utility = 0
     return {
         "arm": arm,
         "brier": (float(probability) - float(resolves)) ** 2,
@@ -296,31 +342,130 @@ def fidelity_passes(
                     f"{cell.get('candidate_id')} arm {cell.get('arm')}: "
                     f"{path_field} changed"
                 )
-    required_true = (
-        "audits_both_arms_for_leakage",
-        "b_plan_specific",
-        "b_repro_built_and_ran",
-        "no_leakage",
-        "no_undisclosed_prereg_mutation",
-        "passes",
-    )
+    expected_keys = [
+        (cell.get("candidate_id"), cell.get("arm"))
+        for cell in audit.get("cells", [])
+    ]
+    result_cells = result.get("cells")
+    cells_valid = isinstance(result_cells, list) and [
+        (cell.get("candidate_id"), cell.get("arm"))
+        for cell in result_cells
+        if isinstance(cell, dict)
+    ] == expected_keys
+    cell_schema_valid = cells_valid
+    if cells_valid:
+        for cell in result_cells:
+            arm = cell.get("arm")
+            evidence = cell.get("evidence")
+            cell_schema_valid = cell_schema_valid and (
+                isinstance(cell.get("leakage_found"), bool)
+                and isinstance(cell.get("prereg_mutation_found"), bool)
+                and isinstance(evidence, list)
+                and bool(evidence)
+                and all(isinstance(item, str) and item.strip() for item in evidence)
+                and (
+                    (
+                        arm == "B"
+                        and isinstance(cell.get("plan_specific"), bool)
+                        and isinstance(cell.get("repro_built_and_ran"), bool)
+                    )
+                    or (
+                        arm == "A"
+                        and cell.get("plan_specific") is None
+                        and cell.get("repro_built_and_ran") is None
+                    )
+                )
+            )
+    else:
+        result_cells = []
+    b_cells = [cell for cell in result_cells if cell.get("arm") == "B"]
+    recomputed = {
+        "audits_both_arms_for_leakage": cells_valid,
+        "b_plan_specific": bool(b_cells)
+        and all(cell.get("plan_specific") is True for cell in b_cells),
+        "b_repro_built_and_ran": bool(b_cells)
+        and all(cell.get("repro_built_and_ran") is True for cell in b_cells),
+        "no_leakage": cell_schema_valid
+        and all(cell.get("leakage_found") is False for cell in result_cells),
+        "no_undisclosed_prereg_mutation": cell_schema_valid
+        and all(
+            cell.get("prereg_mutation_found") is False for cell in result_cells
+        ),
+    }
+    recomputed["passes"] = all(recomputed.values())
+    summary_valid = all(result.get(key) is value for key, value in recomputed.items())
     bound = result.get("audit_input_sha256") == audit.get("audit_input_sha256")
-    auditor_valid = result.get("auditor") == "GLM-5.2 via DeepEval"
+    auditor_valid = (
+        result.get("auditor_model") == "GLM-5.2"
+        and result.get("framework") == "DeepEval"
+    )
+    audit_run = trial_dir / "fidelity-auditor-run"
+    raw_path = audit_run / "final.txt"
+    execution_path = audit_run / "execution.json"
+    execution_valid = False
+    if raw_path.is_file() and execution_path.is_file():
+        execution = load_json(execution_path)
+        raw_response = extract_json_object(raw_path.read_text(encoding="utf-8"))
+        execution_valid = (
+            execution.get("model") == "GLM-5.2"
+            and execution.get("command_sha256")
+            == result.get("audit_command_sha256")
+            and not execution.get("artifact_screen_violations")
+            and not execution.get("blocked_secret_like_output")
+            and not execution.get("cap_violations")
+            and execution.get("returncode") == 0
+            and execution.get("timed_out") is False
+            and sha256_file(raw_path) == result.get("raw_response_sha256")
+            and isinstance(raw_response, dict)
+            and raw_response.get("cells") == result.get("cells")
+        )
+    audit_file_bound = result.get("audit_input_file_sha256") == sha256_file(
+        audit_path
+    )
+    oracle = load_json(trial_dir / "oracle.json")
+    blinded_order_valid = (
+        isinstance(result.get("completed_at"), str)
+        and isinstance(oracle.get("finished_at"), str)
+        and result["completed_at"] < oracle["finished_at"]
+    )
     passed = (
         input_hash_valid
         and snapshot_valid
         and bound
         and auditor_valid
-        and all(result.get(field) is True for field in required_true)
+        and audit_file_bound
+        and blinded_order_valid
+        and cells_valid
+        and cell_schema_valid
+        and summary_valid
+        and execution_valid
+        and result.get("passes") is True
     )
     return passed, {
         "audit_input_sha256": audit.get("audit_input_sha256"),
         "auditor_valid": auditor_valid,
+        "audit_file_bound": audit_file_bound,
+        "blinded_order_valid": blinded_order_valid,
         "bound_to_audit_input": bound,
+        "cells_valid": cells_valid and cell_schema_valid,
+        "execution_valid": execution_valid,
         "input_hash_valid": input_hash_valid,
-        "result": result,
+        "result_summary": {
+            key: result.get(key)
+            for key in (
+                "auditor_model",
+                "framework",
+                "audits_both_arms_for_leakage",
+                "b_plan_specific",
+                "b_repro_built_and_ran",
+                "no_leakage",
+                "no_undisclosed_prereg_mutation",
+                "passes",
+            )
+        },
         "snapshot_errors": snapshot_errors,
         "snapshot_valid": snapshot_valid,
+        "summary_valid": summary_valid,
     }
 
 
@@ -345,7 +490,10 @@ def main(argv: list[str] | None = None) -> int:
     selected_ids = {task["instance_id"] for task in tasks}
     candidate_manifest = load_json(args.candidates)
     all_candidates = validate_candidate_bank(
-        candidate_manifest, args.candidates, task_bank["task_bank_sha256"]
+        candidate_manifest,
+        args.candidates,
+        task_bank["task_bank_sha256"],
+        selected_ids,
     )
     calibration = load_json(args.calibration)
     calibrated_ids = validate_calibration(
@@ -380,6 +528,10 @@ def main(argv: list[str] | None = None) -> int:
         HERE / "common.py"
     ):
         raise ValueError("shared harness code changed after the trial was frozen")
+    if trial_manifest.get("config", {}).get(
+        "audit_fidelity_py_sha256"
+    ) != sha256_file(HERE / "audit_fidelity.py"):
+        raise ValueError("fidelity runner changed after the trial was frozen")
     if trial_manifest.get("config", {}).get("run_trial_py_sha256") != sha256_file(
         HERE / "run_trial.py"
     ):
@@ -444,6 +596,7 @@ def main(argv: list[str] | None = None) -> int:
                     trial_dir=args.trial_dir,
                     candidate=candidate,
                     arm=arm,
+                    frozen_config=trial_manifest["config"],
                     resolves=truth[candidate["candidate_id"]],
                 )
             )
@@ -498,19 +651,20 @@ def main(argv: list[str] | None = None) -> int:
     fidelity_path = args.fidelity or args.trial_dir / "fidelity-result.json"
     fidelity_ok, fidelity = fidelity_passes(fidelity_path, args.trial_dir)
 
-    calibration_ok = all(
+    included_calibration_passes = sum(
         result.get("passes") is True
         and result.get("gold_resolved") == [True, True]
         and result.get("base_resolved") == [False, False]
-        and result.get("image", {}).get("image_id")
+        and bool(result.get("image", {}).get("image_id"))
         for result in calibration["task_results"]
         if result["instance_id"] in calibrated_set
     )
+    calibration_ok = included_calibration_passes == len(calibrated_ids)
     conditions = [
         condition(
             "1. repeated gold/base calibration",
             calibration_ok,
-            f"{len(calibrated_ids)}/{len(calibrated_ids)} included rulers",
+            f"{included_calibration_passes}/{len(calibrated_ids)} included rulers",
             "every included ruler: gold=[true,true], base=[false,false], image frozen",
         ),
         condition(

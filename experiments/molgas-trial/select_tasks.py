@@ -119,7 +119,6 @@ def build_parser() -> argparse.ArgumentParser:
         type=Path,
         help="Optional cached Arrow file; otherwise load the Hugging Face dataset.",
     )
-    parser.add_argument("--force", action="store_true", help="Replace an existing output.")
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--seed", type=int, default=DEFAULT_SEED)
     return parser
@@ -146,7 +145,7 @@ def main(argv: list[str] | None = None) -> int:
         "task_bank_sha256": payload_sha256(tasks),
         "tasks": tasks,
     }
-    write_json(args.output, bank, overwrite=args.force)
+    write_json(args.output, bank)
     repo_counts = Counter(task["repo"] for task in tasks)
     band_counts = Counter(task["difficulty"] for task in tasks)
     print(f"froze {len(tasks)} task ids to {args.output}")

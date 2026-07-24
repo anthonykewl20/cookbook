@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import os
 import random
+import re
 import sys
 import tempfile
 from collections import Counter, defaultdict
@@ -143,8 +144,8 @@ FROZEN CANDIDATE PATCH:
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description=(
-            "Run candidate-blind B plans, randomized A/B decisions, and repeated "
-            "SWE-bench oracle grading over calibrated tasks."
+            "Run candidate-blind plans and randomized A/B decisions, then "
+            "(after the blinded audit) repeated SWE-bench oracle grading."
         )
     )
     parser.add_argument("--calibration", type=Path, default=DEFAULT_CALIBRATION)
@@ -164,8 +165,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument(
         "--phase",
-        choices=("all", "plans", "decisions", "oracle"),
-        default="all",
+        choices=("decision-pipeline", "plans", "decisions", "oracle"),
+        default="decision-pipeline",
     )
     parser.add_argument("--seed", type=int, default=DEFAULT_SEED)
     parser.add_argument("--tasks", type=Path, default=DEFAULT_TASKS)
@@ -342,6 +343,13 @@ def split_cap(total: int) -> tuple[int, int]:
     return plan, total - plan
 
 
+def render_prompt(template: str, **values: str) -> str:
+    """Substitute named markers without interpreting the prompt's JSON braces."""
+    names = "|".join(re.escape(name) for name in values)
+    marker = re.compile(r"\{(" + names + r")\}")
+    return marker.sub(lambda match: values[match.group(1)], template)
+
+
 def initialize_trial(
     *,
     args: argparse.Namespace,
@@ -355,11 +363,13 @@ def initialize_trial(
     manifest_path = output / "trial-manifest.json"
     order_path = output / "order.json"
     config = {
+        "audit_fidelity_py_sha256": sha256_file(HERE / "audit_fidelity.py"),
         "calibration_file_sha256": sha256_file(args.calibration),
         "candidate_bank_sha256": candidate_manifest["candidate_bank_sha256"],
         "candidates_file_sha256": sha256_file(args.candidates),
         "common_py_sha256": sha256_file(HERE / "common.py"),
         "cook_command_sha256": sha256_text(args.cook_cmd),
+        "cook_model": args.cook_model,
         "oracle_repeats": ORACLE_REPEATS,
         "pre_registration_sha256": sha256_file(HERE / "PRE-REGISTRATION.md"),
         "protocol_prompts_sha256": payload_sha256(
@@ -370,8 +380,10 @@ def initialize_trial(
         "seed": args.seed,
         "task_bank_sha256": task_bank["task_bank_sha256"],
         "test_timeout_seconds": args.test_timeout_seconds,
+        "total_compute_token_cap_per_artifact": args.total_compute_token_cap,
         "total_timeout_seconds_per_artifact": args.total_timeout_seconds,
         "total_token_cap_per_artifact": args.total_token_cap,
+        "total_tool_call_cap_per_artifact": args.total_tool_call_cap,
     }
     config_hash = payload_sha256(config)
     if manifest_path.exists():
@@ -450,6 +462,47 @@ def frozen_patch(
     return path, path.read_text(encoding="utf-8")
 
 
+def patch_target_paths(patch_text: str) -> list[str]:
+    """Return normalized destination paths named by a standard Git patch."""
+    targets = []
+    for line in patch_text.splitlines():
+        if not line.startswith("+++ "):
+            continue
+        raw = line[4:].split("\t", 1)[0]
+        if raw == "/dev/null":
+            continue
+        if raw.startswith("b/"):
+            raw = raw[2:]
+        path = Path(raw)
+        if path.is_absolute() or ".." in path.parts:
+            raise ValueError(f"unsafe candidate patch target: {raw}")
+        targets.append(path.as_posix())
+    return sorted(set(targets))
+
+
+def checkout_candidate_state(
+    checkout: Path, base_commit: str, patch_text: str = ""
+) -> str:
+    """Bind tracked changes and candidate-created target files to their content."""
+    tracked = run_command(
+        ["git", "diff", "--binary", "--no-ext-diff", base_commit, "--"],
+        cwd=checkout,
+    ).stdout
+    targets = []
+    root = checkout.resolve()
+    for relative in patch_target_paths(patch_text):
+        path = (checkout / relative).resolve()
+        if root != path.parent and root not in path.parents:
+            raise ValueError(f"candidate patch target escapes checkout: {relative}")
+        targets.append(
+            {
+                "path": relative,
+                "sha256": sha256_file(path) if path.is_file() else None,
+            }
+        )
+    return payload_sha256({"candidate_targets": targets, "tracked_diff": tracked})
+
+
 def fail_closed_decision(
     normalized: dict[str, Any], errors: list[str], execution: dict[str, Any]
 ) -> tuple[dict[str, Any], list[str]]:
@@ -462,6 +515,7 @@ def fail_closed_decision(
         failures.append("cook output was blocked by the secret screen")
     if execution.get("artifact_screen_violations"):
         failures.append("cook artifacts failed retention screening")
+    failures.extend(execution.get("cap_violations") or [])
     if failures:
         normalized = {
             **normalized,
@@ -478,7 +532,9 @@ def run_plans(
     candidates_by_id: dict[str, dict[str, Any]],
     tasks: dict[str, dict[str, Any]],
 ) -> None:
+    plan_compute, _ = split_cap(args.total_compute_token_cap)
     plan_tokens, _ = split_cap(args.total_token_cap)
+    plan_tools, _ = split_cap(args.total_tool_call_cap)
     plan_timeout, _ = split_cap(args.total_timeout_seconds)
     plan_root = args.output_dir / "plans"
     checkout_root = args.work_dir / "plan-checkouts"
@@ -493,9 +549,11 @@ def run_plans(
         checkout = fresh_checkout(
             task, destination=checkout_root / tag, mirrors=mirrors
         )
-        prompt = PLAN_PROMPT.format(
+        prompt = render_prompt(
+            PLAN_PROMPT,
             problem_statement=task["problem_statement"].strip()
         )
+        before_state = checkout_candidate_state(checkout, task["base_commit"])
         result = run_cook(
             template=args.cook_cmd,
             checkout=checkout,
@@ -503,7 +561,10 @@ def run_plans(
             prompt=prompt,
             tag=tag,
             phase="molgas_plan",
+            model=args.cook_model,
+            max_compute_tokens=plan_compute,
             max_tokens=plan_tokens,
+            max_tool_calls=plan_tools,
             timeout_seconds=plan_timeout,
         )
         plan, errors = validate_plan(result["final_text"])
@@ -515,6 +576,9 @@ def run_plans(
             errors.append("plan output was blocked by the secret screen")
         if result["artifact_screen_violations"]:
             errors.append("plan artifacts failed retention screening")
+        errors.extend(result["cap_violations"])
+        if checkout_candidate_state(checkout, task["base_commit"]) != before_state:
+            errors.append("plan cook altered tracked repository state")
         record = {
             "candidate_id": candidate_id,
             "errors": errors,
@@ -523,11 +587,17 @@ def run_plans(
                 for key in (
                     "artifact_screen_violations",
                     "blocked_secret_like_output",
+                    "cap_violations",
+                    "command_sha256",
                     "finished_at",
+                    "max_compute_tokens",
                     "max_tokens",
+                    "max_tool_calls",
+                    "model",
                     "returncode",
                     "safe_mode",
                     "timed_out",
+                    "timeout_seconds",
                     "token_usage",
                     "wall_seconds",
                 )
@@ -536,8 +606,9 @@ def run_plans(
             "instance_id": candidate["instance_id"],
             "order_index": position,
             "plan": plan,
-            "plan_sha256": sha256_text(result["final_text"]),
+            "plan_sha256": payload_sha256(plan),
             "prompt_sha256": sha256_text(prompt),
+            "raw_response_sha256": sha256_text(result["final_text"]),
             "raw_response_path": str(
                 (args.output_dir / "cook-runs" / tag / "final.txt").relative_to(
                     args.output_dir
@@ -560,8 +631,19 @@ def load_plan(output_dir: Path, candidate_id: str) -> dict[str, Any]:
     if record.get("candidate_id") != candidate_id:
         raise RuntimeError(f"frozen plan identity mismatch: {path}")
     raw_path = output_dir / record["raw_response_path"]
-    if sha256_file(raw_path) != record["plan_sha256"]:
+    if sha256_file(raw_path) != record.get("raw_response_sha256"):
         raise RuntimeError(f"frozen plan response changed: {raw_path}")
+    reparsed, structural_errors = validate_plan(
+        raw_path.read_text(encoding="utf-8")
+    )
+    if (
+        reparsed != record.get("plan")
+        or structural_errors
+        != record.get("errors", [])[: len(structural_errors)]
+    ):
+        raise RuntimeError(f"frozen plan normalization changed: {path}")
+    if payload_sha256(record.get("plan")) != record.get("plan_sha256"):
+        raise RuntimeError(f"frozen plan payload changed: {path}")
     return record
 
 
@@ -582,21 +664,30 @@ def run_decision_cell(
     )
     patch_path, patch_text = frozen_patch(candidate, args.candidates)
     apply_patch(checkout, patch_path)
+    frozen_checkout_state = checkout_candidate_state(
+        checkout, task["base_commit"], patch_text
+    )
 
     plan_record: dict[str, Any] | None = None
     if arm == "A":
+        max_compute_tokens = args.total_compute_token_cap
         max_tokens = args.total_token_cap
+        max_tool_calls = args.total_tool_call_cap
         timeout = args.total_timeout_seconds
-        prompt = ADHOC_PROMPT.format(
+        prompt = render_prompt(
+            ADHOC_PROMPT,
             problem_statement=task["problem_statement"].strip(),
             candidate_patch=patch_text or "(empty/base candidate)",
         )
         phase = "adhoc_decision"
     else:
+        _, max_compute_tokens = split_cap(args.total_compute_token_cap)
         _, max_tokens = split_cap(args.total_token_cap)
+        _, max_tool_calls = split_cap(args.total_tool_call_cap)
         _, timeout = split_cap(args.total_timeout_seconds)
         plan_record = load_plan(args.output_dir, candidate_id)
-        prompt = MOLGAS_PROMPT.format(
+        prompt = render_prompt(
+            MOLGAS_PROMPT,
             candidate_patch=patch_text or "(empty/base candidate)",
             plan=canonical_json(plan_record["plan"]),
             plan_frozen_at=plan_record["frozen_at"],
@@ -612,15 +703,30 @@ def run_decision_cell(
         prompt=prompt,
         tag=tag,
         phase=phase,
+        model=args.cook_model,
+        max_compute_tokens=max_compute_tokens,
         max_tokens=max_tokens,
+        max_tool_calls=max_tool_calls,
         timeout_seconds=timeout,
     )
     normalized, errors = normalize_decision(result["final_text"])
     if arm == "B" and not isinstance(normalized.get("plan_adherence"), bool):
         errors.append("molgas decision must report boolean plan_adherence")
+    if arm == "B" and normalized.get("decision") == "SERVE":
+        if normalized.get("plan_adherence") is not True:
+            errors.append("molgas cannot SERVE without full frozen-plan adherence")
+        if normalized.get("deviations"):
+            errors.append("molgas cannot SERVE with disclosed plan deviations")
     normalized, errors = fail_closed_decision(normalized, errors, result)
+    if (
+        checkout_candidate_state(checkout, task["base_commit"], patch_text)
+        != frozen_checkout_state
+    ):
+        errors.append("cook altered the frozen candidate or tracked repository state")
+        normalized = {**normalized, "decision": "REFUSE", "p_pass": 0.0}
     if arm == "B" and plan_record and plan_record["errors"]:
         errors.append("candidate-blind plan was structurally invalid")
+        normalized = {**normalized, "decision": "REFUSE", "p_pass": 0.0}
     return {
         "arm": arm,
         "candidate_id": candidate_id,
@@ -633,11 +739,17 @@ def run_decision_cell(
             for key in (
                 "artifact_screen_violations",
                 "blocked_secret_like_output",
+                "cap_violations",
+                "command_sha256",
                 "finished_at",
+                "max_compute_tokens",
                 "max_tokens",
+                "max_tool_calls",
+                "model",
                 "returncode",
                 "safe_mode",
                 "timed_out",
+                "timeout_seconds",
                 "token_usage",
                 "wall_seconds",
             )
@@ -729,22 +841,6 @@ def write_fidelity_input(
         }
         payload["audit_input_sha256"] = payload_sha256(payload)
         write_json(path, payload)
-    template = output_dir / "fidelity-result.template.json"
-    if not template.exists():
-        write_json(
-            template,
-            {
-                "audit_input_sha256": payload["audit_input_sha256"],
-                "auditor": "GLM-5.2 via DeepEval",
-                "audits_both_arms_for_leakage": None,
-                "b_plan_specific": None,
-                "b_repro_built_and_ran": None,
-                "no_leakage": None,
-                "no_undisclosed_prereg_mutation": None,
-                "passes": None,
-                "schema_version": 1,
-            },
-        )
 
 
 def run_decisions(
@@ -792,6 +888,50 @@ def require_all_decisions(output_dir: Path, order: dict[str, Any]) -> None:
             missing.append(name)
     if missing:
         raise RuntimeError(f"oracle blocked: {len(missing)} decision cells are missing")
+
+
+def require_blinded_audit_completed(output_dir: Path) -> None:
+    """Require an executed, bound cross-family audit before oracle truth."""
+    from audit_fidelity import validate_audit_cells, validate_frozen_snapshot
+
+    audit_input_path = output_dir / "fidelity-audit-input.json"
+    result_path = output_dir / "fidelity-result.json"
+    if not audit_input_path.is_file() or not result_path.is_file():
+        raise RuntimeError(
+            "oracle blocked: run audit_fidelity.py on the blinded snapshot first"
+        )
+    audit_input = load_json(audit_input_path)
+    result = load_json(result_path)
+    validate_frozen_snapshot(output_dir, audit_input)
+    audit_run = output_dir / "fidelity-auditor-run"
+    raw_path = audit_run / "final.txt"
+    execution_path = audit_run / "execution.json"
+    if not raw_path.is_file() or not execution_path.is_file():
+        raise RuntimeError("oracle blocked: fidelity execution artifacts are missing")
+    raw = extract_json_object(raw_path.read_text(encoding="utf-8"))
+    cells, errors = validate_audit_cells(
+        raw.get("cells") if isinstance(raw, dict) else None,
+        audit_input["cells"],
+    )
+    execution = load_json(execution_path)
+    if (
+        result.get("audit_input_sha256") != audit_input.get("audit_input_sha256")
+        or result.get("auditor_model") != "GLM-5.2"
+        or result.get("framework") != "DeepEval"
+        or not result.get("completed_at")
+        or errors
+        or result.get("cells") != cells
+        or sha256_file(raw_path) != result.get("raw_response_sha256")
+        or execution.get("model") != "GLM-5.2"
+        or execution.get("command_sha256")
+        != result.get("audit_command_sha256")
+        or execution.get("returncode") != 0
+        or execution.get("timed_out") is not False
+        or execution.get("blocked_secret_like_output")
+        or execution.get("artifact_screen_violations")
+        or execution.get("cap_violations")
+    ):
+        raise RuntimeError("oracle blocked: fidelity result is not a bound GLM-5.2 audit")
 
 
 def assert_frozen_ruler_environment(
@@ -848,6 +988,7 @@ def run_oracle(
         print(f"oracle already frozen: {oracle_path}")
         return
     require_all_decisions(args.output_dir, order)
+    require_blinded_audit_completed(args.output_dir)
     calibration = load_json(args.calibration)
     swebench_version = assert_frozen_ruler_environment(calibration, candidates)
     by_index: dict[int, list[dict[str, Any]]] = {1: [], 2: []}
@@ -961,7 +1102,10 @@ def dry_run(args: argparse.Namespace) -> int:
     if args.candidates.is_file() and args.calibration.is_file():
         candidate_manifest = load_json(args.candidates)
         all_candidates = validate_candidate_bank(
-            candidate_manifest, args.candidates, tasks["task_bank_sha256"]
+            candidate_manifest,
+            args.candidates,
+            tasks["task_bank_sha256"],
+            {task["instance_id"] for task in selected},
         )
         calibrated = validate_calibration(
             load_json(args.calibration),
@@ -978,6 +1122,7 @@ def dry_run(args: argparse.Namespace) -> int:
         print("candidate/calibration inputs are not frozen yet")
         print("maximum plan calls=60 decision_cells=120 oracle_runs=4")
     print(f"cook_cmd_sha256={sha256_text(args.cook_cmd)}")
+    print(f"cook_model={args.cook_model}")
     print(f"randomization_seed={args.seed}")
     return 0
 
@@ -987,17 +1132,25 @@ def main(argv: list[str] | None = None) -> int:
     if args.dry_run:
         return dry_run(args)
     is_claude = validate_cook_template(args.cook_cmd)
-    if not VENV_PY.is_file() and args.phase in {"all", "oracle"}:
+    validate_cook_model(args.cook_model)
+    if not VENV_PY.is_file() and args.phase == "oracle":
         raise SystemExit(f"SWE-bench venv interpreter not found: {VENV_PY}")
     for value, name in (
         (args.max_workers, "max workers"),
         (args.test_timeout_seconds, "test timeout"),
+        (args.total_compute_token_cap, "total compute-token cap"),
         (args.total_timeout_seconds, "total cook timeout"),
         (args.total_token_cap, "total token cap"),
+        (args.total_tool_call_cap, "total tool-call cap"),
     ):
         if value <= 0:
             raise SystemExit(f"{name} must be positive")
-    if args.total_timeout_seconds < 2 or args.total_token_cap < 2:
+    if (
+        args.total_compute_token_cap < 2
+        or args.total_timeout_seconds < 2
+        or args.total_token_cap < 2
+        or args.total_tool_call_cap < 2
+    ):
         raise SystemExit("B's two calls require total caps of at least 2")
 
     task_bank = load_json(args.tasks)
@@ -1005,7 +1158,10 @@ def main(argv: list[str] | None = None) -> int:
     tasks = task_map(task_bank)
     candidate_manifest = load_json(args.candidates)
     all_candidates = validate_candidate_bank(
-        candidate_manifest, args.candidates, task_bank["task_bank_sha256"]
+        candidate_manifest,
+        args.candidates,
+        task_bank["task_bank_sha256"],
+        {task["instance_id"] for task in selected_tasks},
     )
     calibration = load_json(args.calibration)
     calibrated_ids = validate_calibration(
@@ -1034,21 +1190,21 @@ def main(argv: list[str] | None = None) -> int:
         f"frozen trial config {manifest['config_sha256']} "
         f"(Claude safe-mode={is_claude})"
     )
-    if args.phase in {"all", "plans"}:
+    if args.phase in {"decision-pipeline", "plans"}:
         run_plans(
             args=args,
             order=order,
             candidates_by_id=candidates_by_id,
             tasks=tasks,
         )
-    if args.phase in {"all", "decisions"}:
+    if args.phase in {"decision-pipeline", "decisions"}:
         run_decisions(
             args=args,
             order=order,
             candidates_by_id=candidates_by_id,
             tasks=tasks,
         )
-    if args.phase in {"all", "oracle"}:
+    if args.phase == "oracle":
         run_oracle(args=args, candidates=candidates, order=order)
     return 0
 

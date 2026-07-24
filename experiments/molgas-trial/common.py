@@ -60,23 +60,20 @@ _ALLOWED_TEMPLATE_FIELDS = {
 }
 _SAFE_MODEL_ENV_NAMES = {
     "COLORTERM",
-    "HOME",
     "LANG",
-    "LOGNAME",
     "NO_COLOR",
     "PATH",
     "SHELL",
     "SSL_CERT_DIR",
     "SSL_CERT_FILE",
     "TERM",
-    "TMPDIR",
     "TZ",
-    "USER",
 }
 _MAX_CAPTURE_BYTES = 8 * 1024 * 1024
 _MAX_ARTIFACT_BYTES = 16 * 1024 * 1024
 _MAX_ARTIFACT_TOTAL_BYTES = 256 * 1024 * 1024
 _MAX_ARTIFACT_FILES = 2000
+_MAX_ARTIFACT_ENTRIES = 4000
 
 
 def utc_now() -> str:
@@ -178,7 +175,22 @@ def assert_no_secret_like_text(text: str, *, label: str) -> None:
             raise ValueError(f"{label} matched a secret-like value; refusing model call")
 
 
-def validate_cook_template(template: str) -> bool:
+def model_family(model: str) -> str | None:
+    lowered = model.lower()
+    families = (
+        ("anthropic", ("anthropic", "claude")),
+        ("glm", ("glm", "zhipu")),
+        ("google", ("gemini", "google")),
+        ("openai", ("openai", "gpt", "codex")),
+        ("mistral", ("mistral",)),
+    )
+    for family, markers in families:
+        if any(marker in lowered for marker in markers):
+            return family
+    return None
+
+
+def validate_cook_template(template: str, *, model: str | None = None) -> bool:
     if not template or template.strip() == DEFAULT_COOK_CMD:
         raise ValueError(
             "COOK_CMD is still the placeholder; set COOK_CMD or pass --cook-cmd"
@@ -199,7 +211,9 @@ def validate_cook_template(template: str) -> bool:
             "COOK_CMD must pass the fixed model and every matched cap; missing "
             f"placeholders: {sorted(missing)}"
         )
-    is_claude = bool(_CLAUDE_RE.search(template))
+    is_claude = bool(
+        _CLAUDE_RE.search(template) or _CLAUDE_RE.search(model or "")
+    )
     if is_claude and "--safe-mode" not in template and "safe_mode" not in fields:
         raise ValueError("Claude COOK_CMD must contain --safe-mode or {safe_mode}")
     return is_claude
@@ -252,20 +266,49 @@ def _read_bounded(handle: Any) -> tuple[str, bool]:
 def _screen_run_artifacts(run_dir: Path) -> list[str]:
     """Remove links/overflow and redact secret-like retained wrapper artifacts."""
     violations: list[str] = []
+
+    def record(message: str) -> None:
+        if len(violations) < 100:
+            violations.append(message)
+        elif len(violations) == 100:
+            violations.append("additional artifact violations omitted")
+
     files: list[Path] = []
-    for path in sorted(run_dir.rglob("*")):
-        relative = path.relative_to(run_dir).as_posix()
-        if path.is_symlink():
-            path.unlink()
-            violations.append(f"{relative}: symlink removed")
-        elif path.is_file():
-            files.append(path)
-    if len(files) > _MAX_ARTIFACT_FILES:
-        for path in files[_MAX_ARTIFACT_FILES:]:
+    entries = 0
+    for directory, dirnames, filenames in os.walk(run_dir, topdown=True):
+        dirnames.sort()
+        filenames.sort()
+        parent = Path(directory)
+        for name in list(dirnames):
+            path = parent / name
             relative = path.relative_to(run_dir).as_posix()
-            path.unlink()
-            violations.append(f"{relative}: file-count overflow removed")
-        files = files[:_MAX_ARTIFACT_FILES]
+            entries += 1
+            if path.is_symlink():
+                path.unlink()
+                dirnames.remove(name)
+                record(f"{relative}: symlink removed")
+            elif entries > _MAX_ARTIFACT_ENTRIES:
+                shutil.rmtree(path)
+                dirnames.remove(name)
+                record(f"{relative}: entry-count overflow removed")
+        for name in filenames:
+            path = parent / name
+            relative = path.relative_to(run_dir).as_posix()
+            entries += 1
+            if path.is_symlink():
+                path.unlink()
+                record(f"{relative}: symlink removed")
+            elif not path.is_file():
+                path.unlink()
+                record(f"{relative}: special file removed")
+            elif (
+                entries > _MAX_ARTIFACT_ENTRIES
+                or len(files) >= _MAX_ARTIFACT_FILES
+            ):
+                path.unlink()
+                record(f"{relative}: file-count overflow removed")
+            elif path.is_file():
+                files.append(path)
 
     total = 0
     for path in files:
@@ -277,7 +320,7 @@ def _screen_run_artifacts(run_dir: Path) -> list[str]:
                 "[BLOCKED: artifact exceeded retention limit]\n",
                 encoding="utf-8",
             )
-            violations.append(f"{relative}: oversized artifact redacted")
+            record(f"{relative}: oversized artifact redacted")
             continue
         text = path.read_text(encoding="utf-8", errors="replace")
         try:
@@ -287,7 +330,7 @@ def _screen_run_artifacts(run_dir: Path) -> list[str]:
                 "[BLOCKED: artifact matched a secret-like value]\n",
                 encoding="utf-8",
             )
-            violations.append(f"{relative}: secret-like value redacted")
+            record(f"{relative}: secret-like value redacted")
     return violations
 
 
@@ -364,8 +407,8 @@ def run_cook(
     final.txt when the command writes it, otherwise from stdout.  A command
     wrapper may write usage.json; only numeric token counts are retained.
     """
-    is_claude = validate_cook_template(template)
     model = validate_cook_model(model)
+    is_claude = validate_cook_template(template, model=model)
     assert_no_secret_like_text(prompt, label=f"{tag} prompt")
     if (
         max_compute_tokens <= 0
@@ -379,6 +422,10 @@ def run_cook(
     if run_dir.exists():
         raise FileExistsError(f"refusing to overwrite cook run: {run_dir}")
     run_dir.mkdir(parents=True)
+    sandbox_home = run_dir / "sandbox-home"
+    sandbox_tmp = run_dir / "sandbox-tmp"
+    sandbox_home.mkdir()
+    sandbox_tmp.mkdir()
     (run_dir / "prompt.txt").write_text(prompt, encoding="utf-8")
     write_json(
         run_dir / "run.spec.json",
@@ -408,6 +455,7 @@ def run_cook(
     env = _safe_model_environment()
     env.update(
         {
+            "HOME": str(sandbox_home.resolve()),
             "MOLGAS_CHECKOUT": str(Path(checkout).resolve()),
             "MOLGAS_MAX_COMPUTE_TOKENS": str(max_compute_tokens),
             "MOLGAS_MAX_TOKENS": str(max_tokens),
@@ -418,6 +466,7 @@ def run_cook(
             "MOLGAS_RUN_DIR": str(run_dir.resolve()),
             "MOLGAS_TIMEOUT_SECONDS": str(timeout_seconds),
             "MOLGAS_USAGE_FILE": str((run_dir / "usage.json").resolve()),
+            "TMPDIR": str(sandbox_tmp.resolve()),
         }
     )
 
@@ -512,6 +561,7 @@ def run_cook(
         "stdout_sha256": sha256_text(stdout or ""),
         "stdout_truncated": stdout_truncated,
         "timed_out": timed_out,
+        "timeout_seconds": timeout_seconds,
         "token_usage": usage,
         "wall_seconds": wall_seconds,
     }

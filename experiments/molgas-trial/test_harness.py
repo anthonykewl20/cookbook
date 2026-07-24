@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import os
 import tempfile
 import unittest
@@ -12,9 +13,11 @@ from common import (
     _safe_model_environment,
     _screen_run_artifacts,
     normalize_decision,
+    payload_sha256,
+    sha256_text,
     validate_cook_template,
 )
-from run_trial import validate_plan
+from run_trial import load_plan, render_prompt, validate_plan
 from score import clustered_bootstrap_ci, exact_paired_sign_flip
 from select_tasks import (
     ALLOWED_DIFFICULTIES,
@@ -68,13 +71,18 @@ class TaskSelectionTests(unittest.TestCase):
 
 class ProtocolParsingTests(unittest.TestCase):
     def test_cook_template_requires_token_cap_and_claude_safe_mode(self) -> None:
-        with self.assertRaisesRegex(ValueError, "max_tokens"):
+        with self.assertRaisesRegex(ValueError, "missing placeholders"):
             validate_cook_template("glm-exec {run_dir}")
         with self.assertRaisesRegex(ValueError, "safe-mode"):
-            validate_cook_template("claude --budget {max_tokens}")
+            validate_cook_template(
+                "my-claude-wrapper --model {model} --budget {max_tokens} "
+                "--thinking {max_compute_tokens} --tools {max_tool_calls}"
+            )
         self.assertTrue(
             validate_cook_template(
-                "claude {safe_mode} --budget {max_tokens}"
+                "my-claude-wrapper {safe_mode} --model {model} "
+                "--budget {max_tokens} --thinking {max_compute_tokens} "
+                "--tools {max_tool_calls}"
             )
         )
 
@@ -113,6 +121,81 @@ class ProtocolParsingTests(unittest.TestCase):
             }"""
         )
         self.assertIn("required_controls.negative must be a non-empty list", errors)
+
+    def test_plan_rejects_non_falsifiable_null_entries(self) -> None:
+        _, errors = validate_plan(
+            """{
+              "atomic_success_claims": [null],
+              "failure_modes": ["mode"],
+              "checks": [null],
+              "required_controls": {"positive": ["yes"], "negative": [null]},
+              "acceptance_threshold": "all pass",
+              "refusal_conditions": ["any failure"]
+            }"""
+        )
+        self.assertIn(
+            "atomic_success_claims must contain only non-empty strings", errors
+        )
+        self.assertIn("checks[0] must be an object", errors)
+        self.assertIn(
+            "required_controls.negative must contain non-empty strings", errors
+        )
+
+    def test_prompt_rendering_preserves_json_braces(self) -> None:
+        self.assertEqual(
+            render_prompt('{"decision": "SERVE"} {issue}', issue="example"),
+            '{"decision": "SERVE"} example',
+        )
+        self.assertEqual(
+            render_prompt("{first} {second}", first="{second}", second="value"),
+            "{second} value",
+        )
+
+    def test_frozen_plan_payload_is_bound_to_raw_response(self) -> None:
+        plan = {
+            "atomic_success_claims": ["claim"],
+            "failure_modes": ["mode"],
+            "checks": [
+                {
+                    "id": "C1",
+                    "procedure": "run check",
+                    "pass_condition": "exit 0",
+                    "failure_mode_covered": "mode",
+                }
+            ],
+            "required_controls": {
+                "positive": ["known pass"],
+                "negative": ["known fail"],
+            },
+            "acceptance_threshold": "C1 and controls pass",
+            "refusal_conditions": ["anything fails"],
+        }
+        raw = json.dumps(plan)
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "plans").mkdir()
+            (root / "cook-runs" / "plan").mkdir(parents=True)
+            (root / "cook-runs" / "plan" / "final.txt").write_text(
+                raw, encoding="utf-8"
+            )
+            record_path = root / "plans" / "task__candidate-1.json"
+            record = {
+                "candidate_id": "task::candidate-1",
+                "errors": [],
+                "plan": plan,
+                "plan_sha256": payload_sha256(plan),
+                "raw_response_path": "cook-runs/plan/final.txt",
+                "raw_response_sha256": sha256_text(raw),
+            }
+            record_path.write_text(json.dumps(record), encoding="utf-8")
+            self.assertEqual(
+                load_plan(root, "task::candidate-1")["plan_sha256"],
+                payload_sha256(plan),
+            )
+            record["plan"]["acceptance_threshold"] = "silently rewritten"
+            record_path.write_text(json.dumps(record), encoding="utf-8")
+            with self.assertRaisesRegex(RuntimeError, "normalization changed"):
+                load_plan(root, "task::candidate-1")
 
 
 class SecretBoundaryTests(unittest.TestCase):
