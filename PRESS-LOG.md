@@ -6,6 +6,20 @@ book's own operations log, kept the way the book says to keep one.
 A stocktake would answer *which chapters exist*. This answers *what was done to them*. Those
 are two different records and they are not merged.
 
+## The orphan-bench clean-down (2026-07-24)
+
+A clear-down of stranded work, not a page printed. Seven settle-by-proof research files
+(`research/sbyp-*.md` and `research/settle-by-proof-chapter-rd.md`, ~1,837 lines, for issues #1/#2)
+were rescued from an abandoned worktree onto `main` and pushed public — they were the only thing of
+value left in it. Two abandoned worktrees (`settle-by-proof`, `closeup-handoff`) and four stale
+branches (`worktree-settle-by-proof`, `worktree-closeup-handoff`, `development`, `main-latest`) were
+removed; only `main` remains. No cookbook session was left running — confirmed there is exactly one
+(the head chef's), so nothing was orphaned live.
+
+**One edit deliberately not landed.** The dead branch carried a `book/44` prose edit. It was left
+unmerged on purpose: it authors new prose into a bound chapter, and issue #1 gates any such change
+behind a second cross-family check. Landing it from a dead branch would have sidestepped that gate.
+
 ## Chapter 0 — Opening the box
 
 | Stamp | Record |
