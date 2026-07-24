@@ -44,30 +44,34 @@ plugin, only in external config. Do not repeat it.
 
 ## The step we are on
 
-**END OF 2026-07-24 SESSION — handoff for tomorrow. Where we actually stand:**
+**END OF 2026-07-25 SESSION — the direction pivoted. Where we actually stand:**
 
-- **Board flip: DONE, measured, pushed public.** Open work lives in **GitHub Issues** (`gh issue list`);
-  `TICKETS.md` is frozen with a T→issue map. Content gaps = #9–#16; migrated tickets = #17–#24.
-- **The cookbook-on-trial A/B (issue #24) has RUN — and returned a measured TIE.** Baseline 7/9 (0.78),
-  Process 7/9 (0.78); static-fraction 2/3 in both arms; delta 0.0. **Read: INCONCLUSIVE, not a process
-  failure** — the run was UNDER-POWERED (2 of 3 instances solved 3/3 by both arms = ceiling; the one hard
-  instance stayed flaky in both). **No cookbook session is live now** — this is the only one running, and
-  nothing is running in parallel. Full measured numbers and design are banked in **issue #24**; the harness
-  is **#25**. (Earlier this session a three-arm SWE-bench A/B was designed and the pipeline proved
-  end-to-end — de-contamination via `claude --safe-mode` verified live, leakage guard held, measured cost
-  ≈ **$95** for a full 24-task run — then stood down for the more faithful Codex-both-sides pilot above.)
-- **Reusable gotcha banked:** `claude -p` silently loads the whole cookbook into context — use
-  `--safe-mode` for any clean baseline, or a Claude-based eval is contaminated toward "no effect" (see #24, #17).
-- **NEXT (the decision to make, not a result to wait for):** whether to RE-RUN the #24 A/B for real
-  statistical power — HARDER instances (baseline resolve-rate well under 100%), MORE of them, and possibly a
-  STRONGER taster (a larger/different model than the cook). **The TIE results already exist in #24 — do not
-  re-read them, act on them.** Apply the pre-registered rule **+10pp & McNemar p<0.05** to the re-run's paired
-  delta (delta-not-absolute for contamination); inconclusive again → escalate N or build the
-  orchestration-stress battery. Then **#17** (scenario-eval, reuses the `--safe-mode` de-contamination) and
-  **#3** (page scorer, same outcome-lift method).
-- **This session cleared down.** The 7 settle-by-proof research files (issues #1/#2) were rescued from an
-  abandoned worktree onto `main` and pushed public; 2 abandoned worktrees (settle-by-proof, closeup-handoff)
-  and 4 stale branches were removed. Only `main` remains.
+- **The direction pivoted (2026-07-25).** The SWE-bench "cookbook on trial" measurement (#24) is
+  **DEFERRED.** SWE-bench is too SLOW (a real run is days) and too NARROW — it only sees the final
+  code patch, so it tests ONE cookbook move (check-before-serve), not the whole book. **It is the
+  wrong ruler for "does the cookbook work."**
+- **The real question was answered by a 4-family expert panel** — Claude Opus 4.8, GPT-5.6-sol,
+  DeepSeek V4 Pro, Tencent hy3 — debated over several rounds. **Consensus: measure the cookbook like
+  a PROOFREADER, then judge the whole machine.** Phase 1 = proofread every instruction: compile the
+  book into an atomic **INSTRUCTION REGISTRY**, give each instruction a deterministic
+  (script-driven) **CHECKER** validated by a **sad-path battery** (fail-cases, not happy-path),
+  score each, replace the low-scoring ones. Phase 2 (later) = whole-machine effectiveness. The full
+  consensus verdict is saved at `docs/verdict.html` (linked from the README).
+- **A full Phase-1 build backlog is on the board — GitHub Issues, 171 issues.** Epic **#27**;
+  **#28 the Contract is the CRITICAL PATH — build it first, everything blocks on it**; runtimes
+  #29–#32; scorer #33 + ledgers #34–#36; **7 audit-gap foundations #196–#202** (registry-ID
+  governance, evidence provenance, agent-run + de-contamination, compliance-theatre guard,
+  inventory-recall, atomization rubric, Phase-1/2 boundary); **51 chapter inventories #37–#87**;
+  **51 checker issues (#93+)**; **51 certification issues**; whole-book gate **#195**.
+- **It was verified before this close.** A deterministic script checked all the issues (labels,
+  dependency wiring, sad-path battery — clean); a 4-family panel audited the design and **found real
+  gaps → changes required**; the gaps were fixed (new issues + spine corrections + dependency wiring
+  + contradiction resolution); and a **final family verification returned PASS.**
+- **NEXT STEP for the next session:** start BUILDING Phase 1 at **#28 (the Contract)** — the critical
+  path. Work is tracked on GitHub Issues (`gh issue list`).
+- **Parked, not lost:** the validated SWE-bench ablation harness is on git branch **`wt-harness-3arm`**
+  (it is the Phase-2 effectiveness tool — see issue **#198**). It is deliberately **NOT on main**
+  because of the pivot.
 
 _The blocks below (SCORER, "step now — updated") are earlier-in-the-day context; this block supersedes their "what is active now."_
 

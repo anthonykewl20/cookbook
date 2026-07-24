@@ -6,6 +6,38 @@ book's own operations log, kept the way the book says to keep one.
 A stocktake would answer *which chapters exist*. This answers *what was done to them*. Those
 are two different records and they are not merged.
 
+## The pivot and the Phase-1 backlog — measuring the cookbook itself (2026-07-25)
+
+The SWE-bench "cookbook on trial" measurement (#24) is **deferred.** It was the wrong ruler: too
+SLOW (a real run is days) and too NARROW — it only sees the final code patch, so it tests ONE
+cookbook move (check-before-serve), not the whole book. A measurement that cannot reach the thing
+it is meant to judge is not worth running.
+
+**The real question — does the cookbook work — was put to a 4-family expert panel** (Claude Opus
+4.8, GPT-5.6-sol, DeepSeek V4 Pro, Tencent hy3), debated over several rounds. **Consensus: measure
+the cookbook like a PROOFREADER, then judge the whole machine.** Phase 1 = proofread every
+instruction: compile the book into an atomic INSTRUCTION REGISTRY, give each instruction a
+deterministic (script-driven) CHECKER validated by a sad-path battery (fail-cases, not
+happy-path), score each, replace the low-scoring ones. Phase 2 (later) = whole-machine
+effectiveness. The full consensus verdict is saved at `docs/verdict.html`, linked from the README.
+
+**A full Phase-1 build backlog was created on GitHub Issues — 171 issues.** Fresh-context GPT
+agents wrote it in batches; it was then verified before it was trusted. A deterministic script
+checked every issue (labels, dependency wiring, sad-path battery — clean); a 4-family panel audited
+the design and **found real gaps → changes required**; the gaps were fixed (new issues + spine
+corrections + dependency wiring + contradiction resolution); a final family verification returned
+**PASS.** The structure: epic **#27**; **#28 the Contract is the CRITICAL PATH** (build it first);
+runtimes #29–#32; scorer #33 + ledgers #34–#36; 7 audit-gap foundations #196–#202; 51 chapter
+inventories #37–#87; 51 checker issues (#93+); 51 certification issues; whole-book gate #195.
+
+**The honest lesson, stated plainly.** The "cook never tastes their own dish" rule held twice
+tonight. The family caught a **real measurement bias in the head chef's own SWE-bench harness** —
+the very harness the head chef had praised as good anti-bias design (logged the night before).
+And it found that the head chef's **hand-edits to the spine issues were contradictory** and had to
+be rewritten by a family agent. The pattern repeats: **consequential work goes to fresh family
+agents; the head chef assigns and checks.** The validated SWE-bench harness is parked on branch
+`wt-harness-3arm` (the Phase-2 tool, issue #198) — deliberately not on main, because of the pivot.
+
 ## LLM guardrails added as a chain-wide rule — kept out of CLAUDE.md (2026-07-24)
 
 The owner directed that four of Anthropic's guardrail topics become chain-wide house rules for any
