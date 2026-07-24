@@ -187,6 +187,16 @@ All named pages exist and substantively support the framework’s summaries.
 | [S11 Claude Code programmatic mode](https://code.claude.com/docs/en/headless) and [CLI reference](https://code.claude.com/docs/en/cli-reference) | Current official Claude Code docs | JSON and stream-JSON, session and cost metadata, tool events, API retry events, structured output, version and permission controls | VERIFIED |
 | [S12 Codex non-interactive mode](https://developers.openai.com/codex/non-interactive-mode) | Exists; redirects to current ChatGPT Learn documentation | `codex exec --json`, JSONL events, token usage in `turn.completed`, `--output-schema`, and sandbox guidance | VERIFIED |
 
+Short primary-source excerpts:
+
+- S1: “run each one in a fresh session with the skill available and again with it disabled”
+- S2: “a prompt → a captured run (trace + artifacts) → a small set of checks → a score”
+- S3: “Each eval run should start with a clean context”
+- S4: “Design task-specific evals: Make tests reflect model capability in real-world distributions.”
+- S5: “choose the fastest, most reliable, most scalable method”
+- S11: “`stream-json`: newline-delimited JSON for real-time streaming”
+- S12: “`stdout` becomes a JSON Lines (JSONL) stream”
+
 Two freshness notes:
 
 1. S3 is first-party documentation for the Agent Skills standard, not an OpenAI or Anthropic product
