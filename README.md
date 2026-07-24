@@ -8,6 +8,14 @@ The book is bound. All fifty-one chapters are written, across eight parts, and e
 
 The book was not written by one hand. One worker writes each page and a different worker checks it. A separate pass checks it against the rules one at a time; a further reader reads each batch asking only what is missing, never whether it passes. The roles are filled by measured contest — the latest record sits in `showdown2/RESULTS.md` — and the tools that run these checks live in `press/`.
 
+## Does it work? — measuring the cookbook
+
+A separate question from *"is the book written"* is *"does following it actually make an agent's work better?"* Four independent model families — Claude Opus 4.8, GPT‑5.6‑sol, DeepSeek V4 Pro, and Tencent hy3 — were asked, without seeing each other's answers, how to measure that as a **static, measurable score**. They reached the same verdict: **proofread every instruction on its own first** — is each line followed, drifted from, or wrong? A script can decide most of them, because this book is unusually operational. **Every instruction gets its own score**; a low-scoring one can be rewritten and swapped for a better one, measured; and only **then** do you judge the whole book running as one machine.
+
+The full consensus verdict — [open the report](docs/verdict.html):
+
+[![Consensus verdict — how to measure the cookbook](docs/verdict-report.png)](docs/verdict.html)
+
 ## Try the test print
 
 The installable plugin carries only one rule right now — the test print — not the full book. To install it, type these two lines:

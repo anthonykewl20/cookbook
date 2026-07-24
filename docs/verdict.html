@@ -1,0 +1,163 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Measuring the Cookbook — 4-Family Consensus Verdict</title>
+<style>
+:root{
+  --bg:#f4f2ec; --panel:#fffdf8; --ink:#20242b; --muted:#5d6470; --line:#e3ded2;
+  --accent:#1f6f6a; --accent2:#b4551d; --ok:#2f8f5b; --warn:#c68a12; --stop:#b23b32;
+  --a:#2f8f5b; --b:#1f6f6a; --c:#c68a12; --d:#b23b32;
+  --shadow:0 1px 2px rgba(20,22,26,.05),0 10px 30px rgba(20,22,26,.06);
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#12151a; --panel:#191d24; --ink:#e8ebf0; --muted:#98a1af; --line:#282e37;
+  --accent:#4fb8b0; --accent2:#e08a4a; --ok:#4bbd82; --warn:#e0af3f; --stop:#e56a5d;
+  --a:#4bbd82; --b:#4fb8b0; --c:#e0af3f; --d:#e56a5d;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 12px 34px rgba(0,0,0,.4);
+}}
+:root[data-theme="dark"]{ --bg:#12151a; --panel:#191d24; --ink:#e8ebf0; --muted:#98a1af; --line:#282e37; --accent:#4fb8b0; --accent2:#e08a4a; --ok:#4bbd82; --warn:#e0af3f; --stop:#e56a5d; --a:#4bbd82; --b:#4fb8b0; --c:#e0af3f; --d:#e56a5d; }
+:root[data-theme="light"]{ --bg:#f4f2ec; --panel:#fffdf8; --ink:#20242b; --muted:#5d6470; --line:#e3ded2; --accent:#1f6f6a; --accent2:#b4551d; --ok:#2f8f5b; --warn:#c68a12; --stop:#b23b32; --a:#2f8f5b; --b:#1f6f6a; --c:#c68a12; --d:#b23b32; }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.wrap{max-width:900px;margin:0 auto;padding:44px 22px 90px}
+.eyebrow{font-family:var(--mono);text-transform:uppercase;letter-spacing:.16em;font-size:11.5px;color:var(--accent);font-weight:600}
+h1{font-family:var(--serif);font-weight:600;font-size:34px;line-height:1.15;margin:.35em 0 .2em;text-wrap:balance;letter-spacing:-.01em}
+.lede{font-size:17px;color:var(--muted);margin:0;max-width:62ch}
+.verdict{display:flex;gap:16px;align-items:center;margin:26px 0;padding:18px 20px;background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--ok);border-radius:14px;box-shadow:var(--shadow)}
+.verdict .big{font-family:var(--serif);font-size:30px;font-weight:600;color:var(--ok);line-height:1;white-space:nowrap}
+.verdict .txt{font-size:14.5px;color:var(--ink)}
+.verdict .txt b{color:var(--ink)}
+h2{font-family:var(--serif);font-size:23px;margin:44px 0 6px;font-weight:600;letter-spacing:-.01em}
+h2 .n{font-family:var(--mono);font-size:14px;color:var(--accent);margin-right:10px;font-weight:600}
+.sec-sub{color:var(--muted);font-size:14.5px;margin:0 0 16px}
+p{margin:0 0 14px}
+.panel-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+@media(max-width:620px){.panel-grid{grid-template-columns:1fr}}
+.fam{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:16px 17px;box-shadow:var(--shadow)}
+.fam .top{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:8px}
+.fam .name{font-family:var(--mono);font-weight:600;font-size:14px}
+.fam .badge{font-family:var(--mono);font-size:10.5px;font-weight:600;color:var(--ok);border:1px solid color-mix(in srgb,var(--ok) 40%,transparent);padding:2px 7px;border-radius:999px;white-space:nowrap}
+.fam .role{font-size:12px;color:var(--muted);margin-bottom:8px}
+.fam .contrib{font-size:13.5px;color:var(--ink)}
+.fam .contrib b{color:var(--accent)}
+.phase{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:var(--shadow);margin:14px 0}
+.phase .ptag{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent2);font-weight:600}
+.phase h3{font-family:var(--serif);font-size:19px;margin:4px 0 10px;font-weight:600}
+ul.tight{margin:8px 0 4px;padding-left:20px}
+ul.tight li{margin:6px 0;font-size:14.5px}
+.classes{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}
+@media(max-width:620px){.classes{grid-template-columns:repeat(2,1fr)}}
+.cl{border:1px solid var(--line);border-radius:11px;padding:12px;background:var(--panel);box-shadow:var(--shadow)}
+.cl .pct{font-family:var(--serif);font-size:26px;font-weight:600;line-height:1}
+.cl .lbl{font-size:12px;color:var(--muted);margin-top:3px}
+.cl.a{border-top:3px solid var(--a)} .cl.a .pct{color:var(--a)}
+.cl.b{border-top:3px solid var(--b)} .cl.b .pct{color:var(--b)}
+.cl.c{border-top:3px solid var(--c)} .cl.c .pct{color:var(--c)}
+.cl.d{border-top:3px solid var(--d)} .cl.d .pct{color:var(--d)}
+.formula{font-family:var(--mono);font-size:13.5px;background:color-mix(in srgb,var(--panel) 80%,var(--ink));border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:12px 0;overflow-x:auto;white-space:pre}
+.loop{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:12px 0;font-family:var(--mono);font-size:12.5px}
+.loop .step{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:6px 12px}
+.loop .arw{color:var(--accent);font-weight:700}
+.warn{background:color-mix(in srgb,var(--warn) 12%,var(--panel));border:1px solid color-mix(in srgb,var(--warn) 35%,var(--line));border-radius:12px;padding:15px 18px;margin:14px 0}
+.warn b{color:var(--warn)}
+.ledgers{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+@media(max-width:620px){.ledgers{grid-template-columns:1fr}}
+.led{border:1px solid var(--line);border-radius:11px;padding:14px;background:var(--panel);box-shadow:var(--shadow)}
+.led .q{font-family:var(--serif);font-size:16px;font-weight:600;margin-bottom:4px}
+.led .d{font-size:13px;color:var(--muted)}
+.first{background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 10%,var(--panel)),var(--panel));border:1px solid color-mix(in srgb,var(--accent) 30%,var(--line));border-radius:14px;padding:20px 22px;box-shadow:var(--shadow);margin-top:14px}
+.first h3{font-family:var(--serif);font-size:19px;margin:0 0 8px}
+footer{margin-top:46px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);padding-top:16px}
+strong{color:var(--ink)}
+em{color:var(--ink)}
+</style></head><body>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">Consensus verdict · issues #17 / #3 · methodology</div>
+  <h1>How to measure the cookbook — proofread every bolt before judging the machine</h1>
+  <p class="lede">Four independent model families were asked, without seeing each other's answers, how to measure the cookbook's whole capability as a <em>static, measurable score</em>. They converged.</p>
+</header>
+
+<div class="verdict">
+  <div class="big">4 / 4 · YES</div>
+  <div class="txt"><b>Unanimous, independent verdict: YES-WITH-CHANGES.</b> The owner's proofreader method is right. Don't score "is the cookbook good" with one big run. First make <b>every instruction individually visible and testable</b> — like torque-testing every bolt — <b>then</b> judge the whole machine's story.</div>
+</div>
+
+<h2><span class="n">01</span>The panel</h2>
+<p class="sec-sub">Each family proposed independently, attacked its own proposal, and returned a verdict. All four agreed on the foundation; each contributed one sharp refinement.</p>
+<div class="panel-grid">
+  <div class="fam"><div class="top"><span class="name">Claude Opus 4.8</span><span class="badge">YES-WITH-CHANGES</span></div><div class="role">host · synthesis</div><div class="contrib">The deliverable is a <b>frozen, versioned instruction registry</b> (prose → machine-checkable checks) — that registry, not any single run, is the static instrument. Connect to value via a <b>followed? × helps?</b> grid: keep / cut / enforce-as-hook.</div></div>
+  <div class="fam"><div class="top"><span class="name">GPT-5.6-sol · xhigh</span><span class="badge">YES-WITH-CHANGES</span></div><div class="role">OpenAI family</div><div class="contrib">Keep <b>three separate ledgers</b> — <em>Compliance</em> (followed?), <em>Validity</em> (helped?), <em>Coverage</em> (missing?). A checker returns only PASS / FAIL / UNKNOWN / NOT-APPLICABLE. Beware <b>"compliance theatre."</b></div></div>
+  <div class="fam"><div class="top"><span class="name">DeepSeek V4 Pro</span><span class="badge">YES-WITH-CHANGES</span></div><div class="role">DeepSeek family</div><div class="contrib">Every check needs a <b>negation-invariant</b> — the bolt is tight <em>and</em> nothing it holds has shifted (e.g. "committed on the worktree branch" AND "main's HEAD never moved"). Kills letter-compliance gaming.</div></div>
+  <div class="fam"><div class="top"><span class="name">Tencent hy3</span><span class="badge">YES-WITH-CHANGES</span></div><div class="role">Tencent family</div><div class="contrib">Prefer <b>within-session A/B</b> (same agent, cookbook on vs off) over a cross-agent baseline — you can't fully strip these ideas from a model's training. Add a <b>spirit-vs-letter</b> AI spot-check.</div></div>
+</div>
+
+<h2><span class="n">02</span>Phase 1 — Proofread the writing</h2>
+<p class="sec-sub">Observability first. Before you can say the cookbook <em>works</em>, you must be able to see, for every instruction, whether it was followed. This is the cheap, fast, iterable, static layer.</p>
+
+<div class="phase">
+  <div class="ptag">The instrument</div>
+  <h3>A frozen registry: one instruction → one checker</h3>
+  <p>Compile the cookbook into atomic instructions — like the numbered, single-action, verifiable steps of a real service manual. Each gets an immutable ID, its exact source text, a deterministic <em>"does this even apply here?"</em> predicate, the required evidence, a versioned checker (hashed, with golden pass/fail fixtures and mutation tests), and its possible fault codes.</p>
+  <ul class="tight">
+    <li><strong>Scripts do the checking, on frozen artifacts only</strong> — git state, files, processes, the peg, the final diff. Same artifacts in → identical result out. That is what makes the score <em>static</em>.</li>
+    <li><strong>Checkers verify substance, not ritual</strong>, and are paired with a negation-invariant so an agent can't fake the gesture.</li>
+    <li><strong>AI is bounded</strong> — used only where a script genuinely can't reach, restricted to yes/no classification on a fixed, frozen artifact, pinned + sampled, its verdict written to a committed label. Never in the live scoring path.</li>
+  </ul>
+</div>
+
+<p class="sec-sub" style="margin-top:22px">How much of this cookbook is actually machine-checkable? All four estimated it — because it's unusually <em>operational</em> (worktrees, commits, taster≠cook, clearing-down, logging), the mechanical majority is real.</p>
+<div class="classes">
+  <div class="cl a"><div class="pct">~25%</div><div class="lbl">A · fully script-checkable now</div></div>
+  <div class="cl b"><div class="pct">~40%</div><div class="lbl">B · scriptable with a designed probe</div></div>
+  <div class="cl c"><div class="pct">~25%</div><div class="lbl">C · bounded AI assist</div></div>
+  <div class="cl d"><div class="pct">~10%</div><div class="lbl">D · not checkable today</div></div>
+</div>
+<p style="font-size:13.5px;color:var(--muted)">≈ <strong>65%</strong> becomes deterministically checkable once probes exist (≈20–30% before). Consensus range across the four families: 55–70%. These are planning estimates, not findings.</p>
+
+<div class="warn"><b>Keep the three questions apart (GPT).</b> "Followed / drifted" is <em>Compliance</em>. "Wrong" is <em>Validity</em> — it needs effectiveness evidence. "Incomplete" is <em>Coverage</em> — a fault happened while every applicable rule was obeyed. Blending them recreates the coarse ambiguity the proofreader method exists to kill.</p></div>
+<div class="ledgers">
+  <div class="led"><div class="q">Compliance</div><div class="d">Was the instruction followed? — script, static.</div></div>
+  <div class="led"><div class="q">Validity</div><div class="d">Did following it help? — needs the whole-story test.</div></div>
+  <div class="led"><div class="q">Coverage</div><div class="d">Is a needed instruction missing? — residual failure despite full compliance.</div></div>
+</div>
+
+<h2><span class="n">03</span>Every bolt has its own score</h2>
+<p class="sec-sub">Not one blended number that hides the loose bolt. Each instruction carries its own scorecard.</p>
+<div class="formula">Compliance(instruction i) = FOLLOWED / (TRIGGERED and CHECKABLE)      · per instruction, with vs without the cookbook
+Compliance-lift        = followed-rate(cookbook on) − followed-rate(off)   · does loading the handbook actually change behaviour?
+Deterministic coverage = instructions with a certified checker / all instructions</div>
+<p>Scores roll up — <span class="mono">instruction → chapter → book</span> — but stay drillable to the single line. That panel of per-instruction fault codes <em>is</em> the diagnostic: it tells you which lines are honoured, which drift, and which the model ignores entirely.</p>
+
+<h2><span class="n">04</span>A broken bolt gets replaced with a higher-scoring one</h2>
+<p class="sec-sub">The scores don't just diagnose — they let you improve, and prove the improvement.</p>
+<div class="loop">
+  <span class="step">low-scoring instruction</span><span class="arw">→</span>
+  <span class="step">rewrite the wording</span><span class="arw">→</span>
+  <span class="step">test new vs old in isolation</span><span class="arw">→</span>
+  <span class="step">higher score?</span><span class="arw">→</span>
+  <span class="step">swap it in</span>
+</div>
+<p>An instruction that's ignored, drifts, is ambiguous, or is followed-but-useless becomes a candidate. Rewrite it, A/B the new wording against the old on the very check that failed, and if it scores higher — more consistently followed, clearer, more effective — replace it. The cookbook stops being a fixed book and becomes a <strong>self-improving machine, one measured instruction at a time.</strong></p>
+
+<h2><span class="n">05</span>Phase 2 — Judge the whole story</h2>
+<p class="sec-sub">Clean writing is necessary, not sufficient. Once the bolts pass, run the machine.</p>
+<p>The whole-campaign, all-or-nothing effectiveness test from the earlier debate isn't wrong — it's the <strong>final integration test</strong>, not the first diagnostic. And attribution is two-stage: first, <em>did the cookbook change compliance with instruction X?</em> then, <em>did that changed compliance change a real outcome?</em> If compliance rises but outcomes don't, the instruction is dead weight or its claimed mechanism is wrong. Some instructions only pay off <em>in combination</em>, so line-level tests are checked, then chapter-level interaction tests, then the whole book.</p>
+
+<h2><span class="n">06</span>Scaling — and the honest limits</h2>
+<p class="sec-sub">The checker battery stays constant; only the breadth grows.</p>
+<ul class="tight">
+  <li><strong>Unit:</strong> instruction → chapter → book (integration). Don't widen a level until the smaller unit's UNKNOWNs are exhausted.</li>
+  <li><strong>Breadth:</strong> one author proves feasibility → a group reproduces the same fault codes on frozen bundles → many sites/agents → worldwide <em>independent replication</em> of a published spec. Never a "worldwide vote of AI opinions."</li>
+</ul>
+<div class="warn"><b>What this cannot do (stated plainly).</b> ≈10% of instructions aren't checkable today (attitudinal, hidden, or counterfactual). Compliance is <em>not</em> value — a perfectly-obeyed useless rule scores high on Phase 1 and zero on Phase 2. And the standing danger is <b>compliance theatre</b>: optimising the cookbook for what's easy to instrument while the real work gets worse. Guardrails: keep the three ledgers separate, treat a pass as "no violation detected" (not "true"), keep UNKNOWNs visible, and never publish a single number without its full fault-code table and its observability denominator.</p></div>
+
+<div class="first">
+  <h3>Recommended first bolt to torque</h3>
+  <p style="margin:0">Build the registry and the <strong>Class-A mechanical checkers first</strong> — worktree/branch hygiene, clean tree, no orphan branches, no leftover processes, co-author trailers, never-touch-BASE_URL. They're free, instant, un-gameable, and run on every session today. Get a real per-instruction compliance panel for the ~25% that needs no instrumentation, exhaust it, then add the Class-B probes. Small, fast, static — exactly the check-engine panel.</p>
+</div>
+
+<footer>Panel: Claude Opus 4.8 (host) · GPT-5.6-sol xhigh · DeepSeek V4 Pro · Tencent hy3 — four independent families, no cross-talk, one verdict. Method: score outcomes and observable state, never the agent's own narration. Prepared as the methodology record for the cookbook's own evaluation (#17 behaviour ruler / #3 page scorer).</footer>
+</div>
+</body></html>
